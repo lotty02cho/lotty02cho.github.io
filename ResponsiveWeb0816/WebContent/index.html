@@ -34,81 +34,63 @@
 
 <body>
 
-<!-- Tab 부분 -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-	<!-- 모든 것은 컨테이너 안에 집어 넣기 -->
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+	<!-- Tab 부분 -->
+
+	<div class="navbar navbar-inverse navbar-static-top">
+
+		<div class="container">
+			<!-- Title -->
+			<a href="#" class="navbar-brand">Line Launcher</a>
+
+			<!-- Mobile Button -->
+			<button class="navbar-toggle" data-toggle="collapse"
+				data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Line Launcher</a>
-			<div class="navbar-collapse collapse">
+
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<!-- nav bar 오른쪽 정렬 -->
 				<ul class="nav navbar-nav navbar-right">
+					<!-- active = 강조효과 -->
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li class="dropdown-header">Admin & dashboard</li>
-							<li><a href="#">Admin 1</a></li>
-							<li><a href="#">Admin 2</a></li>
-							<li class="dropdown-header">Portfolio</li>
-							<li><a href="#">Portfolio 1</a></li>
-							<li><a href="#">Portfolio 2</a></li>
-						</ul>
+						<a href ="#" class = "dropdown-toggle" data-toggle = "dropdown">Language <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">한글</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">中文</a></li>
+								<li><a href="#">日本語</a></li>
+							</ul>
+							
 					</li>
 					<li><a href="#">Contact</a></li>
+					<li><a href="#">About</a></li>
+
 				</ul>
+
 			</div>
 		</div>
+
 	</div>
-</div>
-<!-- Animation 부분 -->
 
-	<header>
-		<div class="container">
-			<div class="col-md-8 col-md-offset-2">
-				<h1>
-					<i class="fa fa-heart"></i> ScrollMagic Demos <i class="fa fa-magic"></i>
-				</h1>
-				<hr>
-				<h2>Animation Trigger</h2>
-				<p class="lead">This example shows how to trigger a basic
-					animation when you hit a certain point using the GreenSock
-					Animation Platform.</p>
-			</div>
-		</div>
-		<i class="fa fa-angle-double-down"></i>
-	</header>
-
-
-
-	<main>
+	<!-- Animation 부분 -->
 	
+	<main>
+
 	<div class="container">
-
-
-
-
 		<div class="row">
 			<!-- where the animation starts -->
 
 			<div class="col-md-6 col-md-offset-3">
 				<div class="wrap" id="scene">
-					<h2>Magic Happens Here</h2>
+					<h2>Line Launcher Happens Here</h2>
 					<div id="animation">
 						<i class="fa fa-heart"></i>
 					</div>
 				</div>
 			</div>
-
 		</div>
-
-
 	</div>
 
 	</main>
@@ -127,18 +109,20 @@
 
 
 	<!-- ScrollMagic.js 사용 -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
 	<!-- Debug trigger 부분 표시 -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
-
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
 
 	<!-- 상단 Tab jquery, Bootstrap library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script
+		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-<script src="js/main.js"></script>
+	<script src="js/main.js"></script>
 	<!-- scripts.js, main.js, etc. -->
 </body>
 </html>
