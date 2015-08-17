@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="apple-mobile-web-app-status-bar-style"
+	content="black-translucent">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<!-- FullPage css -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+
+<!-- To use Wow. js -->
+<link rel="stylesheet" href="css/animate.css">
+
+<style type="text/css">
+.section {
+	font-size: 6em;
+	text-align: center;
+}
+</style>
+
+
+<title>Lotty's Line Launcher</title>
+
+
+</head>
+
+
+<body class="fp-viewing-firstPage"
+	style="overflow: visible; height: initial;">
+
+	<!-- Tab 부분 -->
+
+	<div class="navbar navbar-inverse navbar-static-top">
+
+		<div class="container">
+			<!-- Title -->
+			<a href="#" class="navbar-brand">Line Launcher</a>
+
+			<!-- Mobile Button -->
+			<button class="navbar-toggle" data-toggle="collapse"
+				data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<!-- nav bar 오른쪽 정렬 -->
+				<ul class="nav navbar-nav navbar-right">
+					<!-- active = 강조효과 -->
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Language <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">한글</a></li>
+							<li><a href="#">English</a></li>
+							<li><a href="#">中文</a></li>
+							<li><a href="#">日本語</a></li>
+						</ul></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">About</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- FullPage 부분 -->
+
+	<div id="fullpage" class="fullpage-wrapper"
+		style="height: 100%; position: relative;">
+		<div class="section  fp-section fp-table active" id="section0"
+			data-anchor="firstPage"
+			style="height: 1075px; background-color: rgb(198, 61, 15);">
+			<div class="fp-tableCell" style="height: 1075px;">
+				<div class="intro wow bounceInUp">
+					<h1>Enable Your Scroll Bar!</h1>
+					<p>The perfect combination!</p>
+				</div>
+			</div>
+		</div>
+		<div class="section fp-section" id="section1" data-anchor="secondPage"
+			style="height: 1075px; background-color: rgb(27, 188, 155);">
+			<div class="fp-slides">
+				<div class="fp-slidesContainer"
+					style="width: 200%; transition: all 700ms ease; transform: translate3d(0px, 0px, 0px);">
+					<div class="slide fp-slide fp-table active" id="slide1"
+						style="width: 50%;">
+						<div class="fp-tableCell" style="height: 1075px;">
+							<div class="intro wow slideInLeft" data-wow-duration="2s"
+								data-wow-delay="1s">
+								<h1>Free scroll</h1>
+								<p>User can still using the scroll bar and fullPage.js will
+									do the rest!</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide fp-slide fp-table" id="slide2"
+						style="width: 50%;">
+						<div class="fp-tableCell" style="height: 1075px;">
+							<h1>Slide 2</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+		</div>
+		<div class="section fp-section fp-table" id="section2"
+			data-anchor="3rdPage"
+			style="height: 1075px; background-color: rgb(126, 143, 124);">
+			<div class="fp-tableCell" style="height: 1075px;">
+				<div class="intro">
+					<h1>Great User Experience!</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Animation 부분 -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- [Scrolling시 animation 효과] -->
+	<!-- jQuery 사용 -->
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- GreenSock Animation Platform(GSAP) 사용 -->
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+	<!-- ScrollMagic.js 사용 -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
+	<!-- Debug trigger 부분 표시 -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
+
+
+	<!-- [Navigation Bar 효과] jquery & Bootstrap library -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!-- FullPage javaScript -->
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<!-- if you use the option css3:false  -->
+	<script src="js/jquery.easings.min.js"></script>
+
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(
+				function() {
+					$('#fullpage').fullpage(
+							{
+								sectionsColor : [ '#f2f2f2', '#4BBFC3',
+										'#7BAABE', 'whitesmoke' ],
+								afterLoad : function(anchorLink, index) {
+									var loadedSection = $(this);
+
+									//using index
+									if (index == 3) {
+										alert("Section 3 ended loading");
+									}
+
+									//using anchorLink
+									if (anchorLink == 'secondSlide') {
+										alert("Section 2 ended loading");
+									}
+								}
+							});
+				})
+	</script>
+
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW({
+			boxClass : 'wow', // default
+			animateClass : 'animated', // default
+			offset : 0, // default
+			mobile : true, // default
+			live : true
+		// default
+		}).init();
+	</script>
+
+
+
+	<script src="js/main.js"></script>
+	<!-- scripts.js, main.js, etc. -->
+</body>
+</html>

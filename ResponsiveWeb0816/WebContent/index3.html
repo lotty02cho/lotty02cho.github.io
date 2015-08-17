@@ -22,6 +22,10 @@
 <!-- FullPage css -->
 <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
+
+<!-- To use Wow. js -->
+<link rel="stylesheet" href="css/animate.css">
+
 <style type="text/css">
 .section {
 	font-size: 6em;
@@ -93,12 +97,10 @@
 			</main>
 		</div>
 		<div class="section">
-		<div class="container">
-				<h2>Line Launcher Happens Here</h2>
-				<div id="animation">
-					<i class="fa fa-heart"></i>
-				</div>
-		</div></div>
+		<div class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"">
+                  I'm Lotty!!
+                  </div>
+                  </div>
 		<div class="section">section 3</div>
 		<div class="section">section 4</div>
 	</div>
@@ -145,10 +147,34 @@
 		$(document).ready(function(){
 			$('#fullpage').fullpage({
 				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
-				css3: true
+				afterLoad: function(anchorLink, index){
+		            var loadedSection = $(this);
+
+		            //using index
+		            if(index == 3){
+		                alert("Section 3 ended loading");
+		            }
+
+		            //using anchorLink
+		            if(anchorLink == 'secondSlide'){
+		                alert("Section 2 ended loading");
+		            }
+		        }
 			});
 		})
 	</script>
+
+	<script src="js/wow.min.js"></script>
+              <script>
+              new WOW(
+            	{
+                    boxClass:     'wow',      // default
+                    animateClass: 'animated', // default
+                    offset:       0,          // default
+                    mobile:       true,       // default
+                    live:         true        // default
+              }).init();
+    </script>
 
 
 
