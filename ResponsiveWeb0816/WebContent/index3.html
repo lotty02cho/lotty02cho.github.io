@@ -15,13 +15,12 @@
 
 <!-- Styles -->
 <link rel="stylesheet"
-	href="//netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	href="css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
+<!-- FullPage css -->
 <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-
-<!-- Reference to your stylesheet -->
 
 <style type="text/css">
 .section {
@@ -93,7 +92,13 @@
 
 			</main>
 		</div>
-		<div class="section">section 2</div>
+		<div class="section">
+		<div class="container">
+				<h2>Line Launcher Happens Here</h2>
+				<div id="animation">
+					<i class="fa fa-heart"></i>
+				</div>
+		</div></div>
 		<div class="section">section 3</div>
 		<div class="section">section 4</div>
 	</div>
@@ -114,33 +119,27 @@
 
 
 
-
+	<!-- [Scrolling시 animation 효과] -->
 	<!-- jQuery 사용 -->
-	<script
-		src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- GreenSock Animation Platform(GSAP) 사용 -->
-	<script
-		src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-
-
+	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 	<!-- ScrollMagic.js 사용 -->
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
 	<!-- Debug trigger 부분 표시 -->
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
 
-	<!-- 상단 Tab jquery, Bootstrap library -->
+
+	<!-- [Navigation Bar 효과] jquery & Bootstrap library -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script
-		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
-	<script src="js/jquery.easings.min.js"></script>
-
+	<!-- FullPage javaScript -->
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-
+	<!-- if you use the option css3:false  -->
+	<script src="js/jquery.easings.min.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -150,7 +149,6 @@
 			});
 		})
 	</script>
-
 
 
 
