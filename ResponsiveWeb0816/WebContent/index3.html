@@ -18,16 +18,17 @@
 	href="//netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>    
-    
-    
-<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
 <!-- Reference to your stylesheet -->
+
+<style type="text/css">
+.section {
+	font-size: 6em;
+	text-align: center;
+}
+</style>
 
 
 <title>Lotty's Line Launcher</title>
@@ -58,16 +59,14 @@
 				<ul class="nav navbar-nav navbar-right">
 					<!-- active = 강조효과 -->
 					<li class="active"><a href="#">Home</a></li>
-					<li class="dropdown">
-						<a href ="#" class = "dropdown-toggle" data-toggle = "dropdown">Language <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">한글</a></li>
-								<li><a href="#">English</a></li>
-								<li><a href="#">中文</a></li>
-								<li><a href="#">日本語</a></li>
-							</ul>
-							
-					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Language <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">한글</a></li>
+							<li><a href="#">English</a></li>
+							<li><a href="#">中文</a></li>
+							<li><a href="#">日本語</a></li>
+						</ul></li>
 					<li><a href="#">Contact</a></li>
 					<li><a href="#">About</a></li>
 
@@ -80,39 +79,45 @@
 
 
 
-<!-- FullPage 부분 -->
+	<!-- FullPage 부분 -->
 
+	<div id="fullpage">
+		<div class="section">
+			<main>
+			<div class="container">
+				<div class="row">
+					where the animation starts
 
-<div class="section" id="section0">TEST</div>
+					<div class="col-md-6 col-md-offset-3">
+						<div class="wrap" id="scene">
+							<h2>Line Launcher Happens Here</h2>
+							<div id="animation">
+								<i class="fa fa-heart"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-<div class="section" id="section1">TEST</div>
-
-<div class="section" id="section2">TEST</div>
-
+			</main>
+		</div>
+		<div class="section">section 2</div>
+		<div class="section">section 3</div>
+		<div class="section">section 4</div>
+	</div>
 
 
 
 
 	<!-- Animation 부분 -->
-	
-	<main>
 
-	<div class="container">
-		<div class="row">
-			<!-- where the animation starts -->
 
-			<div class="col-md-6 col-md-offset-3">
-				<div class="wrap" id="scene">
-					<h2>Line Launcher Happens Here</h2>
-					<div id="animation">
-						<i class="fa fa-heart"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	</main>
+
+
+
+
+
 
 
 
@@ -120,7 +125,7 @@
 
 	<!-- jQuery 사용 -->
 	<script
-		src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<!-- GreenSock Animation Platform(GSAP) 사용 -->
 	<script
@@ -140,14 +145,21 @@
 	<script
 		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+	<script src="js/jquery.easings.min.js"></script>
+
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$.fn.fullpage({
-				slidesColor:  ['#4BBFC3','#7BAABE','ccddff']
+			$('#fullpage').fullpage({
+				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+				css3: true
 			});
-		});
+		})
 	</script>
+
+
 
 
 	<script src="js/main.js"></script>

@@ -22,8 +22,8 @@ $(function() {
   
   // Create the Scene and trigger when visible
   var scene = new ScrollScene({
-    triggerElement: '#scene',
-    offset: 150 /* offset the trigger 150px below #scene's top */
+    triggerElement: '#container',
+    offset: 0 /* offset the trigger 150px below #scene's top */
 /*    duration: 300  How many pixels to scroll / animate */
   })
   .setTween(tween)
