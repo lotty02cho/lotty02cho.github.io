@@ -33,42 +33,53 @@
 
 @media (min-width: 1200px) {
 
+	/*<!-- 1ST PAGE -->*/
+
 	h1{ font-size: 100px;}
 	#dodolTitle{ width: 300px; height: 300px;}
 	.desc{font-size: 60px;}
+	#googleBtn{ margin-top: 40px; width:200px; height: 76px;}
 
 }
 
 @media (min-width: 979px) and (max-width:1199px) {
-
+	
+	/*<!-- 1ST PAGE -->*/
 	h1{ font-size: 80px;}
 	#dodolTitle{ width: 200px; height: 200px;}
 	.desc{font-size: 50px;}
+	#googleBtn{ margin-top: 40px; width:200px; height: 76px;}
 }
 
  
 /* 세로 방향 타블렛부터 가로 방향 타블렛과 데스크탑까지 */
 @media (min-width: 768px) and (max-width: 979px) {
-
+	
+	/*<!-- 1ST PAGE -->*/
 	h1{ font-size: 60px;  }
 	#dodolTitle{ width: 150px; height: 150px;}
 	.desc{font-size: 40px;}
+	#googleBtn{ margin-top: 40px; width:160px; height: 60px;}
 }
  
 /* 가로 방향 전화기부터 세로 방향 타블렛까지 */
 @media (max-width: 767px) {
-
+	
+	/*<!-- 1ST PAGE -->*/
 	h1{ font-size: 38px;  }
 	#dodolTitle{ width: 150px; height: 150px;}
 	.desc{font-size: 30px;}
+	#googleBtn{ margin-top: 40px; width:160px; height: 60px;}
 }
  
 /* 가로 방향 전화기 이하 */
 @media (max-width: 480px) {
-
+	
+	/*<!-- 1ST PAGE -->*/
 	h1{ font-size: 24px;  }
 	#dodolTitle{ width: 150px; height: 150px;}
 	.desc{font-size: 16px;}
+	#googleBtn{ margin-top: 40px; width:100px; height: 40px;}
 }
 
 
@@ -133,9 +144,14 @@
 				style="height: 1075px; background-color: rgb(198, 61, 15);">
 				<div style="height: 1075px;">
 					<div class="intro wow bounceInUp text-center" style="padding-top: 200px;">
-						<img src="img/dodolTitle.png" id="dodolTitle">
+						<div class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="1s">
+							<img src="img/dodolTitle.png" id="dodolTitle">
+						</div>
 						<h1>This is new Line Launcher!</h1>
 						<div class="desc">The perfect combination!</div>
+						<div class="wow fadeIn" data-wow-duration="4s" data-wow-delay="3s">
+							<img src="img/googleBtn.png" id="googleBtn">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -235,8 +251,8 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors : [ 'firstPage', 'secondPage', '3rdPage' ],
-				sectionsColor : [ '#C63D0F', '#1BBC9B', '#7E8F7C' ],
+				anchors : [ 'firstPage', 'secondPage', '3rdPage'],
+				sectionsColor : [ '#FFFFFF','#C63D0F', '#1BBC9B'],
 				scrollBar : true
 			});
 		});
