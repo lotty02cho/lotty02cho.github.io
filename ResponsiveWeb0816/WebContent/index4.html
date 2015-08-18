@@ -30,6 +30,48 @@
 	font-size: 6em;
 	text-align: center;
 }
+
+@media (min-width: 1200px) {
+
+	h1{ font-size: 100px;}
+	#dodolTitle{ width: 300px; height: 300px;}
+	.desc{font-size: 60px;}
+
+}
+
+@media (min-width: 979px) and (max-width:1199px) {
+
+	h1{ font-size: 80px;}
+	#dodolTitle{ width: 200px; height: 200px;}
+	.desc{font-size: 50px;}
+}
+
+ 
+/* 세로 방향 타블렛부터 가로 방향 타블렛과 데스크탑까지 */
+@media (min-width: 768px) and (max-width: 979px) {
+
+	h1{ font-size: 60px;  }
+	#dodolTitle{ width: 150px; height: 150px;}
+	.desc{font-size: 40px;}
+}
+ 
+/* 가로 방향 전화기부터 세로 방향 타블렛까지 */
+@media (max-width: 767px) {
+
+	h1{ font-size: 38px;  }
+	#dodolTitle{ width: 150px; height: 150px;}
+	.desc{font-size: 30px;}
+}
+ 
+/* 가로 방향 전화기 이하 */
+@media (max-width: 480px) {
+
+	h1{ font-size: 24px;  }
+	#dodolTitle{ width: 150px; height: 150px;}
+	.desc{font-size: 16px;}
+}
+
+
 </style>
 
 
@@ -45,7 +87,7 @@
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
 
-		<div class="container">
+		<div class="container-fluid">
 			<!-- Title -->
 			<a href="#" class="navbar-brand">Line Launcher</a>
 
@@ -82,47 +124,63 @@
 
 
 	<!-- FullPage 부분 -->
-	<div class="fp-viewing-firstPage" style="overflow: visible; height: initial;">
-	<div id="fullpage" class="fullpage-wrapper"
-		style="height: 100%; position: relative;">
-		<div class="section  fp-section fp-table active" id="section0"
-			data-anchor="firstPage"
-			style="height: 1075px; background-color: rgb(198, 61, 15);">
-			<div style="height: 1075px; padding-top: 10%;">
-				<div class="intro wow bounceInUp">
-					<h1>This is new Line Launcher!</h1>
-					<p>The perfect combination!</p>
+	<div class="fp-viewing-firstPage"
+		style="overflow: visible; height: initial;">
+		<div id="fullpage" class="fullpage-wrapper"
+			style="height: 100%; position: relative;">
+			<div class="fp-section fp-table active" id="section0"
+				data-anchor="firstPage"
+				style="height: 1075px; background-color: rgb(198, 61, 15);">
+				<div style="height: 1075px;">
+					<div class="intro wow bounceInUp text-center" style="padding-top: 200px;">
+						<img src="img/dodolTitle.png" id="dodolTitle">
+						<h1>This is new Line Launcher!</h1>
+						<div class="desc">The perfect combination!</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="section fp-section" id="section1" data-anchor="secondPage"
-			style="height: 1075px; background-color: rgb(27, 188, 155);">
-			<div class="fp-slides">
-				<div class="fp-slidesContainer"
-					style="width: 200%; transition: all 700ms ease; transform: translate3d(0px, 0px, 0px);">
-					<div class="slide fp-slide fp-table active" id="slide1"
-						style="width: 50%;">
-						<div style="height: 1075px; padding-top: 10%;">
-							<div class="intro wow slideInLeft" data-wow-duration="2s"
-								data-wow-delay="1s">
-								<h1>Line Launcher</h1>
-								<p>Make your own phone Fashion</p>
+			<div class="fp-section" id="section1"
+				data-anchor="secondPage"
+				style="height: 1075px; background-color: rgb(27, 188, 155);">
+				<div class="fp-slides">
+					<div class="fp-slidesContainer"
+						style="width: 200%; transition: all 700ms ease; transform: translate3d(0px, 0px, 0px);">
+						<div class="slide fp-slide fp-table active" id="slide1"
+							style="width: 50%;">
+							<div style="height: 1075px; padding-top: 5%;">
+								<!-- 애니메이션 효과 -->
+								<div class="intro wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
+									<div>
+								            <div class="container-fluid">
+								                <div class="row">
+								                <div class="col-xs-12 col-md-8">
+								                    <img src="img/launcher01.png">
+								                </div>
+								                
+								                <div class="col-xs-6 col-md-4">
+								                    <h3 class="title">Sleek</h3>
+								                    <h4 class="desc">Fast performance with style</h4>
+								                    <div class="entry">Accelerate your startup speed by 100%! Make your apps load quicker, search the net with speed, and make full use of the capabilities of your phone with no dead weight.</div>
+								                </div>
+								                </div>
+								            </div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="section fp-section fp-table" id="section2"
-			data-anchor="3rdPage"
-			style="height: 1075px; padding-top: 10%; background-color: rgb(126, 143, 124);">
-			<div class="fp-tableCell" style="height: 1075px;">
-				<div class="intro wow slideInRight">
-					<h1>Coool Update!!!</h1>
+			<div class="section fp-section fp-table" id="section2"
+				data-anchor="3rdPage"
+				style="height: 1075px; padding-top: 10%; background-color: rgb(126, 143, 124);">
+				<div class="fp-tableCell" style="height: 1075px;">
+					<div class="intro wow slideInRight">
+						<h1>Coool Update!!!</h1>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 
 
@@ -152,7 +210,7 @@
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
 	<!-- Debug trigger 부분 표시 -->
-<!-- 	<script
+	<!-- 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
  -->
 
@@ -174,18 +232,18 @@
 		new WOW().init();
 	</script>
 
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#fullpage').fullpage({
-			anchors : [ 'firstPage', 'secondPage', '3rdPage' ],
-			sectionsColor : [ '#C63D0F', '#1BBC9B', '#7E8F7C' ],
-			scrollBar : true
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors : [ 'firstPage', 'secondPage', '3rdPage' ],
+				sectionsColor : [ '#C63D0F', '#1BBC9B', '#7E8F7C' ],
+				scrollBar : true
+			});
 		});
-	});
-</script>
+	</script>
 
 	<script src="js/wow.min.js"></script>
-	
+
 	<script>
 		new WOW({
 			boxClass : 'wow', // default
