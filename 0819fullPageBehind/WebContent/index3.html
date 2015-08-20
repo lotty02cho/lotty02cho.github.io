@@ -14,7 +14,7 @@
 <link rel="stylesheet"
 href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" type="text/css" href="css/main2.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 
 <!-- Link for Wow.js Animation -->
 <link rel="stylesheet" href="css/animate.css">
@@ -262,7 +262,7 @@ href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 		<div class="page section3">
 			<div class="contain">
-				<h3 class="title">这里是第三竖屏</h3>
+				<h3 class="title">3페이지 입니다.</h3>
 				<h4 class="titleEng">This is section3</h4>
 			</div>
 		</div>
@@ -273,46 +273,45 @@ href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 		
 				<div class="page page1">
 					<div class="contain">
-						<h3 class="title">整屏切换组件</h3>
+						<h3 class="title">4페이지 입니다.</h3>
 						<h4 class="titleEng">fullPage</h4>
-						<img src="img/a2.png" alt="HTML,CSS" class="page1-box">
-						<p>使用CSS3动画以及降级处理，兼容到ie6。</p>
+						<img src="img/Logo.png" alt="HTML,CSS" class="page1-box">
+						<p>아아.........ㅠㅠㅠㅠ</p>
 					</div>
 				</div>
 
 				<div class="page page2">
 					<div class="contain">
-						<h3 class="title">这是轮播第二部分</h3>
+						<h3 class="title">슬라이드2</h3>
 						<h4 class="titleEng">This is 1-2</h4>
-						<img src="images/a10.png" alt="可视化数据" class="page2-box">
 					</div>
 				</div>
 
 				<div class="page page3">
 					<div class="contain">
-						<h3 class="title">可以随意地添加动画</h3>
-						<h4 class="titleEng">could use animation(CSS3)</h4>
-						<img src="images/a13.png" alt="影视制作" class="page3-box">
+						<h3 class="title">슬라이드3</h3>
+						<h4 class="titleEng">This is 2-2</h4>
+						<img src="img/Logo.png" alt="page4-2" class="page3-box">
 					</div>
-					<div class="scTop"></div>
-					<div class="scBottom"></div>
+<!-- 					<div class="scTop"></div>
+					<div class="scBottom"></div> -->
 				</div>
 
 				<div class="page page4">
 					<div class="contain">
-						<h3 class="title">支持手机端触摸</h3>
-						<h4 class="titleEng">Touch it!</h4>
+						<h3 class="title">슬라이드4</h3>
+						<h4 class="titleEng">This is 2-3</h4>
 						<div class="page4-box">
-							<img src="images/a5.png" alt="微信">
+							<img src="img/Logo.png" alt="page4-3">
 						</div>
 					</div>
 				</div>
 				<div class="page page5">
 					<div class="contain">
-						<h3 class="title">支持手机端触摸</h3>
-						<h4 class="titleEng">Don't Touch it!</h4>
+						<h3 class="title">슬라이드5</h3>
+						<h4 class="titleEng">This is 3-4</h4>
 						<div class="page4-box">
-							<img src="images/a5.png" alt="微信">
+							<img src="img/smallLogo.png" alt="page4-4">
 						</div>
 					</div>
 				</div>
@@ -344,8 +343,8 @@ var runPage,
     autoPlay;
 autoPlay = function(to) {
     clearTimeout(interval);
-    /* alert("Start Animation - Delay(5s)"); */
     interval = setTimeout(function() {
+/*     	alert("ggggg"); */
          runPage.go(to);
     }, 5000); 
     
@@ -365,7 +364,7 @@ runPage = new FullPage({
 	easing : [0, .93, .39, .98],                                // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1] )
      callback : function(index, thisPage) {     // callback when pageChange
          index = index + 1 > 4 ? 0 : index + 1;
-         /* alert("Start Animation - CallBack"); */
+/*           alert("Start Animation - CallBack"); */
          autoPlay(index);
 
     }
@@ -385,7 +384,6 @@ runSection = new FullPage({
 	easing : [0, .93, .39, .98],
 	callback : function(index, thisPage) {     // callback when pageChange
         if (index === 0) {
-        	alert("whtathefuck!!");
         	autoPlay(runPage.thisPage() + 1);
         } else {
         	clearTimeout(interval);
@@ -394,7 +392,7 @@ runSection = new FullPage({
 });
 
 interval = setTimeout(function() {
-	/* alert("Start Animation"); */
+/* 	 alert("Start Animation"); */
     runPage.go(runPage.thisPage() + 1);
 }, 5000);
 </script>
