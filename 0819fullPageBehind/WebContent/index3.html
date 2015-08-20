@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lotty</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="fullPage:For desktop(ie5.5+) or mobile webApp without jQuery,create full screen pages fast and simple.">
+<meta name="keywords" content="fullPage,webApp,full screen">
+<meta name="author" content="Chriswang,396276123@qq.com">
+
+<!-- Link for using BootStrap-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet"
+href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/main2.css">
+
+<!-- Link for Wow.js Animation -->
+<link rel="stylesheet" href="css/animate.css">
+
+
+<style>
+.page2-desc,.page-2-title, .page1-title, .page1-desc{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 13%;
+    left: 50%;
+}
+
+.page1-Img{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-animation:scaleAll .7s ease-in-out 1.6s both;
+    -moz-animation:scaleAll .7s ease-in-out 1.6s both;
+    -ms-animation:scaleAll .7s ease-in-out 1.6s both;
+    animation:scaleAll .7s ease-in-out 1.6s both;
+}
+
+.page1-Img {
+    margin-left: -100px;
+    margin-top: -250px;
+    width: 200px;
+    height: 200px;
+}
+
+.page1-title {
+    -webkit-animation-delay: .8s;
+    -moz-animation-delay:.8s;
+    -ms-animation-delay:.8s;
+    animation-delay:.8s;
+    line-height: 60px;
+    height: 60px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    font-size: 80px;
+    margin-left: -306px;
+    margin-top: 400px;
+}
+
+.page1-desc {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:1.2s;
+    -ms-animation-delay:1.2s;
+    animation-delay:1.2s;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    margin-left: -200px;
+    margin-top: 500px;
+}
+
+<!--PAGE 2-->
+
+.page-2-title{
+    -webkit-animation-delay: .8s;
+    -moz-animation-delay:.8s;
+    -ms-animation-delay:.8s;
+    animation-delay:.8s;
+    line-height: 60px;
+    height: 60px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    font-size: 40px;
+    margin-left: -318px;
+    margin-top: 0px;
+}
+
+.page2-desc {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:1.2s;
+    -ms-animation-delay:1.2s;
+    animation-delay:1.2s;
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    margin-left: -250px;
+    margin-top: 100px;
+}
+
+.page2-Img {
+	text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-animation:scaleAll .7s ease-in-out 1.6s both;
+    -moz-animation:scaleAll .7s ease-in-out 1.6s both;
+    -ms-animation:scaleAll .7s ease-in-out 1.6s both;
+    animation:scaleAll .7s ease-in-out 1.6s both;
+    margin-left: -170px;
+    margin-top: -195px;
+}
+
+.sibal{
+	position: relative;
+    width: 100%;
+    height: 100%;
+/*     border: 3px solid #8AC007; */
+}
+
+.line{
+
+	-webkit-animation-delay: 2s;
+    -moz-animation-delay:2s;
+    -ms-animation-delay:2s;
+    animation-delay:2s;
+
+	position: absolute;
+    width: 72px;
+    height: 72px;
+    
+/*     border: 3px solid #8AC007; */
+}
+
+.c1{
+	top: 50%;
+	left: 30%;
+}
+
+.c2{
+	top: 80%;
+	left: 30%;	
+}
+
+.c3{
+	top: 50%;
+	left: 65%;
+}
+
+.c4{
+	top: 80%;
+	left: 65%;
+}
+
+@media screen and (max-width: 400px) {
+
+.page1-Img {
+    margin-left: -75px;
+    margin-top: -350px;
+    width: 150px;
+    height: 150px;
+}
+.page1-title {
+    -webkit-animation-delay: .8s;
+    -moz-animation-delay: .8s;
+    -ms-animation-delay: .8s;
+    animation-delay: .8s;
+    line-height: 60px;
+    height: 60px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-left: -123px;
+    margin-top: 210px;
+}
+.page1-desc {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -ms-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+    width: 400px;
+    height: 50px;
+    line-height: 0px;
+    font-size: 20px;
+    margin-left: -200px;
+    margin-top: 300px;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+
+	<div class="container-fluid">
+		<!-- Title -->
+		<a href="#">
+		<img src="img/smallLogo.png" class="logo" alt="">
+		<span class="navbar-brand" style="float: left ">Line Launcher</span>
+		</a>
+		
+
+		<!-- Mobile Button -->
+		<button class="navbar-toggle" data-toggle="collapse"
+			data-target=".navHeaderCollapse">
+			<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+				class="icon-bar"></span>
+		</button>
+
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<!-- nav bar 오른쪽 정렬 -->
+			<ul class="nav navbar-nav navbar-right">
+				<!-- active = 강조효과 -->
+				<li class="active"><a href="#">Home</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown">Language <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">한글</a></li>
+						<li><a href="#">English</a></li>
+						<li><a href="#">中文</a></li>
+						<li><a href="#">日本語</a></li>
+						<li><a href="#">Thai</a></li>
+					</ul></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+
+			</ul>
+
+		</div>
+	</div>
+
+</div>
+
+<div id="article">
+	
+	<div class="page section1 current">
+		<div class="contain">
+			<img src="img/middleLogo.png" alt="HTML,CSS" class="page1-Img">
+			<h3 class="page1-title animated fadeInUp">Line Launcher</h3>
+			<h4 class="page1-desc animated fadeInLeft">Breathe new life into your phone</h4>
+		</div>
+	</div>
+
+		<div class="page section2">
+			<div class="contain">
+				<h3 class="page-2-title animated infinite bounce">Let's start Line Launcher</h3>
+				<h4 class="page2-desc">Let's play together with Line Character!</h4>
+				<div class="sibal">
+					<img src="img/phone.png" alt="HTML,CSS" class="page2-Img">
+					<img src="img/app_icon_line_brown.png" alt="brown" class="line c1 animated bounceIn">
+					<img src="img/app_icon_line_cony.png" alt="cony" class="line c2 animated bounceIn">
+					<img src="img/app_icon_line_moon.png" alt="moon" class="line c3 animated bounceIn">
+					<img src="img/app_icon_line_sally.png" alt="sally" class="line c4 animated bounceIn">
+				</div>
+			</div>
+		</div>
+
+		<div class="page section3">
+			<div class="contain">
+				<h3 class="title">这里是第三竖屏</h3>
+				<h4 class="titleEng">This is section3</h4>
+			</div>
+		</div>
+
+		<div class="page section4">
+			<div class="contain">
+				<div id="pageContain">
+		
+				<div class="page page1">
+					<div class="contain">
+						<h3 class="title">整屏切换组件</h3>
+						<h4 class="titleEng">fullPage</h4>
+						<img src="img/a2.png" alt="HTML,CSS" class="page1-box">
+						<p>使用CSS3动画以及降级处理，兼容到ie6。</p>
+					</div>
+				</div>
+
+				<div class="page page2">
+					<div class="contain">
+						<h3 class="title">这是轮播第二部分</h3>
+						<h4 class="titleEng">This is 1-2</h4>
+						<img src="images/a10.png" alt="可视化数据" class="page2-box">
+					</div>
+				</div>
+
+				<div class="page page3">
+					<div class="contain">
+						<h3 class="title">可以随意地添加动画</h3>
+						<h4 class="titleEng">could use animation(CSS3)</h4>
+						<img src="images/a13.png" alt="影视制作" class="page3-box">
+					</div>
+					<div class="scTop"></div>
+					<div class="scBottom"></div>
+				</div>
+
+				<div class="page page4">
+					<div class="contain">
+						<h3 class="title">支持手机端触摸</h3>
+						<h4 class="titleEng">Touch it!</h4>
+						<div class="page4-box">
+							<img src="images/a5.png" alt="微信">
+						</div>
+					</div>
+				</div>
+				<div class="page page5">
+					<div class="contain">
+						<h3 class="title">支持手机端触摸</h3>
+						<h4 class="titleEng">Don't Touch it!</h4>
+						<div class="page4-box">
+							<img src="images/a5.png" alt="微信">
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul id="navBar">
+				<li></li>
+				<li></li>
+				<li></li>
+ 				<li></li>
+ 				<li></li>
+			</ul>
+
+    			<div id="prev">&lt;</div>
+    			<div id="next">&gt;</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Script Section -->
+
+
+<!-- Slide Page Load -->
+<script type="text/javascript" src="js/fullPage.min.js"></script>
+<script type="text/javascript">
+	
+var runPage,
+	runPage2,
+    interval,
+    autoPlay;
+autoPlay = function(to) {
+    clearTimeout(interval);
+    /* alert("Start Animation - Delay(5s)"); */
+    interval = setTimeout(function() {
+         runPage.go(to);
+    }, 5000); 
+    
+}
+runPage = new FullPage({
+	id : 'pageContain',                            // id of contain
+	slideTime : 1000,                               // time of slide
+    effect : {                                     // slide effect
+        transform : {
+        	translate : 'X',					   // 'X'|'Y'|'XY'|'none'
+        	scale : [0, 1],					   // [scalefrom, scaleto]
+        	rotate : [60, 0]					   // [rotatefrom, rotateto]
+        },
+        opacity : [0, 1]                           // [opacityfrom, opacityto]
+    }, 
+	mode : 'touch,nav:navBar',               // mode of fullpage
+	easing : [0, .93, .39, .98],                                // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1] )
+     callback : function(index, thisPage) {     // callback when pageChange
+         index = index + 1 > 4 ? 0 : index + 1;
+         /* alert("Start Animation - CallBack"); */
+         autoPlay(index);
+
+    }
+});
+runSection = new FullPage({
+	id : 'article',                            // id of contain
+	slideTime : 800,                               // time of slide
+    effect : {                                     // slide effect
+        transform : {
+        	translate : 'Y',					   // 'X'|'Y'|'XY'|'none'
+        	scale : [1, 1],					   // [scalefrom, scaleto]
+        	rotate : [0, 0]					   // [rotatefrom, rotateto]
+        },
+        opacity : [0, 1]                           // [opacityfrom, opacityto]
+    },                           
+	mode : 'touch,wheel',               // mode of fullpage
+	easing : [0, .93, .39, .98],
+	callback : function(index, thisPage) {     // callback when pageChange
+        if (index === 0) {
+        	alert("whtathefuck!!");
+        	autoPlay(runPage.thisPage() + 1);
+        } else {
+        	clearTimeout(interval);
+        }
+    }
+});
+
+interval = setTimeout(function() {
+	/* alert("Start Animation"); */
+    runPage.go(runPage.thisPage() + 1);
+}, 5000);
+</script>
+
+<script type="text/javascript">
+    
+    var prev = document.getElementById('prev'),
+        next = document.getElementById('next');
+    
+    prev.onclick = function() {
+    	if(runPage.thisPage()==0){
+    		runPage.go(runPage.go(4));
+    	}
+        runPage.go(runPage.thisPage() - 1);
+    }
+    next.onclick = function() {
+    	if(runPage.thisPage()==4){
+    		runPage.go(runPage.go(4));
+    	}
+        runPage.go(runPage.thisPage() + 1);
+    }
+</script>
+
+<!-- Script for using jquery & Bootstrap -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Script for using Wow.js -->
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+</script>
+
+
+</body>
+</html>

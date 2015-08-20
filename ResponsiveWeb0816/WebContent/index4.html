@@ -37,30 +37,55 @@
 
 	h1{ margin-top:50px; font-size: 100px;}
 	#dodolTitle{ width: 300px; height: 300px;}
-	.desc{font-size: 60px;}
+	.desc { font-size: 40px;}
 	#googleBtn{ margin-top: 40px; width:200px; height: 76px;}
-
+	
+	
+	
+		/*<!-- 2ND PAGE -->*/
+	#launcherPic{width:820px; height: 600px;}
+	.title{ font-size: 60px;}
+	.desc { font-size: 40px;}
+	.section2Img{margin-top: 5%; padding: 0px 5%;}
+	.section2Desc{margin-top: 40%; padding: 0px 5%;}
+	
 }
 
-@media (min-width: 979px) and (max-width:1199px) {
+@media (min-width: 992px) and (max-width:1199px) {
 	
 	/*<!-- 1ST PAGE -->*/
 	h1{ margin-top:50px; font-size: 80px;}
 	#dodolTitle{ width: 200px; height: 200px;}
 	.desc{font-size: 50px;}
 	#googleBtn{ margin-top: 40px; width:200px; height: 76px;}
+	#launcherPic{margin-top: 10%; width:80%; height: 80%;}
+	
+	
+	/*<!-- 2ND PAGE -->*/
+	
+	.title{ font-size: 60px;}
+	.desc { font-size: 40px;}
+	.section2Img{margin-top: 5%; padding: 0px 5%;}
+	.section2Desc{margin-top: 40%; padding: 0px 5%;}
 }
 
  
 /* 세로 방향 타블렛부터 가로 방향 타블렛과 데스크탑까지 */
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px){
 	
 	/*<!-- 1ST PAGE -->*/
 	h1{ margin-top:50px; font-size: 60px;}
 	#dodolTitle{ width: 150px; height: 150px;}
 	.desc{font-size: 40px;}
 	#googleBtn{ margin-top: 40px; width:160px; height: 60px;}
-	.col-md-6{ text-center;}
+	#launcherPic{ margin-top: 10%; width:40%; height: 40%;}
+	
+	/*<!-- 2ND PAGE -->*/
+	
+	.title{ font-size: 40px;}
+	.desc { font-size: 30px;}
+	.section2Img{margin-top: 5%; padding: 0px 5%;}
+	.section2Desc{padding: 0px 5%;}
 }
  
 /* 가로 방향 전화기부터 세로 방향 타블렛까지 */
@@ -71,6 +96,8 @@
 	#dodolTitle{ width: 150px; height: 150px;}
 	.desc{font-size: 30px;}
 	#googleBtn{ margin-top: 40px; width:160px; height: 60px;}
+	
+	#launcherPic{ margin-top: 10%; width:40%; height: 40%;}
 }
  
 /* 가로 방향 전화기 이하 */
@@ -81,6 +108,8 @@
 	#dodolTitle{ width: 150px; height: 150px;}
 	.desc{font-size: 16px;}
 	#googleBtn{ margin-top: 40px; width:100px; height: 40px;}
+	
+	#launcherPic{ margin-top: 30%; width:30%; height: 30%;}
 }
 
 
@@ -170,11 +199,11 @@
 									<div>
 								            <div class="container-fluid">
 								                <div class="row">
-								                <div class="col-xs-12 col-md-6 text-center wow slideInLeft">
-								                    <img src="img/launcher01.png">
+								                <div class="section2Img col-xs-12 col-md-6 text-center wow slideInLeft">
+								                    <img src="img/launcher01.png" id ="launcherPic">
 								                </div>
 								                
-								                <div class="col-xs-12 col-md-6  wow slideInRight" style="margin-top: 5%; padding: 0 5%">
+								                <div class="section2Desc col-xs-12 col-md-6  wow slideInRight">
 								                    <h3 class="title">Sleek</h3>
 								                    <h4 class="desc">Fast performance with style</h4>
 								                    <div class="entry">Accelerate your startup speed by 100%! Make your apps load quicker, search the net with speed, and make full use of the capabilities of your phone with no dead weight.</div>
