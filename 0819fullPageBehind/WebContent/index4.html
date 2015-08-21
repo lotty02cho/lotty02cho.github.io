@@ -19,47 +19,47 @@
     
     
 <style>
-.firstLay {
-	position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    /* border: 3px solid #8AC007;  */
+      #jb-container {
+        width: 940px;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-header {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-content {
+        width: 580px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-sidebar {
+        width: 260px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right;
+        border: 1px solid #bcbcbc;
+      }
+
+
+
+@media screen and (max-width:480px){
+	#jb-container {
+		width: auto;
+	}
+	#jb-content {
+		float: none;
+		width: auto;
+	}
+	#jb-sidebar {
+		float: none;
+		width: auto;
+	}
 }
-
-.firstBox{
-	-webkit-animation-delay: 2s;
-    -moz-animation-delay:2s;
-    -ms-animation-delay:2s;
-    animation-delay:2s;
-
-	position: absolute;
-	width: 300px;
-	height: 60px;
-}
-
-
-.firstTitle{
-	top: 30%;
-	left: 38%;
-	width: 600px;
-	font-size: 80px;
-}
-
-.firstDesc{
-    top: 40%;
-    left: 40%;
-	width: 600px;
-	font-size: 40px;
-}
-
-.firstImg{
-    top: 30%;
-    left: 25%;
-	width: 200px;
-	height: 200px;
-}
-
 </style>
     
     
@@ -115,19 +115,17 @@
 	<div id="article">
 		
 		<div class="page section1 current">
-			<div class="contain">
-				<div class="firstLay">
-				<div class="firstBox firstTitle">Line Launcher</div>
-				<div class="firstBox firstDesc">Breathe new life into your phone</div>
-				<img src="img/bigLogo.png" alt="BigLogo" class="firstBox firstImg">
-				</div>
+			<div class="jb-container">
+				<div class="jb-header">这里是第二竖屏</div>
+				<div class="jb-content">This is section2</div>
+				<img src="img/bigLogo.png" alt="BigLogo" class="jb-sidebar">
 			</div>
 		</div>
 
 		<div class="page section2">
 			<div class="contain">
-				<div class="title">这里是第二竖屏</div>
-				<div class="titleEng">This is section2</div>
+				<h3 class="title">这里是第二竖屏</h3>
+				<h4 class="titleEng">This is section2</h4>
 				<img src="images/a2.png" alt="HTML,CSS" class="page1-box">
 			</div>
 		</div>
