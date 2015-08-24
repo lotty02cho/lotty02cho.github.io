@@ -316,6 +316,38 @@ body {
     margin-left: -200px;
     margin-top: 50px;
 }
+
+.titleDesc {
+    -webkit-animation:dragTop .7s ease-in-out both;
+    -moz-animation:dragTop .7s ease-in-out both;
+    -ms-animation:dragTop .7s ease-in-out both;
+    animation:dragTop .7s ease-in-out both;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 13%;
+    left: 50%;
+}
+.titleDesc {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:1.2s;
+    -ms-animation-delay:1.2s;
+    animation-delay:1.2s;
+    width: 500px;
+    height: 50px;
+    line-height: 150px;
+    font-size: 10px;
+    /*너비의 반을 -200px 마진을 넣어줌*/
+    margin-left: -250px;
+    margin-top: 10px;
+}
+
+.titleDesc2{
+	margin-top: 30px;
+}
+
+
+
 .page3 .title,.page3 .titleEng {
     top: 25%;
     color: #333;
