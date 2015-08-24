@@ -376,17 +376,17 @@ body {
 }
 
 .main2-box {
-    margin-left: -400px;
+    margin-left: -350px;
     margin-top: -100px;
     width: 340px;
     height: 400px;
 }
 
 .main2-2box{
-	margin-left: 40px;
-    margin-top: -45px;
-    width: 134px;
-    height: 188px;
+	margin-left: 80px;
+    margin-top: -90px;
+    width: 269px;
+    height: 376px;
 	
 }
 
@@ -543,20 +543,18 @@ body {
 	}
 
 	.main2-box {
-	margin-left: -200px;
-    margin-top: -150px;
-    width: 204px;
-    height: 250px;
+    margin-left: -200px;
+    margin-top: -50px;
+    width: 170px;
+    height: 200px;
 	}
 
 	.main2-2box{
 	margin-left: 40px;
-    margin-top: 0px;
-    width: 196px;
-    height: 279px;
+    margin-top: -45px;
+    width: 134px;
+    height: 188px;
 	}
-
-	
 }
 
 /* 애니메이션 효과 */
