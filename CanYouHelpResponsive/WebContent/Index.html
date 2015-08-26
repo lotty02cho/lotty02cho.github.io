@@ -132,6 +132,16 @@ body {
 		});
 	});
 </script>
-<script src="js/HideMobileAddressBar.js"></script>
+<script>
+function urihide()
+{
+     try{
+           window.addEventListener('load', function(){
+                                                                          setTimeout(scrollTo, 0, 0, 1); 
+                                                                         }, false
+                                                );
+     } catch(e) {}
+}
+</script>
 
 </html>
