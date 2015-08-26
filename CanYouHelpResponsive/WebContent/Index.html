@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Web</title>
+<!-- icon 설정 -->
+<link rel="icon" href="../../favicon.ico">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+
+<script type="text/javascript" language = "javascript">
+window.addEventListener('load', function() {
+setTimeout(scrollTo, 0, 0, 1);
+}, false);
+</script>
+<style>
+body {
+	padding: 0px;
+	margin: 0px;
+	min-width: 360px;
+}
+
+.navbar-default{
+	z-index: 30;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Line Launcher</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse"
+				aria-expanded="false" style="height: 1px;">
+				<!-- <ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					
+				</ul> -->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="./">HOME <span class="sr-only">(current)</span></a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Language <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">America</li>
+							<li><a href="#">&nbsp;&nbsp;English</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">Asia</li>
+							<li><a href="#">&nbsp;&nbsp;한글</a></li>
+							<li><a href="#">&nbsp;&nbsp;日本語</a></li>
+							<li><a href="#">&nbsp;&nbsp;中文</a></li>
+							<li><a href="#">&nbsp;&nbsp;ไทย</a></li>
+						</ul></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+		<!--/.container-fluid -->
+	</nav>
+
+	<div id="article">
+		<div class="page section2 current"
+			style="transition-timing-function: cubic-bezier(0, 0.93, 0.39, 0.98); transition-duration: 800ms; transform: translate(0px, 0px) translateZ(0px) scale(1) rotate(0deg); transform-origin: 50% 50% 0px; opacity: 1;">
+			<div class="contain">
+				<h3 class="title">LINE LAUNCHER</h3>
+				<h4 class="titleDesc1">OVER 1000 STAMPS, INCLUDING THE POPULAR
+					LINE STAMPS, AND OVER 100 DIFFERENT</h4>
+				<h4 class="titleDesc1 titleDesc2">KINDS OF FRAMES AND RICH FONTS
+					ARE AT YOUR FINGERTIPS FOR FREE.</h4>
+				<a href="#"><img src="img/mpBtn.png" class="main1-btn"></a>
+				<img src="img/mp1.png" class="main1-box">
+			</div>
+		</div>
+
+		<div class="page section3 "
+			style="transition-timing-function: cubic-bezier(0, 0.93, 0.39, 0.98); transition-duration: 800ms; transform: translate(0px, 0px) translateZ(0px) scale(1) rotate(0deg); transform-origin: 50% 50% 0px; opacity: 1;">
+			<div class="contain">
+				<h3 class="title">VARIOUS THEMES</h3>
+				<h4 class="titleDesc1">OVER 1000 STAMPS, INCLUDING THE POPULAR
+					LINE STAMPS, AND OVER 100 DIFFERENT</h4>
+				<h4 class="titleDesc1 titleDesc2">KINDS OF FRAMES AND RICH FONTS
+					ARE AT YOUR FINGERTIPS FOR FREE.</h4>
+				<img src="img/mp2.png" class="main2-box"> <img
+					src="img/mp2_2.png" class="main2-2box">
+			</div>
+		</div>
+
+		<div class="page section4"
+			style="transition-timing-function: cubic-bezier(0, 0.93, 0.39, 0.98);">
+			<div class="contain">
+				<h3 class="title">STYLISH</h3>
+				<h4 class="titleDesc1">OVER 1000 STAMPS, INCLUDING THE POPULAR
+					LINE STAMPS, AND OVER 100 DIFFERENT</h4>
+				<h4 class="titleDesc1 titleDesc2">KINDS OF FRAMES AND RICH FONTS
+					ARE AT YOUR FINGERTIPS FOR FREE.</h4>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(function() {
+		$("#post_content img, .resizablebox").each(function() {
+			var oImgWidth = $(this).width();
+			var oImgHeight = $(this).height();
+			$(this).css({
+				'min-width' : '100px',
+				'min-height' : '100px',
+				'max-width' : oImgWidth + 'px',
+				'max-height' : oImgHeight + 'px',
+				'width' : '100%',
+				'height' : '100%'
+			});
+		});
+	});
+</script>
+
+
+</html>
