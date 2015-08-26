@@ -9,11 +9,18 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 
-<script type="text/javascript" language = "javascript">
-window.addEventListener('load', function() {
-setTimeout(scrollTo, 0, 0, 1);
-}, false);
-</script>
+<script type="text/javascript"> 
+// 주소창 자동 닫힘 
+window.addEventListener("load", function(){ 
+setTimeout(loaded, 100); 
+
+}, false); 
+
+function loaded(){ 
+window.scrollTo(0, 1); 
+} 
+// 
+</script> 
 <style>
 body {
 	padding: 0px;
