@@ -175,7 +175,6 @@ body {
     font-size: 40px;
     /**/
     margin-left: -250px;
-
 }
 .titleEng {
     -webkit-animation-delay: 1.2s;
@@ -418,6 +417,9 @@ body {
 		font-size: 30px;
 		letter-spacing: 2px;
 	}
+	
+	.contain{ font-size: 10px;}
+	
 	.titleEng {
 		font-size: 18px;
 	}
