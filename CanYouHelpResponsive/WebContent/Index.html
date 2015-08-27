@@ -9,6 +9,8 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 
+<link rel="stylesheet" href="css/animate.min.css">
+
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <script>
@@ -32,10 +34,9 @@ body {
 	z-index: 30;
 }
 
-.custom_nav .navbar.navbar-fixed-top .navbar-inner{
-    background: rgba(255, 255, 255, 0.3);
+.custom_nav .navbar.navbar-fixed-top .navbar-inner {
+	background: rgba(255, 255, 255, 0.3);
 }
-
 </style>
 </head>
 <body>
@@ -84,7 +85,8 @@ body {
 	</nav>
 
 	<div id="article">
-		<div class="page section1 current" style="transition-timing-function: cubic-bezier(0, 0.93, 0.39, 0.98); transition-duration: 800ms; transform: translate(0px, 0px) translateZ(0px) scale(1) rotate(0deg); transform-origin: 50% 50% 0px; opacity: 1;">
+		<div class="page section1 current"
+			style="transition-timing-function: cubic-bezier(0, 0.93, 0.39, 0.98); transition-duration: 800ms; transform: translate(0px, 0px) translateZ(0px) scale(1) rotate(0deg); transform-origin: 50% 50% 0px; opacity: 1;">
 			<div class="contain">
 				<p class="title">LINE LAUNCHER</p>
 				<div id="content">
@@ -104,11 +106,13 @@ body {
 			style="transition-timing-function: cubic-bezier(0, 0.93, 0.39, 0.98); transition-duration: 800ms; transform: translate(0px, 0px) translateZ(0px) scale(1) rotate(0deg); transform-origin: 50% 50% 0px; opacity: 1;">
 			<div class="contain">
 				<h3 class="title">VARIOUS THEMES</h3>
-				<h4 class="titleDesc1">OVER 1000 STAMPS, INCLUDING THE POPULAR
-					LINE STAMPS, AND OVER 100 DIFFERENT</h4>
-				<h4 class="titleDesc1 titleDesc2">KINDS OF FRAMES AND RICH
-					FONTS ARE AT YOUR FINGERTIPS FOR FREE.</h4>
-				<img src="img/mp2.png" class="main2-box"> <img
+				<div id="content">
+					<p class="desc">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE
+						STAMPS, AND OVER 100 DIFFERENT</p>
+					<p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR
+						FREE.</p>
+				</div>
+				<img src="img/mp2.png" class="main2-box animated bounce"> <img
 					src="img/mp2_2.png" class="main2-2box">
 			</div>
 		</div>
@@ -117,12 +121,24 @@ body {
 			style="transition-timing-function: cubic-bezier(0, 0.93, 0.39, 0.98);">
 			<div class="contain">
 				<h3 class="title">STYLISH</h3>
+				<p class="desc">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE
+					STAMPS, AND OVER 100 DIFFERENT</p>
+				<p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR
+					FREE.</p>
+			</div>
+		</div>
+
+		<div class="page section4"
+			style="transition-timing-function: cubic-bezier(0, 0.93, 0.39, 0.98);">
+			<div class="contain">
+				<h3 class="title">CLEVER</h3>
 				<h4 class="titleDesc1">OVER 1000 STAMPS, INCLUDING THE POPULAR
 					LINE STAMPS, AND OVER 100 DIFFERENT</h4>
 				<h4 class="titleDesc1 titleDesc2">KINDS OF FRAMES AND RICH
 					FONTS ARE AT YOUR FINGERTIPS FOR FREE.</h4>
 			</div>
 		</div>
+
 	</div>
 
 </body>
