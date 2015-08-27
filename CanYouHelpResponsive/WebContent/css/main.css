@@ -39,6 +39,7 @@ body {
 	overflow: hidden;
 	/*폰트 설정*/
 	font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
+
 }
 #pageContain {
 	/*넘치는 부분 안보이게 함*/
@@ -104,16 +105,14 @@ body {
 .page4 {
 	background: #3c8847;
 }
+
 .section1 {
-    background: #fff;
-}
-.section2 {
     background: #00A6FF;
 }
-.section3 {
-    background: #37c1e3;
+.section2 {
+    background: #ffffff;
 }
-.section4 {
+.section3 {
     background: #009922;
 }
 #prev,#next {
@@ -378,7 +377,7 @@ body {
 	display: block !important;
 }
 
-@media screen and (max-width: 680px) and (orientation: portrait) {
+@media screen and (max-width: 680px) {
 	.nav ul {
 		display: none;
 	}
