@@ -39,8 +39,12 @@ body {
 	overflow: hidden;
 	/*폰트 설정*/
 	font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
-
+		
+	min-width: 350px;
+	min-height: 480px;
+	max-height: 900px;
 }
+
 #pageContain {
 	/*넘치는 부분 안보이게 함*/
 	overflow: hidden;
@@ -376,7 +380,8 @@ body {
 	display: block !important;
 }
 
-@media screen and (max-width: 680px) and (orientation: portrait) {
+@media all and (max-width:768px) {
+/*사용자 해상도가 768px 미만일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.*/
 	.nav ul {
 		display: none;
 	}
@@ -433,7 +438,7 @@ body {
 	}
 	
 	.main1-box {
-	/* 너비와 높이가 정해졌으면, 그 너비와 높이의 반 pixel을 마진으로 빼줘야 가운데 정렬이 된다. */
+	/*너비와 높이가 정해졌으면, 그 너비와 높이의 반 pixel을 마진으로 빼줘야 가운데 정렬이 된다.*/
     margin-left: -160px;
     margin-top: 80px;
     width: 320px;
@@ -464,7 +469,185 @@ body {
 	}
 }
 
- @media (max-height: 500px) and (orientation: landscape){
+/* Tablet Device */
+@media all and (min-width:768px) and (max-width:1024px) {
+/*사용자 해상도가 768px 이상이고 1024px 이하일 때 이 코드가 실행됨. 아이패드 또는 비교적 작은 해상도의 랩탑이나 데스크톱에 대응하는 코드를 작성한다.*/
+	.nav ul {
+		display: none;
+	}
+	.nav span {
+		font-size: 22px;
+	}
+	.page1 p {
+		font-size: 14px;
+	}
+	#next,#prev {
+		display: none;
+	}
+	.page1-box {
+		margin-left: -91px;
+		margin-top: -90px;
+		width: 364px;
+		height: 173px;
+	}
+	.page2-box {
+		margin-left: -160px;
+		margin-top: -70px;
+		width: 320px;
+		height: 140px;
+	}
+	.page3-box {
+		margin-left: -60px;
+		margin-top: -50px;
+		width: 160px;
+		height: 100px;
+	}
+	.page4-box {
+		margin-left: -91px;
+		margin-top: -90px;
+		width: 182px;
+		height: 173px;
+	}
+	.title {
+		font-size: 50px;
+		letter-spacing: 5px;
+	}
+	
+	.contain{ font-size: 16px;}
+	
+	.titleEng {
+		font-size: 18px;
+	}
+	
+	.titleDesc1{
+		font-size: 8px;
+	}
+	
+	.titleDesc2{
+		font-size: 8px;
+	}
+	
+	.main1-box {
+	/*너비와 높이가 정해졌으면, 그 너비와 높이의 반 pixel을 마진으로 빼줘야 가운데 정렬이 된다.*/
+    margin-left: -320px;
+    margin-top: 80px;
+    
+	}
+
+	.main1-btn{
+	margin-left: -95px;
+    width: 189px;
+    height: 76px;
+    bottom: 45%;
+	}
+	
+
+	.main2-box {
+    margin-left: -170px;
+    margin-top: -50px;
+    width: 170px;
+    height: 200px;
+	}
+
+	.main2-2box{
+	margin-left: 40px;
+    margin-top: -45px;
+    width: 134px;
+    height: 188px;
+	}
+}
+
+
+
+/* @media screen and (max-width: 680px) and (orientation: portrait) {
+	.nav ul {
+		display: none;
+	}
+	.nav span {
+		font-size: 22px;
+	}
+	.page1 p {
+		font-size: 14px;
+	}
+	#next,#prev {
+		display: none;
+	}
+	.page1-box {
+		margin-left: -91px;
+		margin-top: -90px;
+		width: 182px;
+		height: 173px;
+	}
+	.page2-box {
+		margin-left: -160px;
+		margin-top: -70px;
+		width: 320px;
+		height: 140px;
+	}
+	.page3-box {
+		margin-left: -60px;
+		margin-top: -50px;
+		width: 160px;
+		height: 100px;
+	}
+	.page4-box {
+		margin-left: -91px;
+		margin-top: -90px;
+		width: 182px;
+		height: 173px;
+	}
+	.title {
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+	
+	.contain{ font-size: 8px;}
+	
+	.titleEng {
+		font-size: 18px;
+	}
+	
+	.titleDesc1{
+		font-size: 8px;
+	}
+	
+	.titleDesc2{
+		font-size: 8px;
+	}
+	
+	.main1-box {
+	너비와 높이가 정해졌으면, 그 너비와 높이의 반 pixel을 마진으로 빼줘야 가운데 정렬이 된다.
+    margin-left: -160px;
+    margin-top: 80px;
+    width: 320px;
+    height: 171px;
+	}
+
+	.main1-btn{
+    margin-left: -71px;
+    margin-top: 19px;
+    width: 142px;
+    height: 57px;
+    bottom: 45%;
+	}
+	
+
+	.main2-box {
+    margin-left: -170px;
+    margin-top: -50px;
+    width: 170px;
+    height: 200px;
+	}
+
+	.main2-2box{
+	margin-left: 40px;
+    margin-top: -45px;
+    width: 134px;
+    height: 188px;
+	}
+}
+
+ @media (max-height: 650px) and (orientation: landscape){
 	
 	#content{
 		font-size: 10px;
@@ -493,7 +676,7 @@ body {
     height: 126px;
 	}
 }
-}
+} */
 
 
 /* 애니메이션 효과 */
