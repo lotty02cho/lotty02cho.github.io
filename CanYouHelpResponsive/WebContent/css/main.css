@@ -113,7 +113,7 @@ body {
     background: #ffffff;
 }
 .section3 {
-    background: #009922;
+    background: #6962C9;
 }
 #prev,#next {
 	/*z-index의 크기*/
@@ -418,7 +418,7 @@ body {
 		letter-spacing: 2px;
 	}
 	
-	.contain{ font-size: 10px;}
+	.contain{ font-size: 8px;}
 	
 	.titleEng {
 		font-size: 18px;
