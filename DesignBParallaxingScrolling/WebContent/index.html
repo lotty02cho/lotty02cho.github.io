@@ -177,7 +177,7 @@ body, div {
 }
 
 .ll-page .desc {
-	color: #7f8fdd;
+	color: #ffffff;
 	font-size: 24px;
 	margin: 10px 0 40px;
 	line-height: 1.4;
@@ -490,9 +490,9 @@ body, div {
 		<div class="ll-page section" id="ll-theme">
 			<div class="content clear">
 				<div class="anibox alignleft">
-					<img src="img/b1.png" style="z-index: 1500">
+					<img src="img/b1.png" style="z-index: 1500" class="wow fadeInLeft" data-wow-offset="700">
 				</div>
-				<div class="textbox alignright">
+				<div class="textbox alignright wow fadeInUp" data-wow-offset="600">
 					<h3 class="title">Theme</h3>
 					<h4 class="desc">The most beatuiful Theme !</h4>
 					<div class="entry">Accelerate your startup speed by 100%!
@@ -504,25 +504,25 @@ body, div {
 
  		<div class="ll-page section" id="ll-smart">
 			<div class="content clear">
-				<div class="anibox alignright">
-					<img src="img/b2.png">
-				</div>
-				<div class="textbox alignleft">
+				<div class="textbox alignleft wow fadeIn" data-wow-offset="500">
 					<h3 class="title">Smart</h3>
 					<h4 class="desc">Various functions became more smart</h4>
 					<div class="entry">Accelerate your startup speed by 100%!
 						Make your apps load quicker, search the net with speed, and make
 						full use of the capabilities of your phone with no dead weight.</div>
 				</div>
+				<div class="anibox alignright">
+					<img src="img/b2.png" class="wow bounceIn" data-wow-offset="600">
+				</div>
 			</div>
 		</div>
 		
 				<div class="ll-page section" id="ll-stylish">
 			<div class="content clear">
-				<div class="anibox alignleft">
-					<img src="img/b3.png" class="" style="z-index: 1500">
+				<div class="anibox alignleft" data-wow-offset="400">
+					<img src="img/b3.png" class="wow rollIn" data-wow-offset="400" style="z-index: 1500">
 				</div>
-				<div class="textbox alignright">
+				<div class="textbox alignright wow fadeIn"  data-wow-offset="400">
 					<h3 class="title">Stylish</h3>
 					<h4 class="desc">To hold up the theme of the world</h4>
 					<div class="entry">Accelerate your startup speed by 100%!
@@ -531,9 +531,7 @@ body, div {
 				</div>
 			</div>
 		</div>
-		
-		
-		
+
 	</div>
 
 </body>
@@ -554,7 +552,12 @@ body, div {
 
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
-
+<script>
+function myFunction() {
+	var m = window.matchMedia(mediaQueryString);
+	alert(m);
+}
+</script>
 
 
 
