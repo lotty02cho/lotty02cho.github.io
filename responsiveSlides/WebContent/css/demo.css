@@ -4,7 +4,7 @@
 }
 
 html {
-  background: #222 url("images/bg.png") repeat;
+  background: #ffffff;
 }
 
 body {
@@ -14,15 +14,9 @@ body {
   margin: 20px auto 0;
   max-width: 800px;
   text-align: center;
-  text-shadow: 0 -2px 1px #000;
   -webkit-font-smoothing: antialiased;
   }
 
-h1 {
-  font: 40px/60px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-weight: 200;
-  }
 
 h2 {
   font: 16px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
