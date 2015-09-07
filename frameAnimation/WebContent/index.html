@@ -33,7 +33,7 @@ body {
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
 <script>
-$( ".monster" ).attr({
+/* $( ".monster" ).attr({
   alt: "jQuery Logo"
 });
 $( "div" ).text( $( "img" ).attr( "alt" ) );
@@ -44,12 +44,12 @@ var divHeight = $("body").outerHeight();
 var ua = window.navigator.userAgent.toLowerCase(); 
 if ( /iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua) ) { 
     alert('모바일 브라우저입니다');
-}
+} */
 
 
 $(window).scroll(function () {
 			var height = $(document).scrollTop();
-/* 			alert(height); */
+ 			alert(height);
 			if(height>=200 && height<=400){
 				$('.monster').css('animation','play .8s steps(10) infinite');
 			}
