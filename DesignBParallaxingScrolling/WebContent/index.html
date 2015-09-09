@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="alternate" media="only screen and (max-width: 540px)" href="http://lotty02cho.github.io/CanYouHelpResponsive/WebContent/Index.html" >
 
+
 <style>
 /* default */
 body, div {
@@ -211,6 +212,92 @@ body, div {
 	font-size: 0;
 	clear: both;
 }
+
+.monster {
+  width: 190px;
+  height: 240px;
+  margin: 2% auto;
+  background: url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/blog/monster.png') left center;
+
+}
+
+@keyframes play {
+    100% { background-position: -1900px; }
+}
+
+
+
+/*
+==============================================
+hatch
+==============================================
+*/
+
+.hatch{
+	animation: hatch 2s infinite;
+	
+	animation-name: hatch;
+	-webkit-animation-name: hatch;
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%; 
+
+	visibility: visible !important;		
+}
+
+@keyframes hatch {
+	0%, 100% {
+		transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		transform: rotate(-2deg);
+	}	
+	65% {
+		transform: rotate(1deg);
+	}	
+	80% {
+		transform: rotate(-1deg);
+	}									
+}
+
+@-webkit-keyframes hatch {
+	0% {
+		-webkit-transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		-webkit-transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		-webkit-transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		-webkit-transform: rotate(-2deg);
+	}	
+	65% {
+		-webkit-transform: rotate(1deg);
+	}	
+	80% {
+		-webkit-transform: rotate(-1deg);
+	}		
+	100% {
+		-webkit-transform: rotate(0deg);
+	}		
+}
+
+
+
 
 @media ( max-width : 800px) {
 	/* banner-wrap */
@@ -450,8 +537,9 @@ body, div {
 	    height: 200px;
 	}
 }
-</style>
 
+
+</style>
 
 </head>
 <body class="bodyLL">
@@ -531,6 +619,37 @@ body, div {
 				</div>
 			</div>
 		</div>
+		
+		<div class="ll-page section" id="ll-monster">
+			<div class="content clear">
+				<div class="anibox alignleft" data-wow-offset="400">
+					<div class="monster" alt="brush seller"></div>
+				</div>
+				<div class="textbox alignright wow fadeIn"  data-wow-offset="400">
+					<h3 class="title">Animation</h3>
+					<h4 class="desc">To hold up the theme of the world</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+
+ 		<div class="ll-page section" id="ll-selri">
+			<div class="content clear">
+				<div class="textbox">
+					<h3 class="title">Salri</h3>
+					<h4 class="desc">Various functions became more smart</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+				<div class="anibox alignright">
+					<img src="img/selri.png" class="selri" style="visibility: hidden;">
+				</div>
+			</div>
+		</div>
+
 
 	</div>
 
@@ -552,7 +671,7 @@ body, div {
 
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
-<script>
+<!-- <script>
 
 var swiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
@@ -563,17 +682,48 @@ var swiper = new Swiper('.swiper-container', {
     mousewheelControl: true,
     touch: true
 })
-</script>
+</script> -->
 
 <script>
 $(window).resize(function(){
 
     if ($(window).width() <= 540) {  
 
-           alert("wow fuck!");
+           console.log("540사이를 넘어가고 있네요.");
 
     }     
 
+});
+
+</script>
+<script>
+
+$(window).scroll(function () {
+			var height = $(document).scrollTop()+700;
+ 			var d = $("#ll-monster").position();
+ 			console.log("d.top= "+d.top);
+ 			console.log("h= "+height);
+			if(height>=d.top){
+				console.log("hi monster");
+				$('.monster').css('animation','play .8s steps(10) infinite');
+			}
+			else{
+				$('.monster').css('animation','none');
+			}
+			
+			
+			$('.selri').each(function(){
+				//이미지 좌표를 얻음.
+				var imagePos = $(this).offset().top;
+				console.log(imagePos-1000);
+				var topOfWindow = $(window).scrollTop();
+				console.log(topOfWindow);
+					if (imagePos-1000 < topOfWindow) {
+						console.log("come on!!!! selri!!!");
+						$(this).addClass("hatch");
+					}
+			});
+			
 });
 
 </script>
