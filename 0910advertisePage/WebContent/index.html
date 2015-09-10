@@ -2,18 +2,43 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Lotty's swiper</title>
+<title>Lotty's advertisement Line Launcher</title>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-<!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="css/swiper.min.css">
+
 
 
 <link rel="stylesheet" href="css/animations.css">
 <!--  Web Page CSS -->
 <link rel="stylesheet" href="css/webpage.css">
 
+
+<style>
+/*몬스터 이용해보자!!*/
+.pic4 {
+	width: 190px;
+	height: 240px;
+	margin: 2% auto;
+	background:
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/blog/monster.png')
+		left center;
+}
+
+.play{
+	
+	animation: play .8s steps(10) infinite;
+	
+	visibility: visible !important;
+}
+
+@keyframes play { 
+	100% {
+		background-position: -1900px;
+	}
+}
+
+</style>
 
 </head>
 <body>
@@ -85,7 +110,7 @@
 		<div class="ll-page section" id="ll-monster">
 			<div class="content clear">
 				<div class="anibox alignleft">
-					<div class="monster" alt="brush seller"></div>
+					<div class="pic4" style="visibility: hidden;"></div>
 				</div>
 				<div class="textbox alignright fadeIn">
 					<h3 class="title">Animation</h3>
@@ -131,121 +156,30 @@
 	</div>
 
 
-	<!-- Swiper JS -->
-	<script src="js/swiper.min.js"></script>
 
-	<!-- Initialize Swiper -->
-	<script>
-		var swiper = new Swiper('.swiper-container', {
-			pagination : '.swiper-pagination',
-			direction : 'vertical',
-			slidesPerView : 1,
-			paginationClickable : true,
-			spaceBetween : 30,
-			mousewheelControl : true
-		});
-	</script>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<!-- 	<script>
-		$(window).resize(function() {
-			console.log($(window).width());
-			if ($(window).width() > 540) {
-				/* console.log("you are out 540"); */
-				//너비가 540 이상이 됐을 때, swiper와 관련된 클래스들을 제거해준다.
-				$('.div1').removeClass("swiper-container");
-				$('.div2').removeClass("swiper-wrapper");
-				$('.div3').removeClass("swiper-slide");
-				$('.swiper-pagination').css("visibility", "hidden");
-				$('.div1').css("display", "none");
-				$('.divWeb').css("display", "block");
-			} else {
-				/* console.log("you are in 540"); */
-				//만약
-				var a = $(".div1").hasClass("swiper-container");
-				var b = $(".div2").hasClass("swiper-wrapper");
-				var c = $(".div3").hasClass("swiper-slide");
-				if (a == false && b == false && c == false) {
-					$('.div1').addClass("swiper-container");
-					$('.div2').addClass("swiper-wrapper");
-					$('.div3').addClass("swiper-slide");
-					$('.swiper-pagination').css("visibility", "visible");
-					$('.div1').css("display", "block");
-					$('.divWeb').css("display", "none");
-				}
-			}
 
-		});
-	</script> -->
-	<script>
-		$(window).resize(function() {
-			var a = $(".chap1").hasClass("swiper-slide-active");
-
-			if (a == true) {
-				$('.monster').css('animation', 'play .8s steps(10) infinite');
-			}
-		});
-		/* 		$( window ).scroll(function() {
-		 if($(".chap2").hasClass("swiper-slide-active")){
-		 alert("here is chap2!!");
-		 $('.monster').css('animation','play .8s steps(10) infinite');
-		 }
-		 }); */
-	</script>
-	<script>
-		var a = $(".chap1").hasClass("swiper-slide-active");
-		var b = $(".chap2").hasClass("swiper-slide-active");
-		if (a == true) {
-			console.log("here is chap1!!");
-			$('.monster').css('animation', 'play .8s steps(10) infinite');
-		}
-		if (b == true) {
-			alert("here is chap2!!");
-			$('.monster').css('animation', 'play .8s steps(10) infinite');
-		}
-	</script>
-	<script>
-		if ($('.chap2').hasClass("swiper-slide-active") == true) {
-			$('.monster').css('animation', 'play .8s steps(10) infinite');
-		}
-		if ($('.swiper-slide-active').hasClass("chap2") == true) {
-			$('.monster').css('animation', 'play .8s steps(10) infinite');
-		}
-
-		$(window).scroll(function() {
-			var b = $(".chap2").hasClass("swiper-slide-active");
-			$('.monster').css('animation', 'play .8s steps(10) infinite');
-		});
-		$('.swiper-pagination-bullet').click(function() {
-			alert("start");
-			var k = $(".div2").css("transform");
-			alert(k);
-			if ($('.swiper-slide-active').hasClass("chap2") == true) {
-				alert("This is real shit.");
-				$('.monster').css('animation', 'play .8s steps(10) infinite');
-			} else {
-				$('.monster').css('animation', 'none');
-			}
-		});
-		$(window).on("swipe", function() {
-			alert("You swiped down!");
-		});
-	</script>
 	
 	<!-- Web Page animation function -->
 	<script>
+	/*스크롤을 내렸을 때 이벤트 진행*/
 	$(window).scroll(function () {
+		/* >> 현재 스크롤의 높이*/
 		var height = $(document).scrollTop();
 		console.log("h= "+height);
+		/* >> pic1이라는 클래스명을 가진 객체의 높이*/
 		var p1 = $(".pic1").offset().top;
 		/* console.log("destination= "+p1); */
+		/* >> 스크롤의 높이가 객체 보다 400px 앞에 도달하게 되면*/
 		if(height>=p1-400){
 			/* console.log("hi 1st!!"); */
+			/* >> slideRight라는 클래스를 넣어줌.*/
 			$('.pic1').addClass('slideRight');
 		}
 		var p2 = $(".pic2").offset().top;
-		 	console.log("destination2= "+p2);
+		 	/* console.log("destination2= "+p2); */
 		if(height>=p2-500){
-			/* console.log("hi 2nd!!"); */
+			/* >> 동시에 발생해야할 태그들을 묶어서 처리가 가능하다.*/
 			$('.pic2').addClass('memoryClean');
 			$('.pic2_2').addClass('memoryCleanPopUp');
 		}
@@ -255,6 +189,13 @@
 		if(height>=p3-400){
 			/* console.log("hi 3rd!!"); */
 			$('.pic3').addClass('scaleIn');
+		}
+		
+		var p4 = $(".pic4").offset().top;
+		 console.log("destination4= "+p4);
+		if(height>=p4-400){
+			console.log("hi 4th!!"); 
+			$('.pic4').addClass('play');
 		}
 		
 		var p5 = $(".pic5").offset().top;
@@ -272,26 +213,24 @@
 	});
 	</script>
 
+<!-- Mobile 구분 스크립트 -->
 <script>
-alert(navigator.userAgent);
+/*Mobile이라는 단어가 들어갔는지 체크하는 변수 checkMobile(return값: boolean)*/
+var checkMobile = navigator.userAgent.match('Mobile');
+
+alert(checkMobile);
+/* 브라우저의 정보에 Mobile이라는 String이 있으면 */
+if(checkMobile != null){
+	alert("u r in mobile!!");
+        /* 모바일 사이트 이동! */
+	location.href = "http://lotty02cho.github.io/0910advertisePage/WebContent/mobile.html";
+}
+/* 브라우저의 정보에 Mobile이라는 String이 없으면 */ 
+else{
+	alert("u r in web!!");
+        /*index.html을 띄워준다.*/
+}
 </script>
 
-	<script type="text/javascript">
-		/* 제조사의 이름을 배열로 할당*/ 
-		var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry',
-				'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG',
-				'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi',
-				'Opera Mini', 'IEmobile');
-
-		/*navigator.userAgent를 이용해 접속한 단말기나 브라우저의 정보를 얻어옴.*/
-		for ( var word in mobileKeyWords) {
-			if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
-				alert("you are in Mobile!!!");
-				/*모바일 페이지로 이동시켜준다.*/
-				location.href = "http://lotty02cho.github.io/swiper/WebContent/mobile.html";
-				break;
-			}
-		}
-	</script>
 </body>
 </html>

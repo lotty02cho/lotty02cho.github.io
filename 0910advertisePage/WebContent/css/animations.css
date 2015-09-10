@@ -1385,7 +1385,6 @@ memoryClean
 .memoryClean{
 	animation: memoryClean 5s linear infinite;
 	opacity:1;
-	transition: opacity .25s ease-in-out;
 	visibility: visible !important;
 }
 
