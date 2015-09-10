@@ -107,14 +107,15 @@ keyframes play { 100% {
 }
 @media ( max-width : 800px) {
 	.title {
-		font-size: 64px;
+		font-size: 32px;
 		letter-spacing: 0px;
 	}
 	.desc {
-		
+		font-size: 4px;
 	}
-	.bgPicture {
-		
+	.bgPicture .main1-box{
+		width: 300px;
+    	height: 200px;
 	}
 }
 </style>
@@ -145,7 +146,7 @@ keyframes play { 100% {
 					</div>
 				</div>
 				<div class="div3 swiper-slide chap2">
-					<div class="monster" alt="brush seller"></div>
+					<div class="monster" alt="brush seller">Slide 2</div>
 				</div>
 				<div class="div3 swiper-slide">Slide 3</div>
 				<div class="div3 swiper-slide">Slide 4</div>
@@ -197,11 +198,11 @@ keyframes play { 100% {
 			$('.monster').css('animation', 'play .8s steps(10) infinite');
 		});
 		$('.swiper-pagination-bullet').click(function() {
-			alert("start");
+			/* alert("start"); */
 			var k = $(".div2").css("transform");
 			alert(k);
 			if ($('.swiper-slide-active').hasClass("chap2") == true) {
-				alert("This is real shit.");
+				/* alert("This is real shit."); */
 				$('.monster').css('animation', 'play .8s steps(10) infinite');
 			} else {
 				$('.monster').css('animation', 'none');
