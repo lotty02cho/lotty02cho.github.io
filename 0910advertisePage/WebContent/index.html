@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Lotty's swiper</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="css/swiper.min.css">
+
+
+<link rel="stylesheet" href="css/animations.css">
+<!--  Web Page CSS -->
+<link rel="stylesheet" href="css/webpage.css">
+
+<!-- Demo styles -->
+<style>
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+</style>
+<style>
+.chap1 {
+	background-color: #e3a2df;
+	position: relative;
+}
+
+.title {
+	-webkit-animation: dragTop .7s ease-in-out both;
+	-moz-animation: dragTop .7s ease-in-out both;
+	-ms-animation: dragTop .7s ease-in-out both;
+	animation: dragTop .7s ease-in-out both;
+	font-size: 80px;
+	color: #00f;
+	letter-spacing: 5px;
+	padding-top: 15%;
+	padding-bottom: 5%;
+}
+
+.content {
+	padding-bottom: 16%;
+}
+
+.desc {
+	font-size: 20px;
+}
+
+.gpBtn {
+	padding-bottom: 16%;
+}
+
+.bgPicture {
+	
+}
+
+/*몬스터 이용해보자!!*/
+.monster {
+	width: 190px;
+	height: 240px;
+	margin: 2% auto;
+	background:
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/blog/monster.png')
+		left center;
+	animation: play .8s steps(10) 1s;
+	animation-iteration-count: 3;
+}
+
+@
+keyframes
+ 
+play { 100% {
+	background-position: -1900px;
+}
+
+}
+@media ( max-width : 800px) {
+	.title {
+		font-size: 64px;
+		letter-spacing: 0px;
+	}
+	.desc {
+		
+	}
+	.bgPicture {
+		
+	}
+}
+
+keyframes play { 100% {
+	background-position: -1900px;
+}
+
+}
+@media ( max-width : 800px) {
+	.title {
+		font-size: 64px;
+		letter-spacing: 0px;
+	}
+	.desc {
+		
+	}
+	.bgPicture {
+		
+	}
+}
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<!-- Swiper -->
+		<div class="div1 swiper-container" style="display: none;">
+			<div class="div2 swiper-wrapper">
+				<div class="div3 swiper-slide chap1">
+					<div class="contain">
+						<div class="title">LINE LAUNCHER</div>
+						<div class="content">
+							<p class="desc">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE
+								STAMPS, AND OVER 100 DIFFERENT</p>
+							<p class="desc">KINDS OF FRAMES AND RICH FONTS ARE AT YOUR
+								FINGERTIPS FOR FREE.</p>
+						</div>
+						<div class="gpBtn">
+							<a
+								href="https://play.google.com/store/apps/details?id=com.campmobile.launcher&hl=ko"><img
+								src="img/mpBtn.png" class="main1-btn"></a>
+						</div>
+						<div class="bgPicture">
+							<img src="img/mp1.png" class="main1-box">
+						</div>
+					</div>
+				</div>
+				<div class="div3 swiper-slide chap2">
+					<div class="monster" alt="brush seller"></div>
+				</div>
+				<div class="div3 swiper-slide">Slide 3</div>
+				<div class="div3 swiper-slide">Slide 4</div>
+				<div class="div3 swiper-slide">Slide 5</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+
+	<!-- Showed web page -->
+
+	<div id="wrap" class="divWeb">
+		<div id="container-wrap" class="section fp-auto-height">
+			<div class="section">
+				<div id="banner-wrap">
+					<div id="banner" class="content">
+						<div class="title fadeInUp">
+							<div class="icon"></div>
+							<h2>LINE Launcher</h2>
+							<div class="desc">Breathe new life into your phone</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="ll-page section" id="ll-theme">
+			<div class="content clear">
+				<div class="anibox alignleft">
+					<img src="img/b1.png" style="z-index: 1500; visibility: hidden;" class="pic1">
+				</div>
+				<div class="textbox alignright expandUp">
+					<h3 class="title">Theme</h3>
+					<h4 class="desc">The most beatuiful Theme !</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ll-page section" id="ll-smart">
+			<div class="content clear">
+				<div class="textbox alignleft expandUp" >
+					<h3 class="title" style="color: white;">Smart</h3>
+					<h4 class="desc">Various functions became more smart</h4>
+					<div class="entry" style="color: white;"">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+				<div class="anibox alignright">
+					<span class="imgHolder" style="display:inline-block; background:#000;">
+						<img src="img/b1.png" style="visibility: hidden; position: relative;"  class="pic2">
+						<img src="img/mc1.png" style="visibility: hidden;" class="pic2_2">
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-stylish">
+			<div class="content clear">
+				<div class="anibox alignleft">
+					<img src="img/b3.png" class="pic3" style="z-index: 1500; visibility: hidden">
+				</div>
+				<div class="textbox alignright expandUp">
+					<h3 class="title">Stylish</h3>
+					<h4 class="desc">To hold up the theme of the world</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-monster">
+			<div class="content clear">
+				<div class="anibox alignleft">
+					<div class="monster" alt="brush seller"></div>
+				</div>
+				<div class="textbox alignright fadeIn">
+					<h3 class="title">Animation</h3>
+					<h4 class="desc">To hold up the theme of the world</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-salri">
+			<div class="content clear">
+				<div class="textbox alignleft">
+					<h3 class="title">Salri</h3>
+					<h4 class="desc">Various functions became more smart</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+				<div class="anibox alignright">
+					<img src="img/selri.png" class="pic5" style="visibility: hidden;">
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-effective">
+			<div class="content clear">
+				<div class="anibox alignleft">
+					<div class="pic6" style="display: block; border-radius: 24px; margin-top: 380px; height: 10px; width: 250px; margin-left: auto; margin-right: auto; margin-bottom: 100px; background-color: #ffffff !important; background-size: contain; visibility: hidden;"></div>
+				</div>
+				<div class="textbox alignright expandUp">
+					<h3 class="title">Stylish</h3>
+					<h4 class="desc">To hold up the theme of the world</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+
+
+	<!-- Swiper JS -->
+	<script src="js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			pagination : '.swiper-pagination',
+			direction : 'vertical',
+			slidesPerView : 1,
+			paginationClickable : true,
+			spaceBetween : 30,
+			mousewheelControl : true
+		});
+	</script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script>
+		$(window).resize(function() {
+			console.log($(window).width());
+			if ($(window).width() > 540) {
+				/* console.log("you are out 540"); */
+				//너비가 540 이상이 됐을 때, swiper와 관련된 클래스들을 제거해준다.
+				$('.div1').removeClass("swiper-container");
+				$('.div2').removeClass("swiper-wrapper");
+				$('.div3').removeClass("swiper-slide");
+				$('.swiper-pagination').css("visibility", "hidden");
+				$('.div1').css("display", "none");
+				$('.divWeb').css("display", "block");
+			} else {
+				/* console.log("you are in 540"); */
+				//만약
+				var a = $(".div1").hasClass("swiper-container");
+				var b = $(".div2").hasClass("swiper-wrapper");
+				var c = $(".div3").hasClass("swiper-slide");
+				if (a == false && b == false && c == false) {
+					$('.div1').addClass("swiper-container");
+					$('.div2').addClass("swiper-wrapper");
+					$('.div3').addClass("swiper-slide");
+					$('.swiper-pagination').css("visibility", "visible");
+					$('.div1').css("display", "block");
+					$('.divWeb').css("display", "none");
+				}
+			}
+
+		});
+	</script>
+	<script>
+		$(window).resize(function() {
+			var a = $(".chap1").hasClass("swiper-slide-active");
+
+			if (a == true) {
+				$('.monster').css('animation', 'play .8s steps(10) infinite');
+			}
+		});
+		/* 		$( window ).scroll(function() {
+		 if($(".chap2").hasClass("swiper-slide-active")){
+		 alert("here is chap2!!");
+		 $('.monster').css('animation','play .8s steps(10) infinite');
+		 }
+		 }); */
+	</script>
+	<script>
+		var a = $(".chap1").hasClass("swiper-slide-active");
+		var b = $(".chap2").hasClass("swiper-slide-active");
+		if (a == true) {
+			console.log("here is chap1!!");
+			$('.monster').css('animation', 'play .8s steps(10) infinite');
+		}
+		if (b == true) {
+			alert("here is chap2!!");
+			$('.monster').css('animation', 'play .8s steps(10) infinite');
+		}
+	</script>
+	<script>
+		if ($('.chap2').hasClass("swiper-slide-active") == true) {
+			$('.monster').css('animation', 'play .8s steps(10) infinite');
+		}
+		if ($('.swiper-slide-active').hasClass("chap2") == true) {
+			$('.monster').css('animation', 'play .8s steps(10) infinite');
+		}
+
+		$(window).scroll(function() {
+			var b = $(".chap2").hasClass("swiper-slide-active");
+			$('.monster').css('animation', 'play .8s steps(10) infinite');
+		});
+		$('.swiper-pagination-bullet').click(function() {
+			alert("start");
+			var k = $(".div2").css("transform");
+			alert(k);
+			if ($('.swiper-slide-active').hasClass("chap2") == true) {
+				alert("This is real shit.");
+				$('.monster').css('animation', 'play .8s steps(10) infinite');
+			} else {
+				$('.monster').css('animation', 'none');
+			}
+		});
+		$(window).on("swipe", function() {
+			alert("You swiped down!");
+		});
+	</script>
+	
+	<!-- Web Page animation function -->
+	<script>
+	$(window).scroll(function () {
+		var height = $(document).scrollTop();
+		console.log("h= "+height);
+		var p1 = $(".pic1").offset().top;
+		/* console.log("destination= "+p1); */
+		if(height>=p1-400){
+			/* console.log("hi 1st!!"); */
+			$('.pic1').addClass('slideRight');
+		}
+		var p2 = $(".pic2").offset().top;
+		 	console.log("destination2= "+p2);
+		if(height>=p2-500){
+			/* console.log("hi 2nd!!"); */
+			$('.pic2').addClass('memoryClean');
+			$('.pic2_2').addClass('memoryCleanPopUp');
+		}
+		
+		var p3 = $(".pic3").offset().top;
+		/* console.log("destination3= "+p3); */
+		if(height>=p3-400){
+			/* console.log("hi 3rd!!"); */
+			$('.pic3').addClass('scaleIn');
+		}
+		
+		var p5 = $(".pic5").offset().top;
+		/* console.log("destination5= "+p5); */
+		if(height>=p5-800){
+			/* console.log("hi 5th!!"); */
+			$('.pic5').addClass('round1');
+		}
+		
+		var p6 = $(".pic6").offset().top;
+		if(height>=p6-500){
+			console.log("hi 6th!!");
+			$('.pic6').addClass('cleanDown');
+		}
+	});
+	</script>
+	
+	<script type="text/javascript">
+		var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+		
+		for (var word in mobileKeyWords){
+    		if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+    			alert("you are in Mobile!!!");
+        		location.href = "http://lotty02cho.github.io/swiper/WebContent/mobile.html";
+        	break;
+    	}
+}
+</script>
+</body>
+</html>
