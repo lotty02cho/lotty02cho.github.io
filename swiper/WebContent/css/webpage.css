@@ -319,3 +319,165 @@
 	}
 	
 }
+
+
+
+
+@media ( max-width : 540px) {
+	/* banner-wrap */
+	#wrap {
+    	min-width: 100%;
+	}
+	
+	.bodyLL #banner-wrap {
+		background-position: center 0;
+		background-size: auto 110%;
+	}
+	
+	.bodyLL #banner {
+    	padding-bottom: 100px;
+	}
+	
+	.bodyLL #banner .title {
+    	width: 300px;
+    	height: 400px; /*확인*/
+    	/*height: X;*/
+    	top: 100px;  /*확인*/
+    	/* top: 40px;  /*확인*/ */
+	}
+	
+	#banner .title .icon {
+	    float: none;
+    	margin: 0 auto 20px;
+    	width: 80px;
+    	height: 80px;
+	}
+	
+	#banner .ll-title h2 {
+	    width: 280px;
+	    height: 70px;
+	    margin: 0 auto;
+	    float: none;
+	}
+	
+	.title h2 {
+		margin: 8px 0 0 0px;
+    width: 300px;
+    height: 45px;
+    font-size: 40px;
+    background-size: contain;
+	}
+	
+	.title .desc {
+		font-size: 16px;
+	}
+	
+	.ll-page .anibox {
+	    float: none;
+	    margin: 0 auto;
+	    width: 200px;
+	}
+	
+	.ll-page .textbox {
+    	float: none;
+    	margin: 0 auto;
+    	text-align: center;
+	}
+	
+	.ll-page .title {
+    	margin: 0 auto;
+	}
+	
+	/*ll-theme*/
+	#ll-theme .content {
+    	padding-top: 40px;
+	}
+
+	#ll-theme .anibox img {
+    	height: 130px;
+    	width: auto;
+	}
+	
+	#ll-theme .textbox {
+    	margin-top: 10px;
+	}
+	
+	#ll-smart .content {
+    	padding-top: 40px;
+	}
+
+	#ll-smart .anibox img {
+    	height: 130px;
+    	width: auto;
+	}
+	
+	#ll-smart .textbox {
+    	margin-top: 10px;
+	}
+
+	#ll-stylish .content {
+    	padding-top: 40px;
+	}
+
+	#ll-stylish .anibox img {
+    	height: 130px;
+    	width: auto;
+	}
+	
+	#ll-stylish .textbox {
+    	margin-top: 10px;
+	}	
+	
+}
+
+/*이미지, 텍스트박스 변경 너비의 최대가 540이고, height가 550px이상인 경우*/
+@media (max-width: 540px) and (min-height: 550px){
+	#ll-theme .anibox img {
+	    height: 240px;
+	}
+	
+	#ll-smart .anibox img{
+	    height: 240px;
+	}
+	
+	#ll-stylish .anibox img{
+	    height: 240px;
+	}
+	
+	#ll-theme .textbox {
+    	margin-top: 30px;
+	}
+	
+	#ll-smart .textbox {
+		margin-top: 30px;
+	}
+	
+	#ll-stylish .textbox {
+		margin-top: 30px;
+	}
+	
+}
+
+/*이미지 변경 너비의 최대가 540이고, height가 450px미만인 경우*/
+@media (max-width: 540px) and (min-height: 450px){
+	#ll-theme .anibox img {
+	    height: 200px;
+	}
+	
+	#ll-smart .anibox img {
+	    height: 200px;
+	}
+	
+	#ll-stylish .anibox img {
+	    height: 200px;
+	}
+}
+
+
+
+
+
+
+
+
+
