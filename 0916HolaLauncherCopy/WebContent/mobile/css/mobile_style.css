@@ -371,7 +371,10 @@ img.homepic{
 
 .swiper-slide-active .thShop {
     animation: round1 5s linear infinite;
-	
+	-webkit-animation-name: round1;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 	visibility: visible !important;
 }
 
