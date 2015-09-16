@@ -300,6 +300,52 @@ img.homepic{
 
 /* lotty */
 /* The animation code */
+
+@-webkit-keyframes round1 {
+ 0% {
+-webkit-transform: rotate(0);
+}
+
+ 25% {
+-webkit-transform: rotate(90deg);
+}
+
+ 50% {
+-webkit-transform: rotate(180deg);
+}
+
+ 75% {
+-webkit-transform: rotate(270deg);
+}
+
+ 100% {
+-webkit-transform: rotate(360deg);
+}
+}
+
+@-moz-keyframes round1 {
+ 0% {
+-keyframes-transform: rotate(0);
+}
+
+ 25% {
+-keyframes-transform: rotate(90deg);
+}
+
+ 50% {
+-keyframes-transform: rotate(180deg);
+}
+
+ 75% {
+-keyframes-transform: rotate(270deg);
+}
+
+ 100% {
+-keyframes-transform: rotate(360deg);
+}
+}
+
+
 @keyframes round1 {
 
  0% {
