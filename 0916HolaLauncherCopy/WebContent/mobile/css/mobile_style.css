@@ -169,7 +169,7 @@ ul,li{padding: 0;margin: 0;}
 	background: #222;
 }
 #menu ul li a.current{
-	background:#00BDFF;
+	background: #9EA1A4;
 }
 /*main content*/
 .wrap{
@@ -594,7 +594,7 @@ img.homepic{
 
 .swiper-slide-active .moveBrown {
 	
-    animation: moveBrown 6s linear;
+    animation: moveBrown 4.5s linear;
 	visibility: visible !important;
 }
 
@@ -622,6 +622,101 @@ img.homepic{
 
 	/* visibility: visible !important; */
 }
+
+@keyframes memoryClean1 {
+
+ 0% {
+	opacity: 0;
+	
+}
+
+ 100% {
+	opacity: 1;
+}
+}
+
+
+.swiper-slide-active .memoryClean1 {
+    animation: memoryClean1 2s ease-in;
+	/* visibility: visible !important; */
+}
+
+@keyframes memoryClean2 {
+
+ 0% {
+	opacity: 0.5;
+}
+
+50%{
+	opacity: 1;
+	top: 65%;
+}
+
+75%{
+	opacity: 1;
+	transform: rotate(-5deg);
+}
+
+ 100% {
+	opacity: 0;
+}
+}
+
+.swiper-slide-active .memoryClean2 {
+    animation: memoryClean2 3s ease-in;
+	/* visibility: visible !important; */
+}
+
+@keyframes memoryClean3 {
+
+ 0% {
+	opacity: 0;
+}
+
+50%{
+	opacity: 0;
+}
+
+51%{
+	opacity: 1;
+
+}
+
+ 100% {
+	opacity: 1;
+}
+}
+
+
+.swiper-slide-active .memoryClean3 {
+    animation: memoryClean3 6s ease-in;
+	/* visibility: visible !important; */
+}
+
+@keyframes memoryClean4 {
+
+ 0% {
+	opacity: 0;
+	top:55%;
+}
+
+80%{
+	opacity: 0;
+	top:55%;
+}
+
+ 100% {
+	opacity: 1;
+	top:50%;
+}
+}
+
+
+.swiper-slide-active .memoryClean4 {
+    animation: memoryClean4 3.5s ease-in;
+	/* visibility: visible !important; */
+}
+
 
 
 /* lotty-end*/
@@ -737,8 +832,8 @@ img.homepic{
 	color: #fff;
 }
 .bg_04 .download a{
-	border: 1px solid #848484;
-	color: #646464;
+	border: 1px solid #ffffff;
+	color: #ffffff;
 }
 .bg_05 .download a{
 	border: 1px solid #BE7202;
