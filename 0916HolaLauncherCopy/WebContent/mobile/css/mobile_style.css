@@ -213,7 +213,7 @@ ul,li{padding: 0;margin: 0;}
 
 /*section background */
 .section01 {
-	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(#00bfff), to(#0081dc));
+	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(#3198FE), to(#1C5792));
 	background-image: -moz-radial-gradient(50% 50%, #00bfff, #0081dc 50%);
 }
 .section02 {
@@ -221,15 +221,16 @@ ul,li{padding: 0;margin: 0;}
 	background-image: -moz-radial-gradient(50% 50%, #6b30ff, #3d1b91 50%);
 }
 .section03 {
-	background:#00b285;
+	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(#FD9A30), to(#92591C));
+	background-image: -moz-radial-gradient(50% 50%, #2f2f2f, #000000 50%);
 }
 .section04 {
-	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(#ffffff), to(#cacaca));
+	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(#FF3142), to(#921C25));
 	background-image: -moz-radial-gradient(50% 50%, #ffffff, #cacaca 50%);
 }
 .section05 {
-	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(#2f2f2f), to(#000000));
-	background-image: -moz-radial-gradient(50% 50%, #2f2f2f, #000000 50%);
+
+	background:#00b285;
 }
 
 
