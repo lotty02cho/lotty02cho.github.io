@@ -64,7 +64,7 @@ ul,li{padding: 0;margin: 0;}
 }
 
 .home_logo img.logo{
-	width: 11rem;
+	width: 10rem;
 	margin-top: 2rem;
 	vertical-align:middle;
 }
@@ -378,6 +378,115 @@ img.homepic{
 	visibility: visible !important;
 }
 
+
+@-webkit-keyframes moveCony {
+ 0% {
+	left: 30%; top:60%;
+	transform: rotate(0deg);
+}
+
+10% {
+	left: 56%; top:32%;
+	transform: rotate(5deg);
+}
+
+20% {
+ 	left: 52%; top:34%;
+ 	transform: rotate(-5deg);
+}
+30% {
+ 	left: 48%; top:36%;
+ 	transform: rotate(-5deg);
+}
+40% {
+ 	left: 44%; top:38%;
+ 	transform: rotate(5deg);
+}
+50% {
+ 	left: 40%; top:40%;
+	transform: rotate(5deg);
+}
+
+60% {
+ 	left: 36%; top: 42%;
+ 	transform: rotate(-5deg);
+}
+70% {
+ 	left: 32%; top: 44%;
+ 	transform: rotate(-5deg);
+}
+
+80% {
+ 	left: 28%; top: 46%;
+ 	transform: rotate(5deg);
+}
+
+90% {
+ 	left: 24%; top: 48%;
+ 	transform: rotate(5deg);
+}
+
+100% {
+	left: 20%; top: 50%;
+	transform: rotate(-5deg);
+}
+}
+
+@-moz-keyframes moveCony {
+ 0% {
+	left: 30%; top:60%;
+	transform: rotate(0deg);
+}
+
+10% {
+	left: 56%; top:32%;
+	transform: rotate(5deg);
+}
+
+20% {
+ 	left: 52%; top:34%;
+ 	transform: rotate(-5deg);
+}
+30% {
+ 	left: 48%; top:36%;
+ 	transform: rotate(-5deg);
+}
+40% {
+ 	left: 44%; top:38%;
+ 	transform: rotate(5deg);
+}
+50% {
+ 	left: 40%; top:40%;
+	transform: rotate(5deg);
+}
+
+60% {
+ 	left: 36%; top: 42%;
+ 	transform: rotate(-5deg);
+}
+70% {
+ 	left: 32%; top: 44%;
+ 	transform: rotate(-5deg);
+}
+
+80% {
+ 	left: 28%; top: 46%;
+ 	transform: rotate(5deg);
+}
+
+90% {
+ 	left: 24%; top: 48%;
+ 	transform: rotate(5deg);
+}
+
+100% {
+	left: 20%; top: 50%;
+	transform: rotate(-5deg);
+}
+}
+
+
+
 @keyframes moveCony {
 
  0% {
@@ -445,47 +554,72 @@ img.homepic{
  0% {
 	opacity: 0;
 	transform: rotate(0deg);
-	translate: 0em;
+	width: 0rem;
 }
 
-12.5% {
+ 50% {
+	opacity: 0;
+	transform: rotate(0deg);
+	width: 6rem;
+}
+
+56.25% {
 	transform: rotate(5deg);
 }
 
-25% {
- 	transform: rotate(5deg);
-}
-37.5% {
- 	transform: rotate(-5deg);
-}
-50% {
- 	transform: rotate(5deg);
-}
 62.5% {
+ 	transform: rotate(5deg);
+}
+68.75% {
+ 	transform: rotate(-5deg);
+}
+75% {
+ 	transform: rotate(5deg);
+}
+81.25% {
 	transform: rotate(5deg);
 }
 
- 75% {
+ 93.75% {
  	transform: rotate(5deg);
 }
-
- 87.5%{
- 	transform: rotate(-5deg);
- }
-
  100% {
 	opacity: 1;
 	transform: rotate(-5deg);
-	translate: 1em;
+	width: 8rem;
 }
 }
 
 
 .swiper-slide-active .moveBrown {
 	
-    animation: moveBrown 2.5s linear;
-	animation-delay: 5s;
+    animation: moveBrown 6s linear;
 	visibility: visible !important;
+}
+
+
+@keyframes burst {
+
+ 0% {
+	opacity: 0;
+	left: 50%; top: 50%;
+	
+}
+ 80% {
+	opacity: 0;
+	left: 50%; top: 50%;
+	
+}
+
+ 100% {
+	opacity: 1;
+}
+}
+
+.swiper-slide-active .burst {
+    animation: burst 3s ease-in;
+
+	/* visibility: visible !important; */
 }
 
 
