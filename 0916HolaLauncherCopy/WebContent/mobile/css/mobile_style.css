@@ -434,7 +434,9 @@ img.homepic{
 
 .swiper-slide-active .moveCony {
     animation: moveCony 2.5s linear;
-	
+    -webkit-animation-name: moveCony;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-timing-function: linear;
 	visibility: visible !important;
 }
 
