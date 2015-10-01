@@ -1,0 +1,207 @@
+<html style="overflow: hidden; height: 100%;"><head>
+        <meta charset="utf-8">
+        <title>hola Launcher</title>
+        <meta name="author" content="hola Group">
+        <meta name="description" content="hola桌面能帮你提升手机速度，提升查找和打开APP速度，节省电量，保持手机桌面清爽整齐">
+        <meta name="keywords" content="안드로이드 바탕 화면 휴대 전화의 바탕 화면, 모바일 가속, 모바일 애플리케이션, 안드로이드 응용 프로그램 시장, 검색, 테마, 배경 화면">
+        <meta name="Resource-type" content="Document">   
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <script>
+            /*jump to the right language*/
+            if (window.navigator.language) {
+            	//toLowerCase() >> 모든문자를 소문자로 변형.
+                var language = window.navigator.language.toLowerCase();
+            } else if(window.navigator.browserLanguage) {
+                var language = window.navigator.browserLanguage.toLowerCase();
+            }
+            /* 주소에 mode=user라는게 안들어가 있고, zh(중국어코드)가 들어가 있으면, 주소창을 다음과 같이 변경*/
+            if (window.location.href.indexOf("mode=user") == -1 && language && language.indexOf("zh") >= 0) {
+                window.location.href = "http://" + window.location.host + '/index_cn.html';
+            }
+            /*jump To mobile*/
+            var mobileAgent = ["iphone", "ipod", "ipad", "android", 
+                "mobile", "blackberry", "webos", "incognito", 
+                "webmate", "bada", "nokia", "lg", 
+                "ucweb", "skyfire"];
+            var browser = navigator.userAgent.toLowerCase(); 
+            var isMobile = false; 
+            for (var i = 0; i < mobileAgent.length; i++) { 
+                if (browser.indexOf(mobileAgent[i]) != -1) { 
+                    isMobile = true; 
+                    window.location.href = 'http://' + window.location.host +　'/mobile/index.html';
+                    break; 
+                } 
+            } 
+        </script>
+    </head>
+
+    <body style="overflow: hidden; height: 100%; font-size: 100%;">
+    <!--Header-->
+    <div class="header fixed">
+        <div class="header_wrap">
+            <a href="index.html" class="logo" id="logo_w">hola Launcher</a>
+            <div class="nav" id="nav_w">
+                <a class="current" href="javascript:;">Home</a>
+                <a href="http://www.holaverse.com/about" target="_blank">About Us</a>
+                <a href="http://www.holalauncher.com/privacy/privacy.html" target="_blank">Privacy Policy</a>
+                <a href="http://www.holaverse.com/about/promotion-policies/" target="_blank">Promotion Policy</a>
+                <a href="index_cn.html?mode=user" id="navList_bar">中文</a>
+            </div>
+        </div>
+    </div>
+    <!--Menu-->
+    <ul id="menu">
+        <li data-menuanchor="Hola" class="active"><a href="#Hola">1</a></li>
+        <li data-menuanchor="Shine" class=""><a href="#Shine">2</a></li>
+        <li data-menuanchor="T9" class=""><a href="#T9">3</a></li>
+        <li data-menuanchor="Customization" class=""><a href="#Customization">4</a></li>
+        <li data-menuanchor="Gestures" class=""><a href="#Gestures">5</a></li>
+    </ul>
+    <!--FullPage-->
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <div class="homebg01">
+                <div class="container">
+                    <div class="row">
+                        <img class="logo_title" src="images/logo4.png"/>
+                        <div class="content">
+                            <P>Simple, fast, and smooth.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="watch-video" href="https://www.youtube.com/watch?v=R1WzBaIoQTw&feature=youtu.be" target="_blank"><img src="images/video_en.png"/></a>
+        </div>
+        <div class="section" id="section2">
+            <div class="homebg02">
+                <div class="container">
+                    <div class="row">
+                        <img class="logo_text" src="images/logo_text.png"/>
+                        <div class="content">
+                            <P>Just swipe from a corner and jump immediately to recent or favorite apps or switch your settings.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="homebg03">
+                <div class="container">
+                    <div class="row">
+                        <img class="logo_text" src="images/logo_text.png"/>
+                        <div class="content">
+                            <P>T9 Search: For the moments you dislike your keyboard and want to go old school.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="homebg04">
+                <div class="container">
+                    <div class="row">
+                        <img class="logo_text  grey" src="images/logo_text_grey.png"/>
+                        <div class="content">
+                            <P class="grey">Personalize: Customize with delightful themes, wallpapers, and fonts. Updated weekly, all free.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="homebg05">
+                <div class="container">
+                    <div class="row">
+                        <img class="logo_text" src="images/logo_text.png"/>
+                        <div class="content">
+                            <P>Gestures: Quickly navigate your device, rearrange your screens, and access special features.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--downlad button-->
+    <div class="download_button">
+        <a href="https://play.google.com/store/apps/details?id=com.hola.launcher" class="googleplay" target="_blank">Google Play</a>
+        <a href="http://a.holalauncher.com/clients/latest?pid=400102&amp;channel=90001" class="download" target="_blank">Download</a>
+        <a class="code_button app_icon" title="使用二维码安装" href="javascript:;"></a>
+    </div>
+    <div class="mask"></div>
+ 	<div class="code_box">
+        <a href="javascript:;" id="close-code"><img src="images/close.png"></a>
+        <img class="download_code" src="images/download_code.png">
+        <p>Scan to download Hola</p>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-1.11.1-ui.min.js"></script> 
+    <script src="js/jquery.fullPage.min.js"></script>
+<!--     <script type="text/javascript">
+    	var obj = document.getElementsByTagName_r("body")[0].style;
+		alert(obj);
+    </script> -->
+    <script type="text/javascript">
+        //resize
+         var winIE = (navigator.userAgent.indexOf("Opera") == -1 && (document.getElementByIdx &&  document.documentElement.behaviorUrns))  ? true : false;
+        function bodySize(){
+         if(winIE && document.documentElement.clientWidth) {
+          var obj = document.getElementsByTagName_r("body")[0].style;
+          obj.width = (document.documentElement.clientWidth < 760) ? "760px" : "100%";
+         }
+        }
+        function init(){
+            if(winIE) {
+                bodySize(); 
+            }
+        }
+        onload = init;
+        if(winIE) { 
+            onresize = bodySize; 
+        }
+        
+        //fullpage plugin
+         $(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#0081DC', '#3D1B91', '#00b285', '#cacaca', '#000'],
+               anchors: ['Hola', 'Shine', 'T9', 'Customization', 'Gestures'],
+                 menu :'#menu',
+                verticalCentered: false,
+                css3: true,
+                scrollingSpeed: 600,
+                //events
+                afterLoad:function(hola){ 
+                    if (hola == 'Customization') {
+                        $('#logo_w').addClass('logo_grey');
+                        $('.nav').addClass('nav_grey').removeClass('nav');
+                        $('#menu li').addClass('grey');
+                        $('.download_button a').addClass('grey');
+                    } else {
+                        $('#logo_w').removeClass('logo_grey');
+                        $('.nav_grey').addClass('nav').removeClass('nav_grey');
+                        $('#menu li').removeClass('grey');
+                        $('.download_button a').removeClass('grey');
+                    }
+                }
+            });
+            /*안보이는 바코드 보여주기.*/
+            $('.code_button').on('click', function(){
+                $('.mask').show();
+                $('.code_box').addClass('show');
+            });
+            /*코드 닫아주기*/
+            $('#close-code').on('click', function(){
+                $('.mask').hide();
+                $('.code_box').removeClass('show').addClass('show_hide');
+                setTimeout(function() {
+                    $('.code_box').removeClass('show_hide');
+                }, 1000);
+            });
+        }); 
+    </script>
+
+
+</body></html>
