@@ -1,0 +1,526 @@
+<html style="overflow: hidden; height: 100%;"><head>
+        <meta charset="utf-8">
+        <!-- title: 메타 태그는 아니지만, 검색결과의 제목으로 표시 -->
+        <title>Line Launcher</title>
+        <meta name="author" content="Camp Mobile & LINE">
+        <!-- 페이지의 짧은 설명 -->
+        <meta name="description" content="당신의 핸드폰을 새롭게 하는 Line Launcher를 이용해보세요!">
+        <!-- 페이지의 키워드 -->
+        <meta name="keywords" content="안드로이드 바탕 화면, 폰패션, 모바일 애플리케이션, 안드로이드 응용 프로그램 시장, 검색, 테마, 배경 화면">
+        
+        <!-- 구글봇과 크롤러에 영향을 주는 태그. -->
+        <meta name="googlebot" content="all">
+        <meta name="robots" content="all">
+        
+        <!-- 번역링크 제공 방지 -->
+        <meta name="google" content="notranslate" />
+        
+        <!-- 전처리될 기본 언어 설정 -->
+        <meta http-equiv="content-language" content="ko" />
+        
+        <!-- 문자 인코딩 선언 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <!-- 단, Google 혹은 다른 크롤러에서 이해할 수 없는 메타태그는 무시된다는 사실에 유의하시기 바랍니다. -->
+        
+        <meta name="Resource-type" content="Document">   
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        
+        <link href='https://fonts.googleapis.com/css?family=Cambay:700' rel='stylesheet' type='text/css'>
+        
+        <!-- <link rel="stylesheet" type="text/css" href="css/fullpage.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+        <script>
+            /*jump to the right language*/
+            ;if (window.navigator.language) {
+            	//toLowerCase() >> 모든문자를 소문자로 변형.
+                var language = window.navigator.language.toLowerCase();
+            } else if(window.navigator.browserLanguage) {
+                var language = window.navigator.browserLanguage.toLowerCase();
+            }
+            /* 주소에 mode=user라는게 안들어가 있고, zh(중국어코드)가 들어가 있으면, 주소창을 다음과 같이 변경*/
+            if (window.location.href.indexOf("mode=user") == -1 && language && language.indexOf("zh") >= 0) {
+                window.location.href = "http://" + window.location.host + '/index_cn.html';
+            }
+            /*jump To mobile*/
+            var mobileAgent = ["iphone", "ipod", "ipad", "android", 
+                "mobile", "blackberry", "webos", "incognito", 
+                "webmate", "bada", "nokia", "lg", 
+                "ucweb", "skyfire"];
+            var browser = navigator.userAgent.toLowerCase(); 
+            var isMobile = false; 
+            for (var i = 0; i < mobileAgent.length; i++) {
+                if (browser.indexOf(mobileAgent[i]) != -1) { 
+                    isMobile = true; 
+                    window.location.href = 'http://' + window.location.host +　'kkkkkkkkkkkkkkkkkkkkkkkkkkk';
+                    
+                    break; 
+                } 
+            } 
+        </script>
+<!--     style.css
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/style.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+     -->
+    <style>
+@-webkit-keyframes round1 { 
+	0% {
+		-webkit-transform: rotate(0);
+	}
+	25%{
+		-webkit-transform: rotate(90deg);
+	}
+	50%{
+		-webkit-transform: rotate(180deg);
+	}
+	75%{
+		-webkit-transform: rotate(270deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@
+-moz-keyframes round1 { 0% {
+	-keyframes-transform: rotate(0);
+}
+
+25%
+{
+-keyframes-transform
+:
+ 
+rotate
+(90deg);
+
+
+}
+50%
+{
+-keyframes-transform
+:
+ 
+rotate
+(180deg);
+
+
+}
+75%
+{
+-keyframes-transform
+:
+ 
+rotate
+(270deg);
+
+
+}
+100%
+{
+-keyframes-transform
+:
+ 
+rotate
+(360deg);
+
+
+}
+}
+@
+keyframes round1 { 0% {
+	transform: rotate(0);
+}
+25%
+{
+transform
+:
+ 
+rotate
+(90deg);
+
+
+}
+50%
+{
+transform
+:
+ 
+rotate
+(180deg);
+
+
+}
+75%
+{
+transform
+:
+ 
+rotate
+(270deg);
+
+
+}
+100%
+{
+transform
+:
+ 
+rotate
+(360deg);
+
+
+}
+}
+
+.themeShop{
+    animation: round1 5s linear infinite;
+	-webkit-animation-name: round1;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	visibility: visible !important;
+}
+
+
+</style>
+
+</head>
+
+    <body style="overflow: hidden; height: 100%; font-size: 100%;">
+    
+
+    
+    <!--Header-->
+<!--     <div class="header fixed">
+        <div class="header_wrap">
+            <a href="index.html" class="logo" id="logo_w">Line Launcher</a>
+            <div class="nav" id="nav_w">
+                <a class="current" href="javascript:;">Home</a>
+                <a href="http://http://dodol.naver.com:10080/recommendtheme/get.camp#" target="_blank">About Us</a>
+                <a href="http://http://dodol.naver.com:10080/recommendtheme/get.camp#" target="_blank">Privacy Policy</a>
+                <a href="http://http://dodol.naver.com:10080/recommendtheme/get.camp#" target="_blank">Promotion Policy</a>
+                <a href="http://http://dodol.naver.com:10080/recommendtheme/get.camp#" id="navList_bar">中文</a>
+            </div>
+        </div>
+    </div> -->
+    <!--Menu-->
+    <ul id="menu">
+        <li data-menuanchor="Line" class="active"><a href="#Line">1</a></li>
+        <li data-menuanchor="VariousTheme" class=""><a href="#VariousTheme">2</a></li>
+        <li data-menuanchor="Stylish" class=""><a href="#Stylish">3</a></li>
+        <li data-menuanchor="Clever" class=""><a href="#Clever">4</a></li>
+        <li data-menuanchor="Download" class=""><a href="#Download">5</a></li>
+    </ul>
+    <!--FullPage-->
+    <div id="fullpage">
+        <div class="section" id="section1" >
+            <div class="homebg01" style="background-image: images/Img_bg_top.png">
+                <div class="container">
+                    <div class="row">
+                        <!-- <img class="logo_title" src="images/logo4.png" height="135px" width="275px"/> -->
+                        <div style="font-family: 'Cambay', sans-serif; font-size: 72px; font-style:bold; fontword-break:keep-all;">L I N E&nbsp;&nbsp;L A U N C H E R</div>
+                        <div class="content">
+                            <p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                        </div>
+                        <!-- Google Button -->
+                        <div class="content">
+                        	<img style="position: relative; top: 25%; left: 0; margin: 66px auto 0 auto;" src="images/btn_store.png"/>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: 0%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin: 0 auto 0 auto; z-index: 500;" src="images/img_device_intro.png"/>
+            </div>
+            <div class="conts kkk" style="height: 1px; margin: 0px auto; position: relative; left: 0%;">
+            	<img class="animated fadeInRight" style="position: relative; top: -40%; left: -240px; margin: 0 auto 0 auto; animation-delay: 0.8s;" src="images/img_leonard_1.png"/>
+<!--             	
+            	<img class="animated bounceInUp " 
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin: 0 auto 0 auto;" src="images/img_device_intro.png"/> --> 
+			</div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: 0%;">
+            	<img class="animated rotateInUpRight" style="position: relative; top: -130%; left: -290px; margin: 0 auto 0 auto; animation-delay: 0.7s;  z-index: 501;" src="images/img_brown_1.png"/>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: 0%;">
+            	<img class="animated rotateInUpLeft" style="position: relative; top: -208%; left: -320px; margin: 0 auto 0 auto; animation-delay: 0.8s;  z-index: 502;" src="images/img_edwards_1.png"/>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: 0%;">
+            	<img class="animated fadeInLeft" style="position: relative; top: -340%; left: 310px; margin: 0 auto 0 auto; animation-delay: 0.9s;  z-index: 499;" src="images/img_james_1.png"/>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: 0%;">
+            	<img class="animated bounce" style="position: relative; top: -415%; left: 230px; margin: 0 auto 0 auto; animation-delay: 3s; animation-iteration-count: infinite; animation-duration: 3s; z-index: 503;" src="images/img_Sally_1.png"/>
+            </div>
+
+            <!-- <a id="watch-video" href="https://www.youtube.com/watch?v=R1WzBaIoQTw&feature=youtu.be" target="_blank"><img src="images/video_en.png" width="142px" height="24px" /></a> -->
+        </div>
+        <div class="section" id="section2">
+            <div class="homebg02">
+                <div class="container">
+                    <div class="row">
+                    	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all; color: #555;">V A R I O U S&nbsp;&nbsp;T H E M E</div>
+                        <!-- <img class="logo_text" src="images/logo_text.png"/> -->
+                        <div class="content">
+                            <P class="grey">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <P class="grey">KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -30%; top: 30%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_1.png"/>
+            	<p style="font-size: 3px; color: #000000;">LINE Friends</p>
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png"/>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -18%; top: -70%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_2.png"/>
+            	<p style="font-size: 3px; color: #000000;">LINE Friends Cony</p>
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png"/>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -6%; top: -170%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_3.png"/>
+            	<p style="font-size: 3px; color: #000000;">LINE Friends Brown</p>
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png"/>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -30%; top: -250%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_4.png"/>
+            	<p style="font-size: 3px; color: #000000;">Leornard Life</p>
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png"/>
+            </div>            
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -18%; top: -350%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_5.png"/>
+            	<p style="font-size: 3px; color: #000000;">GD X TAEYANG</p>
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png"/>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -6%; top: -450%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_6.png"/>
+            	<p style="font-size: 3px; color: #000000;">Duck whoo</p>
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png"/>
+            </div>  
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -30%; top: -530%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_7.png"/>
+            	<p style="font-size: 3px; color: #000000;">Dark Chic</p>
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png"/>
+            </div>  
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -18%; top: -630%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_8.png"/>
+            	<p style="font-size: 3px; color: #000000;">Vivid Line</p>
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png"/>
+            </div>  
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -6%; top: -730%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_9.png"/>
+            	<p style="font-size: 3px; color: #000000;">B1A4 baro</p>
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png"/>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: 20%; top: -925%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_device_none.png"/>
+            
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: 20%; top: -1020%;">
+            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_1_view.png"/>
+            </div>
+            
+            
+        </div>
+        <div class="section" id="section3">
+            <div class="homebg03">
+                <div class="container">
+                    <div class="row">
+                    	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">S T Y L I S H</div>
+                        <!-- <img class="logo_text" src="images/logo_text.png"/> -->
+                        <div class="content">
+                            <P>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <P>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -40%; top: -5%;">
+            	<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 3s; z-index: 500;" src="images/img_icons_1.png"/>
+            </div>
+            <div class="conts kkk" style="margin: 0px auto; position: relative; left: -20%; top: -70%;">
+				<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 2s;  z-index: 500;" src="images/img_icons_2.png"/>
+			</div>
+			<div class="conts kkk" style="margin: 0px auto; position: relative; left: -40%; top: -140%;">
+				<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 1s;  z-index: 500;" src="images/img_icons_3.png"/>
+			</div>
+			<div class="conts kkk" style="margin: 0px auto; position: relative; left: -25%; top: -220%;">
+				<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 4s;  z-index: 500;" src="images/img_icons_4.png"/>
+			</div>
+			<div class="conts kkk" style="margin: 0px auto; position: relative; left: 35%; top: -402%;">
+				<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 2.5s; z-index: 500;" src="images/img_icons_5.png"/>
+			</div>	
+			<div class="conts kkk" style="margin: 0px auto; position: relative; left: 45%; top: -425%;">
+				<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 3.5s; z-index: 500;" src="images/img_icons_6.png"/>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="homebg04">
+                <div class="container">
+                    <div class="row">
+                    	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">C L E V E R</div>
+                        <div class="content">
+                            <P>Personalize: Customize with delightful themes, wallpapers, and fonts. Updated weekly, all free.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="homebg05">
+                <div class="container">
+                    <div class="row">
+                    	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">C L E V E R</div>
+                        <div class="content">
+                            <P>Gestures: Quickly navigate your device, rearrange your screens, and access special features.</P>
+                        </div>
+                    </div>
+                    <div class="conts" style="position: absolute; top: 25%; left: 0; width: 100%; z-index: 1000;">
+						<div class="phone" style="width: 20.5em; height: 40em; margin: 0px auto; background: url(http://static.naver.net/m/vlive/incomms/pc/2015/img_sec3_phone.png) no-repeat; position: relative; left: 0%;">
+							<video
+								style="width: 17.5em; height: 31em; display: inline; margin-top: 5em;"
+								autoplay="autoplay" loop="loop">
+								<source
+									src="http://event.dn.naver.net/naver/event/static/globalv/v_info_4Mbps.mp4"
+									type="video/mp4">
+							</video>
+						</div>
+<!-- 						<div class="txt"
+							style="width: 647px; height: 384px; background: url(http://static.naver.net/m/vlive/incomms/pc/2015/ko/txt_sec3_ko_v2.png) no-repeat; position: absolute; top: 75px; right: 30%;">
+							<h2 class="blind"
+								style="display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; width: 0; height: 0; font-size: 0; line-height: 0;">V
+								is a Real-time Broadcasting Mobile App</h2>
+							<p class="blind"
+								style="display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; width: 0; height: 0; font-size: 0; line-height: 0;">
+								We provide live broadcasts instantly on mobile<br> Meet
+								Celebs at anywhere in the world through V.<br> Enjoy
+								improvised, unexpected fun with them.
+							</p>
+							<p class="blind"
+								style="display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; width: 0; height: 0; font-size: 0; line-height: 0;"">
+								v-Support<br>Live broadcasts across the world<br>Exclusive
+								video clips of K-Celebs
+							</p>
+						</div> -->
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--     downlad button
+    <div class="download_button">
+        <a href="https://play.google.com/store/apps/details?id=com.hola.launcher" class="googleplay" target="_blank">Google Play</a>
+        <a href="http://a.holalauncher.com/clients/latest?pid=400102&amp;channel=90001" class="download" target="_blank">Download</a>
+        <a class="code_button app_icon" title="使用二维码安装" href="javascript:;"></a>
+    </div>
+    <div class="mask"></div>
+ 	<div class="code_box">
+        <a href="javascript:;" id="close-code"><img src="images/close.png" width="15px" height="15px"></a>
+        <img class="download_code" src="images/download_code.png" width="300px" height="300px">
+        <p>Scan to download Hola</p>
+    </div> -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-1.11.1-ui.min.js"></script> 
+    <script src="js/jquery.fullPage.min.js"></script>
+<!--     <script type="text/javascript">
+    	var obj = document.getElementsByTagName_r("body")[0].style;
+		alert(obj);
+    </script> -->
+    <script type="text/javascript">
+        //resize
+         var winIE = (navigator.userAgent.indexOf("Opera") == -1 && (document.getElementByIdx &&  document.documentElement.behaviorUrns))  ? true : false;
+        function bodySize(){
+         if(winIE && document.documentElement.clientWidth) {
+          var obj = document.getElementsByTagName_r("body")[0].style;
+          obj.width = (document.documentElement.clientWidth < 760) ? "760px" : "100%";
+         }
+        }
+        function init(){
+            if(winIE) {
+                bodySize(); 
+            }
+        }
+        onload = init;
+        if(winIE) { 
+            onresize = bodySize; 
+        }
+        
+        //fullpage plugin
+         $(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#2B88FF', '#efefef', '#6962C9', '#00BE68', '#000'],
+               anchors: ['Line', 'VariousTheme', 'Stylish', 'Clever', 'Download'],
+                 menu :'#menu',
+                verticalCentered: false,
+                css3: true,
+                scrollingSpeed: 600,
+                //events
+                afterLoad:function(line){ 
+                    if (line == 'VariousTheme') {
+                        $('#logo_w').addClass('logo_grey');
+                        $('.nav').addClass('nav_grey').removeClass('nav');
+                        $('#menu li').addClass('grey');
+                        $('.download_button a').addClass('grey');
+                    } else {
+                        $('#logo_w').removeClass('logo_grey');
+                        $('.nav_grey').addClass('nav').removeClass('nav_grey');
+                        $('#menu li').removeClass('grey');
+                        $('.download_button a').removeClass('grey');
+                    }
+                }
+            });
+            /*안보이는 바코드 보여주기.*/
+            $('.code_button').on('click', function(){
+                $('.mask').show();
+                $('.code_box').addClass('show');
+            });
+            /*코드 닫아주기*/
+            $('#close-code').on('click', function(){
+                $('.mask').hide();
+                $('.code_box').removeClass('show').addClass('show_hide');
+                setTimeout(function() {
+                    $('.code_box').removeClass('show_hide');
+                }, 1000);
+            });
+        }); 
+    </script>
+    
+	<script>
+	$(function(){
+		var locate = $(window).innerHeight()
+		
+		  $('.kkk').css({ height: $(window).innerHeight() });
+		  $(window).resize(function(){
+		    $('.kkk').css({ height: $(window).innerHeight() });
+		  });
+		});
+	</script>
+    
+<!--     fullpage.css
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/fullpage.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+ -->
+
+
+</body></html>
