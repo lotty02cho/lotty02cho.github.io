@@ -4,7 +4,7 @@ body, div, dl, dt, dd, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset,
 	padding: 0;
 	margin: 0;
 	color: #FFF;
-	font-family: "Microsoft YaHei", Arial, sans-serif;
+	font-family: 'Cambay', sans-serif;
 }
 
 h1 {
@@ -215,7 +215,7 @@ ul {
 	width: 100%;
 	min-width: 1004px;
 	_width: expression(document.body.clientWidth < 1005 ? "1004px" : "auto");
-	min-height: 600px;
+	min-height: 900px;
 	_height: expression(document.body.clientHeight < 601 ? "600px" : "auto");
 }
 
@@ -331,10 +331,10 @@ ul {
 }
 
 #section5 {
-	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 577, from(#2f2f2f),
+/* 	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 577, from(#2f2f2f),
 		to(#000));
 	background-image: -moz-radial-gradient(50% 50%, #2f2f2f, #000 50%);
-	background-image: -ms-radial-gradient(50% 50%, #2f2f2f, #000 50%);
+	background-image: -ms-radial-gradient(50% 50%, #2f2f2f, #000 50%); */
 	filter: progid:DXImageTransform.Microsoft.gradient( GradientType= 0,
 		startColorstr= '#2f2f2f', endColorstr= '#000');
 	-ms-filter:
@@ -387,13 +387,16 @@ div.homebg03 {
 }
 
 div.homebg04 {
-	background: url(../images/holabg04.png) no-repeat;
 	background-position: center 20%;
 	background-size: 52% auto;
 }
 
 div.homebg05 {
-	background: url(../images/holabg05.png) no-repeat;
+	background-position: center 20%;
+	background-size: 52% auto;
+}
+
+div.homebg06{
 	background-position: center 20%;
 	background-size: 52% auto;
 }

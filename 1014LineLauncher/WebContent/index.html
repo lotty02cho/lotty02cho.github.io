@@ -43,7 +43,7 @@
             if (window.location.href.indexOf("mode=user") == -1 && language && language.indexOf("zh") >= 0) {
                 window.location.href = "http://" + window.location.host + '/index_cn.html';
             }
-/*             /*jump To mobile*/
+             /*jump To mobile*/
             var mobileAgent = ["iphone", "ipod", "ipad", "android", 
                 "mobile", "blackberry", "webos", "incognito", 
                 "webmate", "bada", "nokia", "lg", 
@@ -56,7 +56,7 @@
                     window.location.href = 'http://' + window.location.host +　'kkkkkkkkkkkkkkkkkkkkkkkkkkk';
                     
                     break; 
-                }  */
+                }
             } 
         </script>
 <!--     style.css
@@ -191,6 +191,143 @@ rotate
 	visibility: visible !important;
 }
 
+.pageTytle1{
+	font-size: 72px;
+	font-style:bold;
+	fontword-break:keep-all;
+}
+
+.btn_store{
+	position: relative;
+	top: 25%;
+	left: 0;
+	margin: 66px auto 0 auto;
+}
+
+.device_intro{
+	position: relative;
+	top: 55%;
+	left: 0;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+}
+
+.leonard_1{
+	position: relative;
+	top: -40%;
+	left: -240px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.8s;
+}
+
+.brown_1{
+	position: relative;
+	top: -130%;
+	left: -290px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.7s;
+	z-index: 501;
+}
+
+.edward_1{
+	position: relative;
+	top: -208%;
+	left: -320px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.8s;
+	z-index: 502;
+}
+
+.james_1{
+	position: relative;
+	top: -340%;
+	left: 310px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.9s;
+	z-index: 499;
+}
+
+.sally_1{
+	position: relative;
+	top: -415%;
+	left: 230px; 
+	margin: 0 auto 0 auto;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
+	animation-duration: 3s; z-index: 503;
+}
+
+@media screen and (max-height:950px) {
+.pageTytle1{
+	font-size: 60px;
+}
+
+p{
+	font-size: 18px;
+}
+
+.btn_store{
+	margin: 33px auto 0 auto;
+    height: 42px;
+}
+
+.device_intro{
+    top: 56%;
+}
+.leonard_1{
+    left: -200px;
+}
+.brown_1{
+	top: -128%;
+    left: -238px;
+}
+.edward_1{
+	top: -210%;
+	left: -255px;
+}
+.james_1{
+	left: 245px;
+}
+.sally_1{
+	left: 190px;
+}
+}
+
+@media screen and (max-height:700px) {
+.pageTytle1{
+	font-size: 40px;
+}
+
+p{
+	font-size: 15px;	
+}
+
+.btn_store{
+	margin: 33px auto 0 auto;
+    height: 42px;
+}
+
+.device_intro{
+    top: 56%;
+}
+.leonard_1{
+    left: -200px;
+}
+.brown_1{
+	top: -128%;
+    left: -238px;
+}
+.edward_1{
+	left: -320px;
+}
+.james_1{
+	left: 310px;
+}
+.sally_1{
+	left: 230px; 
+}
+}
+
 
 </style>
 
@@ -220,52 +357,48 @@ rotate
         <li data-menuanchor="Stylish" class=""><a href="#Stylish">3</a></li>
         <li data-menuanchor="Clever" class=""><a href="#Clever">4</a></li>
         <li data-menuanchor="Download" class=""><a href="#Download">5</a></li>
+        <li data-menuanchor="Video" class=""><a href="#Video">6</a></li>
     </ul>
     <!--FullPage-->
     <div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);">
-        <div class="section fp-section active" id="section1" data-anchor="Line" style="height: 873px; background-color: rgb(43, 136, 255);">
+        <div class="section fp-section active" id="section1" data-anchor="Line" style="background-color: rgb(43, 136, 255);">
             <div class="homebg01" style="background-image: images/Img_bg_top.png">
                 <div class="container">
                     <div class="row">
                         <!-- <img class="logo_title" src="images/logo4.png" height="135px" width="275px"/> -->
-                        <div style="font-family: 'Cambay', sans-serif; font-size: 72px; font-style:bold; fontword-break:keep-all;">L I N E&nbsp;&nbsp;L A U N C H E R</div>
+                        <div class="pageTytle1">L I N E&nbsp;&nbsp;L A U N C H E R</div>
                         <div class="content">
                             <p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
                             <p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
                         </div>
                         <!-- Google Button -->
                         <div class="content">
-                        	<img style="position: relative; top: 25%; left: 0; margin: 66px auto 0 auto;" src="images/btn_store.png">
+                        	<img class="btn_store" src="images/btn_store.png">
                         </div>
 
                     </div>
                 </div>
             </div>
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin: 0 auto 0 auto; z-index: 500;" src="images/img_device_intro.png">
+            <div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+            	<img class="animated bounceInUp device_intro" style="" src="images/img_device_intro.png">
             </div>
-            <div class="conts browserH" style="height: 873px; margin: 0px auto; position: relative; left: 0%;">
-            	<img class="animated fadeInRight" style="position: relative; top: -40%; left: -240px; margin: 0 auto 0 auto; animation-delay: 0.8s;" src="images/img_leonard_1.png">
-<!--             	
-            	<img class="animated bounceInUp " 
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin: 0 auto 0 auto;" src="images/img_device_intro.png"/> --> 
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
+            	<img class="animated fadeInRight leonard_1" style="" src="images/img_leonard_1.png">
 			</div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
-            	<img class="animated rotateInUpRight" style="position: relative; top: -130%; left: -290px; margin: 0 auto 0 auto; animation-delay: 0.7s;  z-index: 501;" src="images/img_brown_1.png">
+            	<img class="animated rotateInUpRight brown_1" style="" src="images/img_brown_1.png">
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
-            	<img class="animated rotateInUpLeft" style="position: relative; top: -208%; left: -320px; margin: 0 auto 0 auto; animation-delay: 0.8s;  z-index: 502;" src="images/img_edwards_1.png">
+            	<img class="animated rotateInUpLeft edward_1" style="" src="images/img_edwards_1.png">
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
-            	<img class="animated fadeInLeft" style="position: relative; top: -340%; left: 310px; margin: 0 auto 0 auto; animation-delay: 0.9s;  z-index: 499;" src="images/img_james_1.png">
+            	<img class="animated fadeInLeft james_1" style="" src="images/img_james_1.png">
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
-            	<img class="animated bounce" style="position: relative; top: -415%; left: 230px; margin: 0 auto 0 auto; animation-delay: 3s; animation-iteration-count: infinite; animation-duration: 3s; z-index: 503;" src="images/img_Sally_1.png">
+            	<img class="animated bounce Sally_1" style="" src="images/img_Sally_1.png">
             </div>
-
-            <!-- <a id="watch-video" href="https://www.youtube.com/watch?v=R1WzBaIoQTw&feature=youtu.be" target="_blank"><img src="images/video_en.png" width="142px" height="24px" /></a> -->
         </div>
-        <div class="section fp-section" id="section2" data-anchor="VariousTheme" style="height: 873px; background-color: rgb(239, 239, 239);">
+        <div class="section fp-section" id="section2" data-anchor="VariousTheme" style="background-color: rgb(239, 239, 239);">
             <div class="homebg02">
                 <div class="container">
                     <div class="row">
@@ -333,15 +466,15 @@ rotate
             
             
         </div>
-        <div class="section fp-section" id="section3" data-anchor="Stylish" style="height: 873px; background-color: rgb(105, 98, 201);">
+        <div class="section fp-section" id="section3" data-anchor="Stylish" style="background-color: rgb(105, 98, 201);">
             <div class="homebg03">
                 <div class="container">
                     <div class="row">
                     	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">S T Y L I S H</div>
                         <!-- <img class="logo_text" src="images/logo_text.png"/> -->
                         <div class="content">
-                            <p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
-                            <p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                            <p class="grey">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <p class="grey">KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
                         </div>
                     </div>
                 </div>
@@ -371,7 +504,7 @@ rotate
 				<img class="animated bounce" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/img_basictheme.png">
             </div>
         </div>
-        <div class="section fp-section" id="section4" data-anchor="Clever" style="height: 873px; background-color: rgb(0, 190, 104);">
+        <div class="section fp-section" id="section4" data-anchor="Clever" style="background-color: rgb(0, 190, 104);">
             <div class="homebg04">
                 <div class="container">
                     <div class="row">
@@ -382,9 +515,31 @@ rotate
                     </div>
                 </div>
             </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: 30%;">
+				<img class="animated" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/img_device_none.png">
+            </div>
         </div>
-        <div class="section fp-section" id="section5" data-anchor="Download" style=" background-color: rgb(0, 0, 0);">
+        <div class="section fp-section" id="section5" data-anchor="Download" style="background-color: rgb(0, 166, 255);">
             <div class="homebg05">
+                <div class="container">
+                    <div class="row">
+                    	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">D O W N L O A D</div>
+                        <div class="content">
+                            <p>Gestures: Quickly navigate your device, rearrange your screens, and access special features.</p>
+                        </div>
+                    </div>
+                    <div class="conts" style="position: absolute; top: 25%; left: 0; width: 100%; z-index: 1000;">
+						<div class="phone" style="width: 20.5em; height: 40em; margin: 0px auto; background: url(http://static.naver.net/m/vlive/incomms/pc/2015/img_sec3_phone.png) no-repeat; position: relative; left: 0%;">
+							<video style="width: 17.5em; height: 31em; display: inline; margin-top: 5em;" autoplay="autoplay" loop="loop">
+								<source src="http://event.dn.naver.net/naver/event/static/globalv/v_info_4Mbps.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <div class="section fp-section" id="section6" data-anchor="Download" style="background-color: rgb(0, 166, 255);">
+            <div class="homebg06">
                 <div class="container">
                     <div class="row">
                     	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">C L E V E R</div>
@@ -398,23 +553,6 @@ rotate
 								<source src="http://event.dn.naver.net/naver/event/static/globalv/v_info_4Mbps.mp4" type="video/mp4">
 							</video>
 						</div>
-<!-- 						<div class="txt"
-							style="width: 647px; height: 384px; background: url(http://static.naver.net/m/vlive/incomms/pc/2015/ko/txt_sec3_ko_v2.png) no-repeat; position: absolute; top: 75px; right: 30%;">
-							<h2 class="blind"
-								style="display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; width: 0; height: 0; font-size: 0; line-height: 0;">V
-								is a Real-time Broadcasting Mobile App</h2>
-							<p class="blind"
-								style="display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; width: 0; height: 0; font-size: 0; line-height: 0;">
-								We provide live broadcasts instantly on mobile<br> Meet
-								Celebs at anywhere in the world through V.<br> Enjoy
-								improvised, unexpected fun with them.
-							</p>
-							<p class="blind"
-								style="display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; width: 0; height: 0; font-size: 0; line-height: 0;"">
-								v-Support<br>Live broadcasts across the world<br>Exclusive
-								video clips of K-Celebs
-							</p>
-						</div> -->
 					</div>
                 </div>
             </div>
@@ -462,8 +600,8 @@ rotate
         //fullpage plugin
          $(function() {
             $('#fullpage').fullpage({
-                sectionsColor: ['#2B88FF', '#efefef', '#6962C9', '#00BE68', '#000'],
-               anchors: ['Line', 'VariousTheme', 'Stylish', 'Clever', 'Download'],
+                sectionsColor: ['#2B88FF', '#efefef', '#6962C9', '#00BE68', '#00a6ff', '#000'],
+               anchors: ['Line', 'VariousTheme', 'Stylish', 'Clever', 'Download', 'Video'],
                  menu :'#menu',
                 verticalCentered: false,
                 css3: true,
@@ -504,8 +642,81 @@ rotate
 		var locate = $(window).innerHeight()
 		
 		  $('.browserH').css({ height: $(window).innerHeight() });
+			var device_introW = $(".device_intro").width();
+			var device_introH = $(".device_intro").height();
+    		var leonard_1W = $(".leonard_1").width();
+    		var leonard_1H = $(".leonard_1").height();
+    		var brown_1W = $(".brown_1").width();
+    		var brown_1H = $(".brown_1").height();
+    		var edwards_1W = $(".edwards_1").width();
+    		var edwards_1H = $(".edwards_1").height();
+    		var james_1W = $(".james_1").width();
+    		var james_1H = $(".james_1").height();
+    		var Sally_1W = $(".Sally_1").width();
+    		var Sally_1H = $(".Sally_1").height();
+            
+    		
+    		
+		    if ($(window).height() <= 950) {
+		    	$(".device_intro").css({ width : device_introW*(4/5) });
+		    	$(".device_intro").css({ height: device_introH*(4/5) });
+		    	$(".leonard_1").css({ width : leonard_1W*(4/5) });
+		    	$(".leonard_1").css({ height : leonard_1H*(4/5) });
+		    	$(".brown_1").css({ width : brown_1W*(4/5) });
+		    	$(".brown_1").css({ height : brown_1H*(4/5) });
+	    		$(".edwards_1").css({ width : edwards_1W*(4/5) });
+	    		$(".edwards_1").css({ height : edwards_1H*(4/5) });
+	    		$(".james_1").css({ width : james_1W*(4/5) });
+	    		$(".james_1").css({ height : james_1H*(4/5) });
+	    		$(".Sally_1").css({ width : Sally_1W*(4/5) });
+	    		$(".Sally_1").css({ height : Sally_1H*(4/5) });
+	       }
+		    else{
+		    	$(".device_intro").css({ width : device_introW });
+		    	$(".device_intro").css({ height: device_introH });
+		    	$(".leonard_1").css({ width  : leonard_1W });
+		    	$(".leonard_1").css({ height : leonard_1H});
+		    	$(".brown_1").css({ width : brown_1W });
+		    	$(".brown_1").css({ height : brown_1H });
+	    		$(".edwards_1").css({ width : edwards_1W  });
+	    		$(".edwards_1").css({ height : edwards_1H  });
+	    		$(".james_1").css({ width : james_1W  });
+	    		$(".james_1").css({ height : james_1H  });
+	    		$(".Sally_1").css({ width : Sally_1W  });
+	    		$(".Sally_1").css({ height : Sally_1H  });
+		    }
+    		
+    		
 		  $(window).resize(function(){
 		    $('.browserH').css({ height: $(window).innerHeight() });
+		    if ($(window).height() <= 950) {
+		    	$(".device_intro").css({ width : device_introW*(4/5) });
+		    	$(".device_intro").css({ height: device_introH*(4/5) });
+		    	$(".leonard_1").css({ width : leonard_1W*(4/5) });
+		    	$(".leonard_1").css({ height : leonard_1H*(4/5) });
+		    	$(".brown_1").css({ width : brown_1W*(4/5) });
+		    	$(".brown_1").css({ height : brown_1H*(4/5) });
+	    		$(".edwards_1").css({ width : edwards_1W*(4/5) });
+	    		$(".edwards_1").css({ height : edwards_1H*(4/5) });
+	    		$(".james_1").css({ width : james_1W*(4/5) });
+	    		$(".james_1").css({ height : james_1H*(4/5) });
+	    		$(".Sally_1").css({ width : Sally_1W*(4/5) });
+	    		$(".Sally_1").css({ height : Sally_1H*(4/5) });
+	       }
+		    else{
+		    	$(".device_intro").css({ width : device_introW });
+		    	$(".device_intro").css({ height: device_introH });
+		    	$(".leonard_1").css({ width  : leonard_1W });
+		    	$(".leonard_1").css({ height : leonard_1H});
+		    	$(".brown_1").css({ width : brown_1W });
+		    	$(".brown_1").css({ height : brown_1H });
+	    		$(".edwards_1").css({ width : edwards_1W  });
+	    		$(".edwards_1").css({ height : edwards_1H  });
+	    		$(".james_1").css({ width : james_1W  });
+	    		$(".james_1").css({ height : james_1H  });
+	    		$(".Sally_1").css({ width : Sally_1W  });
+	    		$(".Sally_1").css({ height : Sally_1H  });
+		    }
 		  });
 		});
 	</script>
