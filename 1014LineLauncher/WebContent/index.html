@@ -72,125 +72,9 @@
       else window.addEventListener('load', cb);
     </script>
      -->
-    <style>
-@-webkit-keyframes round1 { 
-	0% {
-		-webkit-transform: rotate(0);
-	}
-	25%{
-		-webkit-transform: rotate(90deg);
-	}
-	50%{
-		-webkit-transform: rotate(180deg);
-	}
-	75%{
-		-webkit-transform: rotate(270deg);
-	}
-	100%{
-		-webkit-transform: rotate(360deg);
-	}
-}
-@
--moz-keyframes round1 { 0% {
-	-keyframes-transform: rotate(0);
-}
+<style>
 
-25%
-{
--keyframes-transform
-:
- 
-rotate
-(90deg);
-
-
-}
-50%
-{
--keyframes-transform
-:
- 
-rotate
-(180deg);
-
-
-}
-75%
-{
--keyframes-transform
-:
- 
-rotate
-(270deg);
-
-
-}
-100%
-{
--keyframes-transform
-:
- 
-rotate
-(360deg);
-
-
-}
-}
-@
-keyframes round1 { 0% {
-	transform: rotate(0);
-}
-25%
-{
-transform
-:
- 
-rotate
-(90deg);
-
-
-}
-50%
-{
-transform
-:
- 
-rotate
-(180deg);
-
-
-}
-75%
-{
-transform
-:
- 
-rotate
-(270deg);
-
-
-}
-100%
-{
-transform
-:
- 
-rotate
-(360deg);
-
-
-}
-}
-
-.themeShop{
-    animation: round1 5s linear infinite;
-	-webkit-animation-name: round1;
-	-webkit-animation-duration: 5s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	visibility: visible !important;
-}
-
+/*#Page1*/
 .pageTytle1{
 	font-size: 72px;
 	font-style:bold;
@@ -257,7 +141,75 @@ rotate
 	animation-duration: 3s; z-index: 503;
 }
 
+/*#Page2*/
+.pageTytle2{
+	font-family: 'Cambay', sans-serif;
+	font-size: 3em;
+	word-break:keep-all;
+	color: #555;
+}
+
+.theme_pack{
+	z-index: 500;
+}
+.theme_cover_1{
+    position: relative;
+	left: -30%;
+	top: 35%;
+}
+.theme_cover_2{
+    position: relative;
+	left: -18%;
+	top: -65%;
+}
+.theme_cover_3{
+    position: relative;
+	left: -6%;
+	top: -165%;
+}
+.theme_cover_4{
+    position: relative;
+	left: -30%;
+	top: -245%;
+}
+.theme_cover_5{
+    position: relative;
+	left: -18%;
+	top: -345%;
+}
+.theme_cover_6{
+    position: relative;
+	left: -6%;
+	top: -445%;
+}
+.theme_cover_7{
+    position: relative;
+	left: -30%;
+	top: -525%;
+}
+.theme_cover_8{
+    position: relative;
+	left: -18%;
+	top: -625%;
+}
+.theme_cover_9{
+    position: relative;
+	left: -6%;
+	top: -725%;
+}
+.device_none{
+	position: relative;
+	top: -865%;
+	left: 20%;
+}
+.theme_1_view{
+	position: relative;
+	top: -960%;
+	left: 20%;
+}
+
 @media screen and (max-height:950px) {
+/*#Page1*/
 .pageTytle1{
 	font-size: 60px;
 }
@@ -291,41 +243,107 @@ p{
 .sally_1{
 	left: 190px;
 }
+/*#Page2*/
+.pageTytle2{
+	font-size: 30px;
+}
+.device_none{
+	top: -863%;
+    left: 15%;
+}
+.theme_1_view{
+	top: -958%;
+    left: 15%;
+}
 }
 
-@media screen and (max-height:700px) {
+@media screen and (max-height:620px) {
+/*#Page1*/
 .pageTytle1{
-	font-size: 40px;
+	font-size: 30px;
 }
 
 p{
-	font-size: 15px;	
+	font-size: 10px;	
 }
 
 .btn_store{
-	margin: 33px auto 0 auto;
-    height: 42px;
+	margin: 35px auto 0 auto;
+    height: 30px;
 }
 
 .device_intro{
-    top: 56%;
+	top: 62%;
 }
 .leonard_1{
-    left: -200px;
+	left: -120px;
+	top: -36%;
 }
 .brown_1{
 	top: -128%;
-    left: -238px;
+    left: -150px;
 }
 .edward_1{
-	left: -320px;
+	left: -165px;
+    top: -208%;
 }
 .james_1{
-	left: 310px;
+	left: 155px;
+    top: -335%;
 }
 .sally_1{
-	left: 230px; 
+	left: 115px;
+    top: -410%; 
 }
+/*#Page2*/
+.pageTytle2{
+	font-size: 20px;
+}
+.device_none{
+	top: -857%;
+    left: 10%;
+}
+.theme_1_view{
+	top: -952.5%;
+    left: 10%;
+}
+.theme_cover_1{
+	left: -15%;
+    top: 40%;
+}
+.theme_cover_2{
+	left: -8%;
+    top: -60%;
+}
+.theme_cover_3{
+	left: -1%;
+    top: -160%;
+}
+.theme_cover_4{
+	left: -15%;
+    top: -240%;
+}
+.theme_cover_5{
+	left: -8%;
+    top: -340%;
+}
+.theme_cover_6{
+	left: -1%;
+    top: -440%;
+}
+.theme_cover_7{
+	left: -15%;
+    top: -520%;
+}
+.theme_cover_8{
+	left: -8%;
+    top: -620%;
+}
+.theme_cover_9{
+	left: -1%;
+    top: -720%;
+}
+
 }
 
 
@@ -389,7 +407,7 @@ p{
             	<img class="animated rotateInUpRight brown_1" style="" src="images/img_brown_1.png">
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
-            	<img class="animated rotateInUpLeft edward_1" style="" src="images/img_edwards_1.png">
+            	<img class="animated rotateInUpLeft edward_1" style="" src="images/img_edward_1.png">
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
             	<img class="animated fadeInLeft james_1" style="" src="images/img_james_1.png">
@@ -402,7 +420,7 @@ p{
             <div class="homebg02">
                 <div class="container">
                     <div class="row">
-                    	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all; color: #555;">V A R I O U S&nbsp;&nbsp;T H E M E</div>
+                    	<div class="pageTytle2" style="">V A R I O U S&nbsp;&nbsp;T H E M E</div>
                         <!-- <img class="logo_text" src="images/logo_text.png"/> -->
                         <div class="content">
                             <p class="grey">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
@@ -411,57 +429,57 @@ p{
                     </div>
                 </div>
             </div>
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -30%; top: 30%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_1.png">
+            <div class="conts browserH theme_cover_1">
+            	<img class="animated bounceInUp theme_pack theme_1" src="images/img_theme_1.png">
             	<p style="font-size: 3px; color: #000000;">LINE Friends</p>
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png">
+            	<img class="animated bounceInUp btn_download" style="" src="images/btn_download.png">
             </div>
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -18%; top: -70%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_2.png">
+            <div class="conts browserH theme_cover_2">
+            	<img class="animated bounceInUp theme_pack theme theme_2" src="images/img_theme_2.png">
             	<p style="font-size: 3px; color: #000000;">LINE Friends Cony</p>
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png">
+            	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -6%; top: -170%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_3.png">
+            <div class="conts browserH theme_cover_3">
+            	<img class="animated bounceInUp theme_pack theme_3" style="position: relative; top: 55%; left: 0;" src="images/img_theme_3.png">
             	<p style="font-size: 3px; color: #000000;">LINE Friends Brown</p>
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png">
+            	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -30%; top: -250%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_4.png">
+            <div class="conts browserH theme_cover_4">
+            	<img class="animated bounceInUp theme_pack theme_4" src="images/img_theme_4.png">
             	<p style="font-size: 3px; color: #000000;">Leornard Life</p>
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png">
+            	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>            
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -18%; top: -350%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_5.png">
+            <div class="conts browserH theme_cover_5">
+            	<img class="animated bounceInUp theme_pack theme_5" src="images/img_theme_5.png">
             	<p style="font-size: 3px; color: #000000;">GD X TAEYANG</p>
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png">
+            	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -6%; top: -450%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_6.png">
+            <div class="conts browserH  theme_cover_6">
+            	<img class="animated bounceInUp theme_pack theme_6" src="images/img_theme_6.png">
             	<p style="font-size: 3px; color: #000000;">Duck whoo</p>
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png">
+            	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>  
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -30%; top: -530%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_7.png">
+            <div class="conts browserH theme_cover_7">
+            	<img class="animated bounceInUp theme_pack theme_7" src="images/img_theme_7.png">
             	<p style="font-size: 3px; color: #000000;">Dark Chic</p>
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png">
+            	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>  
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -18%; top: -630%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_8.png">
+            <div class="conts browserH theme_cover_8">
+            	<img class="animated bounceInUp theme_pack theme_8" src="images/img_theme_8.png">
             	<p style="font-size: 3px; color: #000000;">Vivid Line</p>
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png">
+            	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>  
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -6%; top: -730%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_9.png">
+            <div class="conts browserH theme_cover_9">
+            	<img class="animated bounceInUp theme_pack theme_9" src="images/img_theme_9.png">
             	<p style="font-size: 3px; color: #000000;">B1A4 baro</p>
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/btn_download.png">
+            	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 20%; top: -925%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_device_none.png">
+            <div class="conts browserH" style="margin: 0px auto; position: relative;">
+            	<img class="animated bounceInUp device_none" src="images/img_device_none.png">
             
             </div>
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 20%; top: -1020%;">
-            	<img class="animated bounceInUp " style="position: relative; top: 55%; left: 0; margin:; z-index: 500;" src="images/img_theme_1_view.png">
+            <div class="conts browserH" style="margin: 0px auto; position: relative; ">
+            	<img class="animated bounceInUp theme_1_view" src="images/img_theme_1_view.png">
             </div>
             
             
@@ -641,6 +659,9 @@ p{
 	$(function(){
 		var locate = $(window).innerHeight()
 		
+ 		$('#section1').css({ height: $(window).innerHeight()});
+		$('#section1').css({ width: $(window).innerWidth()});
+		
 		  $('.browserH').css({ height: $(window).innerHeight() });
 /* 			var device_introW = $(".device_intro").width();
 			var device_introH = $(".device_intro").height();
@@ -648,86 +669,324 @@ p{
     		var leonard_1H = $(".leonard_1").height();
     		var brown_1W = $(".brown_1").width();
     		var brown_1H = $(".brown_1").height();
-    		var edwards_1W = $(".edwards_1").width();
-    		var edwards_1H = $(".edwards_1").height();
+    		var edward_1W = $(".edward_1").width();
+    		var edward_1H = $(".edward_1").height();
     		var james_1W = $(".james_1").width();
     		var james_1H = $(".james_1").height();
     		var Sally_1W = $(".Sally_1").width();
     		var Sally_1H = $(".Sally_1").height(); */
 
+    		//max-height: 일반
+    		///Page1
 			var device_introW = 402;
 			var device_introH = 516;
     		var leonard_1W = 194;
     		var leonard_1H = 196;
     		var brown_1W = 322;
     		var brown_1H = 464;
-    		var edwards_1W = 90;
-    		var edwards_1H = 102;
+    		var edward_1W = 90;
+    		var edward_1H = 102;
     		var james_1W = 244;
     		var james_1H = 471;
     		var Sally_1W = 144;
     		var Sally_1H = 218;
+    		///Page2
+    		var theme_W = 110;
+    		var theme_H = 110;
+    		var btn_download_W = 84;
+    		var btn_download_H = 19;
+    		var device_none_W = 290;
+    		var device_none_H = 564;
+    		var theme_1_view_W = 373;
+    		var theme_1_view_H = 450;
+    		///Page3
     		
     		
-		    if ($(window).height() <= 950) {
-		    	$(".device_intro").css({ width : device_introW*(4/5) });
-		    	$(".device_intro").css({ height: device_introH*(4/5) });
-		    	$(".leonard_1").css({ width : leonard_1W*(4/5) });
-		    	$(".leonard_1").css({ height : leonard_1H*(4/5) });
-		    	$(".brown_1").css({ width : brown_1W*(4/5) });
-		    	$(".brown_1").css({ height : brown_1H*(4/5) });
-	    		$(".edwards_1").css({ width : edwards_1W*(4/5) });
-	    		$(".edwards_1").css({ height : edwards_1H*(4/5) });
-	    		$(".james_1").css({ width : james_1W*(4/5) });
-	    		$(".james_1").css({ height : james_1H*(4/5) });
-	    		$(".Sally_1").css({ width : Sally_1W*(4/5) });
-	    		$(".Sally_1").css({ height : Sally_1H*(4/5) });
+    		//max-height: 950px (원본의 80%)
+    		///Page1
+    		var device_introW_2 = device_introW*(4/5);
+    		var device_introH_2 = device_introH*(4/5);
+    		var leonard_1W_2 = leonard_1W*(4/5);
+    		var leonard_1H_2 = leonard_1H*(4/5);
+    		var brown_1W_2 = brown_1W*(4/5);
+    		var brown_1H_2 = brown_1H*(4/5);
+    		var edward_1W_2 = edward_1W*(4/5);
+    		var edward_1H_2 = edward_1H*(4/5);
+    		var james_1W_2 = james_1W*(4/5);
+    		var james_1H_2 = james_1H*(4/5);
+    		var Sally_1W_2 = Sally_1W*(4/5);
+    		var Sally_1H_2 = Sally_1H*(4/5);
+    		///Page2
+    		var theme_W_2 = theme_W*(4/5);
+    		var theme_H_2 = theme_H*(4/5);
+    		var btn_download_W_2 = btn_download_W*(4/5);
+    		var btn_download_H_2 = btn_download_H*(4/5);
+    		var device_none_W_2 = device_none_W*(4/5);
+    		var device_none_H_2 = device_none_H*(4/5);
+    		var theme_1_view_W_2 = theme_1_view_W*(4/5);
+    		var theme_1_view_H_2 = theme_1_view_H*(4/5);
+    		///Page3
+    		
+    		
+    		//max-height: 620px (원본의1/2)
+    		///Page1
+    		var device_introW_3 = device_introW*(1/2);
+    		var device_introH_3 = device_introH*(1/2);
+    		var leonard_1W_3 = leonard_1W*(1/2);
+    		var leonard_1H_3 = leonard_1H*(1/2);
+    		var brown_1W_3 = brown_1W*(1/2);
+    		var brown_1H_3 = brown_1H*(1/2);
+    		var edward_1W_3 = edward_1W*(1/2);
+    		var edward_1H_3 = edward_1H*(1/2);
+    		var james_1W_3 = james_1W*(1/2);
+    		var james_1H_3 = james_1H*(1/2);
+    		var Sally_1W_3 = Sally_1W*(1/2);
+    		var Sally_1H_3 = Sally_1H*(1/2);
+    		///Page2
+    		var theme_W_3 = theme_W*(1/2);
+    		var theme_H_3 = theme_H*(1/2);
+    		var btn_download_W_3 = btn_download_W*(1/2);
+    		var btn_download_H_3 = btn_download_H*(1/2);
+    		var device_none_W_3 = device_none_W*(1/2);
+    		var device_none_H_3 = device_none_H*(1/2);
+    		var theme_1_view_W_3 = theme_1_view_W*(1/2);
+    		var theme_1_view_H_3 = theme_1_view_H*(1/2);
+
+    		
+		    if ($(window).height() <= 950 && $(window).height() > 620) {
+		    	///Page1
+		    	$(".device_intro").css({ width : device_introW_2 });
+		    	$(".device_intro").css({ height: device_introH_2 });
+		    	$(".leonard_1").css({ width : leonard_1W_2 });
+		    	$(".leonard_1").css({ height : leonard_1H_2 });
+		    	$(".brown_1").css({ width : brown_1W_2 });
+		    	$(".brown_1").css({ height : brown_1H_2 });
+	    		$(".edward_1").css({ width : edward_1W_2 });
+	    		$(".edward_1").css({ height : edward_1H_2 });
+	    		$(".james_1").css({ width : james_1W_2 });
+	    		$(".james_1").css({ height : james_1H_2 });
+	    		$(".Sally_1").css({ width : Sally_1W_2 });
+	    		$(".Sally_1").css({ height : Sally_1H_2 });
+	    		///Page2
+	    		$(".theme_1").css({ width : theme_W_2 });
+	    		$(".theme_1").css({ height : theme_H_2 });
+	    		$(".theme_2").css({ width : theme_W_2 });
+	    		$(".theme_2").css({ height : theme_H_2 });
+	    		$(".theme_3").css({ width : theme_W_2 });
+	    		$(".theme_3").css({ height : theme_H_2 });
+	    		$(".theme_4").css({ width : theme_W_2 });
+	    		$(".theme_4").css({ height : theme_H_2 });
+	    		$(".theme_5").css({ width : theme_W_2 });
+	    		$(".theme_5").css({ height : theme_H_2 });
+	    		$(".theme_6").css({ width : theme_W_2 });
+	    		$(".theme_6").css({ height : theme_H_2 });
+	    		$(".theme_7").css({ width : theme_W_2 });
+	    		$(".theme_7").css({ height : theme_H_2 });
+	    		$(".theme_8").css({ width : theme_W_2 });
+	    		$(".theme_8").css({ height : theme_H_2 });
+	    		$(".theme_9").css({ width : theme_W_2 });
+	    		$(".theme_9").css({ height : theme_H_2 });
+	    		$(".device_none").css({ width : device_none_W_2 });
+	    		$(".device_none").css({ height : device_none_H_2 });
+	    		$(".theme_1_view").css({ width : theme_1_view_W_2 });
+	    		$(".theme_1_view").css({ height : theme_1_view_H_2 });
 	       }
-		    else{
+		   else if ($(window).height() <= 620 ) {
+		    	///Page1
+		    	$(".device_intro").css({ width : device_introW_3 });
+		    	$(".device_intro").css({ height: device_introH_3 });
+		    	$(".leonard_1").css({ width : leonard_1W_3 });
+		    	$(".leonard_1").css({ height : leonard_1H_3 });
+		    	$(".brown_1").css({ width : brown_1W_3 });
+		    	$(".brown_1").css({ height : brown_1H_3 });
+	    		$(".edward_1").css({ width : edward_1W_3 });
+	    		$(".edward_1").css({ height : edward_1H_3 });
+	    		$(".james_1").css({ width : james_1W_3 });
+	    		$(".james_1").css({ height : james_1H_3 });
+	    		$(".Sally_1").css({ width : Sally_1W_3 });
+	    		$(".Sally_1").css({ height : Sally_1H_3 });
+	    		///Page2
+	    		$(".theme_1").css({ width : theme_W_3 });
+	    		$(".theme_1").css({ height : theme_H_3 });
+	    		$(".theme_2").css({ width : theme_W_3 });
+	    		$(".theme_2").css({ height : theme_H_3 });
+	    		$(".theme_3").css({ width : theme_W_3 });
+	    		$(".theme_3").css({ height : theme_H_3 });
+	    		$(".theme_4").css({ width : theme_W_3 });
+	    		$(".theme_4").css({ height : theme_H_3 });
+	    		$(".theme_5").css({ width : theme_W_3 });
+	    		$(".theme_5").css({ height : theme_H_3 });
+	    		$(".theme_6").css({ width : theme_W_3 });
+	    		$(".theme_6").css({ height : theme_H_3 });
+	    		$(".theme_7").css({ width : theme_W_3 });
+	    		$(".theme_7").css({ height : theme_H_3 });
+	    		$(".theme_8").css({ width : theme_W_3 });
+	    		$(".theme_8").css({ height : theme_H_3 });
+	    		$(".theme_9").css({ width : theme_W_3 });
+	    		$(".theme_9").css({ height : theme_H_3 });
+	    		$(".device_none").css({ width : device_none_W_3 });
+	    		$(".device_none").css({ height : device_none_H_3 });
+	    		$(".theme_1_view").css({ width : theme_1_view_W_3 });
+	    		$(".theme_1_view").css({ height : theme_1_view_H_3 });
+	       }
+		    else if ($(window).height() > 950 ){
+		    	///Page1
 		    	$(".device_intro").css({ width : device_introW });
 		    	$(".device_intro").css({ height: device_introH });
 		    	$(".leonard_1").css({ width  : leonard_1W });
 		    	$(".leonard_1").css({ height : leonard_1H});
 		    	$(".brown_1").css({ width : brown_1W });
 		    	$(".brown_1").css({ height : brown_1H });
-	    		$(".edwards_1").css({ width : edwards_1W  });
-	    		$(".edwards_1").css({ height : edwards_1H  });
+	    		$(".edward_1").css({ width : edward_1W  });
+	    		$(".edward_1").css({ height : edward_1H  });
 	    		$(".james_1").css({ width : james_1W  });
 	    		$(".james_1").css({ height : james_1H  });
 	    		$(".Sally_1").css({ width : Sally_1W  });
 	    		$(".Sally_1").css({ height : Sally_1H  });
+	    		///Page2
+	    		$(".theme_1").css({ width : theme_W });
+	    		$(".theme_1").css({ height : theme_H });
+	    		$(".theme_2").css({ width : theme_W });
+	    		$(".theme_2").css({ height : theme_H });
+	    		$(".theme_3").css({ width : theme_W });
+	    		$(".theme_3").css({ height : theme_H });
+	    		$(".theme_4").css({ width : theme_W });
+	    		$(".theme_4").css({ height : theme_H });
+	    		$(".theme_5").css({ width : theme_W });
+	    		$(".theme_5").css({ height : theme_H });
+	    		$(".theme_6").css({ width : theme_W });
+	    		$(".theme_6").css({ height : theme_H });
+	    		$(".theme_7").css({ width : theme_W });
+	    		$(".theme_7").css({ height : theme_H });
+	    		$(".theme_8").css({ width : theme_W });
+	    		$(".theme_8").css({ height : theme_H });
+	    		$(".theme_9").css({ width : theme_W });
+	    		$(".theme_9").css({ height : theme_H });
+	    		$(".device_none").css({ width : device_none_W });
+	    		$(".device_none").css({ height : device_none_H });
+	    		$(".theme_1_view").css({ width : theme_1_view_W });
+	    		$(".theme_1_view").css({ height : theme_1_view_H });
 		    }
     		
     		
 		  $(window).resize(function(){
+		 		$('#section1').css({ height: $(window).innerHeight()});
+				$('#section1').css({ width: $(window).innerWidth()});
+			  
 		    $('.browserH').css({ height: $(window).innerHeight() });
-		    if ($(window).height() <= 950) {
-		    	$(".device_intro").css({ width : device_introW*(4/5) });
-		    	$(".device_intro").css({ height: device_introH*(4/5) });
-		    	$(".leonard_1").css({ width : leonard_1W*(4/5) });
-		    	$(".leonard_1").css({ height : leonard_1H*(4/5) });
-		    	$(".brown_1").css({ width : brown_1W*(4/5) });
-		    	$(".brown_1").css({ height : brown_1H*(4/5) });
-	    		$(".edwards_1").css({ width : edwards_1W*(4/5) });
-	    		$(".edwards_1").css({ height : edwards_1H*(4/5) });
-	    		$(".james_1").css({ width : james_1W*(4/5) });
-	    		$(".james_1").css({ height : james_1H*(4/5) });
-	    		$(".Sally_1").css({ width : Sally_1W*(4/5) });
-	    		$(".Sally_1").css({ height : Sally_1H*(4/5) });
+		    if ($(window).height() <= 950 && $(window).height() > 620) {
+		    	///Page1
+		    	$(".device_intro").css({ width : device_introW_2 });
+		    	$(".device_intro").css({ height: device_introH_2 });
+		    	$(".leonard_1").css({ width : leonard_1W_2 });
+		    	$(".leonard_1").css({ height : leonard_1H_2 });
+		    	$(".brown_1").css({ width : brown_1W_2 });
+		    	$(".brown_1").css({ height : brown_1H_2 });
+	    		$(".edward_1").css({ width : edward_1W_2 });
+	    		$(".edward_1").css({ height : edward_1H_2 });
+	    		$(".james_1").css({ width : james_1W_2 });
+	    		$(".james_1").css({ height : james_1H_2 });
+	    		$(".Sally_1").css({ width : Sally_1W_2 });
+	    		$(".Sally_1").css({ height : Sally_1H_2 });
+	    		///Page2
+	    		$(".theme_1").css({ width : theme_W_2 });
+	    		$(".theme_1").css({ height : theme_H_2 });
+	    		$(".theme_2").css({ width : theme_W_2 });
+	    		$(".theme_2").css({ height : theme_H_2 });
+	    		$(".theme_3").css({ width : theme_W_2 });
+	    		$(".theme_3").css({ height : theme_H_2 });
+	    		$(".theme_4").css({ width : theme_W_2 });
+	    		$(".theme_4").css({ height : theme_H_2 });
+	    		$(".theme_5").css({ width : theme_W_2 });
+	    		$(".theme_5").css({ height : theme_H_2 });
+	    		$(".theme_6").css({ width : theme_W_2 });
+	    		$(".theme_6").css({ height : theme_H_2 });
+	    		$(".theme_7").css({ width : theme_W_2 });
+	    		$(".theme_7").css({ height : theme_H_2 });
+	    		$(".theme_8").css({ width : theme_W_2 });
+	    		$(".theme_8").css({ height : theme_H_2 });
+	    		$(".theme_9").css({ width : theme_W_2 });
+	    		$(".theme_9").css({ height : theme_H_2 });
+	    		$(".device_none").css({ width : device_none_W_2 });
+	    		$(".device_none").css({ height : device_none_H_2 });
+	    		$(".theme_1_view").css({ width : theme_1_view_W_2 });
+	    		$(".theme_1_view").css({ height : theme_1_view_H_2 });
 	       }
-		    else{
+		    else if ($(window).height() <= 620 ) {
+		    	///Page1
+		    	$(".device_intro").css({ width : device_introW_3 });
+		    	$(".device_intro").css({ height: device_introH_3 });
+		    	$(".leonard_1").css({ width : leonard_1W_3 });
+		    	$(".leonard_1").css({ height : leonard_1H_3 });
+		    	$(".brown_1").css({ width : brown_1W_3 });
+		    	$(".brown_1").css({ height : brown_1H_3 });
+	    		$(".edward_1").css({ width : edward_1W_3 });
+	    		$(".edward_1").css({ height : edward_1H_3 });
+	    		$(".james_1").css({ width : james_1W_3 });
+	    		$(".james_1").css({ height : james_1H_3 });
+	    		$(".Sally_1").css({ width : Sally_1W_3 });
+	    		$(".Sally_1").css({ height : Sally_1H_3 });
+	    		///Page2
+	    		$(".theme_1").css({ width : theme_W_3 });
+	    		$(".theme_1").css({ height : theme_H_3 });
+	    		$(".theme_2").css({ width : theme_W_3 });
+	    		$(".theme_2").css({ height : theme_H_3 });
+	    		$(".theme_3").css({ width : theme_W_3 });
+	    		$(".theme_3").css({ height : theme_H_3 });
+	    		$(".theme_4").css({ width : theme_W_3 });
+	    		$(".theme_4").css({ height : theme_H_3 });
+	    		$(".theme_5").css({ width : theme_W_3 });
+	    		$(".theme_5").css({ height : theme_H_3 });
+	    		$(".theme_6").css({ width : theme_W_3 });
+	    		$(".theme_6").css({ height : theme_H_3 });
+	    		$(".theme_7").css({ width : theme_W_3 });
+	    		$(".theme_7").css({ height : theme_H_3 });
+	    		$(".theme_8").css({ width : theme_W_3 });
+	    		$(".theme_8").css({ height : theme_H_3 });
+	    		$(".theme_9").css({ width : theme_W_3 });
+	    		$(".theme_9").css({ height : theme_H_3 });
+	    		$(".device_none").css({ width : device_none_W_3 });
+	    		$(".device_none").css({ height : device_none_H_3 });
+	    		$(".theme_1_view").css({ width : theme_1_view_W_3 });
+	    		$(".theme_1_view").css({ height : theme_1_view_H_3 });
+	       }
+		    else if ($(window).height() > 950 ){
+		    	///Page1
 		    	$(".device_intro").css({ width : device_introW });
 		    	$(".device_intro").css({ height: device_introH });
 		    	$(".leonard_1").css({ width  : leonard_1W });
 		    	$(".leonard_1").css({ height : leonard_1H});
 		    	$(".brown_1").css({ width : brown_1W });
 		    	$(".brown_1").css({ height : brown_1H });
-	    		$(".edwards_1").css({ width : edwards_1W  });
-	    		$(".edwards_1").css({ height : edwards_1H  });
+	    		$(".edward_1").css({ width : edward_1W  });
+	    		$(".edward_1").css({ height : edward_1H  });
 	    		$(".james_1").css({ width : james_1W  });
 	    		$(".james_1").css({ height : james_1H  });
 	    		$(".Sally_1").css({ width : Sally_1W  });
 	    		$(".Sally_1").css({ height : Sally_1H  });
+	    		///Page2
+	    		$(".theme_1").css({ width : theme_W });
+	    		$(".theme_1").css({ height : theme_H });
+	    		$(".theme_2").css({ width : theme_W });
+	    		$(".theme_2").css({ height : theme_H });
+	    		$(".theme_3").css({ width : theme_W });
+	    		$(".theme_3").css({ height : theme_H });
+	    		$(".theme_4").css({ width : theme_W });
+	    		$(".theme_4").css({ height : theme_H });
+	    		$(".theme_5").css({ width : theme_W });
+	    		$(".theme_5").css({ height : theme_H });
+	    		$(".theme_6").css({ width : theme_W });
+	    		$(".theme_6").css({ height : theme_H });
+	    		$(".theme_7").css({ width : theme_W });
+	    		$(".theme_7").css({ height : theme_H });
+	    		$(".theme_8").css({ width : theme_W });
+	    		$(".theme_8").css({ height : theme_H });
+	    		$(".theme_9").css({ width : theme_W });
+	    		$(".theme_9").css({ height : theme_H });
+	    		$(".device_none").css({ width : device_none_W });
+	    		$(".device_none").css({ height : device_none_H });
+	    		$(".theme_1_view").css({ width : theme_1_view_W });
+	    		$(".theme_1_view").css({ height : theme_1_view_H });
 		    }
 		  });
 		});

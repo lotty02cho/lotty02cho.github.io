@@ -343,6 +343,7 @@ ul {
 
 .section .content, .section .content_cn {
 	margin-top: .5em;
+	margin-bottom: .5em;
 	font-size: 1.25em;
 	filter: alpha(opacity = 0);
 	-moz-opacity: 0;
