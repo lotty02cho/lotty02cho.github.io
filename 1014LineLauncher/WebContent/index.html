@@ -148,7 +148,6 @@
 	word-break:keep-all;
 	color: #555;
 }
-
 .theme_pack{
 	z-index: 500;
 }
@@ -346,6 +345,92 @@ p{
 
 }
 
+.clean_ani_1 {
+  -webkit-animation-name: clean_ani_1;
+  animation-name: clean_ani_1;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes clean_ani_1 {
+  0% {
+    opacity:1;
+  }
+  32%{
+    opacity:1;
+  }
+
+  33% {
+    opacity:0;
+  }
+  66% {
+    opacity:0;
+  }
+  90%{
+  	opacity:0;
+  }
+  100%{
+  	opacity:1;
+  }
+}
+
+.clean_ani_2 {
+  -webkit-animation-name: clean_ani_2;
+  animation-name: clean_ani_2;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes clean_ani_2 {
+  0% {
+    opacity:0;
+  }
+  32%{
+    opacity:0;
+  }
+  33% {
+    opacity:1;
+  }
+  66% {
+    opacity:1;
+  }
+  90%{
+  	opacity:1;
+  }
+  100%{
+  	opacity:0;
+  }
+}
+
+.clean_ani_3 {
+  -webkit-animation-name: clean_ani_3;
+  animation-name: clean_ani_3;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes clean_ani_3 {
+  0% {
+    opacity:0;
+  }
+
+  33% {
+    opacity:0;
+    transform: translateY(-30px);
+  }
+  66% {
+    opacity:1;
+    transform: translateY(0px);
+  }
+  90%{
+  	opacity:0;
+    transform: translateY(30px);
+  }
+  100%{
+  	opacity:0;
+  	
+  }
+}
 
 </style>
 
@@ -491,14 +576,14 @@ p{
                     	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">S T Y L I S H</div>
                         <!-- <img class="logo_text" src="images/logo_text.png"/> -->
                         <div class="content">
-                            <p class="grey">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
-                            <p class="grey">KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                            <p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -40%; top: -5%;">
-            	<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 3s; z-index: 500;" src="images/img_icons_1.png">
+            <div class="conts browserH" style="margin: auto; position: relative; left: 0%; /* margin: 0px auto; position: relative;*/">
+            	<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 3s; z-index: 500; left: -40%; top: -5%;" src="images/img_icons_1.png">
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: -20%; top: -70%;">
 				<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 2s;  z-index: 500;" src="images/img_icons_2.png">
@@ -516,10 +601,16 @@ p{
 				<img class="animated pulse" style="position: relative; animation-iteration-count: infinite; animation-duration: 3.5s; z-index: 500;" src="images/img_icons_6.png">
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: -565%;">
-				<img class="animated bounce" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/img_device_none.png">
+				<img class="animated" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/img_device_none.png">
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: -660%;">
-				<img class="animated bounce" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/img_basictheme.png">
+				<img class="animated" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/img_basictheme.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; ">
+				<img class="animated wobble" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 501; left: -10%; top: -738%" src="images/img_cony_1.png">
+            </div>
+            <div class="conts browserH" style="margin: auto; position: relative; left: 14.5%; top: -860%;">
+				<img class="animated" style="position: relative; animation-iteration-count: infinite; animation-duration: 5s; z-index: 499;" src="images/img_sally_2.png">
             </div>
         </div>
         <div class="section fp-section" id="section4" data-anchor="Clever" style="background-color: rgb(0, 190, 104);">
@@ -528,13 +619,29 @@ p{
                     <div class="row">
                     	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">C L E V E R</div>
                         <div class="content">
-                            <p>Personalize: Customize with delightful themes, wallpapers, and fonts. Updated weekly, all free.</p>
+                            <p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: 30%;">
-				<img class="animated" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/img_device_none.png">
+				<img class="animated " style="position: relative;   z-index: 500;" src="images/img_device_none.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: -65%;">
+				<img class="animated clean_ani_1" style="position: relative;   z-index: 500;" src="images/img_cleanertheme_1.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: -165%;">
+				<img class="animated clean_ani_2" style="position: relative;   z-index: 500;" src="images/img_cleanertheme_2.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 1%; top: -258%;">
+				<img class="animated clean_ani_3" style="position: relative;   z-index: 500;" src="images/img_cleaner_pop.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: -15%; top: -340%;">
+				<img class="animated" style="position: relative;   z-index: 500;" src="images/img_boss_1.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 15%; top: -427%;">
+				<img class="animated" style="position: relative;   z-index: 500;" src="images/img_Sally_3.png">
             </div>
         </div>
         <div class="section fp-section" id="section5" data-anchor="Download" style="background-color: rgb(0, 166, 255);">
@@ -545,16 +652,21 @@ p{
                         <div class="content">
                             <p>Gestures: Quickly navigate your device, rearrange your screens, and access special features.</p>
                         </div>
+                        <img class="animated" style="position: relative; animation-iteration-count: infinite; margin: 80px; animation-duration: 10s; z-index: 500;" src="images/img_appicon.png">
+                        <p style="font-size: 40px; margin: 10px;">LINE's Official Launcher app</p>
+                        <img class="animated" style="position: relative; animation-iteration-count: infinite; margin: 40px; animation-duration: 10s; z-index: 500;" src="images/btn_store.png">
                     </div>
-                    <div class="conts" style="position: absolute; top: 25%; left: 0; width: 100%; z-index: 1000;">
-						<div class="phone" style="width: 20.5em; height: 40em; margin: 0px auto; background: url(http://static.naver.net/m/vlive/incomms/pc/2015/img_sec3_phone.png) no-repeat; position: relative; left: 0%;">
-							<video style="width: 17.5em; height: 31em; display: inline; margin-top: 5em;" autoplay="autoplay" loop="loop">
-								<source src="http://event.dn.naver.net/naver/event/static/globalv/v_info_4Mbps.mp4" type="video/mp4">
-							</video>
-						</div>
-					</div>
                 </div>
             </div>
+<!--             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: 30%;">
+				<img class="animated" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/img_appicon.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: -45%;">
+				<p style="font-size: 40px;">LINE's Official Launcher app</p>
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: -130%;">
+				<img class="animated" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/btn_store.png">
+            </div> -->
         </div>
         <div class="section fp-section" id="section6" data-anchor="Download" style="background-color: rgb(0, 166, 255);">
             <div class="homebg06">
@@ -562,7 +674,7 @@ p{
                     <div class="row">
                     	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">C L E V E R</div>
                         <div class="content">
-                            <p>Gestures: Quickly navigate your device, rearrange your screens, and access special features.</p>
+                            <p>Videos: Video is video and video is also video. I like video, and you like video too.</p>
                         </div>
                     </div>
                     <div class="conts" style="position: absolute; top: 25%; left: 0; width: 100%; z-index: 1000;">
@@ -576,7 +688,53 @@ p{
             </div>
         </div>
     </div>
-    
+<!--     <div id="infoMenu" style="height: 20px; color: #f2f2f2; position: fixed; z-index: 70; bottom: 0; width: 100%; text-align: right; font-size: 0.9em; padding: 8px 0 8px 0;">
+    <ul>
+        <li style="display: inline-block;"><a href="https://goo.gl/HuFudq">Wordpress theme</a></li>
+        <li style="display: inline-block;"><a href="https://github.com/alvarotrigo/fullPage.js/archive/master.zip">Download</a></li>
+        <li style="display: inline-block;">
+            <a href="#" id="showExamples">Examples</a>
+            <div id="examplesList">
+                <div class="column">
+                    <h3>Navigation</h3>
+                    <ul>
+                    <li style="display: inline-block;"><a href="examples/scrollBar.html">Scroll Bar Enabled</a></li>
+                    <li style="display: inline-block;"><a href="examples/normalScroll.html">Normal scrolling</a></li>
+                    <li style="display: inline-block;"><a href="examples/continuous.html">Continuous vertical</a></li>
+                    <li style="display: inline-block;"><a href="examples/noAnchor.html">Without anchor links (same URL)</a></li>
+                    <li style="display: inline-block;"><a href="examples/navigationV.html">Vertical navigation dots</a></li>
+                    <li style="display: inline-block;"><a href="examples/navigationH.html">Horizontal navigation dots</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Design</h3>
+                    <ul>
+                        <li style="display: inline-block;"><a href="examples/responsive.html">Responsive</a></li>
+                        <li style="display: inline-block;"><a href="examples/backgrounds.html">Full backgrounds</a></li>
+                        <li style="display: inline-block;"><a href="examples/videoBackground.html">Full background videos</a></li>
+                        <li style="display: inline-block;"><a href="examples/autoHeight.html">Auto-height sections</a></li>
+                        <li style="display: inline-block;"><a href="examples/gradientBackgrounds.html">Gradient backgrounds</a></li>
+                        <li style="display: inline-block;"><a href="examples/scrolling.html">Scrolling inside sections and slides</a></li>
+                        <li style="display: inline-block;"><a href="examples/fixedHeaders.html">Adding fixed header and footer</a></li>
+                        <li style="display: inline-block;"><a href="examples/oneSection.html">One single section</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Other</h3>
+                    <ul>
+                        <li style="display: inline-block;"><a href="examples/apple.html">Animations on scrolling</a></li>
+                        <li style="display: inline-block;"><a href="examples/callbacks.html">Callbacks</a></li>
+                        <li style="display: inline-block;"><a href="examples/methods.html">Functions and methods</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </li>
+        <li style="display: inline-block;"><a href="https://github.com/alvarotrigo/fullPage.js#fullpagejs">Documentation</a></li>
+        <li style="display: inline-block;"><a href="http://alvarotrigo.com/#contact-page">Contact</a></li>
+    </ul>
+</div> -->
+
 <!--     downlad button
     <div class="download_button">
         <a href="https://play.google.com/store/apps/details?id=com.hola.launcher" class="googleplay" target="_blank">Google Play</a>
@@ -991,7 +1149,23 @@ p{
 		  });
 		});
 	</script>
-    
+<!--     <script>
+    $(window).keydown(function(event) 
+    		{
+    		    if((event.keyCode == 107 && event.ctrlKey == true) || (event.keyCode == 109 && event.ctrlKey == true))
+    		    {
+    		        event.preventDefault(); 
+    		    }
+
+    		    $(window).bind('mousewheel DOMMouseScroll', function(event) 
+    		    {
+    		        if(event.ctrlKey == true)
+    		        {
+    		            event.preventDefault(); 
+    		        }
+    		    });
+    		});
+    </script> -->
 <!--     fullpage.css
     <script>
       var cb = function() {
