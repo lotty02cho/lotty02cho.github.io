@@ -432,6 +432,14 @@ p{
   }
 }
 
+
+.hoverOk{
+	opacity: 1;
+}
+.hoverNo{
+	opacity: 0;
+}
+
 </style>
 
 </head>
@@ -520,12 +528,12 @@ p{
             	<img class="animated bounceInUp btn_download" style="" src="images/btn_download.png">
             </div>
             <div class="conts browserH theme_cover_2">
-            	<img class="animated bounceInUp theme_pack theme theme_2" src="images/img_theme_2.png">
+            	<img class="animated bounceInUp theme_pack theme theme_2" style = "z-index: 900px;"src="images/img_theme_2.png">
             	<p style="font-size: 3px; color: #000000;">LINE Friends Cony</p>
             	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>
             <div class="conts browserH theme_cover_3">
-            	<img class="animated bounceInUp theme_pack theme_3" style="position: relative; top: 55%; left: 0;" src="images/img_theme_3.png">
+            	<img class="animated bounceInUp theme_pack theme_3" style="position: relative; " src="images/img_theme_3.png">
             	<p style="font-size: 3px; color: #000000;">LINE Friends Brown</p>
             	<img class="animated bounceInUp btn_download" src="images/btn_download.png">
             </div>
@@ -564,7 +572,7 @@ p{
             
             </div>
             <div class="conts browserH" style="margin: 0px auto; position: relative; ">
-            	<img class="animated bounceInUp theme_1_view" src="images/img_theme_1_view.png">
+            	<img class="animated bounceInUp theme_1_view" style="" src="images/img_theme_1_view.png">
             </div>
             
             
@@ -1165,6 +1173,20 @@ p{
     		        }
     		    });
     		});
+    
+/*     $("").hover(function(){
+        $(".theme_1_view").css("opacity", 0.5);
+    }); */
+    
+    $( ".theme_2" )
+    .mouseover(function() {
+    	$( ".theme_1_view" ).css("opacity", 0.5);
+    })
+    .mouseout(function() {
+    	$( ".theme_1_view" ).css("opacity", 1);
+    });
+    
+    
 </script>
 <!--     fullpage.css
     <script>
