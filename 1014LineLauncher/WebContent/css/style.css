@@ -691,3 +691,397 @@ div.homebg06{
 	color: #008BE3;
 	text-decoration: underline;
 }
+
+
+/*PAGE 별 미디어쿼리 처리*/
+
+/*#Page1*/
+.pageTite_main {
+	font-size: 72px;
+	font-style: bold;
+	fontword-break: keep-all;
+}
+
+.btn_store {
+	position: relative;
+	top: 25%;
+	left: 0;
+	margin: 66px auto 0 auto;
+}
+
+.device_intro {
+	position: relative;
+	top: 55%;
+	left: 0;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+}
+
+.leonard_1 {
+	position: relative;
+	top: -40%;
+	left: -240px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.8s;
+}
+
+.brown_1 {
+	position: relative;
+	top: -130%;
+	left: -290px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.7s;
+	z-index: 501;
+}
+
+.edward_1 {
+	position: relative;
+	top: -208%;
+	left: -320px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.8s;
+	z-index: 502;
+}
+
+.james_1 {
+	position: relative;
+	top: -340%;
+	left: 310px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.9s;
+	z-index: 499;
+}
+
+.sally_1 {
+	position: relative;
+	top: -415%;
+	left: 230px;
+	margin: 0 auto 0 auto;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	z-index: 503;
+}
+
+/*#Page2*/
+.pageTitle_black {
+	font-family: 'Cambay', sans-serif;
+	font-size: 3em;
+	word-break: keep-all;
+	color: #555;
+}
+
+.theme_pack {
+	margin: 15% 30px;
+}
+
+.device_none {
+	position: relative;
+	top: -65%;
+	left: 280px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.8s;
+}
+
+.theme_1_view {
+	position: relative;
+	top: -160%;
+	left: 280px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.8s;
+}
+
+/*#Page3*/
+.pageTitle_white {
+	font-family: 'Cambay', sans-serif;
+	font-size: 3em;
+	word-break: keep-all;
+}
+
+.device_none2 {
+	position: relative;
+	top: 35%;
+	left: 0px;
+	margin: 0px auto;
+	z-index: 500;
+	width: 290px;
+	height: 564px;
+}
+
+.basictheme1 {
+	position: relative;
+	top: -60%;
+	left: 0;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+}
+
+.cony_1 {
+	position: relative;
+	top: -140%;
+	left: -200px;
+	margin: 0 auto 0 auto;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	z-index: 501;
+}
+
+.sally_2 {
+	position: relative;
+	top: -260%;
+	left: 170px;
+	margin: 0 auto 0 auto;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	z-index: 499;
+}
+
+.icons_1 {
+	position: relative;
+	top: -405%;
+	left: -40%;
+	margin: 0 auto 0 auto;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	z-index: 400;
+}
+
+.icons_2 {
+	position: relative;
+	top: -460%;
+	left: -20%;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	z-index: 400;
+}
+
+.icons_3 {
+	position: relative;
+	top: -535%;
+	left: -38%;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	z-index: 400;
+}
+
+.icons_4 {
+	position: relative;
+	top: -620%;
+	left: -30%;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	z-index: 400;
+}
+
+.icons_5 {
+	position: relative;
+	top: -800%;
+	left: 35%;
+	animation-iteration-count: infinite;
+	animation-duration: 2.5s;
+	z-index: 400;
+}
+
+.icons_6 {
+	position: relative;
+	top: -830%;
+	left: 45%;
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	z-index: 400;
+}
+
+/*#Page4*/
+.cleanertheme_1 {
+	position: relative;
+	top: -60%;
+	left: 0;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+	
+	-webkit-animation-name: clean_ani_1;
+	animation-name: clean_ani_1;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
+
+.cleanertheme_2 {
+	position: relative;
+	top: -160%;
+	left: 0;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+	
+	-webkit-animation-name: clean_ani_2;
+	animation-name: clean_ani_2;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
+
+.cleaner_pop {
+	position: relative;
+	top: -252%;
+	left: 36px;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+	
+	-webkit-animation-name: clean_ani_3;
+	animation-name: clean_ani_3;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
+
+.boss_1 {
+	position: relative;
+	top: -335%;
+	left: -300px;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+}
+
+.Sally_3 {
+	position: relative;
+	top: -422%;
+	left: 300px;
+	z-index: 500;
+}
+
+@media screen and (max-height:950px) {
+	/*#Page1*/
+	.pageTite_main {
+		font-size: 60px;
+	}
+	p {
+		font-size: 18px;
+	}
+	.btn_store {
+		margin: 33px auto 0 auto;
+		height: 42px;
+	}
+	.device_intro {
+		top: 56%;
+	}
+	.leonard_1 {
+		left: -200px;
+	}
+	.brown_1 {
+		top: -128%;
+		left: -238px;
+	}
+	.edward_1 {
+		top: -210%;
+		left: -255px;
+	}
+	.james_1 {
+		left: 245px;
+	}
+	.sally_1 {
+		left: 190px;
+	}
+	/*#Page2*/
+	.pageTitle_black {
+		font-size: 30px;
+	}
+	.theme_pack {
+		margin: 10% 10px;
+	}
+	.device_none {
+		top: -68%;
+		left: 260px;
+	}
+	.theme_1_view {
+		top: -163.5%;
+		left: 260px;
+	}
+
+	/*Page3*/
+	.pageTitle_white {
+		font-size: 30px;
+	}
+	.cony_1 {
+		top: -140%;
+		left: -170px;
+	}
+	.sally_2 {
+		left: 135px;
+	}
+}
+
+@media screen and (max-height:620px) {
+	/*#Page1*/
+	.pageTite_main {
+		font-size: 30px;
+	}
+	p {
+		font-size: 10px;
+	}
+	.btn_store {
+		margin: 35px auto 0 auto;
+		height: 30px;
+	}
+	.device_intro {
+		top: 62%;
+	}
+	.leonard_1 {
+		left: -120px;
+		top: -36%;
+	}
+	.brown_1 {
+		top: -128%;
+		left: -150px;
+	}
+	.edward_1 {
+		left: -165px;
+		top: -208%;
+	}
+	.james_1 {
+		left: 155px;
+		top: -335%;
+	}
+	.sally_1 {
+		left: 115px;
+		top: -410%;
+	}
+	/*#Page2*/
+	.pageTitle_black {
+		font-size: 20px;
+	}
+	.theme_pack {
+		margin: 5% 5px;
+	}
+	.device_none {
+		top: -65%;
+		left: 165px;
+	}
+	.theme_1_view {
+		top: -161%;
+		left: 8.6%;
+	}
+	.pageTite_main {
+		font-size: 20px;
+	}
+	.pageTitle_white {
+		font-size: 20px;
+	}
+	/*#Page3*/
+	.cony_1 {
+		top: -145%;
+		left: -100px;
+	}
+	.sally_2 {
+		left: 85px;
+	}
+}
+
+
+.hoverOk {
+	opacity: 1;
+}
+
+.hoverNo {
+	opacity: 0;
+}
+
+
+
+
