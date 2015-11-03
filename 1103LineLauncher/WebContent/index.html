@@ -58,7 +58,7 @@
                 if (browser.indexOf(mobileAgent[i]) != -1) { 
                     isMobile = true; 
                     window.location.href = 'http://' + window.location.host +　'/mobile/index.html';
-                    $( "#menu" ).hide();
+                    $( "#menu" ).css("visibility", "hidden");
                     break; 
                 } 
             }
@@ -521,15 +521,6 @@ opacity:0;
 		</div>
 		<div class="section" id="section5">
 			<div class="homebg05">
-<!-- 				<div class="container">
-					<div class="row">
-						<img class="logo_text" src="images/logo_text.png" />
-						<div class="content">
-							<P>Gestures: Quickly navigate your device, rearrange your
-								screens, and access special features.</P>
-						</div>
-					</div>
-				</div> -->
 				<div align="center">
 					<img class="animated bounceInUp appicon"
 						style="position: absolute; z-index: 100;"
@@ -581,8 +572,8 @@ opacity:0;
         //fullpage plugin
          $(function() {
             $('#fullpage').fullpage({
-                sectionsColor: ['#00a6ff', '#efefef', '#6962C9', '#00BE68', '#00a6ff'/* , '#000' */],
-                anchors: ['Line', 'VariousTheme', 'Stylish', 'Clever', 'Download'/*,  'Video' */],
+                sectionsColor: ['#00a6ff', '#efefef', '#6962C9', '#00BE68', '#00a6ff'],
+                anchors: ['Line', 'VariousTheme', 'Stylish', 'Clever', 'Download'],
                 menu :'#menu',
                 verticalCentered: false,
                 css3: true,
