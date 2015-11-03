@@ -546,9 +546,17 @@ opacity:0;
 	<script src="javascripts/jquery.fullPage.min.js"></script>
 	<script src="javascripts/resourceArrangement.js"></script>
 	<script type="text/javascript">
+	if(!!window.webkitNotifications) {
+	     alert("현재 브라우저는 Notifications를 지원합니다")
+	}
+	else{
+	      alert("현재 브라우저는Notifications를 지원하지 않습니다")
+	}
 	alert(isMobile);
 	if(isMobile){
         $( "#menu" ).css("visibility", "hidden");
+        $( ".theme_name" ).css("font-size", "5px");
+        $( ".content p" ).css("font-size", "1em");
 	}
         //resize
         var winIE = (navigator.userAgent.indexOf("Opera") == -1 && (document.getElementByIdx &&  document.documentElement.behaviorUrns))  ? true : false;
@@ -616,7 +624,6 @@ opacity:0;
     </script>
 	<script>
 	$(function(){
-        alert(document.documentElement.clientWidth);
 		var windowH = $(window).innerHeight();
 		var windowW = $(window).innerWidth();
 		var device_introW = 402;
