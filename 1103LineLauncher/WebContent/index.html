@@ -12,9 +12,6 @@
 <meta name="keywords"
 	content="안드로이드 바탕 화면, 폰패션, 모바일 애플리케이션, 안드로이드 응용 프로그램 시장, 검색, 테마, 배경 화면">
 
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
 <!-- 구글봇과 크롤러에 영향을 주는 태그. -->
 <meta name="googlebot" content="all">
 <meta name="robots" content="all">
@@ -609,26 +606,7 @@ opacity:0;
                     }
                 }
             });
-        });
-        
-  	   $(window).keydown(function(event) 
-  		   		{
-  		   		    if((event.keyCode == 107 && event.ctrlKey == true) || (event.keyCode == 109 && event.ctrlKey == true))
-  		   		    {
-  		   		        event.preventDefault(); 
-  		   		    }
-  		
-  		   		    $(window).bind('mousewheel DOMMouseScroll', function(event) 
-  		   		    {
-  		   		        if(event.ctrlKey == true)
-  		   		        {
-  		   		            event.preventDefault(); 
-  		   		        }
-  		   		    });
-  		   		    });
-        
-        
-        
+        }); 
     </script>
 	<script>
 	$(function(){
