@@ -298,6 +298,21 @@ opacity:0;
 }
 }
 
+.theme_phone {
+	width: 272px;
+	height: 450px;
+	background: url(images/theme_Phone.png) left center;
+	position: absolute;
+	bottom: 0px;
+	z-index: 800;
+	animation: play 10s steps(9) infinite;
+}
+
+@keyframes play{
+	100% { background-position: -2448px;}
+}
+
+
 
 </style>
 
@@ -464,7 +479,7 @@ opacity:0;
             	<img class="animated bounceInUp device_none" style="position: absolute; bottom: 0px; z-index: 100;" src="images/img_device_none.png">
 			</div>
 			<div class="conts browserH" style="position: absolute; z-index: 101;">
-            	<img class="animated theme_1_view" style="position: absolute; bottom: 0px; z-index: 100;" src="images/img_theme_1_view.png">
+            	<div class="animated theme_phone" style="position: absolute; bottom: 0px; z-index: 100;" src="images/theme_phone.png"></div>
 			</div>
             </div>
 		</div>
@@ -717,14 +732,14 @@ opacity:0;
 		
  		var theme_1_viewW = 373;
 		var theme_1_viewH = 450; 
-		$('.theme_1_view').css({ top: windowH/2-(device_noneH/2)+80+52}); //52
-		$('.theme_1_view').css({ left: windowW/2-(device_noneW/2)+250-42}); //-42
-		$('.theme_1_view').css("opacity", 0);
-		$(".theme_2").hover(function(){
-		    $('.theme_1_view').css("opacity", 1);
+		$('.theme_phone').css({ top: windowH/2-(device_noneH/2)+80+52}); //52
+		$('.theme_phone').css({ left: windowW/2-(device_noneW/2)+250+9}); //-42
+/*		$('.theme_phone').css("opacity", 0);
+ 		$(".theme_2").hover(function(){
+		    $('.theme_phone').css("opacity", 1);
 		    }, function(){
-		    $('.theme_1_view').css("opacity", 0);
-		});
+		    $('.theme_phone').css("opacity", 0);
+		}); */
 		
 		/*Page3*/
 		var device_none2W = 290;
@@ -856,8 +871,8 @@ opacity:0;
 			$('.device_none').css({ left: windowW/2-(device_noneW/2)+250});
 	 		var theme_1_viewW = 373;
 			var theme_1_viewH = 450; 
-			$('.theme_1_view').css({ top: windowH/2-(device_noneH/2)+80+52}); //52
-			$('.theme_1_view').css({ left: windowW/2-(device_noneW/2)+250-42}); //-42
+			$('.theme_phone').css({ top: windowH/2-(device_noneH/2)+80+52}); //52
+			$('.theme_phone').css({ left: windowW/2-(device_noneW/2)+250+9}); //-42
 			
 			/*Page3*/
 			var device_none2W = 290;
