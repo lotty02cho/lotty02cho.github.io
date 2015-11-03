@@ -77,7 +77,7 @@ ul {
 	text-decoration: none;
 	text-indent: -999em;
 	display: block;
-	width: 125px;
+	width: 160px;
 	height: 39px;
 }
 
@@ -247,7 +247,8 @@ ul {
 }
 
 .section .logo_title {
-	width: 14em;
+	width: 18em;
+	height: 7em;
 	margin: 0 auto 0.7em auto;
 }
 
@@ -289,10 +290,10 @@ ul {
 }
 
 #section1 {
-	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 444, from(#00bfff),
+/* 	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 444, from(#00bfff),
 		to(#0081dc));
 	background-image: -moz-radial-gradient(50% 50%, #00bfff, #0081dc 50%);
-	background-image: -ms-radial-gradient(50% 50%, #00bfff, #0081dc 50%);
+	background-image: -ms-radial-gradient(50% 50%, #00bfff, #0081dc 50%); */
 	filter: progid:DXImageTransform.Microsoft.gradient( GradientType= 0,
 		startColorstr= '#00bfff', endColorstr= '#0081dc');
 	-ms-filter:
@@ -300,10 +301,10 @@ ul {
 }
 
 #section2 {
-	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 444, from(#6b30ff),
+/*	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 444, from(#6b30ff),
 		to(#3d1b91));
 	background-image: -moz-radial-gradient(50% 50%, #6b30ff, #3d1b91 50%);
-	background-image: -ms-radial-gradient(50% 50%, #6b30ff, #3d1b91 50%);
+	background-image: -ms-radial-gradient(50% 50%, #6b30ff, #3d1b91 50%); */
 	filter: progid:DXImageTransform.Microsoft.gradient( GradientType= 0,
 		startColorstr= '#6b30ff', endColorstr= '#3d1b91');
 	-ms-filter:
@@ -315,10 +316,10 @@ ul {
 }
 
 #section4 {
-	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 423, from(#ffffff),
+/* 	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 423, from(#ffffff),
 		to(#cacaca));
 	background-image: -moz-radial-gradient(50% 50%, #ffffff, #cacaca 50%);
-	background-image: -ms-radial-gradient(50% 50%, #ffffff, #cacaca 50%);
+	background-image: -ms-radial-gradient(50% 50%, #ffffff, #cacaca 50%); */
 	filter: progid:DXImageTransform.Microsoft.gradient( GradientType= 0,
 		startColorstr= '#ffffff', endColorstr= '#cacaca');
 	-ms-filter:
@@ -367,19 +368,19 @@ div.homebg01, div.homebg02, div.homebg03, div.homebg04, div.homebg05 {
 }
 
 div.homebg01 {
-	background: url(../images/holabg01.png) no-repeat;
+	background: url(../images/linebg01.png) no-repeat;
 	background-position: center 20%;
 	background-size: 52% auto;
 }
 
 div.homebg02 {
-	background: url(../images/holabg02.png) no-repeat;
+/* 	background: url(../images/holabg02.png) no-repeat; */
 	background-position: center 20%;
 	background-size: 52% auto;
 }
 
 div.homebg03 {
-	background: url(../images/holabg03.png) no-repeat;
+/* 	background: url(../images/holabg03.png) no-repeat; */
 	background-position: center 20%;
 	background-size: 52% auto;
 }

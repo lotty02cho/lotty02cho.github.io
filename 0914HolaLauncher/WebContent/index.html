@@ -25,9 +25,12 @@
         
         <meta name="Resource-type" content="Document">   
         <link rel="icon" href="images/logo.png" type="image/x-icon">
+        
+        <link href='https://fonts.googleapis.com/css?family=Cambay:700' rel='stylesheet' type='text/css'>
+        
         <!-- <link rel="stylesheet" type="text/css" href="css/fullpage.css"> -->
         <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-<!--         <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
         <script>
             /*jump to the right language*/
             ;if (window.navigator.language) {
@@ -68,7 +71,129 @@
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
     </script>
-    </head>
+    
+    <style>
+@-webkit-keyframes round1 { 
+	0% {
+		-webkit-transform: rotate(0);
+	}
+	25%{
+		-webkit-transform: rotate(90deg);
+	}
+	50%{
+		-webkit-transform: rotate(180deg);
+	}
+	75%{
+		-webkit-transform: rotate(270deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@
+-moz-keyframes round1 { 0% {
+	-keyframes-transform: rotate(0);
+}
+
+25%
+{
+-keyframes-transform
+:
+ 
+rotate
+(90deg);
+
+
+}
+50%
+{
+-keyframes-transform
+:
+ 
+rotate
+(180deg);
+
+
+}
+75%
+{
+-keyframes-transform
+:
+ 
+rotate
+(270deg);
+
+
+}
+100%
+{
+-keyframes-transform
+:
+ 
+rotate
+(360deg);
+
+
+}
+}
+@
+keyframes round1 { 0% {
+	transform: rotate(0);
+}
+25%
+{
+transform
+:
+ 
+rotate
+(90deg);
+
+
+}
+50%
+{
+transform
+:
+ 
+rotate
+(180deg);
+
+
+}
+75%
+{
+transform
+:
+ 
+rotate
+(270deg);
+
+
+}
+100%
+{
+transform
+:
+ 
+rotate
+(360deg);
+
+
+}
+}
+
+.themeShop{
+    animation: round1 5s linear infinite;
+	-webkit-animation-name: round1;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	visibility: visible !important;
+}
+
+</style>
+
+</head>
 
     <body style="overflow: hidden; height: 100%; font-size: 100%;">
     
@@ -77,20 +202,20 @@
     <!--Header-->
     <div class="header fixed">
         <div class="header_wrap">
-            <a href="index.html" class="logo" id="logo_w">hola Launcher</a>
+            <a href="index.html" class="logo" id="logo_w">Line Launcher</a>
             <div class="nav" id="nav_w">
                 <a class="current" href="javascript:;">Home</a>
-                <a href="http://www.holaverse.com/about" target="_blank">About Us</a>
-                <a href="http://www.holalauncher.com/privacy/privacy.html" target="_blank">Privacy Policy</a>
-                <a href="http://www.holaverse.com/about/promotion-policies/" target="_blank">Promotion Policy</a>
-                <a href="index_cn.html?mode=user" id="navList_bar">中文</a>
+                <a href="http://http://dodol.naver.com:10080/recommendtheme/get.camp#" target="_blank">About Us</a>
+                <a href="http://http://dodol.naver.com:10080/recommendtheme/get.camp#" target="_blank">Privacy Policy</a>
+                <a href="http://http://dodol.naver.com:10080/recommendtheme/get.camp#" target="_blank">Promotion Policy</a>
+                <a href="http://http://dodol.naver.com:10080/recommendtheme/get.camp#" id="navList_bar">中文</a>
             </div>
         </div>
     </div>
     <!--Menu-->
     <ul id="menu">
-        <li data-menuanchor="Hola" class="active"><a href="#Hola">1</a></li>
-        <li data-menuanchor="Shine" class=""><a href="#Shine">2</a></li>
+        <li data-menuanchor="Line" class="active"><a href="#Line">1</a></li>
+        <li data-menuanchor="VariousTheme" class=""><a href="#VariousTheme">2</a></li>
         <li data-menuanchor="T9" class=""><a href="#T9">3</a></li>
         <li data-menuanchor="Customization" class=""><a href="#Customization">4</a></li>
         <li data-menuanchor="Gestures" class=""><a href="#Gestures">5</a></li>
@@ -105,9 +230,6 @@
                         <div class="content">
                             <P>Simple, fast, and smooth.</P>
                         </div>
-                        <video width="500" height="400" autoplay="autoplay" loop="loop">
-                        	<source src="images/ClockWidget_ThemeShop.mp4" type="video/mp4">
-                        </video>
                     </div>
                 </div>
             </div>
@@ -117,23 +239,59 @@
             <div class="homebg02">
                 <div class="container">
                     <div class="row">
-                        <img class="logo_text" src="images/logo_text.png"/>
+                    	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">V A R I O U S&nbsp;&nbsp;T H E M E</div>
+                        <!-- <img class="logo_text" src="images/logo_text.png"/> -->
                         <div class="content">
                             <P>Just swipe from a corner and jump immediately to recent or favorite apps or switch your settings.</P>
                         </div>
+                        <div class="conts" style="height: 40em; margin: 0px auto; position: relative; left: 0%;">
+							<img class="themeShop" style="position: relative; top: 25%; left: 0; width: 20em; height: 20em; margin: 0 auto 1.25em auto;" src="images/theme_shop2.png"/>
+							<img class="burst" style="position:absolute; top: -42%; left:  0%; width: 10rem;" src="images/burst01.png">
+						</div>
                     </div>
+                    
                 </div>
+                
             </div>
         </div>
         <div class="section" id="section3">
             <div class="homebg03">
                 <div class="container">
                     <div class="row">
-                        <img class="logo_text" src="images/logo_text.png"/>
+                    	<div style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">S T Y L I S H</div>
+                        <!-- <img class="logo_text" src="images/logo_text.png"/> -->
                         <div class="content">
                             <P>T9 Search: For the moments you dislike your keyboard and want to go old school.</P>
                         </div>
                     </div>
+                    <div class="conts" style="position: absolute; top: 25%; left: 0; width: 100%; z-index: 1000;">
+						<div class="phone" style="width: 20.5em; height: 40em; margin: 0px auto; background: url(http://static.naver.net/m/vlive/incomms/pc/2015/img_sec3_phone.png) no-repeat; position: relative; left: 0%;">
+							<video
+								style="width: 17.5em; height: 31em; display: inline; margin-top: 5em;"
+								autoplay="autoplay" loop="loop">
+								<source
+									src="http://event.dn.naver.net/naver/event/static/globalv/v_info_4Mbps.mp4"
+									type="video/mp4">
+							</video>
+						</div>
+<!-- 						<div class="txt"
+							style="width: 647px; height: 384px; background: url(http://static.naver.net/m/vlive/incomms/pc/2015/ko/txt_sec3_ko_v2.png) no-repeat; position: absolute; top: 75px; right: 30%;">
+							<h2 class="blind"
+								style="display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; width: 0; height: 0; font-size: 0; line-height: 0;">V
+								is a Real-time Broadcasting Mobile App</h2>
+							<p class="blind"
+								style="display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; width: 0; height: 0; font-size: 0; line-height: 0;">
+								We provide live broadcasts instantly on mobile<br> Meet
+								Celebs at anywhere in the world through V.<br> Enjoy
+								improvised, unexpected fun with them.
+							</p>
+							<p class="blind"
+								style="display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; width: 0; height: 0; font-size: 0; line-height: 0;"">
+								v-Support<br>Live broadcasts across the world<br>Exclusive
+								video clips of K-Celebs
+							</p>
+						</div> -->
+					</div>
                 </div>
             </div>
         </div>
@@ -204,8 +362,8 @@
         //fullpage plugin
          $(function() {
             $('#fullpage').fullpage({
-                sectionsColor: ['#0081DC', '#3D1B91', '#00b285', '#cacaca', '#000'],
-               anchors: ['Hola', 'Shine', 'T9', 'Customization', 'Gestures'],
+                sectionsColor: ['#2B88FF', '#6962C9', '#00BE68', '#ffffff', '#000'],
+               anchors: ['Line', 'VariousTheme', 'T9', 'Customization', 'Gestures'],
                  menu :'#menu',
                 verticalCentered: false,
                 css3: true,
