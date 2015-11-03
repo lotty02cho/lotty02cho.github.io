@@ -546,16 +546,10 @@ opacity:0;
 	<script src="javascripts/jquery.fullPage.min.js"></script>
 	<script src="javascripts/resourceArrangement.js"></script>
 	<script type="text/javascript">
-	if(!!window.webkitNotifications) {
-	     alert("현재 브라우저는 Notifications를 지원합니다")
-	}
-	else{
-	      alert("현재 브라우저는Notifications를 지원하지 않습니다")
-	}
 	alert(isMobile);
 	if(isMobile){
         $( "#menu" ).css("visibility", "hidden");
-        $( ".theme_name" ).css("fontSize", "20px");
+        $( ".theme_name" ).css("fontSize", "10px");
         $( ".content p" ).css("fontSize", "0.5em");
 	}
 
