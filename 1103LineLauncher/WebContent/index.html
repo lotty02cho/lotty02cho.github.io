@@ -53,12 +53,11 @@
                 "webmate", "bada", "nokia", "lg", 
                 "ucweb", "skyfire"];
             var browser = navigator.userAgent.toLowerCase(); 
-            var isMobile = false; 
+            isMobile = false; 
             for (var i = 0; i < mobileAgent.length; i++) { 
                 if (browser.indexOf(mobileAgent[i]) != -1) { 
                     isMobile = true; 
                     /* window.location.href = 'http://' + window.location.host +　'/mobile/index.html'; */
-                    $( "#menu" ).css("visibility", "hidden");
                     break; 
                 } 
             }
@@ -547,6 +546,10 @@ opacity:0;
 	<script src="javascripts/jquery.fullPage.min.js"></script>
 	<script src="javascripts/resourceArrangement.js"></script>
 	<script type="text/javascript">
+	alert(isMobile);
+	if(isMobile){
+        $( "#menu" ).css("visibility", "hidden");
+	}
         //resize
         var winIE = (navigator.userAgent.indexOf("Opera") == -1 && (document.getElementByIdx &&  document.documentElement.behaviorUrns))  ? true : false;
         function bodySize(){
@@ -652,18 +655,18 @@ opacity:0;
 		/*Page2*/
 		var pack_tableW = 518;
 		var pack_tableH = 629;
-		$('.pack_table').css({ top: windowH/2-(pack_tableH/2)+40});
-		$('.pack_table').css({ left: windowW/2-(pack_tableW)});
+		$('.pack_table').css({ top: windowH/2-(pack_tableH/3)});
+		$('.pack_table').css({ left: windowW/2-(pack_tableW)+50});
 		
 		var device_noneW = 290;
 		var device_noneH = 564;
-		$('.device_none').css({ top: windowH/2-(device_noneH/2)+20});
-		$('.device_none').css({ left: windowW/2+(device_noneW/2)});
+		$('.device_none').css({ top: windowH/2-(device_noneH/2)+80});
+		$('.device_none').css({ left: windowW/2-(device_noneW/2)+250});
 		
  		var theme_1_viewW = 373;
 		var theme_1_viewH = 450; 
-		$('.theme_1_view').css({ top: windowH/2-(device_noneH/2)+72});
-		$('.theme_1_view').css({ left: windowW/2+(device_noneW/2)-42});
+		$('.theme_1_view').css({ top: windowH/2-(device_noneH/2)+80+52}); //52
+		$('.theme_1_view').css({ left: windowW/2-(device_noneW/2)+250-42}); //-42
 		$('.theme_1_view').css("opacity", 0);
 		$(".theme_2").hover(function(){
 		    $('.theme_1_view').css("opacity", 1);
@@ -790,18 +793,19 @@ opacity:0;
 			$('.Sally_1').css({ bottom: -Sally_1H/3});
 			
 			/*Page2*/
-			var pack_tableW = 512;
+			var pack_tableW = 518;
 			var pack_tableH = 629;
-			$('.pack_table').css({ top: windowH/2-(pack_tableH/2)+40});
-			$('.pack_table').css({ left: windowW/2-(pack_tableW)});
+			$('.pack_table').css({ top: windowH/2-(pack_tableH/3)});
+			$('.pack_table').css({ left: windowW/2-(pack_tableW)+50});
+			
 			var device_noneW = 290;
 			var device_noneH = 564;
-			$('.device_none').css({ top: windowH/2-(device_noneH/2)+20});
-			$('.device_none').css({ left: windowW/2+(device_noneW/2)});
+			$('.device_none').css({ top: windowH/2-(device_noneH/2)+80});
+			$('.device_none').css({ left: windowW/2-(device_noneW/2)+250});
 	 		var theme_1_viewW = 373;
 			var theme_1_viewH = 450; 
-			$('.theme_1_view').css({ top: windowH/2-(device_noneH/2)+72});
-			$('.theme_1_view').css({ left: windowW/2+(device_noneW/2)-42});
+			$('.theme_1_view').css({ top: windowH/2-(device_noneH/2)+80+52}); //52
+			$('.theme_1_view').css({ left: windowW/2-(device_noneW/2)+250-42}); //-42
 			
 			/*Page3*/
 			var device_none2W = 290;
