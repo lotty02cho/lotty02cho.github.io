@@ -342,23 +342,25 @@ ul {
 }
 
 .section .content, .section .content_cn {
-	margin-top: .5em;
+/*	margin-top: .5em;
 	font-size: 1.25em;
 	filter: alpha(opacity = 0);
 	-moz-opacity: 0;
 	opacity: 0;
+ 	-ms-transform: scale(0.5, 0.5);
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
 	transition: all 1s;
-}
+ */}
 
 .active .content, .active .content_cn {
-	filter: alpha(opacity = 1);
+/*	filter: alpha(opacity = 1);
 	-moz-opacity: 1;
 	opacity: 1;
 	-webkit-transform: scale(1, 1);
+ 	-ms-transform: scale(0.5, 0.5);
 	transform: scale(1, 1);
-	transition-delay: 0.7s;
+	transition-delay: 0.7s; */
 }
 
 div.homebg01, div.homebg02, div.homebg03, div.homebg04, div.homebg05 {
