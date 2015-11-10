@@ -104,7 +104,7 @@
 }
 
 .theme_name{
-	font-size: 3px;
+	font-size: 0.7em;
 	color: #000000;
 	margin-bottom: 12px;
 }
@@ -261,7 +261,52 @@
 
 }
 
+@keyframes clean_ani_1 {
+0% {
+	opacity: 1;
+}
+32%{
+	opacity: 1;
+}
+33%
+{
+	opacity: 0;
+}
+66%
+{
+	opacity: 0;
+}
+90%{
+	opacity: 0;
+}
+100%{
+	opacity: 1;
+}
+
+}
+
 @-webkit-keyframes clean_ani_2 {
+0% {
+	opacity: 0;
+}
+32%{
+	opacity: 0;
+}
+33%{
+	opacity : 1;
+}
+66%{
+	opacity : 1;
+}
+90%{
+	opacity : 1;
+}
+100%{
+	opacity : 0;
+}
+}
+
+@keyframes clean_ani_2 {
 0% {
 	opacity: 0;
 }
@@ -304,6 +349,28 @@ opacity:0;
 }
 }
 
+@keyframes clean_ani_3 { 
+0% {
+	opacity: 0;
+}
+33%{
+	opacity: 0;
+	transform: translateY(-30px);
+}
+66%
+{
+	opacity: 1;
+	transform: translateY(0px);
+}
+90%{
+	opacity: 0;
+	transform : translateY(30px);
+}
+100%{
+opacity:0;
+}
+}
+
 .theme_phone {
 	width: 272px;
 	height: 450px;
@@ -313,430 +380,6 @@ opacity:0;
 	z-index: 800;
 
 }
-/* 
-.play_ani1{
-	animation: play1 15s steps(9000) infinite;
-}
-
-.play_ani2{
-	animation: play2 15s steps(9000) infinite;
-}
-
-.play_ani3{
-	animation: play3 15s steps(9000) infinite;
-}
-
-.play_ani4{
-	animation: play4 15s steps(9000) infinite;
-}
-
-.play_ani5{
-	animation: play5 15s steps(9000) infinite;
-}
-
-.play_ani6{
-	animation: play6 15s steps(9000) infinite;
-}
-
-.play_ani7{
-	animation: play7 15s steps(9000) infinite;
-}
-
-.play_ani8{
-	animation: play8 15s steps(9000) infinite;
-}
-
-.play_ani9{
-	animation: play9 15s steps(9000) infinite;
-}
-
- @keyframes play1{
- 	5.26%{background-position: 0px;}
- 	10.52%{background-position: -272px;}
- 	15.78%{background-position: -272px;}
- 	21.04%{background-position: -544px;}
- 	26.3%{background-position: -544px;}
- 	31.56%{background-position: -816px;}
- 	36.82%{background-position: -816px;}
- 	42.08%{background-position: -1088px;}
- 	47.34%{background-position: -1088px;}
- 	52.6%{background-position: -1360px;}
- 	57.86%{background-position: -1360px;}
- 	63.12%{background-position: -1632px;}
- 	68.38%{background-position: -1632px;}
- 	73.64%{background-position: -1904px;}
- 	78.9%{background-position: -1904px;}
- 	84.16%{background-position: -2176px;}
- 	89.42%{background-position: -2176px;}
- 	94.68%{background-position: -2448px;}
- 	100% {background-position: -2448px;}
-}
-@-webkit-keyframes play1{
- 	5.26%{background-position: 0px;}
- 	10.52%{background-position: -272px;}
- 	15.78%{background-position: -272px;}
- 	21.04%{background-position: -544px;}
- 	26.3%{background-position: -544px;}
- 	31.56%{background-position: -816px;}
- 	36.82%{background-position: -816px;}
- 	42.08%{background-position: -1088px;}
- 	47.34%{background-position: -1088px;}
- 	52.6%{background-position: -1360px;}
- 	57.86%{background-position: -1360px;}
- 	63.12%{background-position: -1632px;}
- 	68.38%{background-position: -1632px;}
- 	73.64%{background-position: -1904px;}
- 	78.9%{background-position: -1904px;}
- 	84.16%{background-position: -2176px;}
- 	89.42%{background-position: -2176px;}
- 	94.68%{background-position: -2448px;}
- 	100%{background-position: -2448px;}
-}
-
- @keyframes play2{
- 	5.26%{background-position: -272px;}
- 	10.52%{background-position: -544px;}
- 	15.78%{background-position: -544px;}
- 	21.04%{background-position: -816px;}
- 	26.3%{background-position: -816px;}
- 	31.56%{background-position: -1088px;}
- 	36.82%{background-position: -1088px;}
- 	42.08%{background-position: -1360px;}
- 	47.34%{background-position: -1360px;}
- 	52.6%{background-position: -1632px;}
- 	57.86%{background-position: -1632px;}
- 	63.12%{background-position: -1904px;}
- 	68.38%{background-position: -1904px;}
- 	73.64%{background-position: -2176px;}
- 	78.9%{background-position: -2176px;}
- 	84.16%{background-position: -2448px;}
- 	89.42%{background-position: -2448px;}
- 	94.68%{background-position: -2720px;}
- 	100% {background-position: -2720px;}
-}
-@-webkit-keyframes play2{
- 	5.26%{background-position: -272px;}
- 	10.52%{background-position: -544px;}
- 	15.78%{background-position: -544px;}
- 	21.04%{background-position: -816px;}
- 	26.3%{background-position: -816px;}
- 	31.56%{background-position: -1088px;}
- 	36.82%{background-position: -1088px;}
- 	42.08%{background-position: -1360px;}
- 	47.34%{background-position: -1360px;}
- 	52.6%{background-position: -1632px;}
- 	57.86%{background-position: -1632px;}
- 	63.12%{background-position: -1904px;}
- 	68.38%{background-position: -1904px;}
- 	73.64%{background-position: -2176px;}
- 	78.9%{background-position: -2176px;}
- 	84.16%{background-position: -2448px;}
- 	89.42%{background-position: -2448px;}
- 	94.68%{background-position: -2720px;}
- 	100% {background-position: -2720px;}
-}
-
- @keyframes play3{
- 	5.26%{background-position: -544px;}
- 	10.52%{background-position: -816px;}
- 	15.78%{background-position: -816px;}
- 	21.04%{background-position: -1088px;}
- 	26.3%{background-position: -1088px;}
- 	31.56%{background-position: -1360px;}
- 	36.82%{background-position: -1360px;}
- 	42.08%{background-position: -1632px;}
- 	47.34%{background-position: -1632px;}
- 	52.6%{background-position: -1904px;}
- 	57.86%{background-position: -1904px;}
- 	63.12%{background-position: -2176px;}
- 	68.38%{background-position: -2176px;}
- 	73.64%{background-position: -2448px;}
- 	78.9%{background-position: -2448px;}
- 	84.16%{background-position: -2720px;}
- 	89.42%{background-position: -2720px;}
- 	94.68%{background-position: -2992px;}
- 	100% {background-position: -2992px;}
-}
-@-webkit-keyframes play3{
- 	5.26%{background-position: -544px;}
- 	10.52%{background-position: -816px;}
- 	15.78%{background-position: -816px;}
- 	21.04%{background-position: -1088px;}
- 	26.3%{background-position: -1088px;}
- 	31.56%{background-position: -1360px;}
- 	36.82%{background-position: -1360px;}
- 	42.08%{background-position: -1632px;}
- 	47.34%{background-position: -1632px;}
- 	52.6%{background-position: -1904px;}
- 	57.86%{background-position: -1904px;}
- 	63.12%{background-position: -2176px;}
- 	68.38%{background-position: -2176px;}
- 	73.64%{background-position: -2448px;}
- 	78.9%{background-position: -2448px;}
- 	84.16%{background-position: -2720px;}
- 	89.42%{background-position: -2720px;}
- 	94.68%{background-position: -2992px;}
- 	100% {background-position: -2992px;}
-}
-
- @keyframes play4{
- 	5.26%{background-position: -816px;}
- 	10.52%{background-position: -1088px;}
- 	15.78%{background-position: -1088px;}
- 	21.04%{background-position: -1360px;}
- 	26.3%{background-position: -1360px;}
- 	31.56%{background-position: -1632px;}
- 	36.82%{background-position: -1632px;}
- 	42.08%{background-position: -1904px;}
- 	47.34%{background-position: -1904px;}
- 	52.6%{background-position: -2176px;}
- 	57.86%{background-position: -2176px;}
- 	63.12%{background-position: -2448px;}
- 	68.38%{background-position: -2448px;}
- 	73.64%{background-position: -2720px;}
- 	78.9%{background-position: -2720px;}
- 	84.16%{background-position: -2992px;}
- 	89.42%{background-position: -2992px;}
- 	94.68%{background-position: -3264px;}
- 	100% {background-position: -3264px;}
-}
-@-webkit-keyframes play4{
- 	5.26%{background-position: -816px;}
- 	10.52%{background-position: -1088px;}
- 	15.78%{background-position: -1088px;}
- 	21.04%{background-position: -1360px;}
- 	26.3%{background-position: -1360px;}
- 	31.56%{background-position: -1632px;}
- 	36.82%{background-position: -1632px;}
- 	42.08%{background-position: -1904px;}
- 	47.34%{background-position: -1904px;}
- 	52.6%{background-position: -2176px;}
- 	57.86%{background-position: -2176px;}
- 	63.12%{background-position: -2448px;}
- 	68.38%{background-position: -2448px;}
- 	73.64%{background-position: -2720px;}
- 	78.9%{background-position: -2720px;}
- 	84.16%{background-position: -2992px;}
- 	89.42%{background-position: -2992px;}
- 	94.68%{background-position: -3264px;}
- 	100% {background-position: -3264px;}
-}
-
- @keyframes play5{
- 	5.26%{background-position: -1088px;}
- 	10.52%{background-position: -1360px;}
- 	15.78%{background-position: -1360px;}
- 	21.04%{background-position: -1632px;}
- 	26.3%{background-position: -1632px;}
- 	31.56%{background-position: -1904px;}
- 	36.82%{background-position: -1904px;}
- 	42.08%{background-position: -2176px;}
- 	47.34%{background-position: -2176px;}
- 	52.6%{background-position: -2448px;}
- 	57.86%{background-position: -2448px;}
- 	63.12%{background-position: -2720px;}
- 	68.38%{background-position: -2720px;}
- 	73.64%{background-position: -2992px;}
- 	78.9%{background-position: -2992px;}
- 	84.16%{background-position: -3264px;}
- 	89.42%{background-position: -3264px;}
- 	94.68%{background-position: -3536px;}
- 	100% {background-position: -3536px;}
-}
-@-webkit-keyframes play5{
- 	5.26%{background-position: -1088px;}
- 	10.52%{background-position: -1360px;}
- 	15.78%{background-position: -1360px;}
- 	21.04%{background-position: -1632px;}
- 	26.3%{background-position: -1632px;}
- 	31.56%{background-position: -1904px;}
- 	36.82%{background-position: -1904px;}
- 	42.08%{background-position: -2176px;}
- 	47.34%{background-position: -2176px;}
- 	52.6%{background-position: -2448px;}
- 	57.86%{background-position: -2448px;}
- 	63.12%{background-position: -2720px;}
- 	68.38%{background-position: -2720px;}
- 	73.64%{background-position: -2992px;}
- 	78.9%{background-position: -2992px;}
- 	84.16%{background-position: -3264px;}
- 	89.42%{background-position: -3264px;}
- 	94.68%{background-position: -3536px;}
- 	100% {background-position: -3536px;}
-}
-
- @keyframes play6{
- 	5.26%{background-position: -1360px;}
- 	10.52%{background-position: -1632px;}
- 	15.78%{background-position: -1632px;}
- 	21.04%{background-position: -1904px;}
- 	26.3%{background-position: -1904px;}
- 	31.56%{background-position: -2176px;}
- 	36.82%{background-position: -2176px;}
- 	42.08%{background-position: -2448px;}
- 	47.34%{background-position: -2448px;}
- 	52.6%{background-position: -2720px;}
- 	57.86%{background-position: -2720px;}
- 	63.12%{background-position: -2992px;}
- 	68.38%{background-position: -2992px;}
- 	73.64%{background-position: -3264px;}
- 	78.9%{background-position: -3264px;}
- 	84.16%{background-position: -3536px;}
- 	89.42%{background-position: -3536px;}
- 	94.68%{background-position: -3808px;}
- 	100% {background-position: -3808px;}
-}
-@-webkit-keyframes play6{
- 	5.26%{background-position: -1360px;}
- 	10.52%{background-position: -1632px;}
- 	15.78%{background-position: -1632px;}
- 	21.04%{background-position: -1904px;}
- 	26.3%{background-position: -1904px;}
- 	31.56%{background-position: -2176px;}
- 	36.82%{background-position: -2176px;}
- 	42.08%{background-position: -2448px;}
- 	47.34%{background-position: -2448px;}
- 	52.6%{background-position: -2720px;}
- 	57.86%{background-position: -2720px;}
- 	63.12%{background-position: -2992px;}
- 	68.38%{background-position: -2992px;}
- 	73.64%{background-position: -3264px;}
- 	78.9%{background-position: -3264px;}
- 	84.16%{background-position: -3536px;}
- 	89.42%{background-position: -3536px;}
- 	94.68%{background-position: -3808px;}
- 	100% {background-position: -3808px;}
-}
-
- @keyframes play7{
- 	5.26%{background-position: -1632px;}
- 	10.52%{background-position: -1904px;}
- 	15.78%{background-position: -1904px;}
- 	21.04%{background-position: -2176px;}
- 	26.3%{background-position: -2176px;}
- 	31.56%{background-position: -2448px;}
- 	36.82%{background-position: -2448px;}
- 	42.08%{background-position: -2720px;}
- 	47.34%{background-position: -2720px;}
- 	52.6%{background-position: -2992px;}
- 	57.86%{background-position: -2992px;}
- 	63.12%{background-position: -3264px;}
- 	68.38%{background-position: -3264px;}
- 	73.64%{background-position: -3536px;}
- 	78.9%{background-position: -3536px;}
- 	84.16%{background-position: -3808px;}
- 	89.42%{background-position: -3808px;}
- 	94.68%{background-position: -4080px;}
- 	100% {background-position: -4080px;}
-}
-@-webkit-keyframes play7{
- 	5.26%{background-position: -1632px;}
- 	10.52%{background-position: -1904px;}
- 	15.78%{background-position: -1904px;}
- 	21.04%{background-position: -2176px;}
- 	26.3%{background-position: -2176px;}
- 	31.56%{background-position: -2448px;}
- 	36.82%{background-position: -2448px;}
- 	42.08%{background-position: -2720px;}
- 	47.34%{background-position: -2720px;}
- 	52.6%{background-position: -2992px;}
- 	57.86%{background-position: -2992px;}
- 	63.12%{background-position: -3264px;}
- 	68.38%{background-position: -3264px;}
- 	73.64%{background-position: -3536px;}
- 	78.9%{background-position: -3536px;}
- 	84.16%{background-position: -3808px;}
- 	89.42%{background-position: -3808px;}
- 	94.68%{background-position: -4080px;}
- 	100% {background-position: -4080px;}
-}
-
- @keyframes play8{
- 	5.26%{background-position: -1904px;}
- 	10.52%{background-position: -2176px;}
- 	15.78%{background-position: -2176px;}
- 	21.04%{background-position: -2448px;}
- 	26.3%{background-position: -2448px;}
- 	31.56%{background-position: -2720px;}
- 	36.82%{background-position: -2720px;}
- 	42.08%{background-position: -2992px;}
- 	47.34%{background-position: -2992px;}
- 	52.6%{background-position: -3264px;}
- 	57.86%{background-position: -3264px;}
- 	63.12%{background-position: -3536px;}
- 	68.38%{background-position: -3536px;}
- 	73.64%{background-position: -3808px;}
- 	78.9%{background-position: -3808px;}
- 	84.16%{background-position: -4080px;}
- 	89.42%{background-position: -4080px;}
- 	94.68%{background-position: -4352px;}
- 	100% {background-position: -4352px;}
-}
-@-webkit-keyframes play8{
- 	5.26%{background-position: -1904px;}
- 	10.52%{background-position: -2176px;}
- 	15.78%{background-position: -2176px;}
- 	21.04%{background-position: -2448px;}
- 	26.3%{background-position: -2448px;}
- 	31.56%{background-position: -2720px;}
- 	36.82%{background-position: -2720px;}
- 	42.08%{background-position: -2992px;}
- 	47.34%{background-position: -2992px;}
- 	52.6%{background-position: -3264px;}
- 	57.86%{background-position: -3264px;}
- 	63.12%{background-position: -3536px;}
- 	68.38%{background-position: -3536px;}
- 	73.64%{background-position: -3808px;}
- 	78.9%{background-position: -3808px;}
- 	84.16%{background-position: -4080px;}
- 	89.42%{background-position: -4080px;}
- 	94.68%{background-position: -4352px;}
- 	100% {background-position: -4352px;}
-}
-
- @keyframes play9{
- 	5.26%{background-position: -2176px;}
- 	10.52%{background-position: -2448px;}
- 	15.78%{background-position: -2448px;}
- 	21.04%{background-position: -2720px;}
- 	26.3%{background-position: -2720px;}
- 	31.56%{background-position: -2992px;}
- 	36.82%{background-position: -2992px;}
- 	42.08%{background-position: -3264px;}
- 	47.34%{background-position: -3264px;}
- 	52.6%{background-position: -3536px;}
- 	57.86%{background-position: -3536px;}
- 	63.12%{background-position: -3808px;}
- 	68.38%{background-position: -3808px;}
- 	73.64%{background-position: -4080px;}
- 	78.9%{background-position: -4080px;}
- 	84.16%{background-position: -4352px;}
- 	89.42%{background-position: -4352px;}
- 	94.68%{background-position: -4624px;}
- 	100% {background-position: -4624px;}
-}
-@-webkit-keyframes play9{
- 	5.26%{background-position: -2176px;}
- 	10.52%{background-position: -2448px;}
- 	15.78%{background-position: -2448px;}
- 	21.04%{background-position: -2720px;}
- 	26.3%{background-position: -2720px;}
- 	31.56%{background-position: -2992px;}
- 	36.82%{background-position: -2992px;}
- 	42.08%{background-position: -3264px;}
- 	47.34%{background-position: -3264px;}
- 	52.6%{background-position: -3536px;}
- 	57.86%{background-position: -3536px;}
- 	63.12%{background-position: -3808px;}
- 	68.38%{background-position: -3808px;}
- 	73.64%{background-position: -4080px;}
- 	78.9%{background-position: -4080px;}
- 	84.16%{background-position: -4352px;}
- 	89.42%{background-position: -4352px;}
- 	94.68%{background-position: -4624px;}
- 	100% {background-position: -4624px;}
-}
- */
 
 #sld {
 	width: 272px;
@@ -1081,7 +724,7 @@ opacity:0;
 						src="images/btn_store.png"></a>
 				</div>
 			<div class="browser-test" style="background-color: red; position: absolute; bottom: 0;">
-    			<p style="background-color: red;">FOOTER</p>
+<!--     			<p style="background-color: red;">FOOTER</p> -->
     		</div>
 			</div>
 		</div>
@@ -1093,9 +736,46 @@ opacity:0;
 	<script src="javascripts/resourceArrangement.js"></script>
 	
 	<script>
-function Slider( element ) {
+	//버튼의 위치를 지정하는 index.
+	index = 0;
+	
+	//image의 위치를 내포하고 있는 배열.
+	var imageArray = [0, 272, 544, 816, 1088, 1360, 1632, 1904, 2176];
+
+	//Page의 오름차순 내림차순을 판별하는 변수.
+	var upPage = true;
+	
+	
+	//이미지 이동을 시켜주는 함수
+	function changeImage(){
+		//left사이드로 이미지의 위로 이동.
+		document.getElementById("sl-wrapper").style.left = "-" + imageArray[index] + "px";
+/*  		alert("index는 "+index);  */
+		//차순인 경우, index ++
+		if(upPage){
+			index++;
+		}
+		//역순인 경우, index --
+		else{
+			index--;
+		}
+			
+		//페이지의 마지막에 위치할 경우, 역순으로 변경
+		if(index>=imageArray.length-1){
+			index=8;
+			upPage = false;
+		}
+		//페이지가 처음페이지에 위치할 경우, 차순으로 변경
+		else if(index<=0){
+			upPage = true;
+		}
+		
+	}
+	
+	function Slider( element ) {
 	this.el = document.querySelector( element );
 	this.init();
+
 
 	
 }
@@ -1103,41 +783,15 @@ function Slider( element ) {
 Slider.prototype = {
 		init: function() {
 			//Pagination 걸리는 부분 선언.
-			/* this.links = this.el.querySelectorAll( "#slider-nav a" ); */
 			this.links = document.querySelectorAll( "#sl-nav a" );
 			
 			//Slide 부분 선언.
 			this.wrapper = document.querySelector( "#sl-wrapper" );
 			this.navigate();
 			
-			var imageIndex = 0;
-			var imageArray = [0, 272, 544, 816, 1088, 1360, 1632, 1904, 2176];
-			var moveSlide= document.querySelector( ".sl:nth-child("+imageIndex+")" );
-				
-			var k = $( ".sl:nth-child("+imageIndex+")" ).offsetLeft;
 			
-			var upPage = true;
-			
-		/* 	alert(moveSlide.offsetLeft); */
-			function changeImage(){
-				document.getElementById("sl-wrapper").style.left = "-" + imageArray[imageIndex] + "px";
-
-				if(upPage){
-					imageIndex++;
-				}
-				else{
-					imageIndex--;
-				}
-				
-				
-				if(imageIndex==8){
-					upPage = false;
-				}
-				else if(imageIndex==0){
-					upPage = true;
-				}
-			}
-			setInterval(changeImage, 2000);
+			//Interval 초기화.
+			changeImg = setInterval(changeImage, 1500);
 			
 		},
 		//Pagination의 기능을 부여하는 함수
@@ -1158,46 +812,26 @@ Slider.prototype = {
 				var a = this;
 				//현재위치를 지정하는 함수.
 				self.setCurrentLink(a);
-				
-				//data-slide의 인덱스를 불러옴.
-				var index = parseInt( a.getAttribute( "data-slide", 1) ) + 1;
-				//현재 슬라이드의 위치를 index를 이용해 구한 후,
-				var currentSlide = document.querySelector( ".sl:nth-child(" + index + ")" );
-				alert(currentSlide.offsetLeft);
-				
-				function changeImage(){
-					document.getElementById("sl-wrapper").style.left = "-" + index + "px";
 
-					if(upPage){
-						imageIndex++;
-					}
-					else{
-						imageIndex--;
-					}
-					
-					
-					if(imageIndex==8){
-						upPage = false;
-					}
-					else if(imageIndex==0){
-						upPage = true;
-					}
-				}
-		
-				//leftpx를 이용해 이동.
-				self.wrapper.style.left = "-" + currentSlide.offsetLeft + "px";
-			}, false);
-/* 			element.addEventListener("mouseout", function( e ){
-				var a = this;
-				//현재위치를 지정하는 함수.
-				self.setCurrentLink(a);
 				
 				//data-slide의 인덱스를 불러옴.
-				var index = parseInt( a.getAttribute( "data-slide", 1) ) + 1;
+				index = parseInt( a.getAttribute( "data-slide", 1) ) + 1;
 				//현재 슬라이드의 위치를 index를 이용해 구한 후,
 				var currentSlide = document.querySelector( ".sl:nth-child(" + index + ")" );
+				
+				
+				
+				//interval를 지워주고,
+				clearInterval(changeImg);
+				//interval를 다시 새로운 index로 fix.
+				changeImg = setInterval(changeImage, 1500);
+
+				
+				
 				//leftpx를 이용해 이동.
-				self.wrapper.style.left = "+" + currentSlide.offsetLeft + "px";
+ 				self.wrapper.style.left = "-" + currentSlide.offsetLeft + "px"; 
+			}, false);
+/*  			element.addEventListener("mouseout", function( e ){
 			}); */
 		},
 		setCurrentLink: function( link ) {
