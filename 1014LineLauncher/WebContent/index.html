@@ -1,0 +1,889 @@
+<html style="overflow: hidden; height: 100%;" class="fp-enabled"><head>
+        <meta charset="utf-8">
+        <!-- title: 메타 태그는 아니지만, 검색결과의 제목으로 표시 -->
+        <title>Line Launcher</title>
+        <meta name="author" content="Camp Mobile &amp; LINE">
+        <!-- 페이지의 짧은 설명 -->
+        <meta name="description" content="당신의 핸드폰을 새롭게 하는 Line Launcher를 이용해보세요!">
+        <!-- 페이지의 키워드 -->
+        <meta name="keywords" content="안드로이드 바탕 화면, 폰패션, 모바일 애플리케이션, 안드로이드 응용 프로그램 시장, 검색, 테마, 배경 화면">
+        
+        <!-- 구글봇과 크롤러에 영향을 주는 태그. -->
+        <meta name="googlebot" content="all">
+        <meta name="robots" content="all">
+        
+        <!-- 번역링크 제공 방지 -->
+        <meta name="google" content="notranslate">
+        
+        <!-- 전처리될 기본 언어 설정 -->
+        <meta http-equiv="content-language" content="ko">
+        
+        <!-- 문자 인코딩 선언 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <!-- 단, Google 혹은 다른 크롤러에서 이해할 수 없는 메타태그는 무시된다는 사실에 유의하시기 바랍니다. -->
+        
+        <meta name="Resource-type" content="Document">   
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        
+        <link href="https://fonts.googleapis.com/css?family=Cambay:700" rel="stylesheet" type="text/css">
+        
+		<link rel="stylesheet" type="text/css" href="css/fullpage.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+        <script>
+            /*jump to the right language*/
+            ;if (window.navigator.language) {
+            	//toLowerCase() >> 모든문자를 소문자로 변형.
+                var language = window.navigator.language.toLowerCase();
+            } else if(window.navigator.browserLanguage) {
+                var language = window.navigator.browserLanguage.toLowerCase();
+            }
+            /* 주소에 mode=user라는게 안들어가 있고, zh(중국어코드)가 들어가 있으면, 주소창을 다음과 같이 변경*/
+            if (window.location.href.indexOf("mode=user") == -1 && language && language.indexOf("zh") >= 0) {
+                window.location.href = "http://" + window.location.host + '/index_cn.html';
+            }
+             /*jump To mobile*/
+            var mobileAgent = ["iphone", "ipod", "ipad", "android", 
+                "mobile", "blackberry", "webos", "incognito", 
+                "webmate", "bada", "nokia", "lg", 
+                "ucweb", "skyfire"];
+            var browser = navigator.userAgent.toLowerCase(); 
+            var isMobile = false; 
+            for (var i = 0; i < mobileAgent.length; i++) {
+                if (browser.indexOf(mobileAgent[i]) != -1) { 
+                    isMobile = true; 
+                    window.location.href = 'http://' + window.location.host +　'kkkkkkkkkkkkkkkkkkkkkkkkkkk';
+                    
+                    break; 
+                }
+            } 
+        </script>
+
+<style>
+
+/*#Page1*/
+.pageTitle_main {
+	font-size: 72px;
+	font-style: bold;
+	fontword-break: keep-all;
+}
+
+.btn_store {
+	position: relative;
+	top: 25%;
+	left: 0;
+	margin: 66px auto 0 auto;
+}
+
+/*#Page2*/
+.pageTitle_black {
+	font-family: 'Cambay', sans-serif;
+	font-size: 3em;
+	word-break: keep-all;
+	color: #555;
+}
+
+.theme_pack {
+	margin: 15% 30px;
+}
+
+.device_none {
+	position: relative;
+	top: -65%;
+	left: 280px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.8s;
+}
+
+.theme_1_view {
+	position: relative;
+	top: -160%;
+	left: 280px;
+	margin: 0 auto 0 auto;
+	animation-delay: 0.8s;
+}
+
+/*#Page3*/
+.pageTitle_white {
+	font-family: 'Cambay', sans-serif;
+	font-size: 3em;
+	word-break: keep-all;
+}
+
+.device_none2 {
+	position: relative;
+	top: 35%;
+	left: 0px;
+	margin: 0px auto;
+	z-index: 500;
+	width: 290px;
+	height: 564px;
+}
+
+.basictheme1 {
+	position: relative;
+	top: -60%;
+	left: 0;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+}
+
+.cony_1 {
+	position: relative;
+	top: -140%;
+	left: -200px;
+	margin: 0 auto 0 auto;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	z-index: 501;
+}
+
+.sally_2 {
+	position: relative;
+	top: -260%;
+	left: 170px;
+	margin: 0 auto 0 auto;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	z-index: 499;
+}
+
+.icons_1 {
+	position: relative;
+	top: -405%;
+	left: -40%;
+	margin: 0 auto 0 auto;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	z-index: 400;
+}
+
+.icons_2 {
+	position: relative;
+	top: -460%;
+	left: -20%;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	z-index: 400;
+}
+
+.icons_3 {
+	position: relative;
+	top: -535%;
+	left: -38%;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	z-index: 400;
+}
+
+.icons_4 {
+	position: relative;
+	top: -620%;
+	left: -30%;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	z-index: 400;
+}
+
+.icons_5 {
+	position: relative;
+	top: -800%;
+	left: 35%;
+	animation-iteration-count: infinite;
+	animation-duration: 2.5s;
+	z-index: 400;
+}
+
+.icons_6 {
+	position: relative;
+	top: -830%;
+	left: 45%;
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	z-index: 400;
+}
+
+/*#Page4*/
+.cleanertheme_1 {
+	position: relative;
+	top: -60%;
+	left: 0;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+	
+	-webkit-animation-name: clean_ani_1;
+	animation-name: clean_ani_1;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
+
+.cleanertheme_2 {
+	position: relative;
+	top: -160%;
+	left: 0;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+	
+	-webkit-animation-name: clean_ani_2;
+	animation-name: clean_ani_2;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
+
+.cleaner_pop {
+	position: relative;
+	top: -252%;
+	left: 36px;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+	
+	-webkit-animation-name: clean_ani_3;
+	animation-name: clean_ani_3;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+}
+
+.boss_1 {
+	position: relative;
+	top: -335%;
+	left: -300px;
+	margin: 0 auto 0 auto;
+	z-index: 500;
+}
+
+.Sally_3 {
+	position: relative;
+	top: -422%;
+	left: 300px;
+	z-index: 500;
+}
+
+@media screen and (max-height:950px) {
+	/*#Page1*/
+/* 	.pageTitle_main {
+		font-size: 60px;
+	}
+	p {
+		font-size: 18px;
+	}
+	.btn_store {
+		margin: 33px auto 0 auto;
+		height: 42px;
+	}
+	.device_intro {
+		top: 56%;
+	}
+	.leonard_1 {
+		left: -200px;
+	}
+	.brown_1 {
+		top: -128%;
+		left: -238px;
+	}
+	.edward_1 {
+		top: -210%;
+		left: -255px;
+	}
+	.james_1 {
+		left: 245px;
+	}
+	.sally_1 {
+		left: 190px;
+	} */
+	/*#Page2*/
+	.pageTitle_black {
+		font-size: 30px;
+	}
+	.theme_pack {
+		margin: 10% 10px;
+	}
+	.device_none {
+		top: -68%;
+		left: 260px;
+	}
+	.theme_1_view {
+		top: -163.5%;
+		left: 260px;
+	}
+
+	/*Page3*/
+	.pageTitle_white {
+		font-size: 30px;
+	}
+	.cony_1 {
+		top: -140%;
+		left: -170px;
+	}
+	.sally_2 {
+		left: 135px;
+	}
+}
+
+@media screen and (max-height:620px) {
+	/*#Page1*/
+	.pageTitle_main {
+		font-size: 30px;
+	}
+	p {
+		font-size: 10px;
+	}
+	.btn_store {
+		margin: 35px auto 0 auto;
+		height: 30px;
+	}
+	.device_intro {
+		top: 62%;
+	}
+	.leonard_1 {
+		left: -120px;
+		top: -36%;
+	}
+	.brown_1 {
+		top: -128%;
+		left: -150px;
+	}
+	.edward_1 {
+		left: -165px;
+		top: -208%;
+	}
+	.james_1 {
+		left: 155px;
+		top: -335%;
+	}
+	.sally_1 {
+		left: 115px;
+		top: -410%;
+	}
+	/*#Page2*/
+	.pageTitle_black {
+		font-size: 20px;
+	}
+	.theme_pack {
+		margin: 5% 5px;
+	}
+	.device_none {
+		top: -65%;
+		left: 165px;
+	}
+	.theme_1_view {
+		top: -161%;
+		left: 8.6%;
+	}
+	.pageTitle_main {
+		font-size: 20px;
+	}
+	.pageTitle_white {
+		font-size: 20px;
+	}
+	/*#Page3*/
+	.cony_1 {
+		top: -145%;
+		left: -100px;
+	}
+	.sally_2 {
+		left: 85px;
+	}
+}
+
+@-webkit-keyframes clean_ani_1 {
+0% {
+	opacity: 1;
+}
+32%{
+	opacity: 1;
+}
+33%
+{
+	opacity: 0;
+}
+66%
+{
+	opacity: 0;
+}
+90%{
+	opacity: 0;
+}
+100%{
+	opacity: 1;
+}
+
+}
+
+@-webkit-keyframes clean_ani_2 {
+0% {
+	opacity: 0;
+}
+32%{
+	opacity: 0;
+}
+33%{
+	opacity : 1;
+}
+66%{
+	opacity : 1;
+}
+90%{
+	opacity : 1;
+}
+100%{
+	opacity : 0;
+}
+}
+
+@-webkit-keyframes clean_ani_3 { 
+0% {
+	opacity: 0;
+}
+33%{
+	opacity: 0;
+	transform: translateY(-30px);
+}
+66%
+{
+	opacity: 1;
+	transform: translateY(0px);
+}
+90%{
+	opacity: 0;
+	transform : translateY(30px);
+}
+100%{
+opacity:0;
+}
+}
+
+.hoverOk {
+	opacity: 1;
+}
+
+.hoverNo {
+	opacity: 0;
+}
+</style>
+
+</head>
+
+    <body>
+    <!--Menu-->
+    <ul id="menu">
+        <li data-menuanchor="Line" class="active"><a href="#Line">1</a></li>
+        <li data-menuanchor="VariousTheme" class=""><a href="#VariousTheme">2</a></li>
+        <li data-menuanchor="Stylish" class=""><a href="#Stylish">3</a></li>
+        <li data-menuanchor="Clever" class=""><a href="#Clever">4</a></li>
+        <li data-menuanchor="Download" class=""><a href="#Download">5</a></li>
+        <li data-menuanchor="Video" class=""><a href="#Video">6</a></li>
+    </ul>
+    <!--FullPage-->
+    <div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);">
+        <div class="section fp-section active" id="section1" data-anchor="Line" >
+            <div class="homebg01" style="/* background-image: images/Img_bg_top.png */">
+                <div class="container">
+                    <div class="row">
+                        <div class="pageTitle_main">L I N E&nbsp;&nbsp;L A U N C H E R</div>
+                        <div class="content">
+                            <p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                        </div>
+                        <!-- Google Button -->
+                        <div class="content">
+                        	<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher"><img class="btn_store" src="images/btn_store.png"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+             <div id="" style="width:100%; text-align:center;">
+            	<div align="center">
+           			<img class="animated bounceInUp device_intro" style="position: absolute; bottom: 0px; z-index: 100;" src="images/img_device_intro.png">
+           		</div>
+           		<div align="center">
+           			<img class="animated fadeInRight leonard_1" style="position: absolute; bottom: 0px; z-index: 99;" src="images/img_leonard_1.png">
+           		</div>
+           		<div align="center">
+           			<img class="animated rotateInUpRight brown_1" style="position: absolute; bottom: 0px; z-index: 101;" src="images/img_brown_1.png">
+           		</div>
+           		<div align="center">
+           			<img class="animated rotateInUpLeft edward_1" style="position: absolute; bottom: 0px; z-index: 102;" src="images/img_edward_1.png">
+           		</div>
+				<div align="center">
+					<img class="animated fadeInLeft james_1" style="position: absolute; bottom: 0px; z-index: 102;" src="images/img_james_1.png">
+				</div>
+				<div align="center">
+					<img class="animated bounce Sally_1" style="position: absolute; bottom: 0px; z-index: 103;" src="images/img_Sally_1.png">
+				</div>   		     
+           	</div>
+        </div>
+        <div class="section fp-section" id="section2" data-anchor="VariousTheme" style="">
+            <div class="homebg02">
+                <div class="container">
+                    <div class="row">
+                    	<div class="pageTitle_black" style="">V A R I O U S&nbsp;&nbsp;T H E M E</div>
+                        <!-- <img class="logo_text" src="images/logo_text.png"/> -->
+                        <div class="content">
+                            <p class="grey">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <p class="grey">KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+            <table style="position: relative; top: 33%; left: -195px; margin: 0 auto 0 auto; z-index: 500;">
+				<tr>
+					<th>
+						<div class="conts theme_pack">
+							<img class="animated bounceInUp theme_1"
+								src="images/img_theme_1.png">
+							<p style="font-size: 3px; color: #000000;">LINE Friends</p>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.linefriends"><img class="animated bounceInUp btn_download" style="" src="images/btn_download.png"></a>
+						</div>
+					</th>
+					<th>
+						<div class="conts theme_pack">
+							<img class="animated bounceInUp theme theme_2" src="images/img_theme_2.png">
+							<p style="font-size: 3px; color: #000000;">LINE Friends Cony</p>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.lovelycony"><img class="animated bounceInUp btn_download" style="" src="images/btn_download.png"></a>
+						</div>
+					</th>
+					<th>
+						<div class="conts theme_pack">
+							<img class="animated bounceInUp theme_3"
+								style="position: relative;" src="images/img_theme_3.png">
+							<p style="font-size: 3px; color: #000000;">LINE Friends Brown</p>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.friendlybrown"><img class="animated bounceInUp btn_download" src="images/btn_download.png"></a>
+						</div>
+					</th>
+				</tr>
+
+				<tr>
+					<th>
+						<div class="conts theme_pack">
+							<img class="animated bounceInUp theme_4"
+								src="images/img_theme_4.png">
+							<p style="font-size: 3px; color: #000000;">Leornard Life</p>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.friendlybrown"><img class="animated bounceInUp btn_download" src="images/btn_download.png"></a>
+						</div>
+					</th>
+					<th>
+						<div class="conts theme_pack">
+							<img class="animated bounceInUp theme_5"
+								src="images/img_theme_5.png">
+							<p style="font-size: 3px; color: #000000;">GD X TAEYANG</p>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.GDxTAEYANG"><img class="animated bounceInUp btn_download"
+								src="images/btn_download.png"></a>
+						</div>
+					</th>
+					<th>
+						<div class="conts  theme_pack">
+							<img class="animated bounceInUp theme_6"
+								src="images/img_theme_6.png">
+							<p style="font-size: 3px; color: #000000;">Duck whoo</p>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.RubberDuck"><img class="animated bounceInUp btn_download" src="images/btn_download.png"></a>
+						</div>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<div class="conts theme_pack">
+							<img class="animated bounceInUp theme_7"
+								src="images/img_theme_7.png">
+							<p style="font-size: 3px; color: #000000;">Dark Chic</p>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.darkchic"><img class="animated bounceInUp btn_download" src="images/btn_download.png"></a>
+						</div>
+					</th>
+					<th>
+						<div class="conts theme_pack">
+							<img class="animated bounceInUp theme_8"
+								src="images/img_theme_8.png">
+							<p style="font-size: 3px; color: #000000;">Vivid Line</p>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.vividline"><img class="animated bounceInUp btn_download" src="images/btn_download.png"></a>
+						</div>
+					</th>
+					<th>
+						<div class="conts theme_pack">
+							<img class="animated bounceInUp theme_9"
+								src="images/img_theme_9.png">
+							<p style="font-size: 3px; color: #000000;">B1A4 baro</p>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.B1A4_Baro"><img class="animated bounceInUp btn_download" src="images/btn_download.png"></a>
+						</div>
+					</th>
+				</tr>
+			</table>
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
+            	<img class="animated bounceInUp device_none" style="" src="images/img_device_none.png">
+			</div>
+			<div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
+            	<img class="animated theme_1_view" style="" src="images/img_theme_1_view.png">
+			</div>
+        </div>
+        <div class="section fp-section" id="section3" data-anchor="Stylish" style="background-color: rgb(105, 98, 201);">
+            <div class="homebg03">
+                <div class="container">
+                    <div class="row">
+                    	<div class="pageTitle_white" style="">S T Y L I S H</div>
+                        <div class="content">
+                            <p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+            	<img class="animated bounceInUp device_none2"  src="images/img_device_none.png">
+            </div>
+            <div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+				<img class="animated bounceInUp basictheme1" style="" src="images/img_basictheme.png">
+            </div>
+            <div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+            	<img class="animated wobble cony_1" style="" src="images/img_cony_1.png">
+            </div>
+            <div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+            	<img class="animated swing sally_2" style="" src="images/img_sally_2.png">
+            </div>
+            <div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+            	<img class="animated pulse icons_1" style="" src="images/img_icons_1.png">
+            </div>
+            <div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+				<img class="animated pulse icons_2" style="" src="images/img_icons_2.png">
+			</div>
+			<div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+				<img class="animated pulse icons_3" style="" src="images/img_icons_3.png">
+			</div>
+			<div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+				<img class="animated pulse icons_4" style="" src="images/img_icons_4.png">
+			</div>
+			<div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+				<img class="animated pulse icons_5" style="" src="images/img_icons_5.png">
+			</div>	
+			<div class="conts browserH" style="margin: auto; position: relative; left: 0%;">
+				<img class="animated pulse icons_6" style="" src="images/img_icons_6.png">
+            </div>
+        </div>
+        <div class="section fp-section" id="section4" data-anchor="Clever" style="background-color: rgb(0, 190, 104);">
+            <div class="homebg04">
+                <div class="container">
+                    <div class="row">
+                    	<div class="pageTitle_white" style="">C L E V E R</div>
+                        <div class="content">
+                            <p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
+                            <p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
+				<img class="animated device_none2" style="" src="images/img_device_none.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
+				<img class="animated cleanertheme_1" style="" src="images/img_cleanertheme_1.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
+				<img class="animated cleanertheme_2" style="" src="images/img_cleanertheme_2.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
+				<img class="animated cleaner_pop" style="" src="images/img_cleaner_pop.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
+				<img class="animated boss_1" style="" src="images/img_boss_1.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%;">
+				<img class="animated Sally_3" style="" src="images/img_Sally_3.png">
+            </div>
+        </div>
+        <div class="section fp-section" id="section5" data-anchor="Download" style="background-color: rgb(0, 166, 255);">
+            <div class="homebg05">
+                <div class="container">
+                    <div class="row">
+<!--                     	<div class="pageTitle_white" style="">D O W N L O A D</div>
+                        <div class="content">
+                            <p>Gestures: Quickly navigate your device, rearrange your screens, and access special features.</p>
+                        </div> -->
+                        <img class="animated" style="position: relative; animation-iteration-count: infinite; margin: 20px 80px 20px 80px; z-index: 500;" src="images/img_appicon.png">
+                        <p class="pageTitle_white">LINE's Official Launcher app</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher"><img class="animated" style="position: relative; animation-iteration-count: infinite; margin: 40px; z-index: 500;" src="images/btn_store.png"></a>
+                    </div>
+                </div>
+            </div>
+<!--             <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: 30%;">
+				<img class="animated" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/img_appicon.png">
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: -45%;">
+				<p style="font-size: 40px;">LINE's Official Launcher app</p>
+            </div>
+            <div class="conts browserH" style="margin: 0px auto; position: relative; left: 0%; top: -130%;">
+				<img class="animated" style="position: relative; animation-iteration-count: infinite; animation-duration: 10s; z-index: 500;" src="images/btn_store.png">
+            </div> -->
+        </div>
+<!--         <div class="section fp-section" id="section6" data-anchor="Download" style="background-color: rgb(0, 166, 255);">
+            <div class="homebg06">
+                <div class="container">
+                    <div class="row">
+                    	<div class="pageTitle_white" style="font-family: 'Cambay', sans-serif; font-size: 3em; word-break:keep-all;">V I D E O</div>
+                        <div class="content">
+                            <p>Videos: Video is video and video is also video. I like video, and you like video too.</p>
+                        </div>
+                    </div>
+                    <div class="conts" style="position: absolute; top: 25%; left: 0; width: 100%; z-index: 1000;">
+						<div class="phone" style="width: 20.5em; height: 40em; margin: 0px auto; background: url(http://static.naver.net/m/vlive/incomms/pc/2015/img_sec3_phone.png) no-repeat; position: relative; left: 0%;">
+							<video style="width: 17.5em; height: 31em; display: inline; margin-top: 5em;" autoplay="autoplay" loop="loop">
+								<source src="http://event.dn.naver.net/naver/event/static/globalv/v_info_4Mbps.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-1.11.1-ui.min.js"></script> 
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/resourceArrangement.js"></script>
+    <script type="text/javascript">
+        //resize
+         var winIE = (navigator.userAgent.indexOf("Opera") == -1 && (document.getElementByIdx &&  document.documentElement.behaviorUrns))  ? true : false;
+        function bodySize(){
+         if(winIE && document.documentElement.clientWidth) {
+          var obj = document.getElementsByTagName_r("body")[0].style;
+          obj.width = (document.documentElement.clientWidth < 760) ? "760px" : "100%";
+         }
+        }
+        function init(){
+            if(winIE) {
+                bodySize(); 
+            }
+        }
+        onload = init;
+        if(winIE) { 
+            onresize = bodySize; 
+        }
+        
+        //fullpage plugin
+         $(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#2B88FF', '#efefef', '#6962C9', '#00BE68', '#00a6ff'/* , '#000' */],
+               anchors: ['Line', 'VariousTheme', 'Stylish', 'Clever', 'Download'/*,  'Video' */],
+                 menu :'#menu',
+                verticalCentered: false,
+                css3: true,
+                scrollingSpeed: 600,
+                //events
+                afterLoad:function(line){ 
+                    if (line == 'VariousTheme') {
+                        $('#logo_w').addClass('logo_grey');
+                        $('.nav').addClass('nav_grey').removeClass('nav');
+                        $('#menu li').addClass('grey');
+                        $('.download_button a').addClass('grey');
+                    } else {
+                        $('#logo_w').removeClass('logo_grey');
+                        $('.nav_grey').addClass('nav').removeClass('nav_grey');
+                        $('#menu li').removeClass('grey');
+                        $('.download_button a').removeClass('grey');
+                    }
+                }
+            });
+        }); 
+    </script>
+<!-- 	<script>
+	   $(window).keydown(function(event) 
+	   		{
+	   		    if((event.keyCode == 107 && event.ctrlKey == true) || (event.keyCode == 109 && event.ctrlKey == true))
+	   		    {
+	   		        event.preventDefault(); 
+	   		    }
+	
+	   		    $(window).bind('mousewheel DOMMouseScroll', function(event) 
+	   		    {
+	   		        if(event.ctrlKey == true)
+	   		        {
+	   		            event.preventDefault(); 
+	   		        }
+	   		    });
+	   		});
+	   $( ".theme_2" )
+	   .mouseover(function() {
+	   	$( ".theme_1_view" ).css("opacity", 1);
+	   })
+	   .mouseout(function() {
+	   	$( ".theme_1_view" ).css("opacity", 0);
+	   });
+	   
+	   
+	</script> -->
+	<script>
+	$(function(){
+		var windowH = $(window).innerHeight();
+		var windowW = $(window).innerWidth();
+		var device_introW = 402;
+		var device_introH = 516;
+		var leonard_1W = 194;
+		var leonard_1H = 196;
+		var brown_1W = 322;
+		var brown_1H = 464;
+		var edward_1W = 90;
+		var edward_1H = 102;
+		var james_1W = 244;
+		var james_1H = 471;
+		var Sally_1W = 144;
+		var Sally_1H = 218;
+		
+		/* 태그 이미지 위치 */
+		var device_intro_loca = (windowW/2.0)-(device_introW/2.0);
+		var leonard_1_loca = (windowW/2.0)-(device_introW/2.0)-(leonard_1W*3/4);
+		var brown_1_loca = (windowW/2.0)-(device_introW/2.0)-(brown_1W*3/4);
+		var edward_1_loca = (windowW/2.0)-(device_introW/2.0)*2+50;
+		var james_1_loca = (windowW/2.0)+(device_introW/2.0);
+		var Sally_1_loca = (windowW/2.0)+(device_introW/2.0)-Sally_1W/3;
+		
+		$('.device_intro').css({ left: device_intro_loca});
+		$('.leonard_1').css({ left: leonard_1_loca});
+		$('.leonard_1').css({ bottom: device_introH-250});
+		$('.brown_1').css({ left: brown_1_loca});
+		$('.brown_1').css({ bottom: -device_introH*1/4});
+		$('.edward_1').css({ left: edward_1_loca});
+		$('.edward_1').css({ bottom: -edward_1W*1/3});
+		$('.james_1').css({ left: james_1_loca});
+		$('.james_1').css({ bottom: 0});
+		$('.Sally_1').css({ left: Sally_1_loca});
+		$('.Sally_1').css({ bottom: -Sally_1H/4});
+		
+		$(window).resize(function(){
+			var windowH = $(window).innerHeight();
+			var windowW = $(window).innerWidth();
+			var device_introW = 402;
+			var device_introH = 516;
+			var leonard_1W = 194;
+			var leonard_1H = 196;
+			var brown_1W = 322;
+			var brown_1H = 464;
+			var james_1W = 244;
+			var james_1H = 471;
+			var Sally_1W = 144;
+			var Sally_1H = 218;
+			
+			var device_intro_loca = (windowW/2.0)-(device_introW/2.0);
+			var leonard_1_loca = (windowW/2.0)-(device_introW/2.0)-(leonard_1W*3/4);
+			var brown_1_loca = (windowW/2.0)-(device_introW/2.0)-(brown_1W*3/4);
+			var edward_1_loca = (windowW/2.0)-(device_introW/2.0)*2+50;
+			var james_1_loca = (windowW/2.0)+(device_introW/2.0);
+			var Sally_1_loca = (windowW/2.0)+(device_introW/2.0);
+			
+			
+			$('.device_intro').css({ left: device_intro_loca});
+			$('.leonard_1').css({ left: leonard_1_loca});
+			$('.leonard_1').css({ bottom: device_introH-250});
+			$('.brown_1').css({ left: brown_1_loca});
+			$('.brown_1').css({ bottom: -device_introH*1/4});
+			$('.edward_1').css({ left: edward_1_loca});
+			$('.edward_1').css({ bottom: -edward_1W*1/3});
+			$('.james_1').css({ left: james_1_loca});
+			$('.james_1').css({ bottom: 0});
+			$('.Sally_1').css({ left: Sally_1_loca});
+			$('.Sally_1').css({ bottom: -Sally_1H/3});
+		});
+	});	
+	</script>
+
+</body></html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Lotty's advertisement Line Launcher</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+
+
+<link rel="stylesheet" href="css/animations.css">
+<!--  Web Page CSS -->
+<link rel="stylesheet" href="css/webpage.css">
+
+
+<style>
+/*몬스터 이용해보자!!*/
+.pic4 {
+	width: 190px;
+	height: 240px;
+	margin: 2% auto;
+	background:
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/blog/monster.png')
+		left center;
+}
+
+.play{
+	
+	animation: play .8s steps(10) infinite;
+	
+	visibility: visible !important;
+}
+
+@keyframes play { 
+	100% {
+		background-position: -1900px;
+	}
+}
+
+</style>
+
+</head>
+<body>
+	<!-- Showed web page -->
+
+	<div id="wrap" class="divWeb">
+		<div id="container-wrap" class="section fp-auto-height">
+			<div class="section">
+				<div id="banner-wrap">
+					<div id="banner" class="content">
+						<div class="title fadeInUp">
+							<div class="icon"></div>
+							<h2>LINE Launcher</h2>
+							<div class="desc">Breathe new life into your phone</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="ll-page section" id="ll-theme">
+			<div class="content clear">
+				<div class="anibox alignleft">
+					<img src="img/b1.png" style="z-index: 1500; visibility: hidden;" class="pic1">
+				</div>
+				<div class="textbox alignright expandUp">
+					<h3 class="title">Theme</h3>
+					<h4 class="desc">The most beatuiful Theme !</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ll-page section" id="ll-smart">
+			<div class="content clear">
+				<div class="textbox alignleft expandUp" >
+					<h3 class="title" style="color: white;">Smart</h3>
+					<h4 class="desc">Various functions became more smart</h4>
+					<div class="entry" style="color: white;"">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+				<div class="anibox alignright">
+					<span class="imgHolder" style="display:inline-block; background:#000;">
+						<div style="position: relative;"><img src="img/b1.png" style="visibility: hidden; position: relative;"  class="pic2"></div>
+						<img src="img/mc1.png" style="visibility: hidden;" class="pic2_2">
+						<img src="img/touchBtn.png" style="top: -340px; left: 130px; position: relative; width: 100px; height: 95px;" class="pic2_3">
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-stylish">
+			<div class="content clear">
+				<div class="anibox alignleft">
+					<img src="img/b3.png" class="pic3" style="z-index: 1500; visibility: hidden">
+				</div>
+				<div class="textbox alignright expandUp">
+					<h3 class="title">Stylish</h3>
+					<h4 class="desc">To hold up the theme of the world</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-monster">
+			<div class="content clear">
+				<div class="anibox alignleft">
+					<div class="pic4" style="visibility: hidden;"></div>
+				</div>
+				<div class="textbox alignright fadeIn">
+					<h3 class="title">Animation</h3>
+					<h4 class="desc">To hold up the theme of the world</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-salri">
+			<div class="content clear">
+				<div class="textbox alignleft">
+					<h3 class="title">Salri</h3>
+					<h4 class="desc">Various functions became more smart</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+				<div class="anibox alignright">
+					<img src="img/selri.png" class="pic5" style="visibility: hidden;">
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-effective">
+			<div class="content clear">
+				<div class="anibox alignleft">
+					<div class="pic6" style="display: block; border-radius: 24px; margin-top: 380px; height: 10px; width: 250px; margin-left: auto; margin-right: auto; margin-bottom: 100px; background-color: #ffffff !important; background-size: contain; visibility: hidden;"></div>
+				</div>
+				<div class="textbox alignright expandUp">
+					<h3 class="title">Stylish</h3>
+					<h4 class="desc">To hold up the theme of the world</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+
+
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+	
+	<!-- Web Page animation function -->
+	<script>
+	/*스크롤을 내렸을 때 이벤트 진행*/
+	$(window).scroll(function () {
+		/* >> 현재 스크롤의 높이*/
+		var height = $(document).scrollTop();
+		console.log("h= "+height);
+		/* >> pic1이라는 클래스명을 가진 객체의 높이*/
+		var p1 = $(".pic1").offset().top;
+		/* console.log("destination= "+p1); */
+		/* >> 스크롤의 높이가 객체 보다 400px 앞에 도달하게 되면*/
+		if(height>=p1-400){
+			/* console.log("hi 1st!!"); */
+			/* >> slideRight라는 클래스를 넣어줌.*/
+			$('.pic1').addClass('slideRight');
+		}
+		var p2 = $(".pic2").offset().top;
+		 	/* console.log("destination2= "+p2); */
+		if(height>=p2-500){
+			/* >> 동시에 발생해야할 태그들을 묶어서 처리가 가능하다.*/
+			$('.pic2').addClass('memoryClean');
+			$('.pic2_2').addClass('memoryCleanPopUp');
+		}
+		
+		var p3 = $(".pic3").offset().top;
+		/* console.log("destination3= "+p3); */
+		if(height>=p3-400){
+			/* console.log("hi 3rd!!"); */
+			$('.pic3').addClass('scaleIn');
+		}
+		
+		var p4 = $(".pic4").offset().top;
+		 console.log("destination4= "+p4);
+		if(height>=p4-400){
+			console.log("hi 4th!!"); 
+			$('.pic4').addClass('play');
+		}
+		
+		var p5 = $(".pic5").offset().top;
+		/* console.log("destination5= "+p5); */
+		if(height>=p5-800){
+			/* console.log("hi 5th!!"); */
+			$('.pic5').addClass('round1');
+		}
+		
+		var p6 = $(".pic6").offset().top;
+		if(height>=p6-500){
+			console.log("hi 6th!!");
+			$('.pic6').addClass('cleanDown');
+		}
+	});
+	</script>
+
+<!-- Mobile 구분 스크립트 -->
+<script>
+/*Mobile이라는 단어가 들어갔는지 체크하는 변수 checkMobile(return값: boolean)*/
+var checkMobile = navigator.userAgent.match('Mobile');
+
+alert(checkMobile);
+/* 브라우저의 정보에 Mobile이라는 String이 있으면 */
+if(checkMobile != null){
+	alert("u r in mobile!!");
+        /* 모바일 사이트 이동! */
+	location.href = "http://lotty02cho.github.io/0910advertisePage/WebContent/mobile2.html";
+}
+/* 브라우저의 정보에 Mobile이라는 String이 없으면 */ 
+else{
+	alert("u r in web!!");
+        /*index.html을 띄워준다.*/
+}
+</script>
+
+</body>
+</html>

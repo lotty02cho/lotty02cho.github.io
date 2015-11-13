@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="apple-mobile-web-app-status-bar-style"
+	content="black-translucent">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<!-- FullPage css -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+
+<!-- To use Wow. js -->
+<link rel="stylesheet" href="css/animate.css">
+
+<style type="text/css">
+.section {
+	font-size: 6em;
+	text-align: center;
+}
+
+@media (min-width: 1200px) {
+
+	/*<!-- 1ST PAGE -->*/
+
+	h1{ margin-top:50px; font-size: 100px;}
+	#dodolTitle{ width: 300px; height: 300px;}
+	.desc { font-size: 40px;}
+	#googleBtn{ margin-top: 40px; width:200px; height: 76px;}
+	
+	
+	
+		/*<!-- 2ND PAGE -->*/
+	#launcherPic{width:820px; height: 600px;}
+	.title{ font-size: 60px;}
+	.desc { font-size: 40px;}
+	.section2Img{margin-top: 5%; padding: 0px 5%;}
+	.section2Desc{margin-top: 40%; padding: 0px 5%;}
+	
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+	
+	/*<!-- 1ST PAGE -->*/
+	h1{ margin-top:50px; font-size: 80px;}
+	#dodolTitle{ width: 200px; height: 200px;}
+	.desc{font-size: 50px;}
+	#googleBtn{ margin-top: 40px; width:200px; height: 76px;}
+	#launcherPic{margin-top: 10%; width:80%; height: 80%;}
+	
+	
+	/*<!-- 2ND PAGE -->*/
+	
+	.title{ font-size: 60px;}
+	.desc { font-size: 40px;}
+	.section2Img{margin-top: 5%; padding: 0px 5%;}
+	.section2Desc{margin-top: 40%; padding: 0px 5%;}
+}
+
+ 
+/* 세로 방향 타블렛부터 가로 방향 타블렛과 데스크탑까지 */
+@media (min-width: 768px){
+	
+	/*<!-- 1ST PAGE -->*/
+	h1{ margin-top:50px; font-size: 60px;}
+	#dodolTitle{ width: 150px; height: 150px;}
+	.desc{font-size: 40px;}
+	#googleBtn{ margin-top: 40px; width:160px; height: 60px;}
+	#launcherPic{ margin-top: 10%; width:40%; height: 40%;}
+	
+	/*<!-- 2ND PAGE -->*/
+	
+	.title{ font-size: 40px;}
+	.desc { font-size: 30px;}
+	.section2Img{margin-top: 5%; padding: 0px 5%;}
+	.section2Desc{padding: 0px 5%;}
+}
+ 
+/* 가로 방향 전화기부터 세로 방향 타블렛까지 */
+@media (max-width: 767px) {
+	
+	/*<!-- 1ST PAGE -->*/
+	h1{ margin-top:50px; font-size: 38px;}
+	#dodolTitle{ width: 150px; height: 150px;}
+	.desc{font-size: 30px;}
+	#googleBtn{ margin-top: 40px; width:160px; height: 60px;}
+	
+	#launcherPic{ margin-top: 10%; width:40%; height: 40%;}
+}
+ 
+/* 가로 방향 전화기 이하 */
+@media (max-width: 480px) {
+	
+	/*<!-- 1ST PAGE -->*/
+	h1{ margin-top:20px; font-size: 24px;}
+	#dodolTitle{ width: 150px; height: 150px;}
+	.desc{font-size: 16px;}
+	#googleBtn{ margin-top: 40px; width:100px; height: 40px;}
+	
+	#launcherPic{ margin-top: 30%; width:30%; height: 30%;}
+}
+
+
+</style>
+
+
+<title>Lotty's Line Launcher</title>
+
+
+</head>
+
+
+<body>
+
+	<!-- Tab 부분 -->
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+
+		<div class="container-fluid">
+			<!-- Title -->
+			<a href="#" class="navbar-brand">Line Launcher</a>
+
+			<!-- Mobile Button -->
+			<button class="navbar-toggle" data-toggle="collapse"
+				data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<!-- nav bar 오른쪽 정렬 -->
+				<ul class="nav navbar-nav navbar-right">
+					<!-- active = 강조효과 -->
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Language <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">한글</a></li>
+							<li><a href="#">English</a></li>
+							<li><a href="#">中文</a></li>
+							<li><a href="#">日本語</a></li>
+						</ul></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">About</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- FullPage 부분 -->
+	<div class="fp-viewing-firstPage"
+		style="overflow: visible; height: initial;">
+		<div id="fullpage" class="fullpage-wrapper"
+			style="height: 100%; position: relative;">
+			<div class="fp-section fp-table active" id="section0"
+				data-anchor="firstPage"
+				style="height: 1075px; background-color: rgb(198, 61, 15);">
+				<div style="height: 1075px;">
+					<div class="intro wow bounceInUp text-center" style="padding-top: 100px;">
+						<div class="wow rotateIn" data-wow-duration="2s" data-wow-delay="1s">
+							<img src="img/dodolTitle.png" id="dodolTitle">
+						</div>
+						<h1>This is new Line Launcher!</h1>
+						<div class="desc">The perfect combination!</div>
+						<div class="wow fadeIn" data-wow-duration="4s" data-wow-delay="3s">
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher"><img src="img/googleBtn.png" id="googleBtn"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fp-section" id="section1"
+				data-anchor="secondPage"
+				style="height: 1075px; background-color: rgb(27, 188, 155);">
+				<div class="fp-slides">
+					<div class="fp-slidesContainer"
+						style="width: 200%; transition: all 700ms ease; transform: translate3d(0px, 0px, 0px);">
+						<div class="slide fp-slide fp-table active" id="slide1"
+							style="width: 50%;">
+							<div style="height: 1075px; padding-top: 5%;">
+								<!-- 애니메이션 효과 -->
+								<div class="intro" data-wow-duration="2s" data-wow-delay="1s">
+									<div>
+								            <div class="container-fluid">
+								                <div class="row">
+								                <div class="section2Img col-xs-12 col-md-6 text-center wow slideInLeft">
+								                    <img src="img/launcher01.png" id ="launcherPic">
+								                </div>
+								                
+								                <div class="section2Desc col-xs-12 col-md-6  wow slideInRight">
+								                    <h3 class="title">Sleek</h3>
+								                    <h4 class="desc">Fast performance with style</h4>
+								                    <div class="entry">Accelerate your startup speed by 100%! Make your apps load quicker, search the net with speed, and make full use of the capabilities of your phone with no dead weight.</div>
+								                </div>
+								                </div>
+								            </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section fp-section fp-table" id="section2"
+				data-anchor="3rdPage"
+				style="height: 1075px; padding-top: 10%; background-color: rgb(126, 143, 124);">
+				<div class="fp-tableCell" style="height: 1075px;">
+					<div class="intro wow slideInRight">
+						<h1>Coool Update!!!</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Animation 부분 -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- [Scrolling시 animation 효과] -->
+	<!-- jQuery 사용 -->
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- GreenSock Animation Platform(GSAP) 사용 -->
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+	<!-- ScrollMagic.js 사용 -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
+	<!-- Debug trigger 부분 표시 -->
+	<!-- 	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
+ -->
+
+	<!-- [Navigation Bar 효과] jquery & Bootstrap library -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!-- FullPage javaScript -->
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<!-- if you use the option css3:false  -->
+	<script src="js/jquery.easings.min.js"></script>
+
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors : [ 'firstPage', 'secondPage', '3rdPage'],
+				sectionsColor : [ '#FFFFFF','#C63D0F', '#1BBC9B'],
+				scrollBar : true
+			});
+		});
+	</script>
+
+	<script src="js/wow.min.js"></script>
+
+	<script>
+		new WOW({
+			boxClass : 'wow', // default
+			animateClass : 'animated', // default
+			offset : 0, // default
+			mobile : true, // default
+			live : true
+		// default
+		}).init();
+	</script>
+
+
+
+	<script src="js/main.js"></script>
+	<!-- scripts.js, main.js, etc. -->
+</body>
+</html>

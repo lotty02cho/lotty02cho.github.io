@@ -1,0 +1,421 @@
+/* lotty */
+/* The animation code */
+
+@-webkit-keyframes round1 {
+ 0% {
+-webkit-transform: rotate(0);
+}
+
+ 25% {
+-webkit-transform: rotate(90deg);
+}
+
+ 50% {
+-webkit-transform: rotate(180deg);
+}
+
+ 75% {
+-webkit-transform: rotate(270deg);
+}
+
+ 100% {
+-webkit-transform: rotate(360deg);
+}
+}
+
+@-moz-keyframes round1 {
+ 0% {
+-keyframes-transform: rotate(0);
+}
+
+ 25% {
+-keyframes-transform: rotate(90deg);
+}
+
+ 50% {
+-keyframes-transform: rotate(180deg);
+}
+
+ 75% {
+-keyframes-transform: rotate(270deg);
+}
+
+ 100% {
+-keyframes-transform: rotate(360deg);
+}
+}
+
+
+@keyframes round1 {
+
+ 0% {
+ transform: rotate(0);
+}
+
+ 25% {
+ transform: rotate(90deg);
+}
+
+ 50% {
+ transform: rotate(180deg);
+}
+
+ 75% {
+ transform: rotate(270deg);
+}
+
+ 100% {
+ transform: rotate(360deg);
+}
+}
+
+.swiper-slide-active .thShop {
+    animation: round1 5s linear infinite;
+	-webkit-animation-name: round1;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	visibility: visible !important;
+}
+
+
+@-webkit-keyframes moveCony {
+ 0% {
+	left: 30%; top:60%;
+	transform: rotate(0deg);
+}
+
+10% {
+	left: 56%; top:32%;
+	transform: rotate(5deg);
+}
+
+20% {
+ 	left: 52%; top:34%;
+ 	transform: rotate(-5deg);
+}
+30% {
+ 	left: 48%; top:36%;
+ 	transform: rotate(-5deg);
+}
+40% {
+ 	left: 44%; top:38%;
+ 	transform: rotate(5deg);
+}
+50% {
+ 	left: 40%; top:40%;
+	transform: rotate(5deg);
+}
+
+60% {
+ 	left: 36%; top: 42%;
+ 	transform: rotate(-5deg);
+}
+70% {
+ 	left: 32%; top: 44%;
+ 	transform: rotate(-5deg);
+}
+
+80% {
+ 	left: 28%; top: 46%;
+ 	transform: rotate(5deg);
+}
+
+90% {
+ 	left: 24%; top: 48%;
+ 	transform: rotate(5deg);
+}
+
+100% {
+	left: 20%; top: 50%;
+	transform: rotate(-5deg);
+}
+}
+
+@-moz-keyframes moveCony {
+ 0% {
+	left: 30%; top:60%;
+	transform: rotate(0deg);
+}
+
+10% {
+	left: 56%; top:32%;
+	transform: rotate(5deg);
+}
+
+20% {
+ 	left: 52%; top:34%;
+ 	transform: rotate(-5deg);
+}
+30% {
+ 	left: 48%; top:36%;
+ 	transform: rotate(-5deg);
+}
+40% {
+ 	left: 44%; top:38%;
+ 	transform: rotate(5deg);
+}
+50% {
+ 	left: 40%; top:40%;
+	transform: rotate(5deg);
+}
+
+60% {
+ 	left: 36%; top: 42%;
+ 	transform: rotate(-5deg);
+}
+70% {
+ 	left: 32%; top: 44%;
+ 	transform: rotate(-5deg);
+}
+
+80% {
+ 	left: 28%; top: 46%;
+ 	transform: rotate(5deg);
+}
+
+90% {
+ 	left: 24%; top: 48%;
+ 	transform: rotate(5deg);
+}
+
+100% {
+	left: 20%; top: 50%;
+	transform: rotate(-5deg);
+}
+}
+
+
+
+@keyframes moveCony {
+
+ 0% {
+	left: 30%; top:60%;
+	transform: rotate(0deg);
+}
+
+10% {
+	left: 56%; top:32%;
+	transform: rotate(5deg);
+}
+
+20% {
+ 	left: 52%; top:34%;
+ 	transform: rotate(-5deg);
+}
+30% {
+ 	left: 48%; top:36%;
+ 	transform: rotate(-5deg);
+}
+40% {
+ 	left: 44%; top:38%;
+ 	transform: rotate(5deg);
+}
+50% {
+ 	left: 40%; top:40%;
+	transform: rotate(5deg);
+}
+
+60% {
+ 	left: 36%; top: 42%;
+ 	transform: rotate(-5deg);
+}
+70% {
+ 	left: 32%; top: 44%;
+ 	transform: rotate(-5deg);
+}
+
+80% {
+ 	left: 28%; top: 46%;
+ 	transform: rotate(5deg);
+}
+
+90% {
+ 	left: 24%; top: 48%;
+ 	transform: rotate(5deg);
+}
+
+100% {
+	left: 20%; top: 50%;
+	transform: rotate(-5deg);
+}
+}
+
+.swiper-slide-active .moveCony {
+    animation: moveCony 2.5s linear;
+    -webkit-animation-name: moveCony;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-timing-function: linear;
+	visibility: visible !important;
+}
+
+@keyframes moveBrown {
+
+ 0% {
+	opacity: 0;
+	transform: rotate(0deg);
+	width: 0rem;
+}
+
+ 50% {
+	opacity: 0;
+	transform: rotate(0deg);
+	width: 6rem;
+}
+
+56.25% {
+	transform: rotate(5deg);
+}
+
+62.5% {
+ 	transform: rotate(5deg);
+}
+68.75% {
+ 	transform: rotate(-5deg);
+}
+75% {
+ 	transform: rotate(5deg);
+}
+81.25% {
+	transform: rotate(5deg);
+}
+
+ 93.75% {
+ 	transform: rotate(5deg);
+}
+ 100% {
+	opacity: 1;
+	transform: rotate(-5deg);
+	width: 8rem;
+}
+}
+
+
+.swiper-slide-active .moveBrown {
+	
+    animation: moveBrown 4.5s linear;
+	visibility: visible !important;
+}
+
+
+@keyframes burst {
+
+ 0% {
+	opacity: 0;
+	left: 50%; top: 50%;
+	
+}
+ 80% {
+	opacity: 0;
+	left: 50%; top: 50%;
+	
+}
+
+ 100% {
+	opacity: 1;
+}
+}
+
+.swiper-slide-active .burst {
+    animation: burst 3s ease-in;
+
+	/* visibility: visible !important; */
+}
+
+@keyframes memoryClean1 {
+
+ 0% {
+	opacity: 0;
+	
+}
+
+ 100% {
+	opacity: 1;
+}
+}
+
+
+.swiper-slide-active .memoryClean1 {
+    animation: memoryClean1 2s ease-in;
+	/* visibility: visible !important; */
+}
+
+@keyframes memoryClean2 {
+
+ 0% {
+	opacity: 0.5;
+}
+
+50%{
+	opacity: 1;
+	top: 65%;
+}
+
+75%{
+	opacity: 1;
+	transform: rotate(-5deg);
+}
+
+ 100% {
+	opacity: 0;
+}
+}
+
+.swiper-slide-active .memoryClean2 {
+    animation: memoryClean2 3s ease-in;
+	/* visibility: visible !important; */
+}
+
+@keyframes memoryClean3 {
+
+ 0% {
+	opacity: 0;
+}
+
+50%{
+	opacity: 0;
+}
+
+51%{
+	opacity: 1;
+
+}
+
+ 100% {
+	opacity: 1;
+}
+}
+
+
+.swiper-slide-active .memoryClean3 {
+    animation: memoryClean3 6s ease-in;
+	/* visibility: visible !important; */
+}
+
+@keyframes memoryClean4 {
+
+ 0% {
+	opacity: 0;
+	top:55%;
+}
+
+80%{
+	opacity: 0;
+	top:55%;
+}
+
+ 100% {
+	opacity: 1;
+	top:50%;
+}
+}
+
+
+.swiper-slide-active .memoryClean4 {
+    animation: memoryClean4 3.5s ease-in;
+	/* visibility: visible !important; */
+}
+
+
+
+/* lotty-end*/

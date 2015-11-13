@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fixed Navigation Bar</title>
+<meta name="description"
+	content="An example of a fixed-position(sticky) top navigation bar that remains visible while the user scrolls the page.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/fixed-navigation-bar.css">
+<link rel="shortcut icon" href="http://sixrevisions.com/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" href="css/animate.css">
+<link rel="alternate" media="only screen and (max-width: 540px)" href="http://lotty02cho.github.io/CanYouHelpResponsive/WebContent/Index.html" >
+
+
+<style>
+/* default */
+body, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* float */
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+#wrap {
+	position: relative;
+	min-height: 100%;
+	_height: 100%;
+	min-width: 960px;
+}
+
+#container-wrap {
+	padding: 0 0 35px;
+	width: 100%;
+	position: relative;
+	z-index: 8;
+	overflow: hidden;
+}
+
+.section {
+	width: 100%;
+}
+
+@media ( min-width : 540px) {
+	.ll-page, .bodyLL #banner-wrap {
+		display: block !important;
+		position: static !important;
+	}
+}
+
+#banner {
+	text-align: center;
+	padding: 60px 0 120px;
+	position: relative;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.content {
+	margin: 0 auto;
+	width: 960px;
+	/* background: #536FD8; */ /*확인*/
+	background: #ffffff;
+}
+
+#ll-theme .content{
+	background: #00A6FF;
+}
+
+#ll-smart .content{
+	background: #00BE68;
+}
+
+#ll-stylish .content{
+	background: #6962C9;
+}
+
+
+.bodyLL #banner {
+	padding: 100px 0 260px;
+}
+
+.bodyLL #banner .title {
+	width: 750px;
+	height: auto;
+	background: none;
+}
+
+#banner .title {
+	/* text-indent: -999em; */
+	width: 516px;
+	height: 143px;
+	margin: 0 auto;
+	position: relative;
+	top: 90px;
+}
+
+.title .icon {
+	width: 134px;
+	height: 134px;
+	background: url(img/dodolTitleSmall3.png) no-repeat;
+	float: left;
+}
+
+.title h2 {
+	margin: 12px 0 0 25px;
+	width: 553px;
+	height: 72px;
+	font-size: 86px;
+	float: left;
+	color: black;
+}
+
+.title .desc {
+	font-size: 38px;
+	color: black;
+}
+
+.ll-page {
+	padding: 0 0 35px;
+}
+
+.ll-page .anibox {
+	-webkit-animation-delay: .8s;
+    -moz-animation-delay: .8s;
+    -ms-animation-delay: .8s;
+    animation-delay: .8s;
+    -webkit-animation: dragTop .7s ease-in-out both;
+    -moz-animation: dragTop .7s ease-in-out both;
+    -ms-animation: dragTop .7s ease-in-out both;
+    animation: dragTop .7s ease-in-out both;
+	width: 350px;
+	position: relative;
+}
+
+#ll-theme .content {
+	padding-top: 0px;
+}
+
+#ll-theme .anibox img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#ll-theme .textbox {
+	margin-top: 100px;
+}
+
+.ll-page .content {
+	padding: 70px 0;
+	border-bottom: 1px solid #e43e38;
+}
+
+.ll-page .textbox {
+	width: 500px;
+	margin-top: 60px;
+}
+
+.ll-page .title {
+	height: 60px;
+	line-height: 60px;
+	color: black;
+	font-size: 60px;
+}
+
+.ll-page .desc {
+	color: #ffffff;
+	font-size: 24px;
+	margin: 10px 0 40px;
+	line-height: 1.4;
+}
+
+.ll-page .entry {
+	line-height: 1.6;
+	font-size: 18px;
+	color: black;
+	overflow: hidden;
+}
+
+#ll-smart .content {
+	padding-top: 0px;
+}
+
+#ll-smart .anibox img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#ll-smart .textbox {
+	margin-top: 100px;
+}
+
+.clear:after {
+	content: "\200c";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+}
+
+.monster {
+  width: 190px;
+  height: 240px;
+  margin: 2% auto;
+  background: url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/blog/monster.png') left center;
+
+}
+
+@keyframes play {
+    100% { background-position: -1900px; }
+}
+
+
+
+/*
+==============================================
+hatch
+==============================================
+*/
+
+.hatch{
+	animation: hatch 2s infinite;
+	
+	animation-name: hatch;
+	-webkit-animation-name: hatch;
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%; 
+
+	visibility: visible !important;		
+}
+
+@keyframes hatch {
+	0%, 100% {
+		transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		transform: rotate(-2deg);
+	}	
+	65% {
+		transform: rotate(1deg);
+	}	
+	80% {
+		transform: rotate(-1deg);
+	}		
+							
+}
+
+@-webkit-keyframes hatch {
+	0% {
+		-webkit-transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		-webkit-transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		-webkit-transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		-webkit-transform: rotate(-2deg);
+	}	
+	65% {
+		-webkit-transform: rotate(1deg);
+	}	
+	80% {
+		-webkit-transform: rotate(-1deg);
+	}		
+	100% {
+		-webkit-transform: rotate(0deg);
+	}		
+}
+
+
+
+
+@media ( max-width : 800px) {
+	/* banner-wrap */
+	#wrap {
+		min-width: 100%;
+	}
+	.bodyLL #banner-wrap {
+		background-position: center -400px;
+	}
+	.bodyLL #banner {
+		padding: 90px 0 170px;
+		width: auto;
+		min-width: 320px;
+	}
+	.bodyLL #banner .title {
+		width: 500px;
+	}
+	.title .icon {
+		width: 100px;
+		height: 100px;
+		background-size: contain;
+	}
+	.title h2 {
+		margin: 8px 0 0 20px;
+		width: 380px;
+		height: 60px;
+		font-size: 60px;
+		background-size: contain;
+	}
+	.title .desc {
+		font-size: 22px;
+	}
+
+	/* ll-theme */
+	.content {
+		width: auto;
+		min-width: 320px;
+	}
+	.ll-page .content {
+		padding: 60px 10px;
+		max-width: 600px;
+	}
+	.ll-page .anibox {
+		width: 200px;
+	}
+	.ll-page .textbox {
+    	width: 300px;
+    	margin-top: 20px;
+	}
+	#ll-theme .anibox img {
+		width: 200px;
+	}
+	#ll-theme .textbox {
+		width: 300px;
+		margin-top: 40px;
+	}
+	.ll-page .title {
+		height: 40px;
+		line-height: 40px;
+		font-size: 36px;
+		/* background-size: auto 155px; */
+	}
+	.ll-page .desc {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.ll-page .entry {
+		font-size: 14px;
+	}
+	
+	/* ll-smart */
+	#ll-smart .anibox img {
+		width: 200px;
+	}
+	#ll-smart .textbox {
+		width: 300px;
+		margin-top: 40px;
+	}
+	
+	/* ll-stylish */
+	#ll-stylish .anibox img {
+		width: 200px;
+	}
+	#ll-stylish .textbox {
+		width: 300px;
+		margin-top: 40px;
+	}
+	
+}
+
+@media ( max-width : 540px) {
+	/* banner-wrap */
+	#wrap {
+    	min-width: 100%;
+	}
+	
+	.bodyLL #banner-wrap {
+		background-position: center 0;
+		background-size: auto 110%;
+	}
+	
+	.bodyLL #banner {
+    	padding-bottom: 100px;
+	}
+	
+	.bodyLL #banner .title {
+    	width: 300px;
+    	height: 400px; /*확인*/
+    	/*height: X;*/
+    	top: 100px;  /*확인*/
+    	/* top: 40px;  /*확인*/ */
+	}
+	
+	#banner .title .icon {
+	    float: none;
+    	margin: 0 auto 20px;
+    	width: 80px;
+    	height: 80px;
+	}
+	
+	#banner .ll-title h2 {
+	    width: 280px;
+	    height: 70px;
+	    margin: 0 auto;
+	    float: none;
+	}
+	
+	.title h2 {
+		margin: 8px 0 0 0px;
+    width: 300px;
+    height: 45px;
+    font-size: 40px;
+    background-size: contain;
+	}
+	
+	.title .desc {
+		font-size: 16px;
+	}
+	
+	.ll-page .anibox {
+	    float: none;
+	    margin: 0 auto;
+	    width: 200px;
+	}
+	
+	.ll-page .textbox {
+    	float: none;
+    	margin: 0 auto;
+    	text-align: center;
+	}
+	
+	.ll-page .title {
+    	margin: 0 auto;
+	}
+	
+	/*ll-theme*/
+	#ll-theme .content {
+    	padding-top: 40px;
+	}
+
+	#ll-theme .anibox img {
+    	height: 130px;
+    	width: auto;
+	}
+	
+	#ll-theme .textbox {
+    	margin-top: 10px;
+	}
+	
+	#ll-smart .content {
+    	padding-top: 40px;
+	}
+
+	#ll-smart .anibox img {
+    	height: 130px;
+    	width: auto;
+	}
+	
+	#ll-smart .textbox {
+    	margin-top: 10px;
+	}
+
+	#ll-stylish .content {
+    	padding-top: 40px;
+	}
+
+	#ll-stylish .anibox img {
+    	height: 130px;
+    	width: auto;
+	}
+	
+	#ll-stylish .textbox {
+    	margin-top: 10px;
+	}	
+	
+}
+
+/*이미지, 텍스트박스 변경 너비의 최대가 540이고, height가 550px이상인 경우*/
+@media (max-width: 540px) and (min-height: 550px){
+	#ll-theme .anibox img {
+	    height: 240px;
+	}
+	
+	#ll-smart .anibox img{
+	    height: 240px;
+	}
+	
+	#ll-stylish .anibox img{
+	    height: 240px;
+	}
+	
+	#ll-theme .textbox {
+    	margin-top: 30px;
+	}
+	
+	#ll-smart .textbox {
+		margin-top: 30px;
+	}
+	
+	#ll-stylish .textbox {
+		margin-top: 30px;
+	}
+	
+}
+
+/*이미지 변경 너비의 최대가 540이고, height가 450px미만인 경우*/
+@media (max-width: 540px) and (min-height: 450px){
+	#ll-theme .anibox img {
+	    height: 200px;
+	}
+	
+	#ll-smart .anibox img {
+	    height: 200px;
+	}
+	
+	#ll-stylish .anibox img {
+	    height: 200px;
+	}
+}
+</style>
+
+
+</head>
+<body class="bodyLL">
+
+	<nav class="fixed-nav-bar">
+		<div id="menu" class="menu">
+			<a class="sitename" href="fixed-navigation-bar.html">Line
+				Launcher</a>
+			<!-- Example responsive navigation menu  -->
+			<a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+			<ul class="menu-items">
+				<li><a href="//sixrevisions.com">Home</a></li>
+				<li><a href="//sixrevisions.com/about/">About</a></li>
+				<li><a href="//sixrevisions.com/contact/">Contact</a></li>
+				<li><a href="//twitter.com/sixrevisions">Twitter</a></li>
+				<li><a href="//www.facebook.com/sixrevisions">Facebook</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="wrap" class="fullpage">
+		<div id="container-wrap" class="section fp-auto-height">
+			<div class="section">
+				<div id="banner-wrap">
+					<div id="banner" class="content">
+						<div class="title wow fadeInUp">
+							<div class="icon"></div>
+							<h2>LINE Launcher</h2>
+							<div class="desc">Breathe new life into your phone</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="ll-page section" id="ll-theme">
+			<div class="content clear">
+				<div class="anibox alignleft">
+					<img src="img/b1.png" style="z-index: 1500" class="wow fadeInLeft" data-wow-offset="700">
+				</div>
+				<div class="textbox alignright wow fadeInUp" data-wow-offset="600">
+					<h3 class="title">Theme</h3>
+					<h4 class="desc">The most beatuiful Theme !</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+
+ 		<div class="ll-page section" id="ll-smart">
+			<div class="content clear">
+				<div class="textbox alignleft wow fadeIn" data-wow-offset="500">
+					<h3 class="title">Smart</h3>
+					<h4 class="desc">Various functions became more smart</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+				<div class="anibox alignright">
+					<img src="img/b2.png" class="wow bounceIn" data-wow-offset="600">
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-stylish">
+			<div class="content clear">
+				<div class="anibox alignleft" data-wow-offset="400">
+					<img src="img/b3.png" class="wow rollIn" data-wow-offset="400" style="z-index: 1500">
+				</div>
+				<div class="textbox alignright wow fadeIn"  data-wow-offset="400">
+					<h3 class="title">Stylish</h3>
+					<h4 class="desc">To hold up the theme of the world</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ll-page section" id="ll-monster">
+			<div class="content clear">
+				<div class="anibox alignleft" data-wow-offset="400">
+					<div class="monster" alt="brush seller"></div>
+				</div>
+				<div class="textbox alignright wow fadeIn"  data-wow-offset="400">
+					<h3 class="title">Animation</h3>
+					<h4 class="desc">To hold up the theme of the world</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+			</div>
+		</div>
+
+ 		<div class="ll-page section" id="ll-selri">
+			<div class="content clear">
+				<div class="textbox">
+					<h3 class="title">Salri</h3>
+					<h4 class="desc">Various functions became more smart</h4>
+					<div class="entry">Accelerate your startup speed by 100%!
+						Make your apps load quicker, search the net with speed, and make
+						full use of the capabilities of your phone with no dead weight.</div>
+				</div>
+				<div class="anibox alignright">
+					<img src="img/selri.png" class="selri" style="visibility: hidden;">
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+</body>
+
+<script src="js/wow.min.js"></script>
+<script>
+              new WOW().init();
+              </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="js/jquery.easings.min.js"></script>
+
+
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+<!-- <script>
+
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    direction: 'vertical',
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 30,
+    mousewheelControl: true,
+    touch: true
+})
+</script> -->
+
+<script>
+$(window).resize(function(){
+
+    if ($(window).width() <= 540) {  
+
+           console.log("540사이를 넘어가고 있네요.");
+
+    }     
+
+});
+
+</script>
+<script>
+
+$(window).scroll(function () {
+			var height = $(document).scrollTop()+700;
+ 			var d = $("#ll-monster").position();
+ 			console.log("d.top= "+d.top);
+ 			console.log("h= "+height);
+			if(height>=d.top){
+				console.log("hi monster");
+				$('.monster').css('animation','play .8s steps(10) infinite');
+			}
+			else{
+				$('.monster').css('animation','none');
+			}
+			
+			
+			$('.selri').each(function(){
+				//이미지 좌표를 얻음.
+				var imagePos = $(this).offset().top;
+				console.log(imagePos-1000);
+				var topOfWindow = $(window).scrollTop();
+				console.log(topOfWindow);
+					if (imagePos-1000 < topOfWindow) {
+						console.log("come on!!!! selri!!!");
+						$(this).addClass("hatch");
+					}
+			});
+			
+});
+
+</script>
+
+
+</html>
