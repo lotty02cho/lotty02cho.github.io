@@ -303,28 +303,41 @@
 
 
 
-@-webkit-keyframes facebook1 {
+
+
+@-webkit-keyframes doongdoong {
     0%, 100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    transform: translateY(0px);
 }
 50% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: translateY(30px);
 }
-}@keyframes facebook1 {
+}@keyframes doongdoong {
     0%, 100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    transform: translateY(0px);
 }
 50% {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: translateY(30px);
 }
-}.facebook1 {
-    -webkit-animation-name: facebook1;
-    animation-name: facebook1;
+}.doongdoong {
+	animation-duration: 7s;
+	transition-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-name: doongdoong;
+    animation-name: doongdoong;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 

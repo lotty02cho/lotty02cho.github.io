@@ -88,7 +88,7 @@
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-duration: 5s;
     z-index: 400;
 }
 .icons_3, .icons_4 {
@@ -98,7 +98,7 @@
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-duration: 10s;
     z-index: 400;
 }
 .icons_4 {
@@ -112,17 +112,17 @@
     z-index: 400;
 }
 .icons_5, .icons_6 {
-    animation-iteration-count: infinite;
+/*     animation-iteration-count: infinite; */
     z-index: 400;
 }
 .icons_5 {
-    -webkit-animation-iteration-count: infinite;
+/*     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-duration: 2.5s;
+    -o-animation-iteration-count: infinite; */
+/*     animation-duration: 2.5s;
     -webkit-animation-duration: 2.5s;
     -moz-animation-duration: 2.5s;
-    -o-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s; */
 }
 .icons_6 {
     -webkit-animation-iteration-count: infinite;
@@ -214,21 +214,30 @@
     transform: translateY(30px);
 }
 }@keyframes clean_ani_3 {
-    0%, 100% {
+    0% {
     opacity: 0;
+    transform: scale(0);
 }
 33% {
-    opacity: 0;
-    transform: translateY(-30px);
+    opacity: 1;
+    transform: scale(0);
+/*     transform: translateY(-30px); */
 }
 66% {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1);
+/*     transform: translateY(0); */
 }
 90% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: scale(1);
+/*     transform: translateY(30px); */
 }
+100% {
+    opacity: 0;
+/*     transform: translateY(30px); */
+}
+
 }#sl-wrapper, .sl {
     height: 450px;
     position: relative;
@@ -492,22 +501,22 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 						<img class="animated wobble sally_2" style="position: absolute; z-index: 98;" src="images/img_sally_2.png">
 					</div>
 					<div align="center">
-						<img class="animated facebook1 icons_1" style="position: absolute; z-index: 98;" src="images/img_icons_1.png">
+						<img class="animated doongdoong icons_1" style="position: absolute; z-index: 98;" src="images/img_icons_1.png">
 					</div>
 					<div align="center">
-						<img class="animated pulse icons_2" style="position: absolute; z-index: 98;" src="images/img_icons_2.png">
+						<img class="animated doongdoong icons_2" style="position: absolute; z-index: 98;" src="images/img_icons_2.png">
 					</div>
 					<div align="center">
-						<img class="animated pulse icons_3" style="position: absolute; z-index: 98;" src="images/img_icons_3.png">
+						<img class="animated doongdoong icons_3" style="position: absolute; z-index: 98;" src="images/img_icons_3.png">
 					</div>
 					<div align="center">
-						<img class="animated pulse icons_4" style="position: absolute; z-index: 98;" src="images/img_icons_4.png">
+						<img class="animated doongdoong icons_4" style="position: absolute; z-index: 98;" src="images/img_icons_4.png">
 					</div>
 					<div align="center">
-						<img class="animated pulse icons_5" style="position: absolute; z-index: 98;" src="images/img_icons_5.png">
+						<img class="animated doongdoong icons_5" style="position: absolute; z-index: 98;" src="images/img_icons_5.png">
 					</div>
 					<div align="center">
-						<img class="animated pulse icons_6" style="position: absolute; z-index: 98;" src="images/img_icons_6.png">
+						<img class="animated doongdoong icons_6" style="position: absolute; z-index: 98;" src="images/img_icons_6.png">
 					</div>
 				</div>
 			</div>
@@ -698,6 +707,9 @@ $(function() {
 
             } else {
                 $('#menu li').removeClass('grey');
+            }
+            if (line == 'Stylish'){
+            	$()
             }
         }
     })
