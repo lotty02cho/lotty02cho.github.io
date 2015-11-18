@@ -43,6 +43,7 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-70142824-1', 'auto');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');
 
 </script>
@@ -265,6 +266,10 @@
     float: left;
     width: 272px;
 }
+
+h3{
+	font-size: 20px;
+}
 </style>
 <script>
 if(window.navigator.language){var language=window.navigator.language.toLowerCase()}else if(window.navigator.browserLanguage){var language=window.navigator.browserLanguage.toLowerCase()}if(window.location.href.indexOf("mode=user")==-1&&language&&language.indexOf("zh")>=0){window.location.href="http://"+window.location.host+'/index_cn.html'}var mobileAgent=["iphone","ipod","ipad","android","mobile","blackberry","webos","incognito","webmate","bada","nokia","lg","ucweb","skyfire"];var browser=navigator.userAgent.toLowerCase();isMobile=false;for(var i=0;i<mobileAgent.length;i++){if(browser.indexOf(mobileAgent[i])!=-1){isMobile=true;break}}
@@ -308,19 +313,17 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 			<div class="homebg01">
 				<div class="container">
 					<div class="frontRow">
-						<div class="pageTitle_main">LINE LAUNCHER</div>
+						<h1 class="pageTitle_main">LINE LAUNCHER</h1>
 						<div class="content">
-							<p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND
-								OVER 100 DIFFERENT</p>
-							<p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR
-								FREE.</p>
+							<h3>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</h3>
+							<h3>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</h3>
 						</div>
 						<!-- Google Button -->
-						<div class="content">
+						<h4 class="content">
 							<a
 								href="https://play.google.com/store/apps/details?id=com.campmobile.launcher"><img
-								class="btn_store" src="images/btn_store.png"></a>
-						</div>
+								class="btn_store" alt="Google Play Store Button to install Line Launcher !"title="Press the button to install Line Launcher" src="images/btn_store.png"></a>
+						</h4>
 					</div>
 				</div>
 			</div>
@@ -328,31 +331,37 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 				<div align="center">
 					<img class="animated bounceInUp device_intro"
 						style="position: absolute; bottom: 0px; z-index: 100;"
+						alt="Line Launcher device" 
 						src="images/img_device_intro.png">
 				</div>
 				<div align="center">
 					<img class="animated fadeInRight leonard_1"
 						style="position: absolute; bottom: 0px; z-index: 99;"
+						alt="Line Character Leonard" 
 						src="images/img_leonard_1.png">
 				</div>
 				<div align="center">
 					<img class="animated rotateInUpRight brown_1"
 						style="position: absolute; bottom: 0px; z-index: 101;"
+						alt="Line Character Brown"
 						src="images/img_brown_1.png">
 				</div>
 				<div align="center">
 					<img class="animated rotateInUpLeft edward_1"
 						style="position: absolute; bottom: 0px; z-index: 102;"
+						alt="Line Character Edward"
 						src="images/img_edward_1.png">
 				</div>
 				<div align="center">
 					<img class="animated fadeInLeft james_1"
 						style="position: absolute; bottom: 0px; z-index: 102;"
+						alt="Line Character James"
 						src="images/img_james_1.png">
 				</div>
 				<div align="center">
 					<img class="animated bounce Sally_1"
 						style="position: absolute; bottom: 0px; z-index: 103;"
+						alt="Line Character Sally"
 						src="images/img_Sally_1.png">
 				</div>
 			</div>
@@ -361,11 +370,10 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 			<div class="homebg02">
                 <div class="container">
                     <div class="row">
-                    	<div class="pageTitle_black" style="">VARIOUS THEME</div>
-                        <!-- <img class="logo_text" src="images/logo_text.png"/> -->
+                    	<h2 class="pageTitle_black">VARIOUS THEME</h2>
                         <div class="content">
-                            <p class="grey">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</p>
-                            <p class="grey">KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</p>
+                            <h3 class="grey">OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND OVER 100 DIFFERENT</h3>
+                            <h3 class="grey">KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR FREE.</h3>
                         </div>
                     </div>
                 </div>
@@ -375,70 +383,69 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 				<tr>
 					<th>
 						<div id="sl-nav" class="conts theme_pack">
-							<a href="#" id = "th_btn" data-slide="0"><img class="animated bounceInUp theme_img theme_1" src="images/img_theme_1.png" style=""></a>
-							<p class="theme_name">LINE Friends</p>
-							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.linefriends"><img class="animated bounceInUp theme_down btn_download" style="" src="images/btn_download.png"></a>
+							<a href="#" id ="th_btn" data-slide="0"><img class="animated bounceInUp theme_img theme_1" alt="Line Launcher Theme Line Friends" src="images/img_theme_1.png"></a>
+							<h6 class="theme_name">LINE Friends</h6>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.linefriends"><img class="animated bounceInUp theme_down btn_download" alt="Line Launcher Theme Download" title="Press button and get this theme!" src="images/btn_download.png"></a>
 						</div>
 					</th>
 					<th>
 						<div id="sl-nav" class="conts theme_pack">
-							<a href="#" id = "th_btn" data-slide="1"><img class="animated bounceInUp theme_img theme_2" src="images/img_theme_2.png"></a>
-							<p class="theme_name">LINE Friends Cony</p>
-							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.lovelycony"><img class="animated bounceInUp theme_down btn_download" style="" src="images/btn_download.png"></a>
+							<a href="#" id = "th_btn" data-slide="1"><img class="animated bounceInUp theme_img theme_2" alt="Line Launcher Theme Lovely Cony" src="images/img_theme_2.png"></a>
+							<h6 class="theme_name">Lovely Cony</h6>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.lovelycony"><img class="animated bounceInUp theme_down btn_download" alt="Line Launcher Theme Download" title="Press button and get this theme!" src="images/btn_download.png"></a>
 						</div>
 					</th>
 					<th>
 						<div id="sl-nav" class="conts theme_pack">
-							<a href="#" id = "th_btn" data-slide="2"><img class="animated bounceInUp theme_img theme_3" style="position: relative;" src="images/img_theme_3.png"></a>
-							<p class="theme_name">LINE Friends Brown</p>
-							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.friendlybrown"><img class="animated bounceInUp theme_down btn_download" src="images/btn_download.png"></a>
+							<a href="#" id = "th_btn" data-slide="2"><img class="animated bounceInUp theme_img theme_3" alt="Line Launcher Theme Friend Brown" style="position: relative;" src="images/img_theme_3.png"></a>
+							<h6 class="theme_name">Friendly Brown</h6>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.friendlybrown"><img class="animated bounceInUp theme_down btn_download" alt="Line Launcher Theme Download" title="Press button and get this theme!" src="images/btn_download.png"></a>
 						</div>
 					</th>
 				</tr>
 				<tr>
 					<th>
 						<div id="sl-nav" class="conts theme_pack">
-							<a href="#" id = "th_btn" data-slide="3"><img class="animated bounceInUp theme_img theme_4" src="images/img_theme_4.png"></a>
-							<p class="theme_name">Leornard Life</p>
-							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.friendlybrown"><img class="animated bounceInUp theme_down btn_download" src="images/btn_download.png"></a>
+							<a href="#" id = "th_btn" data-slide="3"><img class="animated bounceInUp theme_img theme_4" alt="Line Launcher Theme Leornard Life" src="images/img_theme_4.png"></a>
+							<h6 class="theme_name">Leornard Life</h6>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.friendlybrown"><img class="animated bounceInUp theme_down btn_download" alt="Line Launcher Theme Download" title="Press button and get this theme!" src="images/btn_download.png"></a>
 						</div>
 					</th>
 					<th>
 						<div id="sl-nav" class="conts theme_pack">
-							<a href="#" id = "th_btn" data-slide="4"><img class="animated bounceInUp theme_img theme_5" src="images/img_theme_5.png"></a>
-							<p class="theme_name">GD X TAEYANG</p>
-							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.GDxTAEYANG"><img class="animated bounceInUp theme_down btn_download"
-								src="images/btn_download.png"></a>
+							<a href="#" id = "th_btn" data-slide="4"><img class="animated bounceInUp theme_img theme_5" alt="Line Launcher Theme GD X TAEYANG" src="images/img_theme_5.png"></a>
+							<h6 class="theme_name">GD X TAEYANG</h6>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.GDxTAEYANG"><img class="animated bounceInUp theme_down btn_download" alt="Line Launcher Theme Download" title="Press button and get this theme!" src="images/btn_download.png"></a>
 						</div>
 					</th>
 					<th>
 						<div id="sl-nav" class="conts  theme_pack">
-							<a href="#" id = "th_btn" data-slide="5"><img class="animated bounceInUp theme_img theme_6" src="images/img_theme_6.png"></a>
-							<p class="theme_name">Duck whoo</p>
-							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.RubberDuck"><img class="animated bounceInUp theme_down btn_download" src="images/btn_download.png"></a>
+							<a href="#" id = "th_btn" data-slide="5"><img class="animated bounceInUp theme_img theme_6" alt="Line Launcher Theme Duck whoo" src="images/img_theme_6.png"></a>
+							<h6 class="theme_name">Duck whoo</h6>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.RubberDuck"><img class="animated bounceInUp theme_down btn_download" alt="Line Launcher Theme Download" title="Press button and get this theme!" src="images/btn_download.png"></a>
 						</div>
 					</th>
 				</tr>
 				<tr>
 					<th>
 						<div id="sl-nav" class="conts theme_pack">
-							<a href="#" id = "th_btn" data-slide="6"><img class="animated bounceInUp theme_img theme_7" src="images/img_theme_7.png"></a>
-							<p class="theme_name">Dark Chic</p>
-							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.darkchic"><img class="animated bounceInUp theme_down btn_download" src="images/btn_download.png"></a>
+							<a href="#" id = "th_btn" data-slide="6"><img class="animated bounceInUp theme_img theme_7" alt="Line Launcher Theme Dark Chic" src="images/img_theme_7.png"></a>
+							<h6 class="theme_name">Dark Chic</h6>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.darkchic"><img class="animated bounceInUp theme_down btn_download" alt="Line Launcher Theme Download" title="Press button and get this theme!" src="images/btn_download.png"></a>
 						</div>
 					</th>
 					<th>
 						<div id="sl-nav" class="conts theme_pack">
-							<a href="#" id = "th_btn" data-slide="7"><img class="animated bounceInUp theme_img theme_8" src="images/img_theme_8.png"></a>
-							<p class="theme_name">Vivid Line</p>
-							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.vividline"><img class="animated bounceInUp theme_down btn_download" src="images/btn_download.png"></a>
+							<a href="#" id = "th_btn" data-slide="7"><img class="animated bounceInUp theme_img theme_8" alt="Line Launcher Theme Vivid Line" src="images/img_theme_8.png"></a>
+							<h6 class="theme_name">Vivid Line</h6>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.vividline"><img class="animated bounceInUp theme_down btn_download" alt="Line Launcher Theme Download" title="Press button and get this theme!" src="images/btn_download.png"></a>
 						</div>
 					</th>
 					<th>
 						<div id="sl-nav" class="conts theme_pack">
-							<a href="#" id = "th_btn" data-slide="8"><img class="animated bounceInUp theme_img theme_9" src="images/img_theme_9.png"></a>
-							<p class="theme_name">B1A4 baro</p>
-							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.B1A4_Baro"><img class="animated bounceInUp theme_down btn_download" src="images/btn_download.png"></a>
+							<a href="#" id = "th_btn" data-slide="8"><img class="animated bounceInUp theme_img theme_9" alt="Line Launcher Theme B1A4 baro" src="images/img_theme_9.png"></a>
+							<h6 class="theme_name">B1A4 baro</h6>
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.B1A4_Baro"><img class="animated bounceInUp theme_down btn_download" alt="Line Launcher Theme Download" title="Press button and get this theme!" src="images/btn_download.png"></a>
 						</div>
 					</th>
 				</tr>
@@ -450,31 +457,31 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 					<div id="sld">
 						<div id="sl-wrapper" style="transition:  all 1s;">
 							<div class="sl">
-								<img src="images/th01.png" alt="" />
+								<img src="images/th01.png" alt="Line Launcher Theme Preview Line Friends" />
 							</div>
 							<div class="sl">
-								<img src="images/th02.png" alt="" />
+								<img src="images/th02.png" alt="Line Launcher Theme Preview Lovely Cony" />
 							</div>
 							<div class="sl">
-								<img src="images/th03.png" alt="" />
+								<img src="images/th03.png" alt="Line Launcher Theme Preview Friendly Brown" />
 							</div>
 							<div class="sl">
-								<img src="images/th04.png" alt="" />
+								<img src="images/th04.png" alt="Line Launcher Theme Preview Leornard Life" />
 							</div>
 							<div class="sl">
-								<img src="images/th05.png" alt="" />
+								<img src="images/th05.png" alt="Line Launcher Theme Preview GD X TAEYANG" />
 							</div>
 							<div class="sl">
-								<img src="images/th06.png" alt="" />
+								<img src="images/th06.png" alt="Line Launcher Theme Preview Duck whoo" />
 							</div>
 							<div class="sl">
-								<img src="images/th07.png" alt="" />
+								<img src="images/th07.png" alt="Line Launcher Theme Preview Dark Chic" />
 							</div>
 							<div class="sl">
-								<img src="images/th08.png" alt="" />
+								<img src="images/th08.png" alt="Line Launcher Theme Preview Vivid Line" />
 							</div>
 							<div class="sl">
-								<img src="images/th09.png" alt="" />
+								<img src="images/th09.png" alt="Line Launcher Theme Preview B1A4 baro" />
 							</div>
 						</div>
 					</div>
@@ -485,12 +492,12 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 			<div class="homebg03">
 				<div class="container">
 					<div class="row">
-						<div class="pageTitle_white" style="">STYLISH</div>
+						<h2 class="pageTitle_white" style="">STYLISH</h2>
 						<div class="content">
-							<p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND
-								OVER 100 DIFFERENT</p>
-							<p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR
-								FREE.</p>
+							<h3>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND
+								OVER 100 DIFFERENT</h3>
+							<h3>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR
+								FREE.</h3>
 						</div>
 					</div>
 				</div>
@@ -498,36 +505,38 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 					<div align="center">
 						<img class="animated bounceInUp device_none2"
 							style="position: absolute; z-index: 100;"
+							alt="Line Launcher device none"
 							src="images/img_device_none.png">
 					</div>
 					<div align="center">
 						<img class="animated fadeInRight basictheme1"
 							style="position: absolute; z-index: 99;"
+							alt="Line Launcher mobile basic theme"
 							src="images/img_basictheme.png">
 					</div>
 					<div align="center">
-						<img class="animated wobble cony_1" style="position: absolute; z-index: 101;" src="images/img_cony_1.png">
+						<img class="animated wobble cony_1" style="position: absolute; z-index: 101;" alt="Line Character Cony" src="images/img_cony_1.png">
 					</div>
 					<div align="center">
-						<img class="animated wobble sally_2" style="position: absolute; z-index: 98;" src="images/img_sally_2.png">
+						<img class="animated wobble sally_2" style="position: absolute; z-index: 98;" alt="Line Character Sally" src="images/img_sally_2.png">
 					</div>
 					<div align="center">
-						<img class="animated doongdoong icons_1" style="position: absolute; z-index: 98;" src="images/img_icons_1.png">
+						<img class="animated doongdoong icons_1" style="position: absolute; z-index: 98;" alt="Application Icon Kakao Story" src="images/img_icons_1.png">
 					</div>
 					<div align="center">
-						<img class="animated doongdoong icons_2" style="position: absolute; z-index: 98;" src="images/img_icons_2.png">
+						<img class="animated doongdoong icons_2" style="position: absolute; z-index: 98;" alt="Application Icon Instagram" src="images/img_icons_2.png">
 					</div>
 					<div align="center">
-						<img class="animated doongdoong icons_3" style="position: absolute; z-index: 98;" src="images/img_icons_3.png">
+						<img class="animated doongdoong icons_3" style="position: absolute; z-index: 98;" alt="Application Icon Love" src="images/img_icons_3.png">
 					</div>
 					<div align="center">
-						<img class="animated doongdoong icons_4" style="position: absolute; z-index: 98;" src="images/img_icons_4.png">
+						<img class="animated doongdoong icons_4" style="position: absolute; z-index: 98;" alt="Application Icon Naver" src="images/img_icons_4.png">
 					</div>
 					<div align="center">
-						<img class="animated doongdoong icons_5" style="position: absolute; z-index: 98;" src="images/img_icons_5.png">
+						<img class="animated doongdoong icons_5" style="position: absolute; z-index: 98;" alt="Application Icon Facebook" src="images/img_icons_5.png">
 					</div>
 					<div align="center">
-						<img class="animated doongdoong icons_6" style="position: absolute; z-index: 98;" src="images/img_icons_6.png">
+						<img class="animated doongdoong icons_6" style="position: absolute; z-index: 98;" alt="Application Icon Youtube" src="images/img_icons_6.png">
 					</div>
 				</div>
 			</div>
@@ -538,28 +547,31 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 			<div class="homebg04">
 				<div class="container">
 					<div class="row">
-						<div class="pageTitle_white" style="">CLEVER</div>
+						<h2 class="pageTitle_white" style="">CLEVER</h2>
 						<div class="content">
-							<p>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND
-								OVER 100 DIFFERENT</p>
-							<p>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR
-								FREE.</p>
+							<h3>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND
+								OVER 100 DIFFERENT</h3>
+							<h3>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS FOR
+								FREE.</h3>
 						</div>
 					</div>
 					<div id="" style="width: 100%; text-align: center;">
 					<div align="center">
 						<img class="animated bounceInUp device_none3"
 							style="position: absolute; z-index: 100;"
+							alt="Line Launcher device none"
 							src="images/img_device_none.png">
 					</div>
 					<div align="center">
 						<img class="animated cleanertheme_1"
 							style="position: absolute; z-index: 100;"
+							alt="Line Launcher Memory Cleaner"
 							src="images/img_cleanertheme_1.png">
 					</div>
 					<div align="center">
 						<img class="animated fadeInRight cleanertheme_2"
 							style="position: absolute; z-index: 99;"
+							alt="Line Launcher Memory Cleaner2"
 							src="images/img_cleanertheme_2.png">
 					</div>
 					</div>
@@ -568,16 +580,19 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 					<div align="center">
 						<img class="animated fadeInRight cleaner_pop"
 							style="position: absolute; z-index: 101;"
+							alt="Line Launcher Memory Cleaner3"
 							src="images/img_cleaner_pop.png">
 					</div>
 					<div align="center">
 						<img class="animated fadeInRight boss_1"
 							style="position: absolute; z-index: 101;"
+							alt="Line Character Boss"
 							src="images/img_boss_1.png">
 					</div>
 					<div align="center">
 						<img class="animated fadeInRight Sally_3"
 							style="position: absolute; z-index: 101;"
+							alt="Line Character Sally"
 							src="images/img_Sally_3.png">
 					</div>
 				</div>
@@ -588,11 +603,13 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 				<div align="center">
 					<img class="animated bounceInUp appicon"
 						style="position: absolute; z-index: 100;"
+						alt="Line Launcher App Icon"
 						src="images/img_appicon.png">
 				</div>
 				<div align="center">
 					<h2 class="apptext"
-						style="font-size: 38px; position: absolute; z-index: 101;">LINE's
+						style="font-size: 38px;
+						position: absolute; z-index: 101;">LINE's
 						Official Launcher app</h2>
 				</div>
 				<div align="center">
@@ -600,11 +617,9 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 						href="https://play.google.com/store/apps/details?id=com.campmobile.launcher"><img
 						class="animated bounceInUp btn_store2"
 						style="position: absolute; z-index: 100;"
+						alt="Google Play Store Button to install Line Launcher !"title="Press the button to install Line Launcher"
 						src="images/btn_store.png"></a>
 				</div>
-			<div class="browser-test" style="background-color: red; position: absolute; bottom: 0;">
-<!--     			<p style="background-color: red;">FOOTER</p> -->
-    		</div>
 			</div>
 		</div>
 	</div>
@@ -612,75 +627,7 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 	<script src="javascripts/jquery-1.11.1.min.js"></script>
 	<script src="javascripts/jquery-1.11.1-ui.min.js"></script>
 	<script src="javascripts/jquery.fullPage.min.js"></script>
-<script>
-index = 0;
-var imageArray = [0, 272, 544, 816, 1088, 1360, 1632, 1904, 2176];
-var upPage = true;
 
-function changeImage() {
-    document.getElementById("sl-wrapper").style.left = "-" + imageArray[index] + "px";
-    if (upPage) {
-        index++
-    } else {
-        index--
-    }
-    if (index >= imageArray.length - 1) {
-        index = 8;
-        upPage = false
-    } else if (index <= 0) {
-        upPage = true
-    }
-}
-
-function Slider(element) {
-    this.el = document.querySelector(element);
-    this.init()
-}
-Slider.prototype = {
-    init: function() {
-        this.links = document.querySelectorAll("#sl-nav #th_btn");
-        this.wrapper = document.querySelector("#sl-wrapper");
-        this.navigate();
-        changeImg = setInterval(changeImage, 1500)
-    },
-    navigate: function() {
-        for (var i = 0; i < this.links.length; ++i) {
-            var link = this.links[i];
-            this.slide(link)
-        }
-    },
-    slide: function(element) {
-        var self = this;
-        element.addEventListener("click", function(e) {
-            e.preventDefault();
-            var a = this;
-            self.setCurrentLink(a);
-            index = parseInt(a.getAttribute("data-slide", 1)) + 1;
-            var currentSlide = document.querySelector(".sl:nth-child(" + index + ")");
-            clearInterval(changeImg);
-            changeImg = setInterval(changeImage, 1500);
-            self.wrapper.style.left = "-" + currentSlide.offsetLeft + "px"
-        }, false)
-    },
-    setCurrentLink: function(link) {
-        var parent = link.parentNode;
-        var a = parent.querySelectorAll("a");
-        link.className = "current";
-        for (var j = 0; j < a.length; ++j) {
-            var cur = a[j];
-            if (cur !== link) {
-                cur.className = ""
-            }
-        }
-    }
-};
-document.addEventListener("DOMContentLoaded", function() {
-    var aSlider = new Slider("#slider_button")
-});
-/* $.ready(function() {
-    domContentLoaded();
-}); */
-</script>
 <script type="text/javascript">
 if (isMobile) {
     $(".theme_name").css("fontSize", "1em");
@@ -737,7 +684,1648 @@ $(window).keydown(function(event) {
 });
 </script>
 <script>
-$(function(){var s=$(window).innerHeight(),e=$(window).innerWidth(),c=402,t=516,o=194,n=322,a=90,l=144,_=218;900>=s&&$(".row").css("top","8%");var r=e/2-c/2,p=e/2-c/2-3*o/4,i=e/2-c/2-3*n/4,v=e/2-c/2*2+50,f=e/2+c/2,d=e/2+c/2-l/3;$(".device_intro").css({left:r}),$(".leonard_1").css({left:p}),$(".leonard_1").css({bottom:t-250}),$(".brown_1").css({left:i}),$(".brown_1").css({bottom:1*-t/4}),$(".edward_1").css({left:v}),$(".edward_1").css({bottom:1*-a/3}),$(".james_1").css({left:f}),$(".james_1").css({bottom:0}),$(".Sally_1").css({left:d}),$(".Sally_1").css({bottom:-_/4});var b=518,m=629;$(".pack_table").css({top:s/2-m/3}),$(".pack_table").css({left:e/2-b+50});var h=290,w=564;$(".device_none").css({top:s/2-w/2+80}),$(".device_none").css({left:e/2-h/2+250});$(".device_theme").css({top:s/2-w/2+80+52}),$(".device_theme").css({left:e/2-h/2+250+9});var y=290,x=564;$(".device_none2").css({top:s/2-x/2+50}),$(".device_none2").css({left:e/2-y/2});var S=272;$(".basictheme1").css({top:s/2-x/2+50+52}),$(".basictheme1").css({left:e/2-S/2});var g=180;$(".cony_1").css({top:s/2+50}),$(".cony_1").css({left:e/2-1.5*g});var j=158,k=158;$(".sally_2").css({top:s/2-k}),$(".sally_2").css({left:e/2+j/2});var H=168,W=168;$(".icons_1").css({top:1*-W/3}),$(".icons_1").css({left:H/2});var u=168,z=168;$(".icons_2").css({top:s/2-z}),$(".icons_2").css({left:e/2-3*u});var q=168;$(".icons_3").css({top:s/1.5}),$(".icons_3").css({left:q/2});var A=220,B=220;$(".icons_4").css({top:s-B}),$(".icons_4").css({left:A});var C=193;$(".icons_5").css({top:0}),$(".icons_5").css({left:e-2*C});var D=200,E=156;$(".icons_6").css({top:s-2*E}),$(".icons_6").css({left:e-4*D/5});var F=290,G=564;$(".device_none3").css({top:s/2-G/2+50}),$(".device_none3").css({left:e/2-F/2});var I=272;$(".cleanertheme_1").css({top:s/2-G/2+50+52}),$(".cleanertheme_1").css({left:e/2-I/2});var J=272;$(".cleanertheme_2").css({top:s/2-G/2+50+52}),$(".cleanertheme_2").css({left:e/2-J/2});var K=440,L=184;$(".cleaner_pop").css({top:s/2-L/2}),$(".cleaner_pop").css({left:e/2-K/2});var M=212,N=298;$(".boss_1").css({top:s/2+N/2}),$(".boss_1").css({left:e/2-2*M});var O=118,P=150;$(".Sally_3").css({top:s/2+2*P}),$(".Sally_3").css({left:e/2+2*O});var Q=184,R=184;$(".appicon").css({top:s/2-1.5*R}),$(".appicon").css({left:e/2-Q/2});var T=$(".apptext").innerWidth(),U=$(".apptext").innerHeight();$(".apptext").css({top:s/2-U/2}),$(".apptext").css({left:e/2-T/2});var V=256,X=82;$(".btn_store2").css({top:s/2+X}),$(".btn_store2").css({left:e/2-V/2}),$(window).resize(function(){var s=$(window).innerHeight(),e=$(window).innerWidth(),c=402,t=516,o=194,n=322,l=218,_=e/2-c/2,r=e/2-c/2-3*o/4,p=e/2-c/2-3*n/4,i=e/2-c/2*2+50,v=e/2+c/2,f=e/2+c/2;900>=s&&$(".row").css("top","8%"),$(".device_intro").css({left:_}),$(".leonard_1").css({left:r}),$(".leonard_1").css({bottom:t-250}),$(".brown_1").css({left:p}),$(".brown_1").css({bottom:1*-t/4}),$(".edward_1").css({left:i}),$(".edward_1").css({bottom:1*-a/3}),$(".james_1").css({left:v}),$(".james_1").css({bottom:0}),$(".Sally_1").css({left:f}),$(".Sally_1").css({bottom:-l/3});var d=518,b=629;$(".pack_table").css({top:s/2-b/3}),$(".pack_table").css({left:e/2-d+50});var m=290,h=564;$(".device_none").css({top:s/2-h/2+80}),$(".device_none").css({left:e/2-m/2+250});$(".device_theme").css({top:s/2-h/2+80+52}),$(".device_theme").css({left:e/2-m/2+250+9});var w=290,y=564;$(".device_none2").css({top:s/2-y/2+50}),$(".device_none2").css({left:e/2-w/2});var x=272;$(".basictheme1").css({top:s/2-y/2+50+52}),$(".basictheme1").css({left:e/2-x/2});var S=180;$(".cony_1").css({top:s/2+50}),$(".cony_1").css({left:e/2-1.5*S});var g=158,j=158;$(".sally_2").css({top:s/2-j}),$(".sally_2").css({left:e/2+g/2});var k=168,H=168;$(".icons_1").css({top:1*-H/3}),$(".icons_1").css({left:k/2});var W=168,u=168;$(".icons_2").css({top:s/2-u}),$(".icons_2").css({left:e/2-3*W});var z=168;$(".icons_3").css({top:s/1.5}),$(".icons_3").css({left:z/2});var q=220,A=220;$(".icons_4").css({top:s-A}),$(".icons_4").css({left:q});var B=193;$(".icons_5").css({top:0}),$(".icons_5").css({left:e-2*B});var C=200,D=156;$(".icons_6").css({top:s-2*D}),$(".icons_6").css({left:e-4*C/5});$(".footer").css({bottom:0}),$(".footer").css({left:0});var E=290,F=564;$(".device_none3").css({top:s/2-F/2+50}),$(".device_none3").css({left:e/2-E/2});var G=272;$(".cleanertheme_1").css({top:s/2-F/2+50+52}),$(".cleanertheme_1").css({left:e/2-G/2});var I=272;$(".cleanertheme_2").css({top:s/2-F/2+50+52}),$(".cleanertheme_2").css({left:e/2-I/2});var J=440,K=184;$(".cleaner_pop").css({top:s/2-K/2}),$(".cleaner_pop").css({left:e/2-J/2});var L=212,M=298;$(".boss_1").css({top:s/2+M/2}),$(".boss_1").css({left:e/2-2*L});var N=118,O=150;$(".Sally_3").css({top:s/2+2*O}),$(".Sally_3").css({left:e/2+2*N});var P=184,Q=184;$(".appicon").css({top:s/2-1.5*Q}),$(".appicon").css({left:e/2-P/2});var R=$(".apptext").innerWidth(),T=$(".apptext").innerHeight();$(".apptext").css({top:s/2-T/2}),$(".apptext").css({left:e/2-R/2});var U=256,V=82;$(".btn_store2").css({top:s/2+V}),$(".btn_store2").css({left:e/2-U/2})})});
+$(function() {
+    var windowH = $(window).innerHeight();
+    var windowW = $(window).innerWidth();
+    var device_introW = 402;
+    var device_introH = 516;
+    var leonard_1W = 194;
+    var leonard_1H = 196;
+    var brown_1W = 322;
+    var brown_1H = 464;
+    var edward_1W = 90;
+    var edward_1H = 102;
+    var james_1W = 244;
+    var james_1H = 471;
+    var Sally_1W = 144;
+    var Sally_1H = 218;
+
+    var device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+    var leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+    var brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+    var edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+    var james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+    var Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1W / 3;
+    var pack_tableW = 518;
+    var pack_tableH = 629;
+    var device_noneW = 290;
+    var device_noneH = 564;    
+    var device_themeW = 272;
+    var device_themeH = 450;    
+    var theme_1_viewW = 373;
+    var theme_1_viewH = 450;
+    var device_none2W = 290;
+    var device_none2H = 564;
+    var basictheme1W = 272;
+    var basictheme1H = 450;    
+    var cony_1W = 180;
+    var cony_1H = 362;    
+    var sally_2W = 158;
+    var sally_2H = 158;
+    var icons_1W = 168;
+    var icons_1H = 168;    
+    var icons_2W = 168;
+    var icons_2H = 168;    
+    var icons_3W = 168;
+    var icons_3H = 168;    
+    var icons_4W = 220;
+    var icons_4H = 220;
+    var icons_5W = 193;
+    var icons_5H = 193;    
+    var icons_6W = 200;
+    var icons_6H = 156;
+    var device_none3W = 290;
+    var device_none3H = 564;
+    var cleanertheme_1W = 272;
+    var cleanertheme_1H = 450;
+    var cleanertheme_2W = 272;
+    var cleanertheme_2H = 450;
+    var cleaner_popW = 440;
+    var cleaner_popH = 184;
+    var boss_1W = 212;
+    var boss_1H = 298;
+    var Sally_3W = 118;
+    var Sally_3H = 150;    
+    var appiconW = 184;
+    var appiconH = 184;
+    var apptextW = $('.apptext').innerWidth();
+    var apptextH = $('.apptext').innerHeight();    
+    var btn_store2W = 256;
+    var btn_store2H = 82;    
+    
+    if (windowH >= 930) {
+       	alert("device_introW(>=930, noneMove) : "+ device_introW);
+          windowH = $(window).innerHeight();
+          windowW = $(window).innerWidth();
+          device_introW = 402;
+          device_introH = 516;
+          leonard_1W = 194;
+          leonard_1H = 196;
+          brown_1W = 322;
+          brown_1H = 464;
+          edward_1W = 90;
+          edward_1H = 102;
+          james_1W = 244;
+          james_1H = 471;
+          Sally_1W = 144;
+          Sally_1H = 218;
+
+          device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+          leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+          brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+          edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+          james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+          Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1W / 3;
+          pack_tableW = 518;
+          pack_tableH = 629;
+          device_noneW = 290;
+          device_noneH = 564;    
+          device_themeW = 272;
+          device_themeH = 450;    
+          theme_1_viewW = 373;
+          theme_1_viewH = 450;
+          device_none2W = 290;
+          device_none2H = 564;
+          basictheme1W = 272;
+          basictheme1H = 450;    
+          cony_1W = 180;
+          cony_1H = 362;    
+          sally_2W = 158;
+          sally_2H = 158;
+          icons_1W = 168;
+          icons_1H = 168;    
+          icons_2W = 168;
+          icons_2H = 168;    
+          icons_3W = 168;
+          icons_3H = 168;    
+          icons_4W = 220;
+          icons_4H = 220;
+          icons_5W = 193;
+          icons_5H = 193;    
+          icons_6W = 200;
+          icons_6H = 156;
+          device_none3W = 290;
+          device_none3H = 564;
+          cleanertheme_1W = 272;
+          cleanertheme_1H = 450;
+          cleanertheme_2W = 272;
+          cleanertheme_2H = 450;
+          cleaner_popW = 440;
+          cleaner_popH = 184;
+          boss_1W = 212;
+          boss_1H = 298;
+          Sally_3W = 118;
+          Sally_3H = 150;    
+          appiconW = 184;
+          appiconH = 184;
+          apptextW = $('.apptext').innerWidth();
+          apptextH = $('.apptext').innerHeight();    
+          btn_store2W = 256;
+          btn_store2H = 82;    
+          
+    $('.device_intro').css({
+        left: device_intro_loca
+    });
+    $('.leonard_1').css({
+        left: leonard_1_loca
+    });
+    $('.leonard_1').css({
+        bottom: device_introH - 250
+    });
+    $('.brown_1').css({
+        left: brown_1_loca
+    });
+    $('.brown_1').css({
+        bottom: -device_introH * 1 / 4
+    });
+    $('.edward_1').css({
+        left: edward_1_loca
+    });
+    $('.edward_1').css({
+        bottom: -edward_1W * 1 / 3
+    });
+    $('.james_1').css({
+        left: james_1_loca
+    });
+    $('.james_1').css({
+        bottom: 0
+    });
+    $('.Sally_1').css({
+        left: Sally_1_loca
+    });
+    $('.Sally_1').css({
+        bottom: -Sally_1H / 4
+    });
+
+    $('.pack_table').css({
+        top: windowH / 2 - (pack_tableH / 3)
+    });
+    $('.pack_table').css({
+        left: windowW / 2 - (pack_tableW) + 50
+    });
+
+    $('.device_none').css({
+        top: windowH / 2 - (device_noneH / 2) + 80
+    });
+    $('.device_none').css({
+        left: windowW / 2 - (device_noneW / 2) + 250
+    });
+
+    $('.device_theme').css({
+        top: windowH / 2 - (device_noneH / 2) + 80 + 52
+    });
+    $('.device_theme').css({
+        left: windowW / 2 - (device_noneW / 2) + 250 + 9
+    });
+
+    $('.device_none2').css({
+        top: windowH / 2 - (device_none2H / 2) + 50
+    });
+    $('.device_none2').css({
+        left: windowW / 2 - (device_none2W / 2)
+    });
+
+    $('.basictheme1').css({
+        top: windowH / 2 - (device_none2H / 2) + 50 + 52
+    });
+    $('.basictheme1').css({
+        left: windowW / 2 - (basictheme1W / 2)
+    });
+
+    $('.cony_1').css({
+        top: windowH / 2 + 50
+    });
+    $('.cony_1').css({
+        left: windowW / 2 - (cony_1W * 1.5)
+    });
+
+    $('.sally_2').css({
+        top: windowH / 2 - sally_2H
+    });
+    $('.sally_2').css({
+        left: windowW / 2 + sally_2W / 2
+    });
+
+    $('.icons_1').css({
+        top: -icons_1H * 1 / 3
+    });
+    $('.icons_1').css({
+        left: icons_1W / 2
+    });
+
+    $('.icons_2').css({
+        top: windowH / 2 - icons_2H
+    });
+    $('.icons_2').css({
+        left: windowW / 2 - icons_2W * 3
+    });
+
+    $('.icons_3').css({
+        top: windowH / 1.5
+    });
+    $('.icons_3').css({
+        left: icons_3W / 2
+    });
+
+    $('.icons_4').css({
+        top: windowH - icons_4H
+    });
+    $('.icons_4').css({
+        left: icons_4W
+    });
+
+    $('.icons_5').css({
+        top: 0
+    });
+    $('.icons_5').css({
+        left: windowW - icons_5W * 2
+    });
+
+    $('.icons_6').css({
+        top: windowH - icons_6H * 2
+    });
+    $('.icons_6').css({
+        left: windowW - icons_6W * 4 / 5
+    });
+
+    $('.device_none3').css({
+        top: windowH / 2 - (device_none3H / 2) + 50
+    });
+    $('.device_none3').css({
+        left: windowW / 2 - (device_none3W / 2)
+    });
+
+    $('.cleanertheme_1').css({
+        top: windowH / 2 - (device_none3H / 2) + 50 + 52
+    });
+    $('.cleanertheme_1').css({
+        left: windowW / 2 - (cleanertheme_1W / 2)
+    });
+
+    $('.cleanertheme_2').css({
+        top: windowH / 2 - (device_none3H / 2) + 50 + 52
+    });
+    $('.cleanertheme_2').css({
+        left: windowW / 2 - (cleanertheme_2W / 2)
+    });
+
+    $('.cleaner_pop').css({
+        top: windowH / 2 - cleaner_popH / 2
+    });
+    $('.cleaner_pop').css({
+        left: windowW / 2 - cleaner_popW / 2
+    });
+
+    $('.boss_1').css({
+        top: windowH / 2 + boss_1H / 2
+    });
+    $('.boss_1').css({
+        left: windowW / 2 - boss_1W * 2
+    });
+
+    $('.Sally_3').css({
+        top: windowH / 2 + Sally_3H * 2
+    });
+    $('.Sally_3').css({
+        left: windowW / 2 + Sally_3W * 2
+    });
+
+    $('.appicon').css({
+        top: windowH / 2 - appiconH * 1.5
+    });
+    $('.appicon').css({
+        left: windowW / 2 - appiconW / 2
+    });
+
+    $('.apptext').css({
+        top: windowH / 2 - apptextH / 2
+    });
+    $('.apptext').css({
+        left: windowW / 2 - apptextW / 2
+    });
+
+    $('.btn_store2').css({
+        top: windowH / 2 + btn_store2H
+    });
+    $('.btn_store2').css({
+        left: windowW / 2 - btn_store2W / 2
+    });
+
+    
+}   else{
+   	alert("device_introW(<=930, noneMove) : "+ device_introW);
+    $(".row").css("top", "8%")
+    $(".pageTitle_main").css("font-size", "48px")
+    $(".content").css("font-size", "15px")
+    $(".content").css("font-size", "15px")
+    $(".content").css("margin", "16px 0 32px")
+    $(".btn_store").css("width", "200px")
+    $(".btn_store").css("height", "61px")
+    $(".pageTitle_black").css("font-size", "48px")
+    $(".pageTitle_white").css("font-size", "48px")
+    
+
+    
+    
+    /* $(".row").css("top", "8%") */
+    
+     device_introW = device_introW*2/3;
+     device_introH = device_introH*2/3;
+     device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+     leonard_1W = leonard_1W*2/3;
+     leonard_1H = leonard_1H*2/3;
+     brown_1W = brown_1W*2/3;
+     brown_1H = brown_1H*2/3;
+     edward_1W = edward_1W*2/3;
+     edward_1H = edward_1H*2/3;
+     james_1W = james_1W*2/3;
+     james_1H = james_1H*2/3;
+     Sally_1W = Sally_1W*2/3;
+     Sally_1H = Sally_1H*2/3;
+     
+     device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+     leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+     brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+     edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+     james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+     Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1W / 3;
+     
+     pack_tableW = pack_tableW*2/3;
+     pack_tableH = pack_tableH*2/3;
+     device_noneW = device_noneW*2/3;
+     device_noneH = device_noneH*2/3;    
+     device_themeW = device_themeW*2/3;
+     device_themeH = device_themeH*2/3;    
+     theme_1_viewW = theme_1_viewW*2/3;
+     theme_1_viewH = theme_1_viewH*2/3;
+     device_none2W = device_none2W*2/3;
+     device_none2H = device_none2H*2/3;
+     basictheme1W = basictheme1W*2/3;
+     basictheme1H = basictheme1H*2/3;
+     
+     
+     cony_1W = cony_1W*2/3;
+     cony_1H = cony_1H*2/3;    
+     sally_2W = sally_2W*2/3;
+     sally_2H = sally_2H*2/3;
+     icons_1W = icons_1W*2/3;
+     icons_1H = icons_1H*2/3;    
+     icons_2W = icons_2W*2/3;
+     icons_2H = icons_2H*2/3;    
+     icons_3W = icons_3W*2/3;
+     icons_3H = icons_3H*2/3;    
+     icons_4W = icons_4W*2/3;
+     icons_4H = icons_4H*2/3;
+     icons_5W = icons_5W*2/3;
+     icons_5H = icons_5H*2/3;    
+     icons_6W = icons_6W*2/3;
+     icons_6H = icons_6H*2/3;
+     
+     device_none3W = device_none3W*2/3;
+     device_none3H = device_none3H*2/3;
+     cleanertheme_1W = cleanertheme_1W*2/3;
+     cleanertheme_1H = cleanertheme_1H*2/3;
+     cleanertheme_2W = cleanertheme_2W*2/3;
+     cleanertheme_2H = cleanertheme_2H*2/3;
+     cleaner_popW = cleaner_popW*2/3;
+     cleaner_popH = cleaner_popH*2/3;
+     boss_1W = boss_1W*2/3;
+     boss_1H = boss_1H*2/3;
+     Sally_3W = Sally_3W*2/3;
+     Sally_3H = Sally_3H*2/3;
+     
+     appiconW = 184;
+     appiconH = 184;
+     apptextW = $('.apptext').innerWidth();
+     apptextH = $('.apptext').innerHeight();    
+     btn_store2W = 256;
+     btn_store2H = 82;    
+    
+    
+     //PAGE1
+    $('.device_intro').css({
+        left: device_intro_loca
+    });
+    $('.device_intro').css({
+        width: device_introW
+    });
+    $('.leonard_1').css({
+        left: leonard_1_loca
+    });
+    $('.leonard_1').css({
+         width: leonard_1W
+    });
+    $('.leonard_1').css({
+        bottom: device_introH -(device_introH/2)
+    });
+    $('.brown_1').css({
+        left: brown_1_loca
+    });
+    $('.brown_1').css({
+        width: brown_1W
+    });
+    $('.brown_1').css({
+        bottom: -device_introH * 1 / 4
+    });
+    $('.edward_1').css({
+        left: edward_1_loca
+    });
+    $('.edward_1').css({
+        width: edward_1W
+    });
+    $('.edward_1').css({
+        bottom: -edward_1W * 1 / 3
+    });
+    $('.james_1').css({
+        left: james_1_loca
+    });
+    $('.james_1').css({
+        width: james_1W
+    });
+    $('.james_1').css({
+        bottom: 0
+    });
+    $('.Sally_1').css({
+        left: Sally_1_loca
+    });
+    $('.Sally_1').css({
+        width: Sally_1W
+    });
+    $('.Sally_1').css({
+        bottom: -Sally_1H / 4
+    });
+
+    
+    
+    
+    
+    //PAGE2
+    $('.pack_table').css({
+        top: windowH / 2 - (pack_tableH / 3)
+    });
+    $('.pack_table').css({
+        width: pack_tableW
+    });
+    $('.pack_table').css({
+        left: windowW / 2 - (pack_tableW) + 50
+    });
+    $(".theme_pack").css("margin","0 10px")
+    $(".theme_img").css("width","55px")
+    $(".theme_img").css("height","55px")
+    $(".theme_img").css("margin-bottom","5px")
+    
+    
+    $('.device_none').css({
+        top: windowH / 2 - (device_noneH / 2) + 80
+    });
+    $('.device_none').css({
+        width: device_noneW
+    });
+    $('.device_none').css({
+        left: windowW / 2 - (device_noneW / 2) + 200
+    });
+
+    $('.device_theme').css({
+        top: windowH / 2 - (device_noneH / 2) + 115
+    });
+    $('.device_theme').css({
+        width:device_themeW
+    });
+    $('.device_theme').css({
+        left: windowW / 2 - (device_noneW / 2) + 206
+    });
+    
+	$('#sld').css("width", device_themeW);
+	$('#sld').css("height", device_themeH);
+	$('#sld').css("left", windowW / 2 - (device_noneW / 2) + 259);
+	$('#sl-wrapper').css("width", device_themeW*9);
+	$('#sl-wrapper').css("height", device_themeH);
+
+	$('.sl').css("width", device_themeW);
+	$('.sl img').css("width", device_themeW);
+	$('.sl img').css("height", device_themeH);
+    
+    
+    
+    
+
+    //PAGE3
+    $('.device_none2').css({
+        top: windowH / 2 - (device_none2H / 2) + 50
+    });
+    $('.device_none2').css({
+        width: device_none2W
+    });
+    $('.device_none2').css({
+        left: windowW / 2 - (device_none2W / 2)
+    });
+
+    $('.basictheme1').css({
+        top: windowH / 2 - (device_none2H / 2) + 50 + 34
+    });
+    $('.basictheme1').css({
+        width: basictheme1W
+    });
+    $('.basictheme1').css({
+        left: windowW / 2 - (basictheme1W / 2)
+    });
+
+    $('.cony_1').css({
+        top: windowH / 2 + 50
+    });
+    $('.cony_1').css({
+        width: cony_1W
+    });
+    $('.cony_1').css({
+        left: windowW / 2 - (cony_1W * 1.5)
+    });
+    $('.sally_2').css({
+        top: windowH / 2 - sally_2H
+    });
+    $('.sally_2').css({
+        width: sally_2W
+    });
+    $('.sally_2').css({
+        left: windowW / 2 + sally_2W / 2
+    });
+    $('.icons_1').css({
+        top: -icons_1H * 1 / 3
+    });
+    $('.icons_1').css({
+        width: icons_1W
+    });
+    $('.icons_1').css({
+        left: icons_1W / 2
+    });
+    $('.icons_2').css({
+        top: windowH / 2 - icons_2H
+    });
+    $('.icons_2').css({
+    	width: icons_2W
+    });
+    $('.icons_2').css({
+        left: windowW / 2 - icons_2W * 3
+    });
+    $('.icons_3').css({
+        top: windowH / 1.5
+    });
+    $('.icons_3').css({
+    	width: icons_3W
+    });
+    $('.icons_3').css({
+        left: icons_3W / 2
+    });
+    $('.icons_4').css({
+        top: windowH - icons_4H
+    });
+    $('.icons_4').css({
+    	width: icons_4W
+    });
+    $('.icons_4').css({
+        left: icons_4W
+    });
+    $('.icons_5').css({
+        top: 0
+    });
+    $('.icons_5').css({
+    	width: icons_5W
+    });
+    $('.icons_5').css({
+        left: windowW - icons_5W * 2
+    });
+    $('.icons_6').css({
+        top: windowH - icons_6H * 2
+    });
+    $('.icons_6').css({
+    	width: icons_6W
+    });
+    $('.icons_6').css({
+        left: windowW - icons_6W * 4 / 5
+    });
+    
+    //PAGE4
+    $('.device_none3').css({
+        top: windowH / 2 - (device_none3H / 2) + 50
+    });
+    $('.device_none3').css({
+        width: device_none3W
+    });
+    $('.device_none3').css({
+        left: windowW / 2 - (device_none3W / 2)
+    });
+
+    $('.cleanertheme_1').css({
+        top: windowH / 2 - (device_none3H / 2) + 50  + 34
+    });
+    $('.cleanertheme_1').css({
+        width: cleanertheme_1W
+    });
+    $('.cleanertheme_1').css({
+        left: windowW / 2 - (cleanertheme_1W / 2)
+    });
+
+    $('.cleanertheme_2').css({
+        top: windowH / 2 - (device_none3H / 2) + 50  + 34
+    });
+    $('.cleanertheme_2').css({
+    	width: cleanertheme_2W
+    });
+    $('.cleanertheme_2').css({
+        left: windowW / 2 - (cleanertheme_2W / 2)
+    });
+
+    $('.cleaner_pop').css({
+        top: windowH / 2 - cleaner_popH / 2
+    });
+    $('.cleaner_pop').css({
+    	width: cleaner_popW
+    });
+    $('.cleaner_pop').css({
+        left: windowW / 2 - cleaner_popW / 2
+    });
+
+    $('.boss_1').css({
+        top: windowH / 2 + boss_1H / 2
+    });
+    $('.boss_1').css({
+    	width: boss_1W
+    });
+    $('.boss_1').css({
+        left: windowW / 2 - boss_1W * 2
+    });
+
+    $('.Sally_3').css({
+        top: windowH / 2 + Sally_3H * 2
+    });
+    $('.Sally_3').css({
+    	width: Sally_3W
+    });
+    $('.Sally_3').css({
+        left: windowW / 2 + Sally_3W * 2
+    });
+
+    $('.appicon').css({
+        top: windowH / 2 - appiconH * 1.5
+    });
+    $('.appicon').css({
+        left: windowW / 2 - appiconW / 2
+    });
+
+    $('.apptext').css({
+        top: windowH / 2 - apptextH / 2
+    });
+    $('.apptext').css({
+        left: windowW / 2 - apptextW / 2
+    });
+
+    $('.btn_store2').css({
+        top: windowH / 2 + btn_store2H
+    });
+    $('.btn_store2').css({
+        left: windowW / 2 - btn_store2W / 2
+    });
+    
+    aSlider = null;
+    aSlider = Slider("#slider_button", 1)
+    
+    
+}
+    
+    
+    $(window).resize(function() {
+
+        var windowH = $(window).innerHeight();
+        var windowW = $(window).innerWidth();
+        var device_introW = 402;
+        var device_introH = 516;
+        var leonard_1W = 194;
+        var leonard_1H = 196;
+        var brown_1W = 322;
+        var brown_1H = 464;
+        var edward_1W = 90;
+        var edward_1H = 102;
+        var james_1W = 244;
+        var james_1H = 471;
+        var Sally_1W = 144;
+        var Sally_1H = 218;
+
+        var device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+        var leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+        var brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+        var edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+        var james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+        var Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1W / 3;
+        
+        var pack_tableW = 518;
+        var pack_tableH = 629;
+        var device_noneW = 290;
+        var device_noneH = 564;    
+        var device_themeW = 272;
+        var device_themeH = 450;    
+        var theme_1_viewW = 373;
+        var theme_1_viewH = 450;
+        
+        var device_none2W = 290;
+        var device_none2H = 564;
+        var basictheme1W = 272;
+        var basictheme1H = 450;    
+        var cony_1W = 180;
+        var cony_1H = 362;    
+        var sally_2W = 158;
+        var sally_2H = 158;
+        var icons_1W = 168;
+        var icons_1H = 168;    
+        var icons_2W = 168;
+        var icons_2H = 168;    
+        var icons_3W = 168;
+        var icons_3H = 168;    
+        var icons_4W = 220;
+        var icons_4H = 220;
+        var icons_5W = 193;
+        var icons_5H = 193;    
+        var icons_6W = 200;
+        var icons_6H = 156;
+        var device_none3W = 290;
+        var device_none3H = 564;
+        var cleanertheme_1W = 272;
+        var cleanertheme_1H = 450;
+        var cleanertheme_2W = 272;
+        var cleanertheme_2H = 450;
+        var cleaner_popW = 440;
+        var cleaner_popH = 184;
+        var boss_1W = 212;
+        var boss_1H = 298;
+        var Sally_3W = 118;
+        var Sally_3H = 150;    
+        var appiconW = 184;
+        var appiconH = 184;
+        var apptextW = $('.apptext').innerWidth();
+        var apptextH = $('.apptext').innerHeight();    
+        var btn_store2W = 256;
+        var btn_store2H = 82;
+        
+        if (windowH >= 930) {
+           	alert("device_introW(>=930, Move) : "+ device_introW);
+            /* $(".row").css("top", "8%") */
+		$(".row").css("top", "8%")
+        $(".pageTitle_main").css("font-size", "72px")
+        $(".content").css("font-size", "20px")
+        $(".content").css("margin", "25px 0 46px")
+        $(".btn_store").css("width", "256px")
+        $(".btn_store").css("height", "82px")
+        $(".pageTitle_black").css("font-size", "72px")
+        $(".pageTitle_white").css("font-size", "72px")
+        $(".pack_table").css("width", "518px")
+        $(".pack_table").css("height", "632px")
+
+          windowH = $(window).innerHeight();
+          windowW = $(window).innerWidth();
+          
+          device_introW = 402;
+          device_introH = 516;
+          leonard_1W = 194;
+          leonard_1H = 196;
+          brown_1W = 322;
+          brown_1H = 464;
+          edward_1W = 90;
+          edward_1H = 102;
+          james_1W = 244;
+          james_1H = 471;
+          Sally_1W = 144;
+          Sally_1H = 218;
+
+          device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+          leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+          brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+          edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+          james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+          Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1W / 3;
+          pack_tableW = 518;
+          pack_tableH = 629;
+          device_noneW = 290;
+          device_noneH = 564;    
+          device_themeW = 272;
+          device_themeH = 450;    
+          theme_1_viewW = 373;
+          theme_1_viewH = 450;
+          device_none2W = 290;
+          device_none2H = 564;
+          basictheme1W = 272;
+          basictheme1H = 450;    
+          cony_1W = 180;
+          cony_1H = 362;    
+          sally_2W = 158;
+          sally_2H = 158;
+          icons_1W = 168;
+          icons_1H = 168;    
+          icons_2W = 168;
+          icons_2H = 168;    
+          icons_3W = 168;
+          icons_3H = 168;    
+          icons_4W = 220;
+          icons_4H = 220;
+          icons_5W = 193;
+          icons_5H = 193;    
+          icons_6W = 200;
+          icons_6H = 156;
+          device_none3W = 290;
+          device_none3H = 564;
+          cleanertheme_1W = 272;
+          cleanertheme_1H = 450;
+          cleanertheme_2W = 272;
+          cleanertheme_2H = 450;
+          cleaner_popW = 440;
+          cleaner_popH = 184;
+          boss_1W = 212;
+          boss_1H = 298;
+          Sally_3W = 118;
+          Sally_3H = 150;    
+          appiconW = 184;
+          appiconH = 184;
+          apptextW = $('.apptext').innerWidth();
+          apptextH = $('.apptext').innerHeight();    
+          btn_store2W = 256;
+          btn_store2H = 82; 
+            
+            
+            
+          //PAGE1
+          $('.device_intro').css({
+              left: device_intro_loca
+          });
+          $('.device_intro').css({
+              width: device_introW
+          });
+          $('.leonard_1').css({
+              left: leonard_1_loca
+          });
+          $('.leonard_1').css({
+               width: leonard_1W
+          });
+          $('.leonard_1').css({
+              bottom: device_introH -(device_introH/2)
+          });
+          $('.brown_1').css({
+              left: brown_1_loca
+          });
+          $('.brown_1').css({
+              width: brown_1W
+          });
+          $('.brown_1').css({
+              bottom: -device_introH * 1 / 4
+          });
+          $('.edward_1').css({
+              left: edward_1_loca
+          });
+          $('.edward_1').css({
+              width: edward_1W
+          });
+          $('.edward_1').css({
+              bottom: -edward_1W * 1 / 3
+          });
+          $('.james_1').css({
+              left: james_1_loca
+          });
+          $('.james_1').css({
+              width: james_1W
+          });
+          $('.james_1').css({
+              bottom: 0
+          });
+          $('.Sally_1').css({
+              left: Sally_1_loca
+          });
+          $('.Sally_1').css({
+              width: Sally_1W
+          });
+          $('.Sally_1').css({
+              bottom: -Sally_1H / 4
+          });
+
+          
+          
+          
+          
+          //PAGE2
+          $('.pack_table').css({
+              top: windowH / 2 - (pack_tableH / 3)
+          });
+          $('.pack_table').css({
+              width: pack_tableW
+          });
+          $('.pack_table').css({
+              left: windowW / 2 - (pack_tableW) + 50
+          });
+          $(".theme_pack").css("margin","0 30px")
+          $(".theme_img").css("width","110px")
+          $(".theme_img").css("height","110px")
+          $(".theme_img").css("margin-bottom","16px")
+          $(".theme_img").css("font-size","0.7em")
+          
+          $('.device_none').css({
+              top: windowH / 2 - (device_noneH / 2) + 80
+          });
+          $('.device_none').css({
+              width: device_noneW
+          });
+          $('.device_none').css({
+              left: windowW / 2 - (device_noneW / 2) + 250
+          });
+
+          $('.device_theme').css({
+              top: windowH / 2 - (device_noneH / 2)+ 80 + 52
+          });
+          $('.device_theme').css({
+              width:device_themeW
+          });
+          $('.device_theme').css({
+              left: windowW / 2 - (device_noneW / 2) + 250 + 9
+          });
+          
+      	$('#sld').css("width", device_themeW);
+      	$('#sld').css("height", device_themeH);
+      	$('#sld').css("left", windowW / 2 - (device_noneW / 2) + 259);
+      	$('#sl-wrapper').css("width", device_themeW*9);
+      	$('#sl-wrapper').css("height", device_themeH);
+
+      	$('.sl').css("width", device_themeW);
+      	$('.sl img').css("width", device_themeW);
+      	$('.sl img').css("height", device_themeH);
+
+          
+          
+          
+          
+          //PAGE3
+          $('.device_none2').css({
+              top: windowH / 2 - (device_none2H / 2) + 50
+          });
+          $('.device_none2').css({
+              width: device_none2W
+          });
+          $('.device_none2').css({
+              left: windowW / 2 - (device_none2W / 2)
+          });
+
+          $('.basictheme1').css({
+              top: windowH / 2 - (device_none2H / 2) + 50 + 52
+          });
+          $('.basictheme1').css({
+              width: basictheme1W
+          });
+          $('.basictheme1').css({
+              left: windowW / 2 - (basictheme1W / 2)
+          });
+
+          $('.cony_1').css({
+              top: windowH / 2 + 50
+          });
+          $('.cony_1').css({
+              width: cony_1W
+          });
+          $('.cony_1').css({
+              left: windowW / 2 - (cony_1W * 1.5)
+          });
+          $('.sally_2').css({
+              top: windowH / 2 - sally_2H
+          });
+          $('.sally_2').css({
+              width: sally_2W
+          });
+          $('.sally_2').css({
+              left: windowW / 2 + sally_2W / 2
+          });
+          $('.icons_1').css({
+              top: -icons_1H * 1 / 3
+          });
+          $('.icons_1').css({
+              width: icons_1W
+          });
+          $('.icons_1').css({
+              left: icons_1W / 2
+          });
+          $('.icons_2').css({
+              top: windowH / 2 - icons_2H
+          });
+          $('.icons_2').css({
+          	width: icons_2W
+          });
+          $('.icons_2').css({
+              left: windowW / 2 - icons_2W * 3
+          });
+          $('.icons_3').css({
+              top: windowH / 1.5
+          });
+          $('.icons_3').css({
+          	width: icons_3W
+          });
+          $('.icons_3').css({
+              left: icons_3W / 2
+          });
+          $('.icons_4').css({
+              top: windowH - icons_4H
+          });
+          $('.icons_4').css({
+          	width: icons_4W
+          });
+          $('.icons_4').css({
+              left: icons_4W
+          });
+          $('.icons_5').css({
+              top: 0
+          });
+          $('.icons_5').css({
+          	width: icons_5W
+          });
+          $('.icons_5').css({
+              left: windowW - icons_5W * 2
+          });
+          $('.icons_6').css({
+              top: windowH - icons_6H * 2
+          });
+          $('.icons_6').css({
+          	width: icons_6W
+          });
+          $('.icons_6').css({
+              left: windowW - icons_6W * 4 / 5
+          });
+          
+          //PAGE4
+
+          $('.device_none3').css({
+              top: windowH / 2 - (device_none3H / 2) + 50
+          });
+          $('.device_none3').css({
+              width: device_none3W
+          });
+          $('.device_none3').css({
+              left: windowW / 2 - (device_none3W / 2)
+          });
+
+          $('.cleanertheme_1').css({
+              top: windowH / 2 - (device_none3H / 2) + 50  + 52
+          });
+          $('.cleanertheme_1').css({
+              width: cleanertheme_1W
+          });
+          $('.cleanertheme_1').css({
+              left: windowW / 2 - (cleanertheme_1W / 2)
+          });
+
+          $('.cleanertheme_2').css({
+              top: windowH / 2 - (device_none3H / 2) + 50  + 52
+          });
+          $('.cleanertheme_2').css({
+          	width: cleanertheme_2W
+          });
+          $('.cleanertheme_2').css({
+              left: windowW / 2 - (cleanertheme_2W / 2)
+          });
+
+          $('.cleaner_pop').css({
+              top: windowH / 2 - cleaner_popH / 2
+          });
+          $('.cleaner_pop').css({
+          	width: cleaner_popW
+          });
+          $('.cleaner_pop').css({
+              left: windowW / 2 - cleaner_popW / 2
+          });
+
+          $('.boss_1').css({
+              top: windowH / 2 + boss_1H / 2
+          });
+          $('.boss_1').css({
+          	width: boss_1W
+          });
+          $('.boss_1').css({
+              left: windowW / 2 - boss_1W * 2
+          });
+
+          $('.Sally_3').css({
+              top: windowH / 2 + Sally_3H * 2
+          });
+          $('.Sally_3').css({
+          	width: Sally_3W
+          });
+          $('.Sally_3').css({
+              left: windowW / 2 + Sally_3W * 2
+          });
+
+          $('.appicon').css({
+              top: windowH / 2 - appiconH * 1.5
+          });
+          $('.appicon').css({
+              left: windowW / 2 - appiconW / 2
+          });
+
+          $('.apptext').css({
+              top: windowH / 2 - apptextH / 2
+          });
+          $('.apptext').css({
+              left: windowW / 2 - apptextW / 2
+          });
+
+          $('.btn_store2').css({
+              top: windowH / 2 + btn_store2H
+          });
+          $('.btn_store2').css({
+              left: windowW / 2 - btn_store2W / 2
+          });
+
+          clearInterval(changeImg);
+      	  changeImg = setInterval(changeImage, 1500);
+          
+/*            var aSlider = new Slider("#slider_button") */
+    }   else{
+       	alert("device_introW(<=930, Move) : "+ device_introW);
+        $(".row").css("top", "8%")
+        $(".pageTitle_main").css("font-size", "48px")
+        $(".content").css("font-size", "15px")
+        $(".content").css("font-size", "15px")
+        $(".content").css("margin", "16px 0 32px")
+        $(".btn_store").css("width", "200px")
+        $(".btn_store").css("height", "61px")
+        $(".pageTitle_black").css("font-size", "48px")
+        $(".pageTitle_white").css("font-size", "48px")
+        $(".pack_table").css("width", "345px")
+        $(".pack_table").css("height", "345px")
+        
+        
+        device_introW = device_introW*2/3;
+       	alert("device_introW(Point!) : "+ device_introW);
+         device_introH = device_introH*2/3;
+         device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+         leonard_1W = leonard_1W*2/3;
+         leonard_1H = leonard_1H*2/3;
+         brown_1W = brown_1W*2/3;
+         brown_1H = brown_1H*2/3;
+         edward_1W = edward_1W*2/3;
+         edward_1H = edward_1H*2/3;
+         james_1W = james_1W*2/3;
+         james_1H = james_1H*2/3;
+         Sally_1W = Sally_1W*2/3;
+         Sally_1H = Sally_1H*2/3;
+         
+         device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+         leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+         brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+         edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+         james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+         Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1W / 3;
+         
+         pack_tableW = pack_tableW*2/3;
+         pack_tableH = pack_tableH*2/3;
+         device_noneW = device_noneW*2/3;
+         device_noneH = device_noneH*2/3;    
+         device_themeW = device_themeW*2/3;
+         device_themeH = device_themeH*2/3;    
+         theme_1_viewW = theme_1_viewW*2/3;
+         theme_1_viewH = theme_1_viewH*2/3;
+         device_none2W = device_none2W*2/3;
+         device_none2H = device_none2H*2/3;
+         basictheme1W = basictheme1W*2/3;
+         basictheme1H = basictheme1H*2/3;
+         
+         
+         cony_1W = cony_1W*2/3;
+         cony_1H = cony_1H*2/3;    
+         sally_2W = sally_2W*2/3;
+         sally_2H = sally_2H*2/3;
+         icons_1W = icons_1W*2/3;
+         icons_1H = icons_1H*2/3;    
+         icons_2W = icons_2W*2/3;
+         icons_2H = icons_2H*2/3;    
+         icons_3W = icons_3W*2/3;
+         icons_3H = icons_3H*2/3;    
+         icons_4W = icons_4W*2/3;
+         icons_4H = icons_4H*2/3;
+         icons_5W = icons_5W*2/3;
+         icons_5H = icons_5H*2/3;    
+         icons_6W = icons_6W*2/3;
+         icons_6H = icons_6H*2/3;
+         
+         device_none3W = device_none3W*2/3;
+         device_none3H = device_none3H*2/3;
+         cleanertheme_1W = cleanertheme_1W*2/3;
+         cleanertheme_1H = cleanertheme_1H*2/3;
+         cleanertheme_2W = cleanertheme_2W*2/3;
+         cleanertheme_2H = cleanertheme_2H*2/3;
+         cleaner_popW = cleaner_popW*2/3;
+         cleaner_popH = cleaner_popH*2/3;
+         boss_1W = boss_1W*2/3;
+         boss_1H = boss_1H*2/3;
+         Sally_3W = Sally_3W*2/3;
+         Sally_3H = Sally_3H*2/3;
+         
+         appiconW = 184;
+         appiconH = 184;
+         apptextW = $('.apptext').innerWidth();
+         apptextH = $('.apptext').innerHeight();    
+         btn_store2W = 256;
+         btn_store2H = 82;    
+        
+        
+         //PAGE1
+        $('.device_intro').css({
+            left: device_intro_loca
+        });
+        $('.device_intro').css({
+            width: device_introW
+        });
+        $('.leonard_1').css({
+            left: leonard_1_loca
+        });
+        $('.leonard_1').css({
+             width: leonard_1W
+        });
+        $('.leonard_1').css({
+            bottom: device_introH -(device_introH/2)
+        });
+        $('.brown_1').css({
+            left: brown_1_loca
+        });
+        $('.brown_1').css({
+            width: brown_1W
+        });
+        $('.brown_1').css({
+            bottom: -device_introH * 1 / 4
+        });
+        $('.edward_1').css({
+            left: edward_1_loca
+        });
+        $('.edward_1').css({
+            width: edward_1W
+        });
+        $('.edward_1').css({
+            bottom: -edward_1W * 1 / 3
+        });
+        $('.james_1').css({
+            left: james_1_loca
+        });
+        $('.james_1').css({
+            width: james_1W
+        });
+        $('.james_1').css({
+            bottom: 0
+        });
+        $('.Sally_1').css({
+            left: Sally_1_loca
+        });
+        $('.Sally_1').css({
+            width: Sally_1W
+        });
+        $('.Sally_1').css({
+            bottom: -Sally_1H / 4
+        });
+
+        
+        
+        
+        
+        //PAGE2
+        $('.pack_table').css({
+            top: windowH / 2 - (pack_tableH / 3)
+        });
+        $('.pack_table').css({
+            width: pack_tableW
+        });
+        $('.pack_table').css({
+            left: windowW / 2 - (pack_tableW) + 50
+        });
+        $(".theme_pack").css("margin","0 10px")
+        $(".theme_img").css("width","55px")
+        $(".theme_img").css("height","55px")
+        $(".theme_img").css("margin-bottom","5px")
+        $(".theme_img").css("font-size","0.4em")
+        
+        $('.device_none').css({
+            top: windowH / 2 - (device_noneH / 2) + 80
+        });
+        $('.device_none').css({
+            width: device_noneW
+        });
+        $('.device_none').css({
+            left: windowW / 2 - (device_noneW / 2) + 200
+        });
+
+        $('.device_theme').css({
+            top: windowH / 2 - (device_noneH / 2) + 115
+        });
+        $('.device_theme').css({
+            width:device_themeW
+        });
+        $('.device_theme').css({
+            left: windowW / 2 - (device_noneW / 2) + 206
+        });
+        
+    	$('#sld').css("width", device_themeW);
+    	$('#sld').css("height", device_themeH);
+    	$('#sld').css("left", windowW / 2 - (device_noneW / 2) + 259);
+    	$('#sl-wrapper').css("width", device_themeW*9);
+    	$('#sl-wrapper').css("height", device_themeH);
+
+    	$('.sl').css("width", device_themeW);
+    	$('.sl img').css("width", device_themeW);
+    	$('.sl img').css("height", device_themeH);
+        
+        
+        
+        
+        
+        
+        
+        //PAGE3
+        $('.device_none2').css({
+            top: windowH / 2 - (device_none2H / 2) + 50
+        });
+        $('.device_none2').css({
+            width: device_none2W
+        });
+        $('.device_none2').css({
+            left: windowW / 2 - (device_none2W / 2)
+        });
+
+        $('.basictheme1').css({
+            top: windowH / 2 - (device_none2H / 2) + 50 + 34
+        });
+        $('.basictheme1').css({
+            width: basictheme1W
+        });
+        $('.basictheme1').css({
+            left: windowW / 2 - (basictheme1W / 2)
+        });
+
+        $('.cony_1').css({
+            top: windowH / 2 + 50
+        });
+        $('.cony_1').css({
+            width: cony_1W
+        });
+        $('.cony_1').css({
+            left: windowW / 2 - (cony_1W * 1.5)
+        });
+        $('.sally_2').css({
+            top: windowH / 2 - sally_2H
+        });
+        $('.sally_2').css({
+            width: sally_2W
+        });
+        $('.sally_2').css({
+            left: windowW / 2 + sally_2W / 2
+        });
+        $('.icons_1').css({
+            top: -icons_1H * 1 / 3
+        });
+        $('.icons_1').css({
+            width: icons_1W
+        });
+        $('.icons_1').css({
+            left: icons_1W / 2
+        });
+        $('.icons_2').css({
+            top: windowH / 2 - icons_2H
+        });
+        $('.icons_2').css({
+        	width: icons_2W
+        });
+        $('.icons_2').css({
+            left: windowW / 2 - icons_2W * 3
+        });
+        $('.icons_3').css({
+            top: windowH / 1.5
+        });
+        $('.icons_3').css({
+        	width: icons_3W
+        });
+        $('.icons_3').css({
+            left: icons_3W / 2
+        });
+        $('.icons_4').css({
+            top: windowH - icons_4H
+        });
+        $('.icons_4').css({
+        	width: icons_4W
+        });
+        $('.icons_4').css({
+            left: icons_4W
+        });
+        $('.icons_5').css({
+            top: 0
+        });
+        $('.icons_5').css({
+        	width: icons_5W
+        });
+        $('.icons_5').css({
+            left: windowW - icons_5W * 2
+        });
+        $('.icons_6').css({
+            top: windowH - icons_6H * 2
+        });
+        $('.icons_6').css({
+        	width: icons_6W
+        });
+        $('.icons_6').css({
+            left: windowW - icons_6W * 4 / 5
+        });
+        
+        //PAGE4
+        $('.device_none3').css({
+            top: windowH / 2 - (device_none3H / 2) + 50
+        });
+        $('.device_none3').css({
+            width: device_none3W
+        });
+        $('.device_none3').css({
+            left: windowW / 2 - (device_none3W / 2)
+        });
+
+        $('.cleanertheme_1').css({
+            top: windowH / 2 - (device_none3H / 2) + 50  + 34
+        });
+        $('.cleanertheme_1').css({
+            width: cleanertheme_1W
+        });
+        $('.cleanertheme_1').css({
+            left: windowW / 2 - (cleanertheme_1W / 2)
+        });
+
+        $('.cleanertheme_2').css({
+            top: windowH / 2 - (device_none3H / 2) + 50  + 34
+        });
+        $('.cleanertheme_2').css({
+        	width: cleanertheme_2W
+        });
+        $('.cleanertheme_2').css({
+            left: windowW / 2 - (cleanertheme_2W / 2)
+        });
+
+        $('.cleaner_pop').css({
+            top: windowH / 2 - cleaner_popH / 2
+        });
+        $('.cleaner_pop').css({
+        	width: cleaner_popW
+        });
+        $('.cleaner_pop').css({
+            left: windowW / 2 - cleaner_popW / 2
+        });
+
+        $('.boss_1').css({
+            top: windowH / 2 + boss_1H / 2
+        });
+        $('.boss_1').css({
+        	width: boss_1W
+        });
+        $('.boss_1').css({
+            left: windowW / 2 - boss_1W * 2
+        });
+
+        $('.Sally_3').css({
+            top: windowH / 2 + Sally_3H * 2
+        });
+        $('.Sally_3').css({
+        	width: Sally_3W
+        });
+        $('.Sally_3').css({
+            left: windowW / 2 + Sally_3W * 2
+        });
+
+        $('.appicon').css({
+            top: windowH / 2 - appiconH * 1.5
+        });
+        $('.appicon').css({
+            left: windowW / 2 - appiconW / 2
+        });
+
+        $('.apptext').css({
+            top: windowH / 2 - apptextH / 2
+        });
+        $('.apptext').css({
+            left: windowW / 2 - apptextW / 2
+        });
+
+        $('.btn_store2').css({
+            top: windowH / 2 + btn_store2H
+        });
+        $('.btn_store2').css({
+            left: windowW / 2 - btn_store2W / 2
+        });
+        
+        aSlider = null;
+        aSlider = Slider("#slider_button", 1)
+
+        clearInterval(changeImg);
+    	changeImg = setInterval(changeImage2, 1500);
+    }
+    })
+});
+</script>
+<script>
+	index = 0;
+
+	var imageArray = [0, 272, 544, 816, 1088, 1360, 1632, 1904, 2176];
+
+	var imageArray2 = [0, 181, 362, 543, 725, 906, 1088, 1269, 1450];
+
+
+
+var upPage = true;
+
+function changeImage() {
+/* 	alert("changImage >> "+index); */
+    document.getElementById("sl-wrapper").style.left = "-" + imageArray[index] + "px";
+    if (upPage) {
+        index++
+    } else {
+        index--
+    }
+    if (index >= imageArray.length - 1) {
+        index = 8;
+        upPage = false
+    } else if (index <= 0) {
+        upPage = true
+    }
+}
+
+function changeImage2() {
+/* 	alert("changImage2 >> "+index); */
+    document.getElementById("sl-wrapper").style.left = "-" + imageArray2[index] + "px";
+    if (upPage) {
+        index++
+    } else {
+        index--
+    }
+    if (index >= imageArray2.length - 1) {
+        index = 8;
+        upPage = false
+    } else if (index <= 0) {
+        upPage = true
+    }
+}
+
+function Slider(element, sizeChange) {
+    this.el = document.querySelector(element);
+    this.init(sizeChange)
+}
+Slider.prototype = {
+    init: function(sizeChange) {
+/*     	alert(sizeChange) */
+        this.links = document.querySelectorAll("#sl-nav #th_btn");
+        this.wrapper = document.querySelector("#sl-wrapper");
+        this.navigate(sizeChange);
+        if(sizeChange==0){
+        	changeImg = setInterval(changeImage, 1500)
+        }
+        else{
+        	changeImg = setInterval(changeImage2, 1500)
+        }
+    },
+    navigate: function(sizeChange) {
+        for (var i = 0; i < this.links.length; ++i) {
+            var link = this.links[i];
+            this.slide(link, sizeChange)
+        }
+    },
+    slide: function(element, sizeChange) {
+        var self = this;
+        element.addEventListener("click", function(e) {
+            e.preventDefault();
+            var a = this;
+            self.setCurrentLink(a);
+            index = parseInt(a.getAttribute("data-slide", 1)) + 1;
+            var currentSlide = document.querySelector(".sl:nth-child(" + index + ")");
+            if(sizeChange==0){
+            	clearInterval(changeImg);
+            	changeImg = setInterval(changeImage, 1500);
+            }
+            else{
+            	clearInterval(changeImg2);
+            	changeImg = setInterval(changeImage2, 1500);
+            }
+            self.wrapper.style.left = "-" + currentSlide.offsetLeft + "px"
+        }, false)
+    },
+    setCurrentLink: function(link) {
+        var parent = link.parentNode;
+        var a = parent.querySelectorAll("a");
+        link.className = "current";
+        for (var j = 0; j < a.length; ++j) {
+            var cur = a[j];
+            if (cur !== link) {
+                cur.className = ""
+            }
+        }
+    }
+};
+document.addEventListener("DOMContentLoaded", function() {
+	if(window.innerHeight>=930){
+ 		aSlider = new Slider("#slider_button", 0)
+	}
+	else{
+		aSlider = new Slider("#slider_button", 1)
+	}
+});
+
 </script>
 </body>
 </html>

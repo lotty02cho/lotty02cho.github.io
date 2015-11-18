@@ -99,7 +99,7 @@ ul {
     text-align: center;
     overflow: hidden;
 }
-.section p.grey {
+.section .grey {
     color: #313131;
 }
 
