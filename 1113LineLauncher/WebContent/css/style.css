@@ -7,6 +7,18 @@
     src: url('../fonts/LINE GothicOTF Regular.otf');
 }
 
+h1{
+	font-size: 72px;
+}
+
+h2{
+	font-size: 72px;
+}
+
+h3{
+	font-size: 20px;
+}
+
 #menu, body, html, ul {
     padding: 0;
 }
