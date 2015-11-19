@@ -1,12 +1,4 @@
-@font-face {
-    font-family: LINEBold;
-      src : url('../fonts/LINEBold.ttf');
-}
-}
- @font-face {
-    font-family: LINERegular;
-     src: url('../fonts/LINERegular.ttf');
-}
+
 h1{
 	font-size: 72px;
 }
@@ -15,10 +7,7 @@ h2{
 	font-size: 72px;
 }
 
-h3{
-/* 	font-family: LINERegular;
-	font-size: 20px; */
-}
+
 
 #menu, body, html, ul {
     padding: 0;
@@ -136,13 +125,13 @@ ul {
 
 .pageTitle_main {
     font-size: 72px;
-    font-family: LINEBold;
+    font-family: LINERegular;
     letter-spacing: 12px;
     fontword-break: keep-all;
 }
 .pageTitle_black, .pageTitle_white {
 	font-size: 72px;
-    font-family: LINEBold;
+    font-family: LINERegular;
     letter-spacing: 12px;
     word-break: keep-all;
 }
@@ -155,7 +144,7 @@ ul {
 
 .content{
 	font-size: 20px;
-    font-family: LINEBold;
+    font-family: LINERegular;
     margin: 25px 0 46px; 0;
 }
 
@@ -187,10 +176,10 @@ div.homebg01, div.homebg02, div.homebg03, div.homebg04, div.homebg05 {
 }
 
 .content{
-	font-family: LINEBold;
+	font-family: LINERegular;
 }
 
 .apptext{
 	font-size: 38px;
-	font-family: LINEBold;
+	font-family: LINERegular;
 }
