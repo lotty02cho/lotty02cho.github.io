@@ -1,16 +1,13 @@
 @font-face {
     font-family: LINE_GothicOTF_Bold;
-     src : url('../fonts/LINE GothicOTF Bold.otf'); <!-- IE9 호환 모드 -->
-
+      src : url('../fonts/LINE GothicOTF Bold.otf');
 }
-    
-    
 }
-@font-face {
+/* @font-face {
     font-family: LINE_GothicOTF_Regular;
-    src: url('../fonts/LINE GothicOTF Regular.otf');
+     src: url('../fonts/LINE GothicOTF Regular.otf');
 }
-
+ */
 h1{
 	font-size: 72px;
 }
@@ -20,6 +17,7 @@ h2{
 }
 
 h3{
+	font-family: LINE_GothicOTF_Bold;
 	font-size: 20px;
 }
 
@@ -187,4 +185,13 @@ div.homebg01, div.homebg02, div.homebg03, div.homebg04, div.homebg05 {
     background-position: center 50%;
     opacity: 1;
     transition-delay: .7s;
+}
+
+.content{
+	font-family: LINE_GothicOTF_Regular;
+}
+
+.apptext{
+	font-size: 38px;
+	font-family: LINE_GothicOTF_Bold;
 }
