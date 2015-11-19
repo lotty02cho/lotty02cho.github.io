@@ -1,12 +1,3 @@
-@font-face {
-    font-family: LINE_GothicOTF_Bold;
-    src: url('../fonts/LINE GothicOTF Bold.otf');
-}
-@font-face {
-    font-family: LINE_GothicOTF_Regular;
-    src: url('../fonts/LINE GothicOTF Regular.otf');
-}
-
 h1{
 	font-size: 72px;
 }
