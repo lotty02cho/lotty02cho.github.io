@@ -1,3 +1,16 @@
+@font-face {
+    font-family: LINE_GothicOTF_Bold;
+     src : url('../fonts/LINE GothicOTF Bold.otf'); <!-- IE9 호환 모드 -->
+
+}
+    
+    
+}
+@font-face {
+    font-family: LINE_GothicOTF_Regular;
+    src: url('../fonts/LINE GothicOTF Regular.otf');
+}
+
 h1{
 	font-size: 72px;
 }
