@@ -1,13 +1,12 @@
 @font-face {
-    font-family: LINE_GothicOTF_Bold;
-      src : url('../fonts/LINE GothicOTF Bold.otf');
+    font-family: LINEBold;
+      src : url('../fonts/LINEBold.ttf');
 }
 }
-/* @font-face {
-    font-family: LINE_GothicOTF_Regular;
-     src: url('../fonts/LINE GothicOTF Regular.otf');
+ @font-face {
+    font-family: LINERegular;
+     src: url('../fonts/LINERegular.ttf');
 }
- */
 h1{
 	font-size: 72px;
 }
@@ -17,8 +16,8 @@ h2{
 }
 
 h3{
-	font-family: LINE_GothicOTF_Bold;
-	font-size: 20px;
+/* 	font-family: LINERegular;
+	font-size: 20px; */
 }
 
 #menu, body, html, ul {
@@ -137,13 +136,13 @@ ul {
 
 .pageTitle_main {
     font-size: 72px;
-    font-family: LINE_GothicOTF_Bold;
+    font-family: LINEBold;
     letter-spacing: 12px;
     fontword-break: keep-all;
 }
 .pageTitle_black, .pageTitle_white {
 	font-size: 72px;
-    font-family: LINE_GothicOTF_Bold;
+    font-family: LINEBold;
     letter-spacing: 12px;
     word-break: keep-all;
 }
@@ -156,7 +155,7 @@ ul {
 
 .content{
 	font-size: 20px;
-    font-family: LINE_GothicOTF_Regular;
+    font-family: LINEBold;
     margin: 25px 0 46px; 0;
 }
 
@@ -188,10 +187,10 @@ div.homebg01, div.homebg02, div.homebg03, div.homebg04, div.homebg05 {
 }
 
 .content{
-	font-family: LINE_GothicOTF_Regular;
+	font-family: LINEBold;
 }
 
 .apptext{
 	font-size: 38px;
-	font-family: LINE_GothicOTF_Bold;
+	font-family: LINEBold;
 }
