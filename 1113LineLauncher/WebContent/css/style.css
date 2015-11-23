@@ -63,8 +63,7 @@ ul {
     height: .6em;
     width: .6em;
     text-indent: 999em;
-    -webkit-transition: transform .5s ease 0s, background-color .5s ease
-		0s;
+    -webkit-transition: transform .5s ease 0s, background-color .5s ease 0s;
     -moz-transition: transform .5s ease 0s, background-color .5s ease 0s;
     -ms-transition: transform .5s ease 0s, background-color .5s ease 0s;
     -o-transition: transform .5s ease 0s, background-color .5s ease 0s;
@@ -183,3 +182,18 @@ div.homebg01, div.homebg02, div.homebg03, div.homebg04, div.homebg05 {
 	font-size: 38px;
 	font-family: LINERegular;
 }
+
+#footer {
+
+}
+
+#footerUl{
+	width:650px; height:30px; list-style: none;
+}
+#footerLi{
+	float:left; margin-right: 16px; color: #999999;
+}
+#footerLi a{
+	font-size: 14px; color: #999999; font-family: LINERegular; text-decoration: none
+}
+
