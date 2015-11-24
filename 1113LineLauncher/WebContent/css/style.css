@@ -72,9 +72,9 @@ ul {
 #menu li.active {
     border: 1px solid #fff;
     background: #fff;
-    filter: alpha(opacity=80);
-    -moz-opacity: .8;
-    opacity: .8;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
     -webkit-transition: All .5s 0s;
     -moz-transition: All .5s 0s;
     -ms-transition: All .5s 0s;
