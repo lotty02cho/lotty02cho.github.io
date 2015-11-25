@@ -146,7 +146,7 @@ h3{
 }
 .cleanertheme_1, .cleanertheme_2 {
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 8s;
 }
 .cleanertheme_1 {
     -webkit-animation-name: clean_ani_1;
@@ -154,9 +154,9 @@ h3{
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
-    -webkit-animation-duration: 5s;
-    -moz-animation-duration: 5s;
-    -o-animation-duration: 5s;
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -o-animation-duration: 8s;
 }
 .cleanertheme_2 {
     -webkit-animation-name: clean_ani_2;
@@ -164,89 +164,133 @@ h3{
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
-    -webkit-animation-duration: 5s;
-    -moz-animation-duration: 5s;
-    -o-animation-duration: 5s;
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -o-animation-duration: 8s;
 }
-.cleaner_pop {
+.cursor{
     -webkit-animation-name: clean_ani_3;
     animation-name: clean_ani_3;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -o-animation-duration: 8s;
+}
+.cleaner_pop {
+    -webkit-animation-name: clean_ani_4;
+    animation-name: clean_ani_4;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
-    animation-duration: 5s;
-    -webkit-animation-duration: 5s;
-    -moz-animation-duration: 5s;
-    -o-animation-duration: 5s;
+    animation-duration: 8s;
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -o-animation-duration: 8s;
 }
 @-webkit-keyframes clean_ani_1 {
-    0%, 100%, 32% {
+    0%, 5%, 90%, 100% {
     opacity: 1;
 }
-33%, 66%, 90% {
+	6%, 89% {
     opacity: 0;
 }
 }@keyframes clean_ani_1 {
-    0%, 100%, 32% {
+    0%, 5%, 90%, 100% {
     opacity: 1;
 }
-33%, 66%, 90% {
+	6%, 89% {
     opacity: 0;
 }
-}@-webkit-keyframes clean_ani_2 {
-    0%, 100%, 32% {
+}
+@-webkit-keyframes clean_ani_2 {
+    0%, 4%, 90%, 100%{
     opacity: 0;
 }
-33%, 66%, 90% {
+	5%, 89%{
     opacity: 1;
 }
 }@keyframes clean_ani_2 {
-    0%, 100%, 32% {
+    0%, 4%, 90%, 100%{
     opacity: 0;
 }
-33%, 66%, 90% {
+	5%, 89%{
     opacity: 1;
 }
 }@-webkit-keyframes clean_ani_3 {
-    0%, 100% {
+    0%, 6%, 100% {
     opacity: 0;
 }
-33% {
-    opacity: 0;
-    transform: translateY(-30px);
-}
-66% {
+	15%{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
 }
-90% {
-    opacity: 0;
-    transform: translateY(30px);
-}
+	20%{
+	opacity: 1;
+    transform: translateY(10px);
+	}
+	40%{
+	opacity: 0;
+    transform: translateY(0px);
+	}
 }@keyframes clean_ani_3 {
-    0% {
+    0%, 6%, 100% {
     opacity: 0;
-    transform: scale(0);
+}
+	15%{
+    opacity: 1;
+    transform: translateY(0px);
+}
+	20%{
+	opacity: 1;
+    transform: translateY(10px);
+	}
+	40%{
+	opacity: 0;
+    transform: translateY(0px);
+	}
+}
+/* @-webkit-keyframes clean_ani_4 {
+    0%, 40%, 100% {
+    opacity: 0;
 }
 33% {
-    opacity: 1;
-    transform: scale(0);
-/*     transform: translateY(-30px); */
+    opacity: 0;
+
 }
 66% {
     opacity: 1;
-    transform: scale(1);
-/*     transform: translateY(0); */
+
 }
 90% {
     opacity: 0;
+
+}
+} */
+@keyframes clean_ani_4 {
+    0%, 30% {
+    opacity: 0;
+    transform: scale(0);
+}
+31% {
+    opacity: 1;
+    transform: scale(0);
+
+}
+60% {
+    opacity: 1;
     transform: scale(1);
-/*     transform: translateY(30px); */
+}
+85% {
+    opacity: 0;
+    transform: scale(1);
+
 }
 100% {
     opacity: 0;
-/*     transform: translateY(30px); */
+
 }
 
 }#sl-wrapper, .sl {
@@ -597,6 +641,12 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 							src="images/img_cleanertheme_1.png">
 					</div>
 					<div align="center">
+						<img class="animated cursor"
+							style="position: absolute; z-index: 100;"
+							alt="Line Launcher Memory Cleaner Click"
+							src="images/img_cursor.png">
+					</div>
+					<div align="center">
 						<img class="animated fadeInRight cleanertheme_2"
 							style="position: absolute; z-index: 99;"
 							alt="Line Launcher Memory Cleaner2"
@@ -606,22 +656,34 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 				</div>
 				<div id="" style="width: 100%; text-align: center;">
 					<div align="center">
-						<img class="animated fadeInRight cleaner_pop"
+						<img class="animated cleaner_pop"
 							style="position: absolute; z-index: 101;"
 							alt="Line Launcher Memory Cleaner3"
 							src="images/img_cleaner_pop.png">
 					</div>
 					<div align="center">
-						<img class="animated fadeInRight boss_1"
+						<img class="animated fadeInRight boss_d1"
 							style="position: absolute; z-index: 101;"
-							alt="Line Character Boss"
-							src="images/img_boss_1.png">
+							alt="Line Character Boss1"
+							src="images/img_boss_d1.png">
 					</div>
 					<div align="center">
-						<img class="animated fadeInRight Sally_3"
+						<img class="animated fadeInRight boss_d2"
+							style="position: absolute; z-index: 100;"
+							alt="Line Character Boss2"
+							src="images/img_boss_d2.png">
+					</div>
+					<div align="center">
+						<img class="animated fadeInRight Sally_3_1"
 							style="position: absolute; z-index: 101;"
 							alt="Line Character Sally"
-							src="images/img_Sally_3.png">
+							src="images/img_Sally_3_1.png">
+					</div>
+					<div align="center">
+						<img class="animated fadeInRight Sally_3_2"
+							style="position: absolute; z-index: 100;"
+							alt="Line Character Sally"
+							src="images/img_Sally_3_2.png">
 					</div>
 				</div>
 			</div>
@@ -778,14 +840,27 @@ $(function() {
     var device_none3H = 564;
     var cleanertheme_1W = 272;
     var cleanertheme_1H = 450;
+    var cursor_1W = 40;
+    var cursor_1H = 40;
     var cleanertheme_2W = 272;
     var cleanertheme_2H = 450;
     var cleaner_popW = 440;
     var cleaner_popH = 184;
-    var boss_1W = 212;
-    var boss_1H = 298;
-    var Sally_3W = 118;
-    var Sally_3H = 150;    
+    /*  var boss_1W = 212;
+    var boss_1H = 298; */
+    var boss_d1W = 155;
+    var boss_d1H = 288;
+    var boss_d2W = 90;
+    var boss_d2H = 100;
+
+/*     var Sally_3W = 118;
+    var Sally_3H = 150;  */
+    var Sally_3_1W = 78;
+    var Sally_3_1H = 128;
+    var Sally_3_2W = 46;
+    var Sally_3_2H = 46;
+    
+    
     var appiconW = 184;
     var appiconH = 184;
     var apptextW = 496;
@@ -848,14 +923,27 @@ $(function() {
           device_none3H = 564;
           cleanertheme_1W = 272;
           cleanertheme_1H = 450;
+          cursor_1W = 40;
+          cursor_1H = 40;
           cleanertheme_2W = 272;
           cleanertheme_2H = 450;
           cleaner_popW = 440;
           cleaner_popH = 184;
-          boss_1W = 212;
-          boss_1H = 298;
-          Sally_3W = 118;
-          Sally_3H = 150;    
+/*           boss_1W = 212;
+          boss_1H = 298; */
+          boss_d1W = 155;
+          boss_d1H = 288;
+          boss_d2W = 90;
+		  boss_d2H = 100;
+/*           Sally_3W = 118;
+          Sally_3H = 150; */
+          Sally_3_1W = 78;
+          Sally_3_1H = 128;
+          Sally_3_2W = 46;
+          Sally_3_2H = 46;
+          
+          
+          
           appiconW = 184;
           appiconH = 184;
           apptextW = 496;
@@ -1002,6 +1090,13 @@ $(function() {
         left: windowW / 2 - (cleanertheme_1W / 2)
     });
 
+    $('.cursor').css({
+        top: windowH / 2 - cursor_1H / 2 + cursor_1H*3
+    });
+    $('.cursor').css({
+        left: windowW / 2 - cursor_1W / 2 + cursor_1W* 2.5
+    });
+    
     $('.cleanertheme_2').css({
         top: windowH / 2 - (device_none3H / 2) + 50 + 52
     });
@@ -1009,27 +1104,50 @@ $(function() {
         left: windowW / 2 - (cleanertheme_2W / 2)
     });
 
-    $('.cleaner_pop').css({
+     $('.cleaner_pop').css({
         top: windowH / 2 - cleaner_popH / 2
     });
     $('.cleaner_pop').css({
         left: windowW / 2 - cleaner_popW / 2
+    }); 
+
+    $('.boss_d1').css({
+        top: windowH / 2 + boss_d1H / 2
+    });
+    $('.boss_d1').css({
+        left: windowW / 2 - boss_d1W * 3
+    });
+    
+    $('.boss_d2').css({
+        top: windowH / 2 + boss_d2H*1.8
+    });
+    $('.boss_d2').css({
+        left: windowW / 2 - boss_d2W*4 +20
     });
 
-    $('.boss_1').css({
-        top: windowH / 2 + boss_1H / 2
-    });
-    $('.boss_1').css({
-        left: windowW / 2 - boss_1W * 2
-    });
-
-    $('.Sally_3').css({
+/*     $('.Sally_3').css({
         top: windowH / 2 + Sally_3H * 2
     });
     $('.Sally_3').css({
         left: windowW / 2 + Sally_3W * 2
+    }); */
+
+    $('.Sally_3_1').css({
+        top: windowH / 2 + Sally_3_1H * 2.3
+    });
+    $('.Sally_3_1').css({
+        left: windowW / 2 + Sally_3_1W * 4
     });
 
+    $('.Sally_3_2').css({
+        top: windowH / 2 + Sally_3_2H * 7.2
+    });
+    $('.Sally_3_2').css({
+        left: windowW / 2 + Sally_3_2W * 6.3
+    });
+
+    
+    
     $('.appicon').css({
         top: windowH / 2 - appiconH * 1.5
     });
@@ -1129,8 +1247,8 @@ $(function() {
      cleanertheme_2H = cleanertheme_2H*2/3;
      cleaner_popW = cleaner_popW*2/3;
      cleaner_popH = cleaner_popH*2/3;
-     boss_1W = boss_1W*2/3;
-     boss_1H = boss_1H*2/3;
+/*      boss_1W = boss_1W*2/3;
+     boss_1H = boss_1H*2/3; */
      Sally_3W = Sally_3W*2/3;
      Sally_3H = Sally_3H*2/3;
      
@@ -1384,7 +1502,7 @@ $(function() {
         left: windowW / 2 - cleaner_popW / 2
     });
 
-    $('.boss_1').css({
+/*     $('.boss_1').css({
         top: windowH / 2 + boss_1H / 2
     });
     $('.boss_1').css({
@@ -1392,7 +1510,7 @@ $(function() {
     });
     $('.boss_1').css({
         left: windowW / 2 - boss_1W * 2
-    });
+    }); */
 
     $('.Sally_3').css({
         top: windowH / 2 + Sally_3H * 2
@@ -1493,8 +1611,8 @@ $(function() {
         var cleanertheme_2H = 450;
         var cleaner_popW = 440;
         var cleaner_popH = 184;
-        var boss_1W = 212;
-        var boss_1H = 298;
+/*         var boss_1W = 212;
+        var boss_1H = 298; */
         var Sally_3W = 118;
         var Sally_3H = 150;    
         var appiconW = 184;
@@ -1576,8 +1694,8 @@ $(function() {
           cleanertheme_2H = 450;
           cleaner_popW = 440;
           cleaner_popH = 184;
-          boss_1W = 212;
-          boss_1H = 298;
+/*           boss_1W = 212;
+          boss_1H = 298; */
           Sally_3W = 118;
           Sally_3H = 150;    
           appiconW = 184;
@@ -1832,7 +1950,7 @@ $(function() {
               left: windowW / 2 - cleaner_popW / 2
           });
 
-          $('.boss_1').css({
+/*           $('.boss_1').css({
               top: windowH / 2 + boss_1H / 2
           });
           $('.boss_1').css({
@@ -1840,7 +1958,7 @@ $(function() {
           });
           $('.boss_1').css({
               left: windowW / 2 - boss_1W * 2
-          });
+          }); */
 
           $('.Sally_3').css({
               top: windowH / 2 + Sally_3H * 2
@@ -1953,8 +2071,8 @@ $(function() {
          cleanertheme_2H = cleanertheme_2H*2/3;
          cleaner_popW = cleaner_popW*2/3;
          cleaner_popH = cleaner_popH*2/3;
-         boss_1W = boss_1W*2/3;
-         boss_1H = boss_1H*2/3;
+/*          boss_1W = boss_1W*2/3;
+         boss_1H = boss_1H*2/3; */
          Sally_3W = Sally_3W*2/3;
          Sally_3H = Sally_3H*2/3;
          
@@ -2210,7 +2328,7 @@ $(function() {
             left: windowW / 2 - cleaner_popW / 2
         });
 
-        $('.boss_1').css({
+/*         $('.boss_1').css({
             top: windowH / 2 + boss_1H / 2
         });
         $('.boss_1').css({
@@ -2218,7 +2336,7 @@ $(function() {
         });
         $('.boss_1').css({
             left: windowW / 2 - boss_1W * 2
-        });
+        }); */
 
         $('.Sally_3').css({
             top: windowH / 2 + Sally_3H * 2
