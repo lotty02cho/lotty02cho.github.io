@@ -146,9 +146,9 @@ h3{
 }
 .cleanertheme_1, .cleanertheme_2 {
     animation-iteration-count: infinite;
-    animation-duration: 8s;
+    animation-duration: 5s;
 }
-.cleanertheme_1 {
+/* .cleanertheme_1 {
     -webkit-animation-name: clean_ani_1;
     animation-name: clean_ani_1;
     -webkit-animation-iteration-count: infinite;
@@ -157,16 +157,16 @@ h3{
     -webkit-animation-duration: 8s;
     -moz-animation-duration: 8s;
     -o-animation-duration: 8s;
-}
+} */
 .cleanertheme_2 {
     -webkit-animation-name: clean_ani_2;
     animation-name: clean_ani_2;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
-    -webkit-animation-duration: 8s;
-    -moz-animation-duration: 8s;
-    -o-animation-duration: 8s;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
 }
 .cursor{
     -webkit-animation-name: clean_ani_3;
@@ -174,9 +174,9 @@ h3{
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
-    -webkit-animation-duration: 8s;
-    -moz-animation-duration: 8s;
-    -o-animation-duration: 8s;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
 }
 .cleaner_pop {
     -webkit-animation-name: clean_ani_4;
@@ -186,11 +186,11 @@ h3{
     -moz-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
     animation-duration: 8s;
-    -webkit-animation-duration: 8s;
-    -moz-animation-duration: 8s;
-    -o-animation-duration: 8s;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
 }
-@-webkit-keyframes clean_ani_1 {
+/* @-webkit-keyframes clean_ani_1 {
     0%, 5%, 90%, 100% {
     opacity: 1;
 }
@@ -203,9 +203,9 @@ h3{
 }
 	6%, 89% {
     opacity: 0;
+} */
 }
-}
-@-webkit-keyframes clean_ani_2 {
+/* @-webkit-keyframes clean_ani_2 {
     0%, 4%, 90%, 100%{
     opacity: 0;
 }
@@ -218,38 +218,35 @@ h3{
 }
 	5%, 89%{
     opacity: 1;
-}
+} */
 }@-webkit-keyframes clean_ani_3 {
-    0%, 6%, 100% {
-    opacity: 0;
-}
-	15%{
-    opacity: 1;
-    transform: translateY(0px);
-}
-	20%{
-	opacity: 1;
-    transform: translateY(10px);
-	}
-	40%{
-	opacity: 0;
-    transform: translateY(0px);
-	}
+
 }@keyframes clean_ani_3 {
     0%, 6%, 100% {
     opacity: 0;
-}
+	}
 	15%{
     opacity: 1;
     transform: translateY(0px);
-}
+	}
 	20%{
 	opacity: 1;
     transform: translateY(10px);
 	}
+	30%{
+	opacity: 1;
+    transform: translateY(25px);
+    transform: scale(0.7);
+	}
 	40%{
 	opacity: 0;
-    transform: translateY(0px);
+    transform: translateY(25px);
+    transform: scale(0.7);
+	}
+	99%{
+	opacity: 0;
+    transform: translateY(25px);
+    transform: scale(0.7);
 	}
 }
 /* @-webkit-keyframes clean_ani_4 {
@@ -279,7 +276,7 @@ h3{
     transform: scale(0);
 
 }
-60% {
+40%, 60% {
     opacity: 1;
     transform: scale(1);
 }
@@ -290,8 +287,79 @@ h3{
 }
 100% {
     opacity: 0;
+}
+}
+
+.boss_d2{
+	-webkit-animation-name: boss_arm;
+    animation-name: boss_arm;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s;
+}
+@keyframes boss_arm {
+0%{
+	transform: rotate(0) translate(-10px,0px);
+}
+25%{
+	transform: rotate(20deg) translate(0px,10px);
 
 }
+33%{
+	transform: rotate(0deg) translate(-10px,0px);
+}
+
+42%{
+	transform: rotate(20deg) translate(0px,0px);
+}
+
+50% {
+	transform: rotate(0deg) translate(-10px,0px);
+}
+100%{
+	transform: rotate(0deg) translate(-10px,0px);
+}
+}
+
+.Sally_3_2{
+	-webkit-animation-name: sally_arm;
+    animation-name: sally_arm;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s;
+}
+@keyframes sally_arm {
+0%{
+	transform: rotate(0deg);
+}
+50%{
+	transform: rotate(0deg);
+
+}
+66%{
+	transform: rotate(20deg);
+}
+
+83%{
+	transform: rotate(20deg);
+}
+
+100% {
+    transform: rotate(0deg);
+}
+}
+
+
 
 }#sl-wrapper, .sl {
     height: 450px;
@@ -634,12 +702,12 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 							alt="Line Launcher device none"
 							src="images/img_device_none.png">
 					</div>
-					<div align="center">
+<!-- 					<div align="center">
 						<img class="animated cleanertheme_1"
 							style="position: absolute; z-index: 100;"
 							alt="Line Launcher Memory Cleaner"
 							src="images/img_cleanertheme_1.png">
-					</div>
+					</div> -->
 					<div align="center">
 						<img class="animated cursor"
 							style="position: absolute; z-index: 100;"
@@ -662,13 +730,13 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 							src="images/img_cleaner_pop.png">
 					</div>
 					<div align="center">
-						<img class="animated fadeInRight boss_d1"
+						<img class="animated boss_d1"
 							style="position: absolute; z-index: 101;"
 							alt="Line Character Boss1"
 							src="images/img_boss_d1.png">
 					</div>
 					<div align="center">
-						<img class="animated fadeInRight boss_d2"
+						<img class="animated boss_d2"
 							style="position: absolute; z-index: 100;"
 							alt="Line Character Boss2"
 							src="images/img_boss_d2.png">
@@ -836,6 +904,9 @@ $(function() {
     var icons_5H = 193;    
     var icons_6W = 200;
     var icons_6H = 156;
+    
+    
+    
     var device_none3W = 290;
     var device_none3H = 564;
     var cleanertheme_1W = 272;
@@ -919,6 +990,8 @@ $(function() {
           icons_5H = 193;    
           icons_6W = 200;
           icons_6H = 156;
+          
+          
           device_none3W = 290;
           device_none3H = 564;
           cleanertheme_1W = 272;
@@ -1077,7 +1150,7 @@ $(function() {
     });
 
     $('.device_none3').css({
-        top: windowH / 2 - (device_none3H / 2) + 50
+        top: windowH / 2 - (device_none3H / 2) + 48
     });
     $('.device_none3').css({
         left: windowW / 2 - (device_none3W / 2)
@@ -1091,7 +1164,7 @@ $(function() {
     });
 
     $('.cursor').css({
-        top: windowH / 2 - cursor_1H / 2 + cursor_1H*3
+        top: windowH / 2 - cursor_1H / 2 + cursor_1H*3.2
     });
     $('.cursor').css({
         left: windowW / 2 - cursor_1W / 2 + cursor_1W* 2.5
@@ -1112,17 +1185,17 @@ $(function() {
     }); 
 
     $('.boss_d1').css({
-        top: windowH / 2 + boss_d1H / 2
+        top: windowH / 2 + boss_d1H / 2.5
     });
     $('.boss_d1').css({
-        left: windowW / 2 - boss_d1W * 3
+        left: windowW / 2 - boss_d1W * 2.5
     });
     
     $('.boss_d2').css({
-        top: windowH / 2 + boss_d2H*1.8
+        top: windowH / 2 + boss_d2H*1.5
     });
     $('.boss_d2').css({
-        left: windowW / 2 - boss_d2W*4 +20
+        left: windowW / 2 - boss_d2W* 2.9
     });
 
 /*     $('.Sally_3').css({
@@ -1133,17 +1206,17 @@ $(function() {
     }); */
 
     $('.Sally_3_1').css({
-        top: windowH / 2 + Sally_3_1H * 2.3
+        top: windowH / 2 + Sally_3_1H * 2.0
     });
     $('.Sally_3_1').css({
-        left: windowW / 2 + Sally_3_1W * 4
+        left: windowW / 2 + Sally_3_1W * 3
     });
 
     $('.Sally_3_2').css({
-        top: windowH / 2 + Sally_3_2H * 7.2
+        top: windowH / 2 + Sally_3_2H * 6.3
     });
     $('.Sally_3_2').css({
-        left: windowW / 2 + Sally_3_2W * 6.3
+        left: windowW / 2 + Sally_3_2W * 4.5
     });
 
     
@@ -1239,18 +1312,33 @@ $(function() {
      icons_6W = icons_6W*2/3;
      icons_6H = icons_6H*2/3;
      
+     
+     
      device_none3W = device_none3W*2/3;
      device_none3H = device_none3H*2/3;
      cleanertheme_1W = cleanertheme_1W*2/3;
      cleanertheme_1H = cleanertheme_1H*2/3;
+     cursor_1W = cursor_1W*2/3;
+     cursor_1H = cursor_1H*2/3;
      cleanertheme_2W = cleanertheme_2W*2/3;
      cleanertheme_2H = cleanertheme_2H*2/3;
      cleaner_popW = cleaner_popW*2/3;
      cleaner_popH = cleaner_popH*2/3;
 /*      boss_1W = boss_1W*2/3;
      boss_1H = boss_1H*2/3; */
-     Sally_3W = Sally_3W*2/3;
-     Sally_3H = Sally_3H*2/3;
+/*      Sally_3W = Sally_3W*2/3;
+     Sally_3H = Sally_3H*2/3; */
+     boss_d1W = boss_d1W*2/3;
+     boss_d1H = boss_d1H*2/3;
+     boss_d2W = boss_d2W*2/3;
+	 boss_d2H = boss_d2H*2/3;
+     Sally_3_1W = Sally_3_1W*2/3;
+     Sally_3_1H = Sally_3_1H*2/3;
+     Sally_3_2W = Sally_3_2W*2/3;
+     Sally_3_2H = Sally_3_1H*2/3;
+     
+     
+     
      
      appiconW = 184;
      appiconH = 184;
@@ -1463,63 +1551,73 @@ $(function() {
     
     //PAGE4
     $('.device_none3').css({
-        top: windowH / 2 - (device_none3H / 2) + 50
-    });
-    $('.device_none3').css({
-        width: device_none3W
+        top: windowH / 2 - (device_none3H / 2) + 48
     });
     $('.device_none3').css({
         left: windowW / 2 - (device_none3W / 2)
     });
 
     $('.cleanertheme_1').css({
-        top: windowH / 2 - (device_none3H / 2) + 50  + 34
-    });
-    $('.cleanertheme_1').css({
-        width: cleanertheme_1W
+        top: windowH / 2 - (device_none3H / 2) + 50 + 52
     });
     $('.cleanertheme_1').css({
         left: windowW / 2 - (cleanertheme_1W / 2)
     });
 
-    $('.cleanertheme_2').css({
-        top: windowH / 2 - (device_none3H / 2) + 50  + 34
+    $('.cursor').css({
+        top: windowH / 2 - cursor_1H / 2 + cursor_1H*3.2
     });
+    $('.cursor').css({
+        left: windowW / 2 - cursor_1W / 2 + cursor_1W* 2.5
+    });
+    
     $('.cleanertheme_2').css({
-    	width: cleanertheme_2W
+        top: windowH / 2 - (device_none3H / 2) + 50 + 52
     });
     $('.cleanertheme_2').css({
         left: windowW / 2 - (cleanertheme_2W / 2)
     });
 
-    $('.cleaner_pop').css({
+     $('.cleaner_pop').css({
         top: windowH / 2 - cleaner_popH / 2
     });
     $('.cleaner_pop').css({
-    	width: cleaner_popW
-    });
-    $('.cleaner_pop').css({
         left: windowW / 2 - cleaner_popW / 2
+    }); 
+
+    $('.boss_d1').css({
+        top: windowH / 2 + boss_d1H / 2.5
+    });
+    $('.boss_d1').css({
+        left: windowW / 2 - boss_d1W * 2.5
+    });
+    
+    $('.boss_d2').css({
+        top: windowH / 2 + boss_d2H*1.5
+    });
+    $('.boss_d2').css({
+        left: windowW / 2 - boss_d2W* 2.9
     });
 
-/*     $('.boss_1').css({
-        top: windowH / 2 + boss_1H / 2
-    });
-    $('.boss_1').css({
-    	width: boss_1W
-    });
-    $('.boss_1').css({
-        left: windowW / 2 - boss_1W * 2
-    }); */
-
-    $('.Sally_3').css({
+/*     $('.Sally_3').css({
         top: windowH / 2 + Sally_3H * 2
     });
     $('.Sally_3').css({
-    	width: Sally_3W
-    });
-    $('.Sally_3').css({
         left: windowW / 2 + Sally_3W * 2
+    }); */
+
+    $('.Sally_3_1').css({
+        top: windowH / 2 + Sally_3_1H * 2.0
+    });
+    $('.Sally_3_1').css({
+        left: windowW / 2 + Sally_3_1W * 3
+    });
+
+    $('.Sally_3_2').css({
+        top: windowH / 2 + Sally_3_2H * 6.3
+    });
+    $('.Sally_3_2').css({
+        left: windowW / 2 + Sally_3_2W * 4.5
     });
 
     $('.appicon').css({
@@ -1603,18 +1701,33 @@ $(function() {
         var icons_5H = 193;    
         var icons_6W = 200;
         var icons_6H = 156;
+        
+        
         var device_none3W = 290;
         var device_none3H = 564;
         var cleanertheme_1W = 272;
         var cleanertheme_1H = 450;
+        var cursor_1W = 40;
+        var cursor_1H = 40;
         var cleanertheme_2W = 272;
         var cleanertheme_2H = 450;
         var cleaner_popW = 440;
         var cleaner_popH = 184;
-/*         var boss_1W = 212;
+        /*  var boss_1W = 212;
         var boss_1H = 298; */
-        var Sally_3W = 118;
-        var Sally_3H = 150;    
+        var boss_d1W = 155;
+        var boss_d1H = 288;
+        var boss_d2W = 90;
+        var boss_d2H = 100;
+
+    /*     var Sally_3W = 118;
+        var Sally_3H = 150;  */
+        var Sally_3_1W = 78;
+        var Sally_3_1H = 128;
+        var Sally_3_2W = 46;
+        var Sally_3_2H = 46;
+   
+        
         var appiconW = 184;
         var appiconH = 184;
         var apptextW = 496;
@@ -1686,18 +1799,34 @@ $(function() {
           icons_5H = 193;    
           icons_6W = 200;
           icons_6H = 156;
+          
+          
+          
           device_none3W = 290;
           device_none3H = 564;
           cleanertheme_1W = 272;
           cleanertheme_1H = 450;
+          cursor_1W = 40;
+          cursor_1H = 40;
           cleanertheme_2W = 272;
           cleanertheme_2H = 450;
           cleaner_popW = 440;
           cleaner_popH = 184;
 /*           boss_1W = 212;
           boss_1H = 298; */
-          Sally_3W = 118;
-          Sally_3H = 150;    
+          boss_d1W = 155;
+          boss_d1H = 288;
+          boss_d2W = 90;
+		  boss_d2H = 100;
+/*           Sally_3W = 118;
+          Sally_3H = 150; */
+          Sally_3_1W = 78;
+          Sally_3_1H = 128;
+          Sally_3_2W = 46;
+          Sally_3_2H = 46;
+          
+          
+          
           appiconW = 184;
           appiconH = 184;
           apptextW = 496;
@@ -1910,65 +2039,75 @@ $(function() {
           
           //PAGE4
 
-          $('.device_none3').css({
-              top: windowH / 2 - (device_none3H / 2) + 50
-          });
-          $('.device_none3').css({
-              width: device_none3W
-          });
-          $('.device_none3').css({
-              left: windowW / 2 - (device_none3W / 2)
-          });
-
-          $('.cleanertheme_1').css({
-              top: windowH / 2 - (device_none3H / 2) + 50  + 52
-          });
-          $('.cleanertheme_1').css({
-              width: cleanertheme_1W
-          });
-          $('.cleanertheme_1').css({
-              left: windowW / 2 - (cleanertheme_1W / 2)
-          });
-
-          $('.cleanertheme_2').css({
-              top: windowH / 2 - (device_none3H / 2) + 50  + 52
-          });
-          $('.cleanertheme_2').css({
-          	width: cleanertheme_2W
-          });
-          $('.cleanertheme_2').css({
-              left: windowW / 2 - (cleanertheme_2W / 2)
-          });
-
-          $('.cleaner_pop').css({
-              top: windowH / 2 - cleaner_popH / 2
-          });
-          $('.cleaner_pop').css({
-          	width: cleaner_popW
-          });
-          $('.cleaner_pop').css({
-              left: windowW / 2 - cleaner_popW / 2
-          });
-
-/*           $('.boss_1').css({
-              top: windowH / 2 + boss_1H / 2
-          });
-          $('.boss_1').css({
-          	width: boss_1W
-          });
-          $('.boss_1').css({
-              left: windowW / 2 - boss_1W * 2
-          }); */
-
-          $('.Sally_3').css({
-              top: windowH / 2 + Sally_3H * 2
-          });
-          $('.Sally_3').css({
-          	width: Sally_3W
-          });
-          $('.Sally_3').css({
-              left: windowW / 2 + Sally_3W * 2
-          });
+	    $('.device_none3').css({
+	        top: windowH / 2 - (device_none3H / 2) + 48
+	    });
+	    $('.device_none3').css({
+	        left: windowW / 2 - (device_none3W / 2)
+	    });
+	
+	    $('.cleanertheme_1').css({
+	        top: windowH / 2 - (device_none3H / 2) + 50 + 52
+	    });
+	    $('.cleanertheme_1').css({
+	        left: windowW / 2 - (cleanertheme_1W / 2)
+	    });
+	
+	    $('.cursor').css({
+	        top: windowH / 2 - cursor_1H / 2 + cursor_1H*3.2
+	    });
+	    $('.cursor').css({
+	        left: windowW / 2 - cursor_1W / 2 + cursor_1W* 2.5
+	    });
+	    
+	    $('.cleanertheme_2').css({
+	        top: windowH / 2 - (device_none3H / 2) + 50 + 52
+	    });
+	    $('.cleanertheme_2').css({
+	        left: windowW / 2 - (cleanertheme_2W / 2)
+	    });
+	
+	     $('.cleaner_pop').css({
+	        top: windowH / 2 - cleaner_popH / 2
+	    });
+	    $('.cleaner_pop').css({
+	        left: windowW / 2 - cleaner_popW / 2
+	    }); 
+	
+	    $('.boss_d1').css({
+	        top: windowH / 2 + boss_d1H / 2.5
+	    });
+	    $('.boss_d1').css({
+	        left: windowW / 2 - boss_d1W * 2.5
+	    });
+	    
+	    $('.boss_d2').css({
+	        top: windowH / 2 + boss_d2H*1.5
+	    });
+	    $('.boss_d2').css({
+	        left: windowW / 2 - boss_d2W* 2.9
+	    });
+	
+	/*     $('.Sally_3').css({
+	        top: windowH / 2 + Sally_3H * 2
+	    });
+	    $('.Sally_3').css({
+	        left: windowW / 2 + Sally_3W * 2
+	    }); */
+	
+	    $('.Sally_3_1').css({
+	        top: windowH / 2 + Sally_3_1H * 2.0
+	    });
+	    $('.Sally_3_1').css({
+	        left: windowW / 2 + Sally_3_1W * 3
+	    });
+	
+	    $('.Sally_3_2').css({
+	        top: windowH / 2 + Sally_3_2H * 6.3
+	    });
+	    $('.Sally_3_2').css({
+	        left: windowW / 2 + Sally_3_2W * 4.5
+	    });
 
           $('.appicon').css({
               top: windowH / 2 - appiconH * 1.5
@@ -2067,14 +2206,24 @@ $(function() {
          device_none3H = device_none3H*2/3;
          cleanertheme_1W = cleanertheme_1W*2/3;
          cleanertheme_1H = cleanertheme_1H*2/3;
+         cursor_1W = cursor_1W*2/3;
+         cursor_1H = cursor_1H*2/3;
          cleanertheme_2W = cleanertheme_2W*2/3;
          cleanertheme_2H = cleanertheme_2H*2/3;
          cleaner_popW = cleaner_popW*2/3;
          cleaner_popH = cleaner_popH*2/3;
-/*          boss_1W = boss_1W*2/3;
+    /*      boss_1W = boss_1W*2/3;
          boss_1H = boss_1H*2/3; */
-         Sally_3W = Sally_3W*2/3;
-         Sally_3H = Sally_3H*2/3;
+    /*      Sally_3W = Sally_3W*2/3;
+         Sally_3H = Sally_3H*2/3; */
+         boss_d1W = boss_d1W*2/3;
+         boss_d1H = boss_d1H*2/3;
+         boss_d2W = boss_d2W*2/3;
+    	 boss_d2H = boss_d2H*2/3;
+         Sally_3_1W = Sally_3_1W*2/3;
+         Sally_3_1H = Sally_3_1H*2/3;
+         Sally_3_2W = Sally_3_2W*2/3;
+         Sally_3_2H = Sally_3_1H*2/3;
          
          appiconW = 184;
          appiconH = 184;
@@ -2288,65 +2437,75 @@ $(function() {
         });
         
         //PAGE4
-        $('.device_none3').css({
-            top: windowH / 2 - (device_none3H / 2) + 50
-        });
-        $('.device_none3').css({
-            width: device_none3W
-        });
-        $('.device_none3').css({
-            left: windowW / 2 - (device_none3W / 2)
-        });
+    $('.device_none3').css({
+        top: windowH / 2 - (device_none3H / 2) + 48
+    });
+    $('.device_none3').css({
+        left: windowW / 2 - (device_none3W / 2)
+    });
 
-        $('.cleanertheme_1').css({
-            top: windowH / 2 - (device_none3H / 2) + 50  + 34
-        });
-        $('.cleanertheme_1').css({
-            width: cleanertheme_1W
-        });
-        $('.cleanertheme_1').css({
-            left: windowW / 2 - (cleanertheme_1W / 2)
-        });
+    $('.cleanertheme_1').css({
+        top: windowH / 2 - (device_none3H / 2) + 50 + 52
+    });
+    $('.cleanertheme_1').css({
+        left: windowW / 2 - (cleanertheme_1W / 2)
+    });
 
-        $('.cleanertheme_2').css({
-            top: windowH / 2 - (device_none3H / 2) + 50  + 34
-        });
-        $('.cleanertheme_2').css({
-        	width: cleanertheme_2W
-        });
-        $('.cleanertheme_2').css({
-            left: windowW / 2 - (cleanertheme_2W / 2)
-        });
+    $('.cursor').css({
+        top: windowH / 2 - cursor_1H / 2 + cursor_1H*3.2
+    });
+    $('.cursor').css({
+        left: windowW / 2 - cursor_1W / 2 + cursor_1W* 2.5
+    });
+    
+    $('.cleanertheme_2').css({
+        top: windowH / 2 - (device_none3H / 2) + 50 + 52
+    });
+    $('.cleanertheme_2').css({
+        left: windowW / 2 - (cleanertheme_2W / 2)
+    });
 
-        $('.cleaner_pop').css({
-            top: windowH / 2 - cleaner_popH / 2
-        });
-        $('.cleaner_pop').css({
-        	width: cleaner_popW
-        });
-        $('.cleaner_pop').css({
-            left: windowW / 2 - cleaner_popW / 2
-        });
+     $('.cleaner_pop').css({
+        top: windowH / 2 - cleaner_popH / 2
+    });
+    $('.cleaner_pop').css({
+        left: windowW / 2 - cleaner_popW / 2
+    }); 
 
-/*         $('.boss_1').css({
-            top: windowH / 2 + boss_1H / 2
-        });
-        $('.boss_1').css({
-        	width: boss_1W
-        });
-        $('.boss_1').css({
-            left: windowW / 2 - boss_1W * 2
-        }); */
+    $('.boss_d1').css({
+        top: windowH / 2 + boss_d1H / 2.5
+    });
+    $('.boss_d1').css({
+        left: windowW / 2 - boss_d1W * 2.5
+    });
+    
+    $('.boss_d2').css({
+        top: windowH / 2 + boss_d2H*1.5
+    });
+    $('.boss_d2').css({
+        left: windowW / 2 - boss_d2W* 2.9
+    });
 
-        $('.Sally_3').css({
-            top: windowH / 2 + Sally_3H * 2
-        });
-        $('.Sally_3').css({
-        	width: Sally_3W
-        });
-        $('.Sally_3').css({
-            left: windowW / 2 + Sally_3W * 2
-        });
+/*     $('.Sally_3').css({
+        top: windowH / 2 + Sally_3H * 2
+    });
+    $('.Sally_3').css({
+        left: windowW / 2 + Sally_3W * 2
+    }); */
+
+    $('.Sally_3_1').css({
+        top: windowH / 2 + Sally_3_1H * 2.0
+    });
+    $('.Sally_3_1').css({
+        left: windowW / 2 + Sally_3_1W * 3
+    });
+
+    $('.Sally_3_2').css({
+        top: windowH / 2 + Sally_3_2H * 6.3
+    });
+    $('.Sally_3_2').css({
+        left: windowW / 2 + Sally_3_2W * 4.5
+    });
 
         $('.appicon').css({
             top: windowH / 2 - appiconH * 1.5
