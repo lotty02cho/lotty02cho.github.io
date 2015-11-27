@@ -169,23 +169,23 @@ h3{
     -o-animation-duration: 5s;
 }
 .cursor{
-    -webkit-animation-name: clean_ani_3;
-    animation-name: clean_ani_3;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: cursor;
+    animation-name: cursor;
+/*     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite; */
     -webkit-animation-duration: 5s;
     -moz-animation-duration: 5s;
     -o-animation-duration: 5s;
 }
 .cleaner_pop {
-    -webkit-animation-name: clean_ani_4;
-    animation-name: clean_ani_4;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: cleaner_pop;
+    animation-name: cleaner_pop;
+/*     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-duration: 8s;
+    -o-animation-iteration-count: infinite; */
+    animation-duration: 5s;
     -webkit-animation-duration: 5s;
     -moz-animation-duration: 5s;
     -o-animation-duration: 5s;
@@ -219,34 +219,72 @@ h3{
 	5%, 89%{
     opacity: 1;
 } */
-}@-webkit-keyframes clean_ani_3 {
-
-}@keyframes clean_ani_3 {
-    0%, 6%, 100% {
-    opacity: 0;
-	}
-	15%{
-    opacity: 1;
-    transform: translateY(0px);
-	}
-	20%{
-	opacity: 1;
-    transform: translateY(10px);
-	}
-	30%{
-	opacity: 1;
-    transform: translateY(25px);
-    transform: scale(0.7);
-	}
-	40%{
-	opacity: 0;
-    transform: translateY(25px), scale(0.7);
-    transform: 
-	}
-	99%{
-	opacity: 0;
-    transform: translateY(25px), scale(0.7);
-	}
+}@-webkit-keyframes cursor {
+0%, 29%{
+	opacity: 0 ;
+	transform: translate(0, -20px);
+}
+30%{
+	opacity: 1 ;
+	transform: translate(0, -20px);
+}
+35%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(1);
+}
+45%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(1);
+}
+50%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(0.7);
+}
+59%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(1);
+}
+85%{
+	opacity: 0 ;
+	transform: translate(0, 5px) scale(1);
+}
+100%{
+	opacity: 0 ;
+	transform: translate(0, 5px) scale(1);
+}
+}@keyframes cursor {
+0%, 29%{
+	opacity: 0 ;
+	transform: translate(0, -20px);
+}
+30%{
+	opacity: 1 ;
+	transform: translate(0, -20px);
+}
+35%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(1);
+}
+45%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(1);
+}
+50%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(0.7);
+}
+59%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(1);
+}
+85%{
+	opacity: 0 ;
+	transform: translate(0, 5px) scale(1);
+}
+100%{
+	opacity: 0 ;
+	transform: translate(0, 5px) scale(1);
+}
 }
 /* @-webkit-keyframes clean_ani_4 {
     0%, 40%, 100% {
@@ -265,33 +303,32 @@ h3{
 
 }
 } */
-@keyframes clean_ani_4 {
-    0%, 30% {
+@keyframes cleaner_pop{
+0%, 63%{
     opacity: 0;
     transform: scale(0.7);
 }
-31% {
-    opacity: 1;
+65% {
+    opacity: 0.7;
     transform: scale(0.7);
 
 }
-40%, 60% {
+70% {
     opacity: 1;
     transform: scale(1);
 }
-85% {
-    opacity: 0;
-    transform: scale(1);
 
-}
 100% {
-    opacity: 0;
+    opacity: 1;
+    transform: scale(1);
 }
 }
 
 .boss_d2{
 	-webkit-animation-name: boss_arm;
     animation-name: boss_arm;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -303,31 +340,32 @@ h3{
 }
 @keyframes boss_arm {
 0%{
-	transform: rotate(0) translate(-10px,0px);
+	transform: rotate(0) translate(0px, 0px);
 }
 25%{
-	transform: rotate(20deg) translate(0px,10px);
-
+	transform: rotate(15deg) translate(5px, +15px);
 }
 33%{
-	transform: rotate(0deg) translate(-10px,0px);
+	transform: rotate(0deg) translate(0px,0px);
 }
 
 42%{
-	transform: rotate(20deg) translate(0px,0px);
+	transform: rotate(15deg) translate(5px,+15px);
 }
 
 50% {
-	transform: rotate(0deg) translate(-10px,0px);
+	transform: rotate(0deg) translate(0px,0px);
 }
 100%{
-	transform: rotate(0deg) translate(-10px,0px);
+	transform: rotate(0deg) translate(0px,0px);
 }
 }
 
 .Sally_3_2{
 	-webkit-animation-name: sally_arm;
     animation-name: sally_arm;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -346,11 +384,13 @@ h3{
 
 }
 66%{
-	transform: rotate(20deg);
+	transform: rotate(20deg) scale(1);	
 }
-
+74%{
+	transform: rotate(0deg) scale(1);
+}
 83%{
-	transform: rotate(20deg);
+	transform: rotate(20deg) scale(1);
 }
 
 100% {
@@ -358,6 +398,186 @@ h3{
 }
 }
 
+
+
+@-webkit-keyframes brownComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}@keyframes brownComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+}.brownComeout {
+    -webkit-animation-name: brownComeout;
+    animation-name: brownComeout;
+        animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+}
+
+@-webkit-keyframes sallyComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}@keyframes sallyComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+}.sallyComeout {
+    -webkit-animation-name: sallyComeout;
+    animation-name: sallyComeout;
+    animation-delay: 0.3s;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+}
+
+
+@-webkit-keyframes leonardComeout{
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes leonardComeout {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.leonardComeout {
+  -webkit-animation-name: leonardComeout;
+  animation-name: leonardComeout;
+  animation-delay: 0.5s;
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+}
+
+
+@-webkit-keyframes JamesInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes JamesInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.JamesInLeft {
+  -webkit-animation-name: JamesInLeft;
+  animation-name: JamesInLeft;
+  animation-delay: 0.7s;
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+}
 
 
 }#sl-wrapper, .sl {
@@ -395,6 +615,9 @@ h3{
 	font-size: 12px; color: #999999; font-weight: bold; text-decoration: none
 }
 
+.unVisible{
+	visibility: none;
+}
 </style>
 
 
@@ -463,51 +686,53 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 						</div>
 						<!-- Google Button -->
 						<h4 class="content">
-							<a
-								href="https://play.google.com/store/apps/details?id=com.campmobile.launcher"><img
+							<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher"><img
 								class="btn_store" alt="Google Play Store Button to install Line Launcher !"title="Press the button to install Line Launcher" src="images/btn_store.png"></a>
 						</h4>
 					</div>
 				</div>
-			</div>
-			<div id="" style="width: 100%; text-align: center;">
+							<div id="" style="width: 100%; text-align: center;">
 				<div align="center">
-					<img class="animated bounceInUp device_intro"
+					<img id="device_intro" class="animated device_intro"
 						style="position: absolute; bottom: 0px; z-index: 100;"
 						alt="Line Launcher device" 
 						src="images/img_device_intro.png">
 				</div>
 				<div align="center">
-					<img class="animated fadeInRight leonard_1"
-						style="position: absolute; bottom: 0px; z-index: 99;"
-						alt="Line Character Leonard" 
-						src="images/img_leonard_1.png">
-				</div>
-				<div align="center">
-					<img class="animated rotateInUpRight brown_1"
+					<img id="brown" class="animated brownComeout brown_1"
 						style="position: absolute; bottom: 0px; z-index: 101;"
 						alt="Line Character Brown"
 						src="images/img_brown_1.png">
 				</div>
 				<div align="center">
-					<img class="animated rotateInUpLeft edward_1"
-						style="position: absolute; bottom: 0px; z-index: 102;"
-						alt="Line Character Edward"
-						src="images/img_edward_1.png">
-				</div>
-				<div align="center">
-					<img class="animated fadeInLeft james_1"
-						style="position: absolute; bottom: 0px; z-index: 102;"
-						alt="Line Character James"
-						src="images/img_james_1.png">
-				</div>
-				<div align="center">
-					<img class="animated bounce Sally_1"
+					<img id="sally" class="animated sallyComeout Sally_1"
 						style="position: absolute; bottom: 0px; z-index: 103;"
 						alt="Line Character Sally"
 						src="images/img_Sally_1.png">
 				</div>
+				<div align="center">
+					<img id="leonard" class="animated leonardComeout leonard_1"
+						style="position: absolute; bottom: 0px; z-index: 99;"
+						alt="Line Character Leonard" 
+						src="images/img_leonard_1.png">
+				</div>
+				<div align="center">
+					<img id="james" class="animated JamesInLeft james_1"
+						style="position: absolute; bottom: 0px; z-index: 98;"
+						alt="Line Character James"
+						src="images/img_james_1.png">
+				</div>
+				
+				<div align="center">
+					<img id="edward" class="animated rotateInUpLeft edward_1"
+						style="position: absolute; bottom: 0px; z-index: 102;"
+						alt="Line Character Edward"
+						src="images/img_edward_1.png">
+				</div>
+
 			</div>
+			</div>
+
 		</div>
 		<div class="section" id="section2">
 			<div class="homebg02">
@@ -655,12 +880,12 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 							alt="Line Launcher mobile basic theme"
 							src="images/img_basictheme.png">
 					</div>
-					<div align="center">
+<!-- 					<div align="center">
 						<img class="animated wobble cony_1" style="position: absolute; z-index: 101;" alt="Line Character Cony" src="images/img_cony_1.png">
 					</div>
 					<div align="center">
 						<img class="animated wobble sally_2" style="position: absolute; z-index: 98;" alt="Line Character Sally" src="images/img_sally_2.png">
-					</div>
+					</div> -->
 					<div align="center">
 						<img class="animated doongdoong icons_1" style="position: absolute; z-index: 98;" alt="Application Icon Kakao Story" src="images/img_icons_1.png">
 					</div>
@@ -678,6 +903,9 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 					</div>
 					<div align="center">
 						<img class="animated doongdoong icons_6" style="position: absolute; z-index: 98;" alt="Application Icon Youtube" src="images/img_icons_6.png">
+					</div>
+					<div align="center">
+						<img class="animated doongdoong icons_7" style="position: absolute; z-index: 98;" alt="Application Icon Sally" src="images/img_icons_7.png">
 					</div>
 				</div>
 			</div>
@@ -708,7 +936,7 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 							src="images/img_cleanertheme_1.png">
 					</div> -->
 					<div align="center">
-						<img class="animated cursor"
+						<img id="cursor" class="animated"
 							style="position: absolute; z-index: 100;"
 							alt="Line Launcher Memory Cleaner Click"
 							src="images/img_cursor.png">
@@ -723,31 +951,31 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 				</div>
 				<div id="" style="width: 100%; text-align: center;">
 					<div align="center">
-						<img class="animated cleaner_pop"
+						<img id="cleaner_pop" class="animated"
 							style="position: absolute; z-index: 101;"
 							alt="Line Launcher Memory Cleaner3"
 							src="images/img_cleaner_pop.png">
 					</div>
 					<div align="center">
-						<img class="animated boss_d1"
+						<img id="boss_d1" class="animated boss_d1"
 							style="position: absolute; z-index: 101;"
 							alt="Line Character Boss1"
 							src="images/img_boss_d1.png">
 					</div>
 					<div align="center">
-						<img class="animated boss_d2"
+						<img id="boss_d2" class="animated boss_d2"
 							style="position: absolute; z-index: 100;"
 							alt="Line Character Boss2"
 							src="images/img_boss_d2.png">
 					</div>
 					<div align="center">
-						<img class="animated fadeInRight Sally_3_1"
+						<img id="Sally_3_1" class="animated fadeInRight Sally_3_1"
 							style="position: absolute; z-index: 101;"
 							alt="Line Character Sally"
 							src="images/img_Sally_3_1.png">
 					</div>
 					<div align="center">
-						<img class="animated fadeInRight Sally_3_2"
+						<img id="Sally_3_2"class="animated fadeInRight Sally_3_2"
 							style="position: absolute; z-index: 100;"
 							alt="Line Character Sally"
 							src="images/img_Sally_3_2.png">
@@ -822,21 +1050,114 @@ if (winIE) {
 }
 $(function() {
     $('#fullpage').fullpage({
-        sectionsColor: ['#00a6ff', '#efefef', '#6962C9', '#00BE68', '#00a6ff'],
+        sectionsColor: ['#00a6ff', '#efefef', '#645cce', '#00BE68', '#00a6ff'],
         anchors: ['Line', 'VariousTheme', 'Stylish', 'Clever', 'Download'],
         menu: '#menu',
         verticalCentered: false,
         css3: true,
         scrollingSpeed: 600,
         afterLoad: function(line) {
+            
+        	if (line == 'Line'){
+        		$('#brown').addClass('brownComeout');
+        		$('#brown').removeClass('unVisible');
+            	$('#sally').addClass('sallyComeout');
+            	$('#sally').removeClass('unVisible');
+            	$('#leonard').addClass('leonardComeout');
+            	$('#leonard').removeClass('unVisible');
+            	$('#james').addClass('JamesInLeft');
+            	$('#james').removeClass('unVisible');
+            	$('#edward').addClass('rotateInUpLeft');
+            	$('#edward').removeClass('unVisible');
+        	}  else {
+        		$('#brown').removeClass('brownComeout');
+        		$('#brown').addClass('unVisible');
+            	$('#sally').removeClass('sallyComeout');
+            	$('#sally').addClass('unVisible');
+            	$('#leonard').removeClass('leonardComeout');
+            	$('#leonard').addClass('unVisible');
+            	$('#james').removeClass('JamesInLeft');
+            	$('#james').addClass('unVisible');
+            	$('#edward').removeClass('rotateInUpLeft');
+            	$('#edward').addClass('unVisible');
+        	}
+            
             if (line == 'VariousTheme') {
                 $('#menu li').addClass('grey');
-
             } else {
                 $('#menu li').removeClass('grey');
             }
-            if (line == 'Stylish'){
-            	$()
+            if (line == 'Clever'){
+            	$('#cursor').addClass('cursor');
+            	$('#cleaner_pop').addClass('cleaner_pop');
+            	$('#boss_d2').addClass('boss_d2');
+            	$('#Sally_3_2').addClass('Sally_3_2');
+            	var windowH = $(window).innerHeight();
+                var windowW = $(window).innerWidth();
+                var cleaner_popW = 440;
+                var cleaner_popH = 184;
+                var cursor_1W = 40;
+                var cursor_1H = 40;
+                var boss_d1W = 155;
+                var boss_d1H = 288;
+                var boss_d2W = 90;
+                var boss_d2H = 100;
+
+            /*     var Sally_3W = 118;
+                var Sally_3H = 150;  */
+                var Sally_3_1W = 78;
+                var Sally_3_1H = 128;
+                var Sally_3_2W = 46;
+                var Sally_3_2H = 46;
+                
+                
+                
+                $('.cursor').css({
+                    top: windowH / 2 - cursor_1H / 2 + cursor_1H*3.2
+                });
+                $('.cursor').css({
+                    left: windowW / 2 - cursor_1W / 2 + cursor_1W* 2.5
+                });
+                 $('.cleaner_pop').css({
+                    top: windowH / 2 - cleaner_popH +35
+                });
+                $('.cleaner_pop').css({
+                    left: windowW / 2 - cleaner_popW / 2
+                });
+                $('.boss_d2').css({
+                    top: windowH / 2 + boss_d2H / 1.0
+                });
+                $('.boss_d2').css({
+                    left: windowW / 2 - boss_d2W* 2.8
+                });
+
+            /*     $('.Sally_3').css({
+                    top: windowH / 2 + Sally_3H * 2
+                });
+                $('.Sally_3').css({
+                    left: windowW / 2 + Sally_3W * 2
+                }); */
+
+                $('.Sally_3_1').css({
+                    top: windowH / 2 + Sally_3_1H * 1.8
+                });
+                $('.Sally_3_1').css({
+                    left: windowW / 2 + Sally_3_1W * 2.67
+                });
+
+                $('.Sally_3_2').css({
+                    top: windowH / 2 + Sally_3_2H * 5.9
+                });
+                $('.Sally_3_2').css({
+                    left: windowW / 2 + Sally_3_2W * 4
+                });
+
+                
+            } else{
+            	$('#cursor').removeClass('cursor');
+            	$('#cleaner_pop').removeClass('cleaner_pop');
+            	$('#boss_d2').removeClass('boss_d2');
+            	$('#Sally_3_2').removeClass('Sally_3_2');
             }
         }
     })
@@ -852,14 +1173,16 @@ $(window).keydown(function(event) {
     })
 });
 </script>
+
 <script>
+
 $(function() {
     var windowH = $(window).innerHeight();
     var windowW = $(window).innerWidth();
     var device_introW = 402;
     var device_introH = 516;
-    var leonard_1W = 194;
-    var leonard_1H = 196;
+    var leonard_1W = 162;
+    var leonard_1H = 190;
     var brown_1W = 322;
     var brown_1H = 464;
     var edward_1W = 90;
@@ -903,7 +1226,8 @@ $(function() {
     var icons_5H = 193;    
     var icons_6W = 200;
     var icons_6H = 156;
-    
+    var icons_7W = 190;
+    var icons_7H = 210;    
     
     
     var device_none3W = 290;
@@ -944,8 +1268,8 @@ $(function() {
           windowW = $(window).innerWidth();
           device_introW = 402;
           device_introH = 516;
-          leonard_1W = 194;
-          leonard_1H = 196;
+          leonard_1W = 162;
+          leonard_1H = 190;
           brown_1W = 322;
           brown_1H = 464;
           edward_1W = 90;
@@ -989,6 +1313,8 @@ $(function() {
           icons_5H = 193;    
           icons_6W = 200;
           icons_6H = 156;
+          icons_7W = 190;
+          icons_7H = 210;    
           
           
           device_none3W = 290;
@@ -1001,13 +1327,13 @@ $(function() {
           cleanertheme_2H = 450;
           cleaner_popW = 440;
           cleaner_popH = 184;
-/*           boss_1W = 212;
+/*        boss_1W = 212;
           boss_1H = 298; */
           boss_d1W = 155;
           boss_d1H = 288;
           boss_d2W = 90;
 		  boss_d2H = 100;
-/*           Sally_3W = 118;
+/*        Sally_3W = 118;
           Sally_3H = 150; */
           Sally_3_1W = 78;
           Sally_3_1H = 128;
@@ -1121,7 +1447,7 @@ $(function() {
     });
 
     $('.icons_3').css({
-        top: windowH / 1.5
+        top: windowH / 1.5  - icons_3W / 3
     });
     $('.icons_3').css({
         left: icons_3W / 2
@@ -1146,6 +1472,13 @@ $(function() {
     });
     $('.icons_6').css({
         left: windowW - icons_6W * 4 / 5
+    });
+    
+    $('.icons_7').css({
+        top: windowH - icons_7H * 2 -50
+    });
+    $('.icons_7').css({
+        left: windowW - icons_7W * 3.5
     });
 
     $('.device_none3').css({
@@ -1177,24 +1510,24 @@ $(function() {
     });
 
      $('.cleaner_pop').css({
-        top: windowH / 2 - cleaner_popH / 2
+        top: windowH / 2 - cleaner_popH +35
     });
     $('.cleaner_pop').css({
         left: windowW / 2 - cleaner_popW / 2
     }); 
 
     $('.boss_d1').css({
-        top: windowH / 2 + boss_d1H / 2.5
+        top: windowH / 2 + boss_d1H / 4.3
     });
     $('.boss_d1').css({
-        left: windowW / 2 - boss_d1W * 2.5
+        left: windowW / 2 - boss_d1W * 2.4
     });
     
     $('.boss_d2').css({
-        top: windowH / 2 + boss_d2H*1.5
+        top: windowH / 2 + boss_d2H / 1.0
     });
     $('.boss_d2').css({
-        left: windowW / 2 - boss_d2W* 2.9
+        left: windowW / 2 - boss_d2W* 2.8
     });
 
 /*     $('.Sally_3').css({
@@ -1205,17 +1538,17 @@ $(function() {
     }); */
 
     $('.Sally_3_1').css({
-        top: windowH / 2 + Sally_3_1H * 2.0
+        top: windowH / 2 + Sally_3_1H * 1.8
     });
     $('.Sally_3_1').css({
-        left: windowW / 2 + Sally_3_1W * 3
+        left: windowW / 2 + Sally_3_1W * 2.67
     });
 
     $('.Sally_3_2').css({
-        top: windowH / 2 + Sally_3_2H * 6.3
+        top: windowH / 2 + Sally_3_2H * 5.9
     });
     $('.Sally_3_2').css({
-        left: windowW / 2 + Sally_3_2W * 4.5
+        left: windowW / 2 + Sally_3_2W * 4
     });
 
     
@@ -1310,9 +1643,10 @@ $(function() {
      icons_5H = icons_5H*2/3;    
      icons_6W = icons_6W*2/3;
      icons_6H = icons_6H*2/3;
+     icons_7W = icons_7W*2/3;
+     icons_7H = icons_7H*2/3;  
      
-     
-     
+
      device_none3W = device_none3W*2/3;
      device_none3H = device_none3H*2/3;
      cleanertheme_1W = cleanertheme_1W*2/3;
@@ -1336,16 +1670,12 @@ $(function() {
      Sally_3_2W = Sally_3_2W*2/3;
      Sally_3_2H = Sally_3_1H*2/3;
      
-     
-     
-     
      appiconW = 184;
      appiconH = 184;
      apptextW = 496;
      apptextH = 42;    
      btn_store2W = 256;
-     btn_store2H = 82;    
-    
+     btn_store2H = 82;
     
      //PAGE1
     $('.device_intro').css({
@@ -1547,11 +1877,21 @@ $(function() {
     $('.icons_6').css({
         left: windowW - icons_6W * 4 / 5
     });
+    $('.icons_7').css({
+        top: windowH - icons_7H * 2 -50
+    });
+    $('.icons_7').css({
+        width: icons_7H
+    });
+    $('.icons_7').css({
+        left: windowW - icons_7W * 3.5
+    });
     
     //PAGE4
     $('.device_none3').css({
         top: windowH / 2 - (device_none3H / 2) + 48
     });
+    alert(device_none3W)
     $('.device_none3').css({
         left: windowW / 2 - (device_none3W / 2)
     });
@@ -1578,24 +1918,24 @@ $(function() {
     });
 
      $('.cleaner_pop').css({
-        top: windowH / 2 - cleaner_popH / 2
+        top: windowH / 2 - cleaner_popH +35
     });
     $('.cleaner_pop').css({
         left: windowW / 2 - cleaner_popW / 2
     }); 
 
     $('.boss_d1').css({
-        top: windowH / 2 + boss_d1H / 2.5
+        top: windowH / 2 + boss_d1H / 4.3
     });
     $('.boss_d1').css({
-        left: windowW / 2 - boss_d1W * 2.5
+        left: windowW / 2 - boss_d1W * 2.4
     });
     
     $('.boss_d2').css({
-        top: windowH / 2 + boss_d2H*1.5
+        top: windowH / 2 + boss_d2H / 1.0
     });
     $('.boss_d2').css({
-        left: windowW / 2 - boss_d2W* 2.9
+        left: windowW / 2 - boss_d2W* 2.8
     });
 
 /*     $('.Sally_3').css({
@@ -1606,17 +1946,17 @@ $(function() {
     }); */
 
     $('.Sally_3_1').css({
-        top: windowH / 2 + Sally_3_1H * 2.0
+        top: windowH / 2 + Sally_3_1H * 1.8
     });
     $('.Sally_3_1').css({
-        left: windowW / 2 + Sally_3_1W * 3
+        left: windowW / 2 + Sally_3_1W * 2.67
     });
 
     $('.Sally_3_2').css({
-        top: windowH / 2 + Sally_3_2H * 6.3
+        top: windowH / 2 + Sally_3_2H * 5.9
     });
     $('.Sally_3_2').css({
-        left: windowW / 2 + Sally_3_2W * 4.5
+        left: windowW / 2 + Sally_3_2W * 4
     });
 
     $('.appicon').css({
@@ -1653,8 +1993,8 @@ $(function() {
         var windowW = $(window).innerWidth();
         var device_introW = 402;
         var device_introH = 516;
-        var leonard_1W = 194;
-        var leonard_1H = 196;
+        var leonard_1W = 162;
+        var leonard_1H = 190;
         var brown_1W = 322;
         var brown_1H = 464;
         var edward_1W = 90;
@@ -1700,7 +2040,8 @@ $(function() {
         var icons_5H = 193;    
         var icons_6W = 200;
         var icons_6H = 156;
-        
+        var icons_7W = 190;
+        var icons_7H = 210;  
         
         var device_none3W = 290;
         var device_none3H = 564;
@@ -1738,13 +2079,13 @@ $(function() {
 /*            	alert("device_introW(>=930, Move) : "+ device_introW); */
             /* $(".row").css("top", "8%") */
 		$(".row").css("top", "8%")
-        $(".pageTitle_main").css("font-size", "72px")
+        $(".pageTitle_main").css("font-size", "64px")
         $(".content").css("font-size", "20px")
         $(".content").css("margin", "25px 0 46px")
         $(".btn_store").css("width", "256px")
         $(".btn_store").css("height", "82px")
-        $(".pageTitle_black").css("font-size", "72px")
-        $(".pageTitle_white").css("font-size", "72px")
+        $(".pageTitle_black").css("font-size", "64px")
+        $(".pageTitle_white").css("font-size", "64px")
         $(".pack_table").css("width", "518px")
         $(".pack_table").css("height", "632px")
 
@@ -1753,8 +2094,8 @@ $(function() {
           
           device_introW = 402;
           device_introH = 516;
-          leonard_1W = 194;
-          leonard_1H = 196;
+          leonard_1W = 162;
+          leonard_1H = 190;
           brown_1W = 322;
           brown_1H = 464;
           edward_1W = 90;
@@ -1798,7 +2139,8 @@ $(function() {
           icons_5H = 193;    
           icons_6W = 200;
           icons_6H = 156;
-          
+          icons_7W = 190;
+          icons_7H = 210;  
           
           
           device_none3W = 290;
@@ -2035,6 +2377,12 @@ $(function() {
           $('.icons_6').css({
               left: windowW - icons_6W * 4 / 5
           });
+          $('.icons_7').css({
+              top: windowH - icons_7H * 2 -50
+          });
+          $('.icons_7').css({
+              left: windowW - icons_7W * 3.5
+          });
           
           //PAGE4
 
@@ -2067,46 +2415,49 @@ $(function() {
 	    });
 	
 	     $('.cleaner_pop').css({
-	        top: windowH / 2 - cleaner_popH / 2
-	    });
-	    $('.cleaner_pop').css({
-	        left: windowW / 2 - cleaner_popW / 2
-	    }); 
-	
-	    $('.boss_d1').css({
-	        top: windowH / 2 + boss_d1H / 2.5
-	    });
-	    $('.boss_d1').css({
-	        left: windowW / 2 - boss_d1W * 2.5
-	    });
+	         top: windowH / 2 - cleaner_popH +35
+	     });
+	     $('.cleaner_pop').css({
+	         left: windowW / 2 - cleaner_popW / 2
+	     }); 
+
+	     $('.boss_d1').css({
+	         top: windowH / 2 + boss_d1H / 4.3
+	     });
+	     $('.boss_d1').css({
+	         left: windowW / 2 - boss_d1W * 2.4
+	     });
+	     
+	     $('.boss_d2').css({
+	         top: windowH / 2 + boss_d2H / 1.0
+	     });
+	     $('.boss_d2').css({
+	         left: windowW / 2 - boss_d2W* 2.8
+	     });
+
+	 /*     $('.Sally_3').css({
+	         top: windowH / 2 + Sally_3H * 2
+	     });
+	     $('.Sally_3').css({
+	         left: windowW / 2 + Sally_3W * 2
+	     }); */
+
+	     $('.Sally_3_1').css({
+	         top: windowH / 2 + Sally_3_1H * 1.8
+	     });
+	     $('.Sally_3_1').css({
+	         left: windowW / 2 + Sally_3_1W * 2.67
+	     });
+
+	     $('.Sally_3_2').css({
+	         top: windowH / 2 + Sally_3_2H * 5.9
+	     });
+	     $('.Sally_3_2').css({
+	         left: windowW / 2 + Sally_3_2W * 4
+	     });
+
 	    
-	    $('.boss_d2').css({
-	        top: windowH / 2 + boss_d2H*1.5
-	    });
-	    $('.boss_d2').css({
-	        left: windowW / 2 - boss_d2W* 2.9
-	    });
-	
-	/*     $('.Sally_3').css({
-	        top: windowH / 2 + Sally_3H * 2
-	    });
-	    $('.Sally_3').css({
-	        left: windowW / 2 + Sally_3W * 2
-	    }); */
-	
-	    $('.Sally_3_1').css({
-	        top: windowH / 2 + Sally_3_1H * 2.0
-	    });
-	    $('.Sally_3_1').css({
-	        left: windowW / 2 + Sally_3_1W * 3
-	    });
-	
-	    $('.Sally_3_2').css({
-	        top: windowH / 2 + Sally_3_2H * 6.3
-	    });
-	    $('.Sally_3_2').css({
-	        left: windowW / 2 + Sally_3_2W * 4.5
-	    });
+	    
 
           $('.appicon').css({
               top: windowH / 2 - appiconH * 1.5
@@ -2149,7 +2500,7 @@ $(function() {
         
         
         device_introW = device_introW*2/3;
-/*        	alert("device_introW(Point!) : "+ device_introW); */
+//       alert("device_introW(Point!) : "+ device_introW);
          device_introH = device_introH*2/3;
          device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
          leonard_1W = leonard_1W*2/3;
@@ -2200,6 +2551,8 @@ $(function() {
          icons_5H = icons_5H*2/3;    
          icons_6W = icons_6W*2/3;
          icons_6H = icons_6H*2/3;
+         icons_7W = icons_7W*2/3;
+         icons_7H = icons_7H*2/3;  
          
          device_none3W = device_none3W*2/3;
          device_none3H = device_none3H*2/3;
@@ -2434,6 +2787,12 @@ $(function() {
         $('.icons_6').css({
             left: windowW - icons_6W * 4 / 5
         });
+        $('.icons_7').css({
+            top: windowH - icons_7H * 2 -50
+        });
+        $('.icons_7').css({
+            left: windowW - icons_7W * 3.5
+        });
         
         //PAGE4
     $('.device_none3').css({
@@ -2506,33 +2865,33 @@ $(function() {
         left: windowW / 2 + Sally_3_2W * 4.5
     });
 
-        $('.appicon').css({
-            top: windowH / 2 - appiconH * 1.5
-        });
-        $('.appicon').css({
-            left: windowW / 2 - appiconW / 2
-        });
+     $('.appicon').css({
+         top: windowH / 2 - appiconH * 1.5
+     });
+     $('.appicon').css({
+         left: windowW / 2 - appiconW / 2
+     });
 
-        $('.apptext').css({
-            top: windowH / 2 - apptextH / 2
-        });
-        $('.apptext').css({
-            left: windowW / 2 - apptextW / 2
-        });
+     $('.apptext').css({
+         top: windowH / 2 - apptextH / 2
+     });
+     $('.apptext').css({
+         left: windowW / 2 - apptextW / 2
+     });
 
-        $('.btn_store2').css({
-            top: windowH / 2 + btn_store2H
-        });
-        $('.btn_store2').css({
-            left: windowW / 2 - btn_store2W / 2
-        });
-        
-        aSlider = null;
-        aSlider = Slider("#slider_button", 1)
+     $('.btn_store2').css({
+         top: windowH / 2 + btn_store2H
+     });
+     $('.btn_store2').css({
+         left: windowW / 2 - btn_store2W / 2
+     });
+     
+     aSlider = null;
+     aSlider = Slider("#slider_button", 1)
 
-        clearInterval(changeImg);
-    	changeImg = setInterval(changeImage2, 1500);
-    }
+     clearInterval(changeImg);
+ 	 changeImg = setInterval(changeImage2, 1500);
+ }
     })
 });
 </script>

@@ -123,13 +123,13 @@ ul {
 
 
 .pageTitle_main {
-    font-size: 72px;
+    font-size: 64px;
     font-family: LINERegular;
     letter-spacing: 12px;
     fontword-break: keep-all;
 }
 .pageTitle_black, .pageTitle_white {
-	font-size: 72px;
+	font-size: 64px;
     font-family: LINERegular;
     letter-spacing: 12px;
     word-break: keep-all;
@@ -138,13 +138,13 @@ ul {
     position: relative;
     top: 25%;
     left: 0;
-    margin: 30px auto 0;
+    margin: 20px auto 0;
 }
 
 .content{
 	font-size: 20px;
     font-family: LINERegular;
-    margin: 25px 0 46px; 0;
+    margin: 10px 0 40px;
 }
 
 
