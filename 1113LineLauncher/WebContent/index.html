@@ -220,38 +220,7 @@ h3{
     opacity: 1;
 } */
 }@-webkit-keyframes cursor {
-0%, 29%{
-	opacity: 0 ;
-	transform: translate(0, -20px);
-}
-30%{
-	opacity: 1 ;
-	transform: translate(0, -20px);
-}
-35%{
-	opacity: 1 ;
-	transform: translate(0, 5px) scale(1);
-}
-45%{
-	opacity: 1 ;
-	transform: translate(0, 5px) scale(1);
-}
-50%{
-	opacity: 1 ;
-	transform: translate(0, 5px) scale(0.7);
-}
-59%{
-	opacity: 1 ;
-	transform: translate(0, 5px) scale(1);
-}
-85%{
-	opacity: 0 ;
-	transform: translate(0, 5px) scale(1);
-}
-100%{
-	opacity: 0 ;
-	transform: translate(0, 5px) scale(1);
-}
+
 }@keyframes cursor {
 0%, 29%{
 	opacity: 0 ;
@@ -691,7 +660,8 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 						</h4>
 					</div>
 				</div>
-							<div id="" style="width: 100%; text-align: center;">
+			</div>
+			<div id="" style="width: 100%; text-align: center;">
 				<div align="center">
 					<img id="device_intro" class="animated device_intro"
 						style="position: absolute; bottom: 0px; z-index: 100;"
@@ -731,8 +701,6 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 				</div>
 
 			</div>
-			</div>
-
 		</div>
 		<div class="section" id="section2">
 			<div class="homebg02">
@@ -1014,7 +982,7 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 							<li id="footerLi">|</li>
 							<li id="footerLi"><a href="help.html">Help</a></li>
 						</ul>
-						<a href="https://www.facebook.com/dodollauncher.kr/"><img class="" style="position: absolute; z-index: 100; top: 30%; right: 20%;" alt="Line Launcher device" src="images/btn_share_fb.png"></a>					
+						<a href="https://www.facebook.com/linelauncher"><img class="" style="position: absolute; z-index: 100; top: 30%; right: 20%;" alt="Line Launcher device" src="images/btn_share_fb.png"></a>					
 					</div>
 				</div>
 			</div>
@@ -1327,13 +1295,13 @@ $(function() {
           cleanertheme_2H = 450;
           cleaner_popW = 440;
           cleaner_popH = 184;
-/*        boss_1W = 212;
+/*           boss_1W = 212;
           boss_1H = 298; */
           boss_d1W = 155;
           boss_d1H = 288;
           boss_d2W = 90;
 		  boss_d2H = 100;
-/*        Sally_3W = 118;
+/*           Sally_3W = 118;
           Sally_3H = 150; */
           Sally_3_1W = 78;
           Sally_3_1H = 128;
@@ -1646,7 +1614,7 @@ $(function() {
      icons_7W = icons_7W*2/3;
      icons_7H = icons_7H*2/3;  
      
-
+     
      device_none3W = device_none3W*2/3;
      device_none3H = device_none3H*2/3;
      cleanertheme_1W = cleanertheme_1W*2/3;
@@ -1670,12 +1638,16 @@ $(function() {
      Sally_3_2W = Sally_3_2W*2/3;
      Sally_3_2H = Sally_3_1H*2/3;
      
+     
+     
+     
      appiconW = 184;
      appiconH = 184;
      apptextW = 496;
      apptextH = 42;    
      btn_store2W = 256;
-     btn_store2H = 82;
+     btn_store2H = 82;    
+    
     
      //PAGE1
     $('.device_intro').css({
@@ -1881,9 +1853,6 @@ $(function() {
         top: windowH - icons_7H * 2 -50
     });
     $('.icons_7').css({
-        width: icons_7H
-    });
-    $('.icons_7').css({
         left: windowW - icons_7W * 3.5
     });
     
@@ -1891,7 +1860,6 @@ $(function() {
     $('.device_none3').css({
         top: windowH / 2 - (device_none3H / 2) + 48
     });
-    alert(device_none3W)
     $('.device_none3').css({
         left: windowW / 2 - (device_none3W / 2)
     });
@@ -1959,6 +1927,7 @@ $(function() {
         left: windowW / 2 + Sally_3_2W * 4
     });
 
+    
     $('.appicon').css({
         top: windowH / 2 - appiconH * 1.5
     });
@@ -2075,7 +2044,7 @@ $(function() {
         var btn_store2W = 256;
         var btn_store2H = 82;
         
-        if (windowH >= 930) {
+        if (windowH >= 1000) {
 /*            	alert("device_introW(>=930, Move) : "+ device_introW); */
             /* $(".row").css("top", "8%") */
 		$(".row").css("top", "8%")
@@ -2377,12 +2346,6 @@ $(function() {
           $('.icons_6').css({
               left: windowW - icons_6W * 4 / 5
           });
-          $('.icons_7').css({
-              top: windowH - icons_7H * 2 -50
-          });
-          $('.icons_7').css({
-              left: windowW - icons_7W * 3.5
-          });
           
           //PAGE4
 
@@ -2415,49 +2378,46 @@ $(function() {
 	    });
 	
 	     $('.cleaner_pop').css({
-	         top: windowH / 2 - cleaner_popH +35
-	     });
-	     $('.cleaner_pop').css({
-	         left: windowW / 2 - cleaner_popW / 2
-	     }); 
-
-	     $('.boss_d1').css({
-	         top: windowH / 2 + boss_d1H / 4.3
-	     });
-	     $('.boss_d1').css({
-	         left: windowW / 2 - boss_d1W * 2.4
-	     });
-	     
-	     $('.boss_d2').css({
-	         top: windowH / 2 + boss_d2H / 1.0
-	     });
-	     $('.boss_d2').css({
-	         left: windowW / 2 - boss_d2W* 2.8
-	     });
-
-	 /*     $('.Sally_3').css({
-	         top: windowH / 2 + Sally_3H * 2
-	     });
-	     $('.Sally_3').css({
-	         left: windowW / 2 + Sally_3W * 2
-	     }); */
-
-	     $('.Sally_3_1').css({
-	         top: windowH / 2 + Sally_3_1H * 1.8
-	     });
-	     $('.Sally_3_1').css({
-	         left: windowW / 2 + Sally_3_1W * 2.67
-	     });
-
-	     $('.Sally_3_2').css({
-	         top: windowH / 2 + Sally_3_2H * 5.9
-	     });
-	     $('.Sally_3_2').css({
-	         left: windowW / 2 + Sally_3_2W * 4
-	     });
-
+	        top: windowH / 2 - cleaner_popH / 2
+	    });
+	    $('.cleaner_pop').css({
+	        left: windowW / 2 - cleaner_popW / 2
+	    }); 
+	
+	    $('.boss_d1').css({
+	        top: windowH / 2 + boss_d1H / 2.5
+	    });
+	    $('.boss_d1').css({
+	        left: windowW / 2 - boss_d1W * 2.5
+	    });
 	    
-	    
+	    $('.boss_d2').css({
+	        top: windowH / 2 + boss_d2H*1.5
+	    });
+	    $('.boss_d2').css({
+	        left: windowW / 2 - boss_d2W* 2.9
+	    });
+	
+	/*     $('.Sally_3').css({
+	        top: windowH / 2 + Sally_3H * 2
+	    });
+	    $('.Sally_3').css({
+	        left: windowW / 2 + Sally_3W * 2
+	    }); */
+	
+	    $('.Sally_3_1').css({
+	        top: windowH / 2 + Sally_3_1H * 2.0
+	    });
+	    $('.Sally_3_1').css({
+	        left: windowW / 2 + Sally_3_1W * 3
+	    });
+	
+	    $('.Sally_3_2').css({
+	        top: windowH / 2 + Sally_3_2H * 6.3
+	    });
+	    $('.Sally_3_2').css({
+	        left: windowW / 2 + Sally_3_2W * 4.5
+	    });
 
           $('.appicon').css({
               top: windowH / 2 - appiconH * 1.5
@@ -2500,7 +2460,7 @@ $(function() {
         
         
         device_introW = device_introW*2/3;
-//       alert("device_introW(Point!) : "+ device_introW);
+/*        	alert("device_introW(Point!) : "+ device_introW); */
          device_introH = device_introH*2/3;
          device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
          leonard_1W = leonard_1W*2/3;
@@ -2551,8 +2511,6 @@ $(function() {
          icons_5H = icons_5H*2/3;    
          icons_6W = icons_6W*2/3;
          icons_6H = icons_6H*2/3;
-         icons_7W = icons_7W*2/3;
-         icons_7H = icons_7H*2/3;  
          
          device_none3W = device_none3W*2/3;
          device_none3H = device_none3H*2/3;
@@ -2787,12 +2745,6 @@ $(function() {
         $('.icons_6').css({
             left: windowW - icons_6W * 4 / 5
         });
-        $('.icons_7').css({
-            top: windowH - icons_7H * 2 -50
-        });
-        $('.icons_7').css({
-            left: windowW - icons_7W * 3.5
-        });
         
         //PAGE4
     $('.device_none3').css({
@@ -2865,33 +2817,33 @@ $(function() {
         left: windowW / 2 + Sally_3_2W * 4.5
     });
 
-     $('.appicon').css({
-         top: windowH / 2 - appiconH * 1.5
-     });
-     $('.appicon').css({
-         left: windowW / 2 - appiconW / 2
-     });
+        $('.appicon').css({
+            top: windowH / 2 - appiconH * 1.5
+        });
+        $('.appicon').css({
+            left: windowW / 2 - appiconW / 2
+        });
 
-     $('.apptext').css({
-         top: windowH / 2 - apptextH / 2
-     });
-     $('.apptext').css({
-         left: windowW / 2 - apptextW / 2
-     });
+        $('.apptext').css({
+            top: windowH / 2 - apptextH / 2
+        });
+        $('.apptext').css({
+            left: windowW / 2 - apptextW / 2
+        });
 
-     $('.btn_store2').css({
-         top: windowH / 2 + btn_store2H
-     });
-     $('.btn_store2').css({
-         left: windowW / 2 - btn_store2W / 2
-     });
-     
-     aSlider = null;
-     aSlider = Slider("#slider_button", 1)
+        $('.btn_store2').css({
+            top: windowH / 2 + btn_store2H
+        });
+        $('.btn_store2').css({
+            left: windowW / 2 - btn_store2W / 2
+        });
+        
+        aSlider = null;
+        aSlider = Slider("#slider_button", 1)
 
-     clearInterval(changeImg);
- 	 changeImg = setInterval(changeImage2, 1500);
- }
+        clearInterval(changeImg);
+    	changeImg = setInterval(changeImage2, 1500);
+    }
     })
 });
 </script>
