@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html class="fp-enabled" style="overflow: hidden; height: 100%;">
+<head>
+<meta charset="utf-8">
+<!-- title: 메타 태그는 아니지만, 검색결과의 제목으로 표시 -->
+<title>Line Launcher</title>
+<meta name="title" content="Line Launcher">
+<meta name="author" content="Camp Mobile &amp; LINE">
+<!-- 페이지의 짧은 설명 -->
+<meta name="description"
+	content="Line Launcher, It makes your phone clean and optimize!!">
+<!-- 페이지의 키워드 -->
+<meta name="keywords"
+	content="Android Wallpaper, Mobile Application, Phone theme, Stylish, Clever, Various Themes, Line, Line Launcher, Search, Theme, Launcher">
+
+<meta name="viewport" content="user-scalable=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- 구글봇과 크롤러에 영향을 주는 태그. -->
+<meta name="googlebot" content="all">
+<meta name="robots" content="all">
+
+<!-- 번역링크 제공 방지 -->
+<meta name="google" content="notranslate">
+
+<!-- 전처리될 기본 언어 설정 -->
+<!-- <meta http-equiv="content-language" content="ko"> -->
+
+<!-- 문자 인코딩 선언 -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- 단, Google 혹은 다른 크롤러에서 이해할 수 없는 메타태그는 무시된다는 사실에 유의하시기 바랍니다. -->
+
+<meta name="Resource-type" content="Document">
+<link rel="icon" href=" images/logo.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href=" css/style.css">
+<link rel="stylesheet" type="text/css" href=" css/animate.css">
+
+<script>
+            /*jump to the right language*/
+            if (window.navigator.language) {
+                var language = window.navigator.language.toLowerCase();
+            } else if(window.navigator.browserLanguage) {
+                var language = window.navigator.browserLanguage.toLowerCase();
+            }
+            if (window.location.href.indexOf("mode=user") == -1 && language && language.indexOf("zh") >= 0) {
+                window.location.href = "http://" + window.location.host + '/index_cn.html';
+            }
+            /*jump To mobile*/
+            var mobileAgent = ["iphone", "ipod", "ipad", "android", 
+                "mobile", "blackberry", "webos", "incognito", 
+                "webmate", "bada", "nokia", "lg", 
+                "ucweb", "skyfire"];
+            var browser = navigator.userAgent.toLowerCase(); 
+            var isMobile = false; 
+            for (var i = 0; i < mobileAgent.length; i++) { 
+                if (browser.indexOf(mobileAgent[i]) != -1) { 
+                    isMobile = true; 
+                    window.location.href = 'http://' + window.location.host +　'/mobile/index.html';
+                    break; 
+                } 
+            } 
+</script>
+
+<style>
+@font-face {
+	font-family: LINERegular;
+	src: url(' fonts/LINERegular.ttf');
+}
+
+h3 {
+	font-family: LINERegular;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 0 0 5px;
+}
+
+.cony_1, .sally_2 {
+	animation-iteration-count: infinite;
+}
+
+.pageTitle_black {
+	color: #313131;
+}
+
+.theme_pack {
+	margin: 0 30px;
+}
+
+.theme_img {
+	margin-bottom: 16px;
+}
+
+.theme_name {
+	font-size: .7em;
+	color: #000;
+	margin-bottom: 12px;
+}
+
+.theme_down {
+	margin-bottom: 28px;
+}
+
+.cony_1 {
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-duration: 10s;
+	z-index: 501;
+}
+
+.sally_2 {
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-duration: 5s;
+	z-index: 499;
+}
+
+.icons_1, .icons_2 {
+	animation-iteration-count: infinite;
+}
+
+.icons_1 {
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-duration: 3s;
+	z-index: 400;
+}
+
+.icons_2 {
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-duration: 5s;
+	z-index: 400;
+}
+
+.icons_3, .icons_4 {
+	animation-iteration-count: infinite;
+}
+
+.icons_3 {
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-duration: 10s;
+	z-index: 400;
+}
+
+.icons_4 {
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-duration: 4s;
+	-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	-o-animation-duration: 4s;
+	z-index: 400;
+}
+
+.icons_5, .icons_6 {
+	/*     animation-iteration-count: infinite; */
+	z-index: 400;
+}
+
+.icons_5 {
+	/*     -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s; */
+	
+}
+
+.icons_6 {
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	-webkit-animation-duration: 3.5s;
+	-moz-animation-duration: 3.5s;
+	-o-animation-duration: 3.5s;
+}
+
+.cleanertheme_1, .cleanertheme_2 {
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+/* .cleanertheme_1 {
+    -webkit-animation-name: clean_ani_1;
+    animation-name: clean_ani_1;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -o-animation-duration: 8s;
+} */
+.cleanertheme_2 {
+    -webkit-animation-name: clean_ani_2;
+    animation-name: clean_ani_2;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+}
+.cursor{
+    -webkit-animation-name: cursor;
+    animation-name: cursor;
+/*     -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite; */
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+}
+.cleaner_pop {
+    -webkit-animation-name: cleaner_pop;
+    animation-name: cleaner_pop;
+/*     animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite; */
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+}
+/* @-webkit-keyframes clean_ani_1 {
+    0%, 5%, 90%, 100% {
+    opacity: 1;
+}
+	6%, 89% {
+    opacity: 0;
+}
+}@keyframes clean_ani_1 {
+    0%, 5%, 90%, 100% {
+    opacity: 1;
+}
+	6%, 89% {
+    opacity: 0;
+} */
+}
+/* @-webkit-keyframes clean_ani_2 {
+    0%, 4%, 90%, 100%{
+    opacity: 0;
+}
+	5%, 89%{
+    opacity: 1;
+}
+}@keyframes clean_ani_2 {
+    0%, 4%, 90%, 100%{
+    opacity: 0;
+}
+	5%, 89%{
+    opacity: 1;
+} */
+}@-webkit-keyframes cursor {
+
+}@keyframes cursor {
+0%, 29%{
+	opacity: 0 ;
+	transform: translate(0, -20px);
+}
+30%{
+	opacity: 1 ;
+	transform: translate(0, -20px);
+}
+35%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(1);
+}
+45%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(1);
+}
+50%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(0.7);
+}
+59%{
+	opacity: 1 ;
+	transform: translate(0, 5px) scale(1);
+}
+85%{
+	opacity: 0 ;
+	transform: translate(0, 5px) scale(1);
+}
+100%{
+	opacity: 0 ;
+	transform: translate(0, 5px) scale(1);
+}
+}
+/* @-webkit-keyframes clean_ani_4 {
+    0%, 40%, 100% {
+    opacity: 0;
+}
+33% {
+    opacity: 0;
+
+}
+66% {
+    opacity: 1;
+
+}
+90% {
+    opacity: 0;
+
+}
+} */
+@keyframes cleaner_pop{
+0%, 63%{
+    opacity: 0;
+    transform: scale(0.7);
+}
+65% {
+    opacity: 0.7;
+    transform: scale(0.7);
+
+}
+70% {
+    opacity: 1;
+    transform: scale(1);
+}
+
+100% {
+    opacity: 1;
+    transform: scale(1);
+}
+}
+
+.boss_d2{
+	-webkit-animation-name: boss_arm;
+    animation-name: boss_arm;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s;
+}
+@keyframes boss_arm {
+0%{
+	transform: rotate(0) translate(0px, 0px);
+}
+25%{
+	transform: rotate(15deg) translate(5px, +15px);
+}
+33%{
+	transform: rotate(0deg) translate(0px,0px);
+}
+
+42%{
+	transform: rotate(15deg) translate(5px,+15px);
+}
+
+50% {
+	transform: rotate(0deg) translate(0px,0px);
+}
+100%{
+	transform: rotate(0deg) translate(0px,0px);
+}
+}
+
+.Sally_3_2{
+	-webkit-animation-name: sally_arm;
+    animation-name: sally_arm;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s;
+}
+@keyframes sally_arm {
+0%{
+	transform: rotate(0deg);
+}
+50%{
+	transform: rotate(0deg);
+
+}
+66%{
+	transform: rotate(20deg) scale(1);	
+}
+74%{
+	transform: rotate(0deg) scale(1);
+}
+83%{
+	transform: rotate(20deg) scale(1);
+}
+
+100% {
+    transform: rotate(0deg);
+}
+}
+
+#sl-wrapper, .sl {
+	height: 450px;
+	position: relative;
+}
+
+#sld {
+	width: 272px;
+	overflow: hidden;
+}
+
+#sl-wrapper {
+	width: 2448px;
+	transition: left .4s linear;
+}
+
+.sl {
+	float: left;
+	width: 272px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+#footer {
+	
+}
+
+#footerUl {
+	width: 650px;
+	height: 30px;
+	list-style: none;
+}
+
+#footerLi {
+	float: left;
+	margin-right: 16px;
+	color: #999999;
+}
+
+#footerLi a {
+	font-size: 12px;
+	color: #999999;
+	font-weight: bold;
+	text-decoration: none
+}
+
+.device_intro {
+	width: 402px;
+	height: 516px;
+}
+
+.leonard_1 {
+	width: 162px;
+	height: 190px;
+}
+.heart_1{
+    position: absolute;
+    bottom: 390px;
+    z-index: 99;
+    left: 370.5px;
+}
+.heart_2{
+    position: absolute;
+    bottom: 435px;
+    z-index: 99;
+    left: 385.5px;
+}
+.brown_1 {
+	width: 322px;
+	height: 464px;
+}
+
+.edward_1 {
+	width: 90px;
+	height: 102px;
+}
+
+.james_1 {
+	width: 244px;
+	height: 471px;
+}
+
+.Sally_1 {
+	width: 144px;
+	height: 218px;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.unVisible{
+	visibility: none;
+}
+
+
+@-webkit-keyframes brownComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}@keyframes brownComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+}.brownComeout {
+    -webkit-animation-name: brownComeout;
+    animation-name: brownComeout;
+        animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+}
+
+@-webkit-keyframes sallyComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}@keyframes sallyComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+}.sallyComeout {
+    -webkit-animation-name: sallyComeout;
+    animation-name: sallyComeout;
+    animation-delay: 0.3s;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+}
+
+@-webkit-keyframes sallyCapComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px) rotate(0deg);
+    transform: translateY(2000px) rotate(0deg);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px) rotate(360deg);
+    transform: translateY(-1500px) rotate(360deg);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}@keyframes sallyCapComeout {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px) rotate(0deg);
+}
+60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-50px) rotate(0deg);
+}
+80% {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px) rotate(360deg);
+}
+100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+}.sallyCapComeout {
+    -webkit-animation-name: sallyCapComeout;
+    animation-name: sallyCapComeout;
+    animation-delay: 0.3s;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+}
+
+
+
+@-webkit-keyframes leonardComeout{
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes leonardComeout {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.leonardComeout {
+  -webkit-animation-name: leonardComeout;
+  animation-name: leonardComeout;
+  animation-delay: 0.5s;
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+}
+
+@-webkit-keyframes heart_1Comeout{
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes heart_1Comeout {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+	opacity:0;
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity:1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    opacity:0;
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+}
+
+.heart_1Comeout {
+  -webkit-animation-name: heart_1Comeout;
+  animation-name: heart_1Comeout;
+  animation-delay: 1.5s;
+
+  	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+   animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+}
+
+
+
+@-webkit-keyframes heart_2Comeout{
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+	opacity:0;
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity:1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    opacity:0;
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+}
+
+@keyframes heart_2Comeout {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+	opacity:0;
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity:1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    opacity:0;
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+}
+
+.heart_2Comeout {
+  -webkit-animation-name: heart_2Comeout;
+  animation-name: heart_2Comeout;
+  animation-delay: 1.8s;
+
+  	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+   animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+}
+
+
+
+
+
+
+@-webkit-keyframes JamesInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes JamesInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.JamesInLeft {
+  -webkit-animation-name: JamesInLeft;
+  animation-name: JamesInLeft;
+  animation-delay: 0.7s;
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+}
+
+
+
+</style>
+
+
+<script async="" src="//www.google-analytics.com/analytics.js"></script>
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70492073-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+ -->
+<script>
+if(window.navigator.language){var language=window.navigator.language.toLowerCase()}else if(window.navigator.browserLanguage){var language=window.navigator.browserLanguage.toLowerCase()}if(window.location.href.indexOf("mode=user")==-1&&language&&language.indexOf("zh")>=0){window.location.href="http://"+window.location.host+'/index_cn.html'}var mobileAgent=["iphone","ipod","ipad","android","mobile","blackberry","webos","incognito","webmate","bada","nokia","lg","ucweb","skyfire"];var browser=navigator.userAgent.toLowerCase();isMobile=false;for(var i=0;i<mobileAgent.length;i++){if(browser.indexOf(mobileAgent[i])!=-1){isMobile=true;break}}
+</script>
+<link type="text/css" rel="stylesheet"
+	href="chrome-extension://kfgmnlgjmofpiicpgohgfpeabgpmhjdp/style.css">
+<script type="text/javascript" charset="utf-8"
+	src="chrome-extension://kfgmnlgjmofpiicpgohgfpeabgpmhjdp/page_context.js"></script>
+</head>
+
+
+
+
+<body class="fp-viewing-Clever" gtools_scp_screen_capture_injected="true" style="overflow: hidden; height: 100%;">
+	<!--Menu-->
+	<ul id="menu">
+		<li data-menuanchor="Line" class=""><a href="#Line">1</a></li>
+		<li data-menuanchor="VariousTheme" class=""><a href="#VariousTheme">2</a></li>
+		<li data-menuanchor="Stylish" class=""><a href="#Stylish">3</a></li>
+		<li data-menuanchor="Clever" class="active"><a href="#Clever">4</a></li>
+		<li data-menuanchor="Download" class=""><a href="#Download">5</a></li>
+	</ul>
+
+
+
+	<!--FullPage-->
+	<div id="fullpage"
+		style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, -3093px, 0px); transition: all 0ms ease;"
+		class="fullpage-wrapper">
+		<div class="section fp-section" id="section1" data-anchor="Line"
+			style="height: 1031px; background-color: rgb(0, 166, 255);">
+			<div class="homebg01">
+				<div class="container">
+					<div class="frontRow">
+						<h1 class="pageTitle_main" style="font-size: 5em;">LINE Mobile
+							LAUNCHER</h1>
+						<div class="content"
+							style="font-size: 20px; margin: 25px 0px 46px;">
+							<h3>OVER 1000 STAMPS, INCLUDING THE POPULAR LINE STAMPS, AND
+								OVER 100 DIFFERENT</h3>
+							<h3>KINDS OF FRAMES AND RICH FONTS ARE AT YOUR FINGERTIPS
+								FOR FREE.</h3>
+						</div>
+						<!-- Google Button -->
+						<h4 class="content2"
+							style="font-size: 20px; margin: 25px 0px 46px;">
+							<a
+								href="https://play.google.com/store/apps/details?id=com.campmobile.launcher"><img
+								class="btn_store"
+								alt="Google Play Store Button to install Line Launcher !"
+								title="Press the button to install Line Launcher"
+								src=" images/btn_store.png" style="width: 256px; height: 82px;">
+							</a>
+						</h4>
+					</div>
+ 					<div id="pageResources" style="width: 100%; text-align: center;">
+
+							<img id="device_intro" class="animated bounceInUp device_intro"
+								style="position: absolute; bottom: 0px; z-index: 100; left: 533.5px; width: 402px; max-width:402px; max-height: 516px; width:100%; height:100%;"
+								alt="Line Launcher device" src=" images/img_device_intro.png">
+
+
+							<img id="leonard" class="animated fadeInRight leonard_1"
+								style="position: absolute; bottom: 258px; z-index: 99; left: 425.5px; width: 194px;"
+								alt="Line Character Leonard" src=" images/img_leonard_1.png">
+							<img id="heart_1" class="animated heart_1"
+								style="position: absolute;"
+								alt="Line Character Leonard" src=" images/img_heart_1.png">
+							<img id="heart_2" class="animated heart_2"
+								style="position: absolute;"
+								alt="Line Character Leonard" src=" images/img_heart_2.png">
+
+							<img id="brown" class="animated rotateInUpRight brown_1"
+								style="position: absolute; bottom: -129px; z-index: 101; left: 329.5px; width: 322px;"
+								alt="Line Character Brown" src=" images/img_brown_1.png">
+
+
+							<img id="edward" class="animated rotateInUpLeft edward_1"
+								style="position: absolute; bottom: -30px; z-index: 102; left: 420px; width: 90px;"
+								alt="Line Character Edward" src=" images/img_edward_1.png">
+
+
+							<img id="james" class="animated fadeInLeft james_1"
+								style="position: absolute; bottom: 0px; z-index: 99; left: 973px; width: 244px;"
+								alt="Line Character James" src=" images/img_james_1.png">
+
+
+							<img id="sally" class="animated bounce Sally_1_1"
+								style="position: absolute; bottom: -54.5px; z-index: 103; left: 925px; width: 144px;"
+								alt="Line Character Sally" src=" images/img_Sally_1_1.png">
+							<img id="sallyCap" class="animated bounce Sally_1_2"
+								style="position: absolute; bottom: 103.5px; z-index: 103; left: 920px;"
+								alt="Line Character Sally" src=" images/img_Sally_1_2.png">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="section fp-section" id="section2"
+			data-anchor="VariousTheme"
+			style="height: 1031px; background-color: rgb(239, 239, 239);">
+			<div class="homebg02">
+				<div class="container">
+					<div class="row" style="top: 8%;">
+						<h2 class="pageTitle_black" style="font-size: 72px;">VARIOUS THEME</h2>
+						<div class="content"
+							style="font-size: 20px; margin: 25px 0px 46px;">
+							<h3 class="grey">Add various themes easily and Have fun by
+								customizing your phone.</h3>
+							<h3 class="grey">There are a lot of themes in Line
+								Launcher's Theme Shops!</h3>
+						</div>
+						<div class="content2" style="position: relative; width: 900px; height: 650px; margin: auto;">
+							<table id="slider_button" class="pack_table"
+								style="position: relative; bottom: 0px; z-index: 100; width: 518px; height: 632px; float: left;">
+								<tbody>
+									<tr>
+										<th>
+											<div id="sl-nav" class="conts theme_pack"
+												style="margin: 0px 30px;">
+												<a href="#" id="th_btn" data-slide="0"><img
+													class="animated bounceInUp theme_img theme_1"
+													alt="Line Launcher Theme Line Friends"
+													src=" images/img_theme_1.png"
+													style="width: 110px; height: 110px; margin-bottom: 16px; font-size: 0.7em;"></a>
+												<h6 class="theme_name">LINE Friends</h6>
+												<a
+													href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.linefriends"><img
+													class="animated bounceInUp theme_down btn_download"
+													alt="Line Launcher Theme Download"
+													title="Press button and get this theme!"
+													src=" images/btn_download.png"></a>
+											</div>
+										</th>
+										<th>
+											<div id="sl-nav" class="conts theme_pack"
+												style="margin: 0px 30px;">
+												<a href="#" id="th_btn" data-slide="1"><img
+													class="animated bounceInUp theme_img theme_2"
+													alt="Line Launcher Theme Lovely Cony"
+													src=" images/img_theme_2.png"
+													style="width: 110px; height: 110px; margin-bottom: 16px; font-size: 0.7em;"></a>
+												<h6 class="theme_name">Lovely Cony</h6>
+												<a
+													href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.lovelycony"><img
+													class="animated bounceInUp theme_down btn_download"
+													alt="Line Launcher Theme Download"
+													title="Press button and get this theme!"
+													src=" images/btn_download.png"></a>
+											</div>
+										</th>
+										<th>
+											<div id="sl-nav" class="conts theme_pack"
+												style="margin: 0px 30px;">
+												<a href="#" id="th_btn" data-slide="2"><img
+													class="animated bounceInUp theme_img theme_3"
+													alt="Line Launcher Theme Friend Brown"
+													style="position: relative; width: 110px; height: 110px; margin-bottom: 16px; font-size: 0.7em;"
+													src=" images/img_theme_3.png"></a>
+												<h6 class="theme_name">Friendly Brown</h6>
+												<a
+													href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.friendlybrown"><img
+													class="animated bounceInUp theme_down btn_download"
+													alt="Line Launcher Theme Download"
+													title="Press button and get this theme!"
+													src=" images/btn_download.png"></a>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											<div id="sl-nav" class="conts theme_pack"
+												style="margin: 0px 30px;">
+												<a href="#" id="th_btn" data-slide="3"><img
+													class="animated bounceInUp theme_img theme_4"
+													alt="Line Launcher Theme Leornard Life"
+													src=" images/img_theme_4.png"
+													style="width: 110px; height: 110px; margin-bottom: 16px; font-size: 0.7em;"></a>
+												<h6 class="theme_name">Leornard Life</h6>
+												<a
+													href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.friendlybrown"><img
+													class="animated bounceInUp theme_down btn_download"
+													alt="Line Launcher Theme Download"
+													title="Press button and get this theme!"
+													src=" images/btn_download.png"></a>
+											</div>
+										</th>
+										<th>
+											<div id="sl-nav" class="conts theme_pack"
+												style="margin: 0px 30px;">
+												<a href="#" id="th_btn" data-slide="4"><img
+													class="animated bounceInUp theme_img theme_5"
+													alt="Line Launcher Theme GD X TAEYANG"
+													src=" images/img_theme_5.png"
+													style="width: 110px; height: 110px; margin-bottom: 16px; font-size: 0.7em;"></a>
+												<h6 class="theme_name">GD X TAEYANG</h6>
+												<a
+													href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.GDxTAEYANG"><img
+													class="animated bounceInUp theme_down btn_download"
+													alt="Line Launcher Theme Download"
+													title="Press button and get this theme!"
+													src=" images/btn_download.png"></a>
+											</div>
+										</th>
+										<th>
+											<div id="sl-nav" class="conts  theme_pack"
+												style="margin: 0px 30px;">
+												<a href="#" id="th_btn" data-slide="5"><img
+													class="animated bounceInUp theme_img theme_6"
+													alt="Line Launcher Theme Duck whoo"
+													src=" images/img_theme_6.png"
+													style="width: 110px; height: 110px; margin-bottom: 16px; font-size: 0.7em;"></a>
+												<h6 class="theme_name">Duck whoo</h6>
+												<a
+													href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.RubberDuck"><img
+													class="animated bounceInUp theme_down btn_download"
+													alt="Line Launcher Theme Download"
+													title="Press button and get this theme!"
+													src=" images/btn_download.png"></a>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											<div id="sl-nav" class="conts theme_pack"
+												style="margin: 0px 30px;">
+												<a href="#" id="th_btn" data-slide="6"><img
+													class="animated bounceInUp theme_img theme_7"
+													alt="Line Launcher Theme Dark Chic"
+													src=" images/img_theme_7.png"
+													style="width: 110px; height: 110px; margin-bottom: 16px; font-size: 0.7em;"></a>
+												<h6 class="theme_name">Dark Chic</h6>
+												<a
+													href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.darkchic"><img
+													class="animated bounceInUp theme_down btn_download"
+													alt="Line Launcher Theme Download"
+													title="Press button and get this theme!"
+													src=" images/btn_download.png"></a>
+											</div>
+										</th>
+										<th>
+											<div id="sl-nav" class="conts theme_pack"
+												style="margin: 0px 30px;">
+												<a href="#" id="th_btn" data-slide="7"><img
+													class="animated bounceInUp theme_img theme_8"
+													alt="Line Launcher Theme Vivid Line"
+													src=" images/img_theme_8.png"
+													style="width: 110px; height: 110px; margin-bottom: 16px; font-size: 0.7em;"></a>
+												<h6 class="theme_name">Vivid Line</h6>
+												<a
+													href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.vividline"><img
+													class="animated bounceInUp theme_down btn_download"
+													alt="Line Launcher Theme Download"
+													title="Press button and get this theme!"
+													src=" images/btn_download.png"></a>
+											</div>
+										</th>
+										<th>
+											<div id="sl-nav" class="conts theme_pack"
+												style="margin: 0px 30px;">
+												<a href="#" id="th_btn" data-slide="8"><img
+													class="animated bounceInUp theme_img theme_9"
+													alt="Line Launcher Theme B1A4 baro"
+													src=" images/img_theme_9.png"
+													style="width: 110px; height: 110px; margin-bottom: 16px; font-size: 0.7em;"></a>
+												<h6 class="theme_name">B1A4 baro</h6>
+												<a
+													href="https://play.google.com/store/apps/details?id=com.campmobile.launcher.theme.B1A4_Baro"><img
+													class="animated bounceInUp theme_down btn_download"
+													alt="Line Launcher Theme Download"
+													title="Press button and get this theme!"
+													src="images/btn_download.png"></a>
+											</div>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+							<div style="postion: relative; margin: 15px 0 0 40px; float: left; width: 290px; height: 564px; background-image: url('images/img_device_none.png');">
+								<!-- 							<img class="animated bounceInUp device_none"
+								alt="Line Laucher Device"
+								style="float: left; position: relative; bottom: 0px; z-index: 100; width: 290px;"
+								src=" images/img_device_none.png"> -->
+								<div class="conts browserH device_theme"
+									style="position: relative; z-index: 101; width: 272px;">
+									<div id="sld"
+										style="width: 272px; height: 450px; left: 886px; margin: 54px 9px;">
+										<div id="sl-wrapper"
+											style="transition: all 1s; left: -1360px; width: 2448px; height: 450px;">
+											<div class="sl" style="width: 272px;">
+												<img src=" images/th01.png"
+													alt="Line Launcher Theme Preview Line Friends"
+													style="width: 272px; height: 450px;">
+											</div>
+											<div class="sl" style="width: 272px;">
+												<img src=" images/th02.png"
+													alt="Line Launcher Theme Preview Lovely Cony"
+													style="width: 272px; height: 450px;">
+											</div>
+											<div class="sl" style="width: 272px;">
+												<img src=" images/th03.png"
+													alt="Line Launcher Theme Preview Friendly Brown"
+													style="width: 272px; height: 450px;">
+											</div>
+											<div class="sl" style="width: 272px;">
+												<img src=" images/th04.png"
+													alt="Line Launcher Theme Preview Leornard Life"
+													style="width: 272px; height: 450px;">
+											</div>
+											<div class="sl" style="width: 272px;">
+												<img src=" images/th05.png"
+													alt="Line Launcher Theme Preview GD X TAEYANG"
+													style="width: 272px; height: 450px;">
+											</div>
+											<div class="sl" style="width: 272px;">
+												<img src=" images/th06.png"
+													alt="Line Launcher Theme Preview Duck whoo"
+													style="width: 272px; height: 450px;">
+											</div>
+											<div class="sl" style="width: 272px;">
+												<img src=" images/th07.png"
+													alt="Line Launcher Theme Preview Dark Chic"
+													style="width: 272px; height: 450px;">
+											</div>
+											<div class="sl" style="width: 272px;">
+												<img src=" images/th08.png"
+													alt="Line Launcher Theme Preview Vivid Line"
+													style="width: 272px; height: 450px;">
+											</div>
+											<div class="sl" style="width: 272px;">
+												<img src=" images/th09.png"
+													alt="Line Launcher Theme Preview B1A4 baro"
+													style="width: 272px; height: 450px;">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section fp-section" id="section3" data-anchor="Stylish"
+			style="height: 1031px; background-color: rgb(105, 98, 201);">
+			<div class="homebg03">
+				<div class="container">
+					<div class="row" style="top: 8%;">
+						<h2 class="pageTitle_white" style="font-size: 72px;">STYLISH</h2>
+						<div class="content"
+							style="font-size: 20px; margin: 25px 0px 46px;">
+							<h3>It makes your phone more stylish. You can change to your
+								own style</h3>
+							<h3>Line Launcher helps your phone becomes more pretty and
+								stylish.</h3>
+						</div>
+							<div class="content2" style="position: relative; width: 900px; height: 650px; margin: auto;">
+								<div style="postion: relative; margin: auto; width: 290px; height: 564px; background-image: url('images/img_device_none.png');">
+<!-- 									<img class="animated fadeInRight basictheme1"
+										style="position: relative; z-index: 99; margin: 54px 0 0 0; width: 272px;"
+										alt="Line Launcher mobile basic theme"
+										src=" images/img_basictheme.png"> -->
+<!--									<video id="video" style="position: relative; z-index: 99; margin: 54px 0 0 0; width: 272px;" alt="Line Launcher mobile basic theme" loop autoplay muted>
+ 									<source src="https://youtu.be/6Ehvxc00e3Y" type="video/mp4">
+									<source src="images/img_basictheme.png" type="image/png" />
+									</video> -->
+									<div style="padding: 54px 0 0 0;">
+										<iframe id="video" marginwidth="50"; width="272" height="450" src="https://www.youtube.com/embed/mGMSPKzvcFY?autoplay=1&controls=0&loop=1&showinfo=0&playlist=mGMSPKzvcFY" frameborder="0" allowfullscreen autoplay></iframe>
+									</div>
+								</div>
+							</div>
+							
+							<div id="page4Icons" style="width: 100%; text-align: center;">
+
+							<img class="animated doongdoong icons_1"
+								style="position: absolute; z-index: -1; width: 168px;"
+								alt="Application Icon Kakao Story" src=" images/img_icons_1.png"> 
+							<img class="animated doongdoong icons_2"
+								style="position: absolute; z-index: -1; top: 347.5px; left: 268px; width: 168px;"
+								alt="Application Icon Instagram" src=" images/img_icons_2.png">
+							<img class="animated doongdoong icons_3"
+								style="position: absolute; z-index: -1; top: 687.333px; left: 84px; width: 168px;"
+								alt="Application Icon Love" src=" images/img_icons_3.png">
+							<img class="animated doongdoong icons_4"
+								style="position: absolute; z-index: -1; top: 811px; left: 220px; width: 220px;"
+								alt="Application Icon Naver" src=" images/img_icons_4.png">
+							<img class="animated doongdoong icons_5"
+								style="position: absolute; z-index: -1; top: 0px; left: 1158px; width: 193px;"
+								alt="Application Icon Facebook" src=" images/img_icons_5.png">
+							<img class="animated doongdoong icons_6"
+								style="position: absolute; z-index: -1; top: 719px; left: 1384px; width: 200px;"
+								alt="Application Icon Youtube" src=" images/img_icons_6.png">
+
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="section fp-section active" id="section4"
+			data-anchor="Clever"
+			style="height: 1031px; background-color: rgb(0, 190, 104);">
+			<div class="homebg04">
+				<div class="container">
+					<div class="row" style="top: 8%;">
+						<h2 class="pageTitle_white" style="font-size: 72px;">CLEVER</h2>
+						<div class="content"
+							style="font-size: 20px; margin: 25px 0px 46px;">
+							<h3>Line Launcher makes your phone more clever.</h3>
+							<h3>We make Phone Boost for your phone, faster and faster.</h3>
+						</div>
+						<div class="content2" style="position: relative; width: 900px; height: 650px; margin: auto;">
+							<img id="boss_d1" class="animated boss_d1" style="position: relative; z-index: 101; margin: 310px 30px 0 60px; float: left" alt="Line Character Bossd1" src=" images/img_boss_d1.png">
+							<img id="boss_d2" class="animated boss_d2" style="position: relative; z-index: 100; margin: 350px 30px 0 -69px; float: left" alt="Line Character Bossd2" src=" images/img_boss_d2.png">							
+							<div style="postion: relative; width: 290px; height: 564px; float: left; background-image: url('images/img_device_none.png');">
+								<img class="animated basictheme1" style="position: relative; z-index: 99; margin: 54px 0px 0 9px; width: 272px; float: left;" alt="Line Launcher mobile basic theme" src=" images/img_cleanertheme_2.png">
+								<img id="cleaner_pop" class="animated cleaner_pop" style="position: relative; z-index: 101; width: 440px; left: -80px; top: -420px;" alt="Line Launcher Memory Cleaner3" src=" images/img_cleaner_pop.png">
+								<img id="cursor" class="animated" style="position: relative; z-index: 100; left: 99px; top: -320px;" alt="Line Launcher Memory Cleaner Click" src="images/img_cursor.png">							
+							</div>
+							<img id="Sally_3_2" class="animated Sally_3_2" style="position: relative; z-index: 101; margin: 40px 20px 40px -80px;" alt="Line Character Sally" src=" images/img_Sally_3_2.png">
+							<img id="Sally_3_1" class="animated Sally_3_1" style="position: relative; z-index: 101; margin: 460px 0px 0 -48px;" alt="Line Character Sally" src=" images/img_Sally_3_1.png">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section fp-section" id="section5" data-anchor="Download"
+			style="height: 1031px; background-color: rgb(0, 166, 255);">
+			<div class="homebg05">
+				<div style="position: relative; top: 25%; width: 900px; height: 650px; margin: 30px auto;">
+						<img class="animated bounceInUp appicon" style="position: relative; z-index: 100;" alt="Line Launcher App Icon" src=" images/img_appicon.png">
+						<h2 class="apptext" style="font-size: 38px; position: relative;  z-index: 101; margin: 63px 0 60px 0">LINE's Official Launcher app</h2>
+						<a href="https://play.google.com/store/apps/details?id=com.campmobile.launcher">
+							<img
+							class="animated bounceInUp btn_store2"
+							style="position: relative; z-index: 100;"
+							alt="Google Play Store Button to install Line Launcher !"
+							title="Press the button to install Line Launcher"
+							src=" images/btn_store.png">
+						</a>
+				</div>
+			</div>
+
+				<div align="center">
+					<div
+						style="width: 100%; height: 5%; left: 0px; background: #333; position: absolute; bottom: 0px; z-index: 100;">
+						<ul id="footerUl" style="position: absolute; top: 25%; left: 15%;">
+							<li id="footerLi"><a href="intro.html">Term of use</a></li>
+							<li id="footerLi">|</li>
+							<li id="footerLi"><a href="privacyPolicy.html">Privacy Policy</a></li>
+							<li id="footerLi">|</li>
+							<li id="footerLi"><a href="help.html">Help</a></li>
+						</ul>
+						<a href="https://www.facebook.com/linelauncher"><img class=""
+							style="position: absolute; z-index: 100; top: 24%; right: 20%;"
+							alt="Line Launcher device" src=" images/btn_share_fb.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src=" javascripts/jquery-1.11.1.min.js"></script>
+	<script src=" javascripts/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+
+
+<script type="text/javascript">
+var winIE = (navigator.userAgent.indexOf("Opera") == -1 && (document.getElementByIdx && document.documentElement.behaviorUrns)) ? true : false;
+
+function bodySize() {
+    if (winIE && document.documentElement.clientWidth) {
+        var obj = document.getElementsByTagName_r("body")[0].style;
+        obj.width = (document.documentElement.clientWidth < 760) ? "760px" : "100%"
+    }
+}
+
+function init() {
+    if (winIE) {
+        bodySize()
+    }
+}
+onload = init;
+if (winIE) {
+    onresize = bodySize
+}
+
+
+/* function onYouTubePlayerAPIReady() {
+	  // create the global player from the specific iframe (#video)
+	  player = new YT.Player('video', {
+	    events: {
+	      // call this function when player is ready to use
+	      'onReady': onPlayerReady
+	    }
+	  });
+}
+ */
+
+$(function() {
+    $('#fullpage').fullpage({
+        sectionsColor: ['#00a6ff', '#efefef', '#645cce', '#00BE68', '#00a6ff'],
+        anchors: ['Line', 'VariousTheme', 'Stylish', 'Clever', 'Download'],
+        menu: '#menu',
+        verticalCentered: false,
+        css3: true,
+        scrollingSpeed: 600,
+        afterLoad: function(line) {
+        	if (line == 'Line'){
+        		$('#brown').addClass('brownComeout');
+        		$('#brown').removeClass('unVisible');
+            	$('#sally').addClass('sallyComeout');
+            	$('#sally').removeClass('unVisible');
+            	$('#sallyCap').addClass('sallyCapComeout');
+            	$('#sallyCap').removeClass('unVisible');
+            	$('#leonard').addClass('leonardComeout');
+            	$('#leonard').removeClass('unVisible');
+            	$('#heart_1').addClass('heart_1Comeout');
+            	$('#heart_1').removeClass('unVisible');
+            	$('#heart_2').addClass('heart_2Comeout');
+            	$('#heart_2').removeClass('unVisible');
+            	$('#james').addClass('JamesInLeft');
+            	$('#james').removeClass('unVisible');
+            	$('#edward').addClass('rotateInUpLeft');
+            	$('#edward').removeClass('unVisible');
+        	}  else {
+        		$('#brown').removeClass('brownComeout');
+        		$('#brown').addClass('unVisible');
+            	$('#sally').removeClass('sallyComeout');
+            	$('#sally').addClass('unVisible');
+            	$('#sallyCap').removeClass('sallyCapComeout');
+            	$('#sallyCap').addClass('unVisible');
+            	$('#leonard').removeClass('leonardComeout');
+            	$('#leonard').addClass('unVisible');
+            	$('#heart_1').addClass('unVisible');
+            	$('#heart_1').removeClass('heart_1Comeout');
+            	$('#heart_2').addClass('unVisible');
+            	$('#heart_2').removeClass('heart_2Comeout');
+            	$('#james').removeClass('JamesInLeft');
+            	$('#james').addClass('unVisible');
+            	$('#edward').removeClass('rotateInUpLeft');
+            	$('#edward').addClass('unVisible');
+        	}
+            
+            if (line == 'VariousTheme') {
+                $('#menu li').addClass('grey');
+            } else {
+                $('#menu li').removeClass('grey');
+            }
+            
+            if (line == 'Stylish'){
+/*             	var video = document.getElementById('video');
+            	video.pause();
+            	video.currentTime = 0;
+            	video.load(); */
+            	
+	 			$("#video")[0].src = "https://www.youtube.com/embed/mGMSPKzvcFY?autoplay=1&loop=1&showinfo=0&playlist=mGMSPKzvcFY";
+            } else{
+/*             	var video = document.getElementById('video');
+            	video.pause(); */
+/*                 player.pauseVideo(); */
+	 			/* document.getElementById('video').pauseVideo() */
+
+	 			$("#video")[0].src = "";
+	 			
+ 			}
+            if (line == 'Clever'){
+            	$('#cursor').addClass('cursor');
+            	$('#cleaner_pop').addClass('cleaner_pop');
+            	$('#boss_d2').addClass('boss_d2');
+            	$('#Sally_3_2').addClass('Sally_3_2');
+            	var windowH = $(window).innerHeight();
+                var windowW = $(window).innerWidth();
+                var cleaner_popW = 440;
+                var cleaner_popH = 184;
+                var cursor_1W = 40;
+                var cursor_1H = 40;
+                var boss_d1W = 155;
+                var boss_d1H = 288;
+                var boss_d2W = 90;
+                var boss_d2H = 100;
+
+            /*     var Sally_3W = 118;
+                var Sally_3H = 150;  */
+                var Sally_3_1W = 78;
+                var Sally_3_1H = 128;
+                var Sally_3_2W = 46;
+                var Sally_3_2H = 46;
+                
+                
+/*                 
+                $('.cursor').css({
+                    top: windowH / 2 - cursor_1H / 2 + cursor_1H*3.2
+                });
+                $('.cursor').css({
+                    left: windowW / 2 - cursor_1W / 2 + cursor_1W* 2.5
+                });
+                $('.cleaner_pop').css({
+                    top: windowH / 2 - cleaner_popH +35
+                });
+                $('.cleaner_pop').css({
+                    left: windowW / 2 - cleaner_popW / 2
+                });
+                $('.boss_d2').css({
+                    top: windowH / 2 + boss_d2H / 1.0
+                });
+                $('.boss_d2').css({
+                    left: windowW / 2 - boss_d2W* 2.8
+                });
+
+                $('.Sally_3').css({
+                    top: windowH / 2 + Sally_3H * 2
+                });
+                $('.Sally_3').css({
+                    left: windowW / 2 + Sally_3W * 2
+                });
+                $('.Sally_3_1').css({
+                    top: windowH / 2 + Sally_3_1H * 1.8
+                });
+                $('.Sally_3_1').css({
+                    left: windowW / 2 + Sally_3_1W * 2.67
+                });
+
+                $('.Sally_3_2').css({
+                    top: windowH / 2 + Sally_3_2H * 5.9
+                });
+                $('.Sally_3_2').css({
+                    left: windowW / 2 + Sally_3_2W * 4
+                });
+*/
+                
+            } else{
+            	$('#cursor').removeClass('cursor');
+            	$('#cleaner_pop').removeClass('cleaner_pop');
+            	$('#boss_d2').removeClass('boss_d2');
+            	$('#Sally_3_2').removeClass('Sally_3_2');
+            }
+        }
+    })
+});
+$(window).keydown(function(event) {
+    if ((event.keyCode == 107 && event.ctrlKey == true) || (event.keyCode == 109 && event.ctrlKey == true)) {
+        event.preventDefault()
+    }
+    $(window).bind('mousewheel DOMMouseScroll', function(event) {
+        if (event.ctrlKey == true) {
+            event.preventDefault()
+        }
+    })
+});
+</script>
+
+
+<!-- PAGE2 관련 슬라이드 기능 -->
+<script>
+
+$(function() {
+
+    var windowH = $(window).innerHeight();
+    var windowW = $(window).innerWidth();
+	
+    $("#page1Resources img, .resizablebox").each(function() {
+        var oImgWidth = $(this).width();
+        var oImgHeight = $(this).height();
+
+	        $(this).css({
+	            'max-width':oImgWidth+'px',
+	            'max-height':oImgHeight+'px',
+	            'width':'100%',
+	            'height':'100%'
+	        });
+    });
+	
+
+
+    var device_introW = $('.device_intro').innerWidth();
+    var device_introH = $('.device_intro').outerHeight();
+    var leonard_1W = $('.leonard_1').innerWidth();
+    var leonard_1H = $('.leonard_1').innerHeight();
+    var heart_1W = $('.heart_1').innerWidth();
+    var heart_1H = $('.heart_1').innerHeight();
+    var heart_2W = $('.heart_2').innerWidth();
+    var heart_2H = $('.heart_2').innerHeight();
+    var brown_1W = $('.brown_1').innerWidth();
+    var brown_1H = $('.brown_1').innerHeight();
+
+    var edward_1W = $('.edward_1').innerWidth();
+    var edward_1H = $('.edward_1').innerHeight();
+    var james_1W = $('.james_1').innerWidth();
+    var james_1H = $('.james_1').innerHeight();
+    var Sally_1_1W = $('.Sally_1_1').innerWidth();
+    var Sally_1_1H = $('.Sally_1_1').innerHeight();
+    var Sally_1_2W = $('.Sally_1_2').innerWidth();
+    var Sally_1_2H = $('.Sally_1_2').innerHeight();
+    var heart_1W = $('.heart_1').innerWidth();
+    var heart_1H = $('.heart_1').innerHeight();
+    var heart_2W = $('.heart_2').innerWidth();
+    var heart_2H = $('.heart_2').innerHeight();
+
+    var device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+    var leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+    var brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+    var edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+    var james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+    var Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1_1W / 3;
+    
+    
+    $("#page4Icons img").each(function() {
+        var oImgWidth = $(this).width();
+        /* var oImgHeight = $(this).height();
+        alert(oImgHeight); */
+	        $(this).css({
+	            'max-width':oImgWidth+'px',
+	            'max-height':oImgWidth+'px',
+	            'width': '100%',
+	            'height': '100%'
+	        });
+    });
+
+    
+    
+    
+    if (windowH >= 930) {
+          windowH = $(window).innerHeight();
+          windowW = $(window).innerWidth();
+          device_introW = $('.device_intro').innerWidth();
+          device_introH = $('.device_intro').innerHeight();
+           
+          device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+          leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+          brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+          edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+          james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+          Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1_1W / 3;
+          
+          $('.content').css({
+          	"margin-bottom": windowH*10/100
+          })
+
+          
+          $('.device_intro').css({
+              left: device_intro_loca
+          });
+          $('.leonard_1').css({
+              left: leonard_1_loca
+          });
+          $('.leonard_1').css({
+              bottom: device_introH - 250
+          });
+          $('.brown_1').css({
+              left: brown_1_loca
+          });
+          $('.brown_1').css({
+              bottom: -device_introH * 1 / 4
+          });
+          $('.edward_1').css({
+              left: edward_1_loca
+          });
+          $('.edward_1').css({
+              bottom: -edward_1W * 1 / 3
+          });
+          $('.james_1').css({
+              left: james_1_loca
+          });
+          $('.james_1').css({
+              bottom: 0
+          });
+          $('.Sally_1_1').css({
+              left: Sally_1_loca
+          });
+          $('.Sally_1_1').css({
+               bottom: -50
+          });
+          $('.Sally_1_2').css({
+              left: Sally_1_loca - 10
+          });
+          $('.Sally_1_2').css({
+               bottom: 105
+          });
+          $('.heart_1').css({
+              left: leonard_1_loca * 0.9
+          });
+          $('.heart_1').css({
+               bottom: 418
+          });
+          $('.heart_2').css({
+              left: leonard_1_loca
+          });
+          $('.heart_2').css({
+               bottom: 455
+          });
+          
+          //PAGE 3
+          
+          $('.icons_1').css({
+              top: -$('.icons_1').height() * 1 / 3
+          });
+          $('.icons_1').css({
+              left: $('.icons_1').width() / 2
+          });
+
+          $('.icons_2').css({
+              top: windowH / 2 - $('.icons_2').height()
+          });
+          $('.icons_2').css({
+              left: windowW / 2 - $('.icons_2').width() * 3
+          });
+
+          $('.icons_3').css({
+              top: windowH / 1.5  - $('.icons_3').height() / 3
+          });
+          $('.icons_3').css({
+              left: $('.icons_3').width() / 2
+          });
+
+          $('.icons_4').css({
+              top: windowH - $('.icons_4').height()
+          });
+          $('.icons_4').css({
+              left: $('.icons_4').width()
+          });
+
+          $('.icons_5').css({
+              top: 0
+          });
+          $('.icons_5').css({
+              left: windowW - $('.icons_5').width() * 2
+          });
+
+          $('.icons_6').css({
+              top: windowH - $('.icons_6').height() * 2
+          });
+          $('.icons_6').css({
+              left: windowW - $('.icons_6').width() * 4 / 5
+          });
+          
+          $('.icons_7').css({
+              top: windowH - $('.icons_7').height() * 2 -50
+          });
+          $('.icons_7').css({
+              left: windowW - $('.icons_7').width() * 3.5
+          });
+
+          
+          
+          
+
+    } else{
+    	
+        $('.content').css({
+          	"margin-bottom": windowH*10/100
+        })
+    	
+        $('.device_intro').css({
+            left: device_intro_loca
+        });
+        $('.leonard_1').css({
+            left: leonard_1_loca
+        });
+        $('.leonard_1').css({
+            bottom: device_introH - 250
+        });
+        $('.brown_1').css({
+            left: brown_1_loca
+        });
+        $('.brown_1').css({
+            bottom: -device_introH * 1 / 4
+        });
+        $('.edward_1').css({
+            left: edward_1_loca
+        });
+        $('.edward_1').css({
+            bottom: -edward_1W * 1 / 3
+        });
+        $('.james_1').css({
+            left: james_1_loca
+        });
+        $('.james_1').css({
+            bottom: 0
+        });
+        $('.Sally_1_1').css({
+            left: Sally_1_loca
+        });
+        $('.Sally_1_1').css({
+             bottom: -50
+        });
+        $('.Sally_1_2').css({
+            left: Sally_1_loca - 10
+        });
+        $('.Sally_1_2').css({
+             bottom: 105
+        });
+        $('.heart_1').css({
+            left: leonard_1_loca * 0.9
+        });
+        $('.heart_1').css({
+             bottom: leonard_1_loca
+        });
+        $('.heart_2').css({
+            left: leonard_1_loca
+        });
+        $('.heart_2').css({
+             bottom: leonard_1_loca * 1.1
+        });
+        
+        
+        //PAGE 3
+        
+        $('.icons_1').css({
+            top: -$('.icons_1').height() * 1 / 3
+        });
+        $('.icons_1').css({
+            left: $('.icons_1').width() / 2
+        });
+
+        $('.icons_2').css({
+            top: windowH / 2 - $('.icons_2').height()
+        });
+        $('.icons_2').css({
+            left: windowW / 2 - $('.icons_2').width() * 3
+        });
+
+        $('.icons_3').css({
+            top: windowH / 1.5  - $('.icons_3').height() / 3
+        });
+        $('.icons_3').css({
+            left: $('.icons_3').width() / 2
+        });
+
+        $('.icons_4').css({
+            top: windowH - $('.icons_4').height()
+        });
+        $('.icons_4').css({
+            left: $('.icons_4').width()
+        });
+
+        $('.icons_5').css({
+            top: 0
+        });
+        $('.icons_5').css({
+            left: windowW - $('.icons_5').width() * 2
+        });
+
+        $('.icons_6').css({
+            top: windowH - $('.icons_6').height() * 2
+        });
+        $('.icons_6').css({
+            left: windowW - $('.icons_6').width() * 4 / 5
+        });
+        
+        $('.icons_7').css({
+            top: windowH - $('.icons_7').height() * 2 -50
+        });
+        $('.icons_7').css({
+            left: windowW - $('.icons_7').width() * 3.5
+        });
+
+        
+        
+        
+        
+    }
+    $(window).resize(function() {
+        var windowH = $(window).innerHeight();
+        var windowW = $(window).innerWidth();
+        var device_introW = $('.device_intro').innerWidth();
+        var device_introH = $('.device_intro').innerHeight();
+        var leonard_1W = $('.leonard_1').innerWidth();
+        var leonard_1H = $('.leonard_1').innerHeight();
+        var brown_1W = $('.brown_1').innerWidth();
+        var brown_1H = $('.brown_1').innerHeight();
+
+        var edward_1W = $('.edward_1').innerWidth();
+        var edward_1H = $('.edward_1').innerHeight();
+        var james_1W = $('.james_1').innerWidth();
+        var james_1H = $('.james_1').innerHeight();
+        var Sally_1_1W = $('.Sally_1').innerWidth();
+        var Sally_1_1H = $('.Sally_1').innerHeight();
+        var Sally_1_2W = $('.Sally_2').innerWidth();
+        var Sally_1_2H = $('.Sally_2').innerHeight();
+        
+
+        var device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+        var leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+        var brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+        var edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+        var james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+        var Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1_1W / 3;
+    	
+    	if(windowH >= 930){
+            windowH = $(window).innerHeight();
+            windowW = $(window).innerWidth();
+/*          device_introW = 402;
+            device_introH = 516;
+            leonard_1W = 162;
+            leonard_1H = 190;
+            brown_1W = 322;
+            brown_1H = 464;
+            edward_1W = 90;
+            edward_1H = 102;
+            james_1W = 244;
+            james_1H = 471;
+            Sally_1W = 144;
+            Sally_1H = 218; */
+            
+            $('.content').css({
+              	"margin-bottom": windowH*10/100
+            })
+
+            device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
+            leonard_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (leonard_1W * 3 / 4);
+            brown_1_loca = (windowW / 2.0) - (device_introW / 2.0) - (brown_1W * 3 / 4);
+            edward_1_loca = (windowW / 2.0) - (device_introW / 2.0) * 2 + 50;
+            james_1_loca = (windowW / 2.0) + (device_introW / 2.0);
+            Sally_1_loca = (windowW / 2.0) + (device_introW / 2.0) - Sally_1_1W / 3;
+     		
+     	    $('.device_intro').css({
+     	        left: device_intro_loca
+     	    });
+     	    $('.leonard_1').css({
+     	        left: leonard_1_loca
+     	    });
+     	    $('.leonard_1').css({
+     	        bottom: device_introH - 250
+     	    });
+     	    $('.brown_1').css({
+     	        left: brown_1_loca
+     	    });
+     	    $('.brown_1').css({
+     	        bottom: -device_introH * 1 / 4
+     	    });
+     	    $('.edward_1').css({
+     	        left: edward_1_loca
+     	    });
+     	    $('.edward_1').css({
+     	        bottom: -edward_1W * 1 / 3
+     	    });
+     	    $('.james_1').css({
+     	        left: james_1_loca
+     	    });
+     	    $('.james_1').css({
+     	        bottom: 0
+     	    });
+            $('.Sally_1_1').css({
+                left: Sally_1_loca
+            });
+            $('.Sally_1_1').css({
+                 bottom: -50
+            });
+            $('.Sally_1_2').css({
+                left: Sally_1_loca - 10
+            });
+            $('.Sally_1_2').css({
+                 bottom: 105
+            });
+            $('.heart_1').css({
+                left: leonard_1_loca * 0.9
+            });
+            $('.heart_1').css({
+                 bottom: 418
+            });
+            $('.heart_2').css({
+                left: leonard_1_loca
+            });
+            $('.heart_2').css({
+                 bottom: 455
+            });
+     	    
+     	    
+     	    
+     	    
+            //PAGE 3
+            
+            $('.icons_1').css({
+                top: -$('.icons_1').height() * 1 / 3
+            });
+            $('.icons_1').css({
+                left: $('.icons_1').width() / 2
+            });
+
+            $('.icons_2').css({
+                top: windowH / 2 - $('.icons_2').height()
+            });
+            $('.icons_2').css({
+                left: windowW / 2 - $('.icons_2').width() * 3
+            });
+
+            $('.icons_3').css({
+                top: windowH / 1.5  - $('.icons_3').height() / 3
+            });
+            $('.icons_3').css({
+                left: $('.icons_3').width() / 2
+            });
+
+            $('.icons_4').css({
+                top: windowH - $('.icons_4').height()
+            });
+            $('.icons_4').css({
+                left: $('.icons_4').width()
+            });
+
+            $('.icons_5').css({
+                top: 0
+            });
+            $('.icons_5').css({
+                left: windowW - $('.icons_5').width() * 2
+            });
+
+            $('.icons_6').css({
+                top: windowH - $('.icons_6').height() * 2
+            });
+            $('.icons_6').css({
+                left: windowW - $('.icons_6').width() * 4 / 5
+            });
+            
+            $('.icons_7').css({
+                top: windowH - $('.icons_7').height() * 2 -50
+            });
+            $('.icons_7').css({
+                left: windowW - $('.icons_7').width() * 3.5
+            });
+
+            
+            
+            
+            
+            
+    	} else{
+            $('.device_intro').css("width", "70%");
+            $('.device_intro').css("height", "70%");
+            
+            $('.content').css({
+              	"margin-bottom": windowH*10/100
+            })
+            
+            //PAGE 3
+            
+            $('.icons_1').css({
+                top: -$('.icons_1').height() * 1 / 3
+            });
+            $('.icons_1').css({
+                left: $('.icons_1').width() / 2
+            });
+
+            $('.icons_2').css({
+                top: windowH / 2 - $('.icons_2').height()
+            });
+            $('.icons_2').css({
+                left: windowW / 2 - $('.icons_2').width() * 3
+            });
+
+            $('.icons_3').css({
+                top: windowH / 1.5  - $('.icons_3').height() / 3
+            });
+            $('.icons_3').css({
+                left: $('.icons_3').width() / 2
+            });
+
+            $('.icons_4').css({
+                top: windowH - $('.icons_4').height()
+            });
+            $('.icons_4').css({
+                left: $('.icons_4').width()
+            });
+
+            $('.icons_5').css({
+                top: 0
+            });
+            $('.icons_5').css({
+                left: windowW - $('.icons_5').width() * 2
+            });
+
+            $('.icons_6').css({
+                top: windowH - $('.icons_6').height() * 2
+            });
+            $('.icons_6').css({
+                left: windowW - $('.icons_6').width() * 4 / 5
+            });
+            
+            $('.icons_7').css({
+                top: windowH - $('.icons_7').height() * 2 -50
+            });
+            $('.icons_7').css({
+                left: windowW - $('.icons_7').width() * 3.5
+            });
+
+            
+            
+            
+    	}
+    });
+});
+</script>
+
+<!-- PAGE2 관련 슬라이드 기능 -->
+<script>
+function changeImage() {
+    document.getElementById("sl-wrapper").style.left = "-" + imageArray[index] + "px", upPage ? index++ : index--, index >= imageArray.length - 1 ? (index = 8, upPage = !1) : index <= 0 && (upPage = !0)
+}
+
+function changeImage2() {
+    document.getElementById("sl-wrapper").style.left = "-" + imageArray2[index] + "px", upPage ? index++ : index--, index >= imageArray2.length - 1 ? (index = 8, upPage = !1) : index <= 0 && (upPage = !0)
+}
+
+function Slider(e, n) {
+    this.el = document.querySelector(e), this.init(n)
+}
+index = 0;
+var imageArray = [0, 272, 544, 816, 1088, 1360, 1632, 1904, 2176],
+    imageArray2 = [0, 181, 362, 543, 725, 906, 1088, 1269, 1450],
+    upPage = !0;
+Slider.prototype = {
+    init: function(e) {
+        this.links = document.querySelectorAll("#sl-nav #th_btn"), this.wrapper = document.querySelector("#sl-wrapper"), this.navigate(e), 0 == e ? changeImg = setInterval(changeImage, 1500) : changeImg = setInterval(changeImage2, 1500)
+    },
+    navigate: function(e) {
+        for (var n = 0; n < this.links.length; ++n) {
+            var t = this.links[n];
+            this.slide(t, e)
+        }
+    },
+    slide: function(e, n) {
+        var t = this;
+        e.addEventListener("click", function(e) {
+            e.preventDefault();
+            var a = this;
+            t.setCurrentLink(a), index = parseInt(a.getAttribute("data-slide", 1)) + 1;
+            var r = document.querySelector(".sl:nth-child(" + index + ")");
+            0 == n ? (clearInterval(changeImg), changeImg = setInterval(changeImage, 1500)) : (clearInterval(changeImg2), changeImg = setInterval(changeImage2, 1500)), t.wrapper.style.left = "-" + r.offsetLeft + "px"
+        }, !1)
+    },
+    setCurrentLink: function(e) {
+        var n = e.parentNode,
+            t = n.querySelectorAll("a");
+        e.className = "current";
+        for (var a = 0; a < t.length; ++a) {
+            var r = t[a];
+            r !== e && (r.className = "")
+        }
+    }
+}, document.addEventListener("DOMContentLoaded", function() {
+    window.innerHeight >= 930 ? aSlider = new Slider("#slider_button", 0) : aSlider = new Slider("#slider_button", 1)
+});
+</script>
+
+</body>
+</html>
