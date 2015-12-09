@@ -123,9 +123,9 @@ ul {
 
 
 .pageTitle_main {
-    font-size: 2.2em;
+    font-size: 2.4em;
     font-family: LINERegular;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     fontword-break: keep-all;
 }
 .pageTitle_black, .pageTitle_white {
@@ -142,9 +142,9 @@ ul {
 }
 
 .content{
-	font-size: 20px;
+	font-size: 1em;
+	margin: 1.5625em 0 2.875em;
     font-family: LINERegular;
-    margin: 10px 0 40px;
 }
 
 
