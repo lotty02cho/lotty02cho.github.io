@@ -1023,7 +1023,7 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 							<h3 class="grey">There are a lot of themes in Line
 								Launcher's Theme Shops!</h3>
 						</div>
-						<div class="content2" style="position: relative; width: 900px; height: 650px; margin: auto;">
+						<div class="content2" style="position: relative; width: 56.25em; height: 40.625em; margin: auto;">
 							<table id="slider_button" class="pack_table"
 								style="">
 								<tbody>
@@ -1190,10 +1190,8 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 							<div class="device_none1" style="">
 							<img class="animated bounceInUp device_none"
 								alt="Line Laucher Device"
-								style="float: left; position: relative; bottom: 0px; z-index: 100; width: 18.125em;"
-								src=" images/img_device_none.png">
-								<div class="conts browserH device_theme"
-									style="position: relative; z-index: 101; width: 45.33em;">
+								style="float: left; position: relative; bottom: 0px; z-index: 100; width: 18.125em;" src=" images/img_device_none.png">
+								<div class="conts browserH device_theme" style="position: relative; z-index: 101; width: 45.33em;">
 									<div id="sld"
 										style="position:absolute; width: 17em; height: 28.125em; left: 0; margin: 3.375em 0.5625em">
 										<div id="sl-wrapper"
@@ -1257,14 +1255,14 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 			<div class="homebg03">
 				<div class="container">
 					<div class="row" style="top: 8%;">
-						<h2 class="pageTitle_white" style="font-size: 4.5em;">STYLISH</h2>
+						<h2 class="pageTitle_white">STYLISH</h2>
 						<div class="content">
 							<h3>It makes your phone more stylish. You can change to your
 								own style</h3>
 							<h3>Line Launcher helps your phone becomes more pretty and
 								stylish.</h3>
 						</div>
-							<div class="content2" style="position: relative; width: 56.25em; height: 40.625em; margin: auto;">
+							<div class="content2" style="position: relative;/*  width: 56.25em; height: 40.625em; margin: auto; */">
 								<div style="postion: relative; margin: auto; width: 18.125em; height: 35.25em;">
 									<img class="animated bounceInUp device_none"
 										alt="Line Laucher Device"
@@ -1316,7 +1314,7 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 			<div class="homebg04">
 				<div class="container">
 					<div class="row" style="top: 8%;">
-						<h2 class="pageTitle_white" style="font-size: 4.5em;">CLEVER</h2>
+						<h2 class="pageTitle_white">CLEVER</h2>
 						<div class="content">
 							<h3>Line Launcher makes your phone more clever.</h3>
 							<h3>We make Phone Boost for your phone, faster and faster.</h3>
@@ -1566,7 +1564,14 @@ $(window).keydown(function(event) {
 <script>
 
 $(function() {
-
+	if (screen.width <= 785) {
+		alert("fuck");
+		$('.device_none1').css({
+			"visibility": "hidden"
+		})
+	}
+	
+	
     var windowH = $(window).innerHeight();
     var windowW = $(window).innerWidth();
 	
