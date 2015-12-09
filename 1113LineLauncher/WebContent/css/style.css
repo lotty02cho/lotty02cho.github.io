@@ -123,9 +123,9 @@ ul {
 
 
 .pageTitle_main {
-    font-size: 64px;
+    font-size: 3em;
     font-family: LINERegular;
-    letter-spacing: 12px;
+    letter-spacing: 0.5em;
     fontword-break: keep-all;
 }
 .pageTitle_black, .pageTitle_white {
