@@ -67,7 +67,7 @@
 
 .theme_name {
 	font-size: .7em;
-	color: #000;
+	color: #000;</div>
 	margin-bottom: 0.75em;
 }
 
@@ -78,12 +78,17 @@
 }
 
 .pack_table{
-	position: relative;
+/* 	position: relative;
 	bottom: 0px;
 	z-index: 100;
 	width: 32.5em;
 	height: 39.5em;
 	float: left;
+	 */
+	position: relative;
+    bottom: 0px;
+    z-index: 100;
+
 }
 
 .device_none1{
@@ -1022,10 +1027,9 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 								customizing your phone.</h3>
 							<h3 class="grey">There are a lot of themes in Line
 								Launcher's Theme Shops!</h3>
-						</div>
-						<div class="content2" style="position: relative; width: 56.25em; height: 40.625em; margin: auto;">
-							<table id="slider_button" class="pack_table"
-								style="">
+						</div>						
+						<div class="content2" style="position: relative; text-align: center;/*width: 56.25em; height: 40.625em; margin: auto; */">
+							<table id="slider_button" class="pack_table" style="postion: relative; margin: auto; width: 29.25em; height: 35.5em;">
 								<tbody>
 									<tr>
 										<th>
@@ -1564,12 +1568,7 @@ $(window).keydown(function(event) {
 <script>
 
 $(function() {
-	if (screen.width <= 785) {
-		alert("fuck");
-		$('.device_none1').css({
-			"visibility": "hidden"
-		})
-	}
+
 	
 	
     var windowH = $(window).innerHeight();
@@ -1634,7 +1633,12 @@ $(function() {
     });
 
     
-    
+	if ($(window).innerWidth() <= 785) {
+		alert("fuck");
+		$('.device_none1').css({
+			"visibility": "hidden"
+		})
+	}
     
     if (windowH >= 930) {
           windowH = $(window).innerHeight();
@@ -1894,6 +1898,14 @@ $(function() {
         var Sally_1_1H = $('.Sally_1').innerHeight();
         var Sally_1_2W = $('.Sally_2').innerWidth();
         var Sally_1_2H = $('.Sally_2').innerHeight();
+        
+        
+    	if ($(window).innerWidth() <= 785) {
+    		alert("fuck");
+    		$('.device_none1').css({
+    			"visibility": "hidden"
+    		})
+    	}
         
 
         var device_intro_loca = (windowW / 2.0) - (device_introW / 2.0);
