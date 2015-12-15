@@ -940,7 +940,30 @@ body { font-size: 1em;}
 }
 
 </style>
+<script>
+//모바일 브라우저 주소창 안보이게 하기
+(function() {
 
+function hideAddressBar() {
+  
+  // 웹페이지의 높이가 화면높이보다 작을 때는 실행할 필요가 없으므로 종료
+  if (document.height <= window.outerHeight) return;
+  
+  var scrollTimer = setInterval(function() {
+   if ( ! pageYOffset) {  // 모바일 브라우저에서 주소창이 보이고 있을 때는 pageYOffset = 0 이므로 이때만 실행
+    scrollTo(0, 1);  // 웹페이지를 x축 0, y축 1의 위치로 끌어올림
+   } else { // pageYOffset !=0 인 경우 반복 종료: scrollTo(0, 1) 이 실행되었거나 사용자가 스크롤을 움직인 경우
+    clearInterval(scrollTimer);
+   }
+  }, 100); // 100 밀리세컨드마다 반복 실행
+  
+};
+
+window.addEventListener('load', hideAddressBar, false);  // 페이지 로드 되었을 때 실행
+window.addEventListener('orientationchange', hideAddressBar, false); // 화면이 가로/세로 전환되었을 때 실행
+
+})(); // 페이지 내 다른 자바스크립트 코드에 영향을 주거나 받지 않도록 self executed anonymous function 형태로 만듬
+</script>
 
 <script async="" src="//www.google-analytics.com/analytics.js"></script>
 <!-- <script>
@@ -994,11 +1017,8 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 						<h4 class="content2"
 							style="font-size: 20px; margin: 25px 0px 46px;">
 							<a
-								href="https://play.google.com/store/apps/details?id=com.campmobile.launcher"><img
-								class="btn_store"
-								alt="Google Play Store Button to install Line Launcher !"
-								title="Press the button to install Line Launcher"
-								src=" images/btn_store.png" style="width: 13rem; height: 4rem;">
+								href="https://play.google.com/store/apps/details?id=com.campmobile.launcher">
+									<img class="btn_store" alt="Google Play Store Button to install Line Launcher !" title="Press the button to install Line Launcher" src=" images/btn_store.png" style="width: 13rem; height: 4rem;">
 							</a>
 						</h4>
 					</div>
@@ -1221,7 +1241,7 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 									</tr>
 								</tbody>
 							</table>
-							<div class="device_none1" style="">
+<!-- 							<div class="device_none1" style="">
 							<img class="animated bounceInUp device_none"
 								alt="Line Laucher Device"
 								style="float: left; position: relative; bottom: 0px; z-index: 100; width: 18.125em;" src=" images/img_device_none.png">
@@ -1278,7 +1298,7 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -1354,18 +1374,20 @@ if(window.navigator.language){var language=window.navigator.language.toLowerCase
 							<h3>We make Phone Boost for your phone, faster and faster.</h3>
 						</div>
 						
-						<div class="content2" style="position: relative; margin: auto; width: 42.25em; height: 40.625em; margin: auto; ">
+						<div class="content2" style="position: relative; margin: auto; width: 47.25em; height: 40.625em; margin: auto; ">
  								<img id="boss_d1" class="animated boss_d1" src=" images/img_boss_d1.png">
 								<img id="boss_d2" class="animated boss_d2" alt="Line Character Bossd2" src=" images/img_boss_d2.png">
 								<div style="float: left; postion: relative; margin: auto; width: 18.125em; height: 35.25em;">
 									<img class="animated device_none" alt="Line Laucher Device" style="float: left; position: relative; bottom: 0px; z-index: 100; width: 18.125em;" src=" images/img_device_none.png">
 									<img class="animated basictheme1"
-										style="position: absolute; z-index: 99; margin: 3.375em 0 0 -17.5625em; width: 17em;"
+										style="position: absolute; z-index: 99; margin: 3.375em 0 0 0.5em; width: 17em;"
 										alt="Line Launcher mobile basic theme"
-										src=" images/img_basictheme.png">
+										src=" images/img_cleanertheme_2.png">
+								<img id="cleaner_pop" class="animated cleaner_pop" style="position: relative; z-index: 101; width: 27.5em; left: -5em; top: -26.25em;" alt="Line Launcher Memory Cleaner3" src=" images/img_cleaner_pop.png">
+								<img id="cursor" class="animated" style="position: relative; z-index: 100; left: 6.1875em; top: -23.5em; width: 2.5em; height: 2.5em;" alt="Line Launcher Memory Cleaner Click" src="images/img_cursor.png">
 								</div>
-								<img id="Sally_3_2" class="animated Sally_3_2" style="position: relative; z-index: 101; float: left; margin: 31em 0em 0em 1em; width: 2.875em; height: 2.875em;"   alt="Line Character Sally" src=" images/img_Sally_3_2.png">
-								<img id="Sally_3_1" class="animated Sally_3_1" style="position: relative; z-index: 101; float: left; margin: 29em 0em 0 -1.5em;  width: 4.875; height: 7.1875em;" alt="Line Character Sally" src=" images/img_Sally_3_1.png">
+								<img id="Sally_3_2" class="animated Sally_3_2" style="position: relative; z-index: 101; float: left; margin: 31em 0em 0em 3em; width: 2.875em; height: 2.875em;"   alt="Line Character Sally" src=" images/img_Sally_3_2.png">
+								<img id="Sally_3_1" class="animated Sally_3_1" style="position: relative; z-index: 101; float: left; margin: 29em 0em 0 -1.5em; width: 4.875em; height: 7.1875em;" alt="Line Character Sally" src=" images/img_Sally_3_1.png">
 						</div>
 						
 						
